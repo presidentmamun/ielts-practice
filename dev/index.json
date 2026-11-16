@@ -49,6 +49,30 @@
    "file": "gt8.json"
   },
   {
+   "id": "gt9",
+   "module": "GT",
+   "title": "General Training Test 9",
+   "file": "gt9.json"
+  },
+  {
+   "id": "gt10",
+   "module": "GT",
+   "title": "General Training Test 10",
+   "file": "gt10.json"
+  },
+  {
+   "id": "gt11",
+   "module": "GT",
+   "title": "General Training Test 11",
+   "file": "gt11.json"
+  },
+  {
+   "id": "gt12",
+   "module": "GT",
+   "title": "General Training Test 12",
+   "file": "gt12.json"
+  },
+  {
    "id": "ac1",
    "module": "AC",
    "title": "Academic Test 1",
@@ -59,6 +83,36 @@
    "module": "AC",
    "title": "Academic Test 2",
    "file": "ac2.json"
+  },
+  {
+   "id": "ac3",
+   "module": "AC",
+   "title": "Academic Test 3",
+   "file": "ac3.json"
+  },
+  {
+   "id": "ac4",
+   "module": "AC",
+   "title": "Academic Test 4",
+   "file": "ac4.json"
+  },
+  {
+   "id": "ac5",
+   "module": "AC",
+   "title": "Academic Test 5",
+   "file": "ac5.json"
+  },
+  {
+   "id": "ac6",
+   "module": "AC",
+   "title": "Academic Test 6",
+   "file": "ac6.json"
+  },
+  {
+   "id": "ac7",
+   "module": "AC",
+   "title": "Academic Test 7",
+   "file": "ac7.json"
   }
  ],
  "planned": {

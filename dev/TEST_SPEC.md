@@ -26,7 +26,7 @@ Check your file with `python dev/check_tests.py <id>` and fix every ERROR (and l
 ```
 - Part 1: everyday conversation, 2 speakers (form / notes completion). Part 2: one speaker, everyday talk (tour, radio
   item, announcement). Part 3: 2-3 speakers, study/training discussion. Part 4: one speaker, lecture.
-- **Length: 600-800 words of script per part** (about 4-5 minutes). Natural speech: short turns in conversations,
+- **Length: 620-800 words of script per part** (about 4-5 minutes); do not go under 600. Natural speech: short turns in conversations,
   hesitations ("well", "let me see"), self-corrections, and **distractors** (a wrong value is mentioned, then corrected
   or rejected). Answers come in question order. Say what the listener needs, never read the questions aloud.
 - Voices (use these exact keys; mix accents across the test): British male `buttery`, `bright`; British female `airy`,
@@ -86,6 +86,8 @@ text or recording; also say why a tempting wrong answer is wrong when there is o
 ```
 `match`: use it for matching information to paragraphs, headings to paragraphs (options = the headings, with one or
 two extra), people/places to statements, and Listening matching. Keys are capital letters.
+Matching headings is welcome (Academic especially): the option keys A, B, C… label the headings, and each item's `q` names
+the paragraph (`"Paragraph B"`). It does not matter that paragraphs also have letters.
 
 Mix the types as the real test does: each Listening part one or two groups; each Reading section two or three groups.
 Spread the correct letters and TRUE/FALSE/NOT GIVEN answers evenly; make NOT GIVEN genuinely not given.

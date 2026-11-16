@@ -1,0 +1,1376 @@
+{
+ "id": "gt12",
+ "module": "GT",
+ "title": "General Training Test 12",
+ "listening": {
+  "parts": [
+   {
+    "title": "Part 1",
+    "context": "A man phones a van hire company to book a van for a weekend.",
+    "range": "1-10",
+    "speakers": {
+     "Hazel": "aus_f",
+     "Gareth": "nz_m"
+    },
+    "script": [
+     [
+      "Hazel",
+      "Good morning, Redfern Van Hire, Hazel speaking."
+     ],
+     [
+      "Gareth",
+      "Oh, hello there. I'd like to hire a van for this coming weekend, please. Is that possible?"
+     ],
+     [
+      "Hazel",
+      "It should be. We're quite busy on Saturdays, but let me take a few details and see what we've got. Could I have your surname first?"
+     ],
+     [
+      "Gareth",
+      "Yes, it's Maddox."
+     ],
+     [
+      "Hazel",
+      "Is that M-A-D-O-X?"
+     ],
+     [
+      "Gareth",
+      "Nearly. There are two Ds. M-A-D-D-O-X."
+     ],
+     [
+      "Hazel",
+      "Thanks, Mr Maddox. And a contact number?"
+     ],
+     [
+      "Gareth",
+      "My mobile's 07845 330 126."
+     ],
+     [
+      "Hazel",
+      "07845 330 126. Lovely. Now, what will you be moving? It helps me recommend the right size."
+     ],
+     [
+      "Gareth",
+      "I'm helping my sister move house, so it's mostly furniture and boxes. Oh, and a piano. An upright one. I know, it's a bit of a nightmare."
+     ],
+     [
+      "Hazel",
+      "Ah, a piano. Right. Then you'll want a ramp and some straps, and we can supply both. They're free with every van."
+     ],
+     [
+      "Gareth",
+      "Brilliant. I was thinking of the smallest van, to keep the cost down."
+     ],
+     [
+      "Hazel",
+      "I'd advise against that. Our small van is fine for a studio flat, but a piano won't fit in it with anything else. We have the medium van, and then the Luton, which is the big one with the box section sticking out over the cab. For a three-bedroom house and a piano, you'd want the Luton, otherwise you'll be making two trips."
+     ],
+     [
+      "Gareth",
+      "Is it difficult to drive?"
+     ],
+     [
+      "Hazel",
+      "Not at all. It drives like a large car, and you don't need any special licence."
+     ],
+     [
+      "Gareth",
+      "Then the Luton it is."
+     ],
+     [
+      "Hazel",
+      "One more thing. The van comes with a full tank of diesel, and we ask you to bring it back full too. Otherwise we charge a refuelling fee, plus the fuel itself, and that works out more expensive than filling it up yourself at the garage round the corner."
+     ],
+     [
+      "Gareth",
+      "Understood. I'll make sure I do that on Sunday afternoon."
+     ],
+     [
+      "Hazel",
+      "Good choice. When would you like to collect it?"
+     ],
+     [
+      "Gareth",
+      "Early on Saturday would be ideal. Eight o'clock?"
+     ],
+     [
+      "Hazel",
+      "We do open at 8, but the vans aren't cleaned and fuelled until a quarter past, I'm afraid. Would 8.15 suit you?"
+     ],
+     [
+      "Gareth",
+      "That's fine. 8.15 it is. My sister wants to start loading by nine anyway."
+     ],
+     [
+      "Hazel",
+      "And when will you bring it back?"
+     ],
+     [
+      "Gareth",
+      "Sunday evening, I suppose. Say 7 o'clock?"
+     ],
+     [
+      "Hazel",
+      "I'm afraid we close at 5.30 on Sundays, so it would need to be back by then."
+     ],
+     [
+      "Gareth",
+      "Hmm. Could I keep it until Monday morning instead?"
+     ],
+     [
+      "Hazel",
+      "You could, but that would count as an extra day's hire, so most people just return it by 5.30 on the Sunday."
+     ],
+     [
+      "Gareth",
+      "Fine. Sunday by 5.30 it is."
+     ],
+     [
+      "Hazel",
+      "Now, the price. The Luton is 62 pounds a day during the week, but at weekends it's cheaper, 54 pounds a day. Mileage is unlimited and included."
+     ],
+     [
+      "Gareth",
+      "That's reasonable. What about insurance?"
+     ],
+     [
+      "Hazel",
+      "Basic cover is included, but you'd be responsible for the first 800 pounds of any damage. For 12 pounds 50 a day you can reduce that to 100 pounds. With a piano in the back, a lot of customers take it."
+     ],
+     [
+      "Gareth",
+      "I think I will. Let's add that."
+     ],
+     [
+      "Hazel",
+      "Certainly. Then there's a refundable deposit. It's normally 200 pounds, but with the extra insurance it drops to 150."
+     ],
+     [
+      "Gareth",
+      "Okay, 150 pounds. And is that paid by card?"
+     ],
+     [
+      "Hazel",
+      "Yes, we take it when you collect the keys, and it goes back onto your card when the van is returned undamaged."
+     ],
+     [
+      "Gareth",
+      "Is there anything I need to bring?"
+     ],
+     [
+      "Hazel",
+      "Your driving licence, of course. We also need proof of address. We used to accept a bank statement, but we've stopped that, so it has to be a utility bill, dated within the last three months."
+     ],
+     [
+      "Gareth",
+      "A gas bill is fine, then?"
+     ],
+     [
+      "Hazel",
+      "A gas bill is perfect. Right, Mr Maddox, I'll put you down for the Luton, and I'll send you a confirmation text in a few minutes."
+     ],
+     [
+      "Gareth",
+      "Thanks very much, Hazel. You've been really helpful."
+     ],
+     [
+      "Hazel",
+      "My pleasure. Good luck with the piano!"
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer. (Question 10 may be TWO WORDS.)",
+      "heading": "Redfern Van Hire: booking form",
+      "items": [
+       {
+        "n": 1,
+        "before": "Surname:",
+        "after": "",
+        "answer": [
+         "Maddox"
+        ],
+        "why": "He spells it M-A-D-D-O-X after Hazel's first attempt, which had only one D."
+       },
+       {
+        "n": 2,
+        "before": "Mobile number:",
+        "after": "",
+        "answer": [
+         "07845 330 126",
+         "07845330126"
+        ],
+        "why": "He gives the number 07845 330 126."
+       },
+       {
+        "n": 3,
+        "before": "Largest item to be moved:",
+        "after": "",
+        "answer": [
+         "piano"
+        ],
+        "why": "Furniture and boxes are general loads; the largest item is an upright piano."
+       },
+       {
+        "n": 4,
+        "before": "Type of van:",
+        "after": "",
+        "answer": [
+         "Luton"
+        ],
+        "why": "He first suggests the smallest van, but Hazel advises the Luton and he agrees."
+       },
+       {
+        "n": 5,
+        "before": "Collection on Saturday at:",
+        "after": "",
+        "answer": [
+         "8.15"
+        ],
+        "why": "He asks for 8 o'clock, but the vans are not ready until a quarter past, so they agree on 8.15."
+       },
+       {
+        "n": 6,
+        "before": "Return on Sunday by:",
+        "after": "",
+        "answer": [
+         "5.30"
+        ],
+        "why": "7 o'clock is rejected because the depot closes at 5.30; keeping the van until Monday would cost an extra day."
+       },
+       {
+        "n": 7,
+        "before": "Hire charge per day at weekends: £",
+        "after": "",
+        "answer": [
+         "54"
+        ],
+        "why": "62 pounds is the weekday rate; the weekend rate is 54 pounds a day."
+       },
+       {
+        "n": 8,
+        "before": "Extra insurance per day: £",
+        "after": "",
+        "answer": [
+         "12.50",
+         "12.5"
+        ],
+        "why": "Reducing the excess costs 12 pounds 50 a day; basic cover is included."
+       },
+       {
+        "n": 9,
+        "before": "Refundable deposit: £",
+        "after": "",
+        "answer": [
+         "150"
+        ],
+        "why": "The deposit is normally 200 pounds but drops to 150 with the extra insurance, which he takes."
+       },
+       {
+        "n": 10,
+        "before": "Documents to bring: driving licence and",
+        "after": "",
+        "answer": [
+         "utility bill"
+        ],
+        "why": "Bank statements are no longer accepted; the proof of address must be a utility bill."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 2",
+    "context": "The manager of a retirement village gives a welcome talk to new residents.",
+    "range": "11-20",
+    "speakers": {
+     "Eleanor": "rounded"
+    },
+    "script": [
+     [
+      "Eleanor",
+      "Good morning, everyone, and a very warm welcome to Larkfield Court. Do help yourselves to more tea and coffee while I talk. My name is Eleanor Pryce, and I'm the village manager. I know you've all had a great deal of paperwork to deal with this week, so I'll try to keep this short, and I'll only tell you what you really need to know on your first few days."
+     ],
+     [
+      "Eleanor",
+      "First, a little about where you are. Several of you have asked me whether the village was built on the site of an old hospital, or perhaps a school, because of the long brick buildings. In fact, neither is right. For about a hundred years this was a brickworks, which closed in the 1970s, and the pond you can see from the lounge is the old clay pit. The bricks in your walls were probably made right here."
+     ],
+     [
+      "Eleanor",
+      "Now, your first week. You'll have noticed that your apartments are fully furnished with the basics, and your photograph for your security pass was taken on moving-in day, so that's already done. You can also leave choosing a meal plan for a month if you like, because the restaurant is open to everyone anyway. What we do ask is that within the first week you sit down with our nurse, Joy, and complete a short health questionnaire. It only takes twenty minutes, and it means that we can help you properly if you ever need it."
+     ],
+     [
+      "Eleanor",
+      "Speaking of which, safety. In every apartment you'll find emergency pull cords. When the village opened, we fitted them in the bedroom and the bathroom only, but after a review a few years ago we added one in the living room too. There isn't one in the kitchen, so please be careful when you're cooking. If you pull a cord, a member of staff will answer within a minute, at any time of day or night, and someone will be with you within five."
+     ],
+     [
+      "Eleanor",
+      "Many of you won't want to drive in the town centre, so we run a minibus into town every weekday morning. It's free, but you do need to reserve a seat. Please don't phone reception for this, because they are very busy at that time. Instead, there's a sign-up sheet on the noticeboard in the main lobby, and you simply write your name on it by five o'clock the evening before. The driver, Tomas, will wait for twenty minutes at the market, and then bring everyone back together."
+     ],
+     [
+      "Eleanor",
+      "What about visitors? Your families and friends are very welcome at any time, and we hope they will come often. If they live a long way away and want to stay overnight, we have a guest suite. It costs 25 pounds a night, and it can be booked for up to five nights in a row. After that, I'm afraid someone else may need it. It isn't only for relatives, by the way. Friends are welcome to use it too."
+     ],
+     [
+      "Eleanor",
+      "Now, let me tell you about the activities, because this is the part that new residents usually enjoy the most. We have a timetable on the wall outside the library, but here are the regular ones. The pottery class is on Tuesdays. It used to be on Mondays, but we moved it to make room for the bridge club, which now meets every Monday afternoon. The bridge club is very friendly, and it's always looking for new players, so don't be shy."
+     ],
+     [
+      "Eleanor",
+      "If you like singing, the choir rehearses on Wednesday evenings at seven in the main hall. You don't need to read music. Thursday mornings belong to the gardening club. We have raised beds just behind the café, so you don't need to bend down, and the club grows vegetables for the restaurant. And on Friday evenings we have film night, in the lounge, with popcorn. The residents' committee chooses the films, and you're all welcome to make suggestions."
+     ],
+     [
+      "Eleanor",
+      "Saturdays are usually quieter, because many families visit then, and there's a small market in the car park, but that's not really a club. And if you'd rather have a lie-in on any day, nobody will mind at all. Nothing is compulsory."
+     ],
+     [
+      "Eleanor",
+      "Finally, if you have any problems or questions at all, my door is always open, and I'm in the office from nine until five on weekdays. Thank you for listening, and enjoy the rest of your morning. Now, who would like to see the garden first?"
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 11,
+        "q": "The land on which the village stands used to be",
+        "options": [
+         "a hospital.",
+         "a brickworks.",
+         "a school."
+        ],
+        "answer": "B",
+        "why": "She says people guess a hospital or school, but neither is right; it was a brickworks for about a hundred years."
+       },
+       {
+        "n": 12,
+        "q": "What do new residents have to do in their first week?",
+        "options": [
+         "Have a photograph taken for a security pass",
+         "Choose a meal plan",
+         "Complete a health questionnaire with the nurse"
+        ],
+        "answer": "C",
+        "why": "The photograph was already taken on moving-in day and the meal plan can wait a month; the questionnaire is the thing asked of them in week one."
+       },
+       {
+        "n": 13,
+        "q": "In each apartment there are emergency pull cords in",
+        "options": [
+         "the bedroom and the bathroom only.",
+         "every room, including the kitchen.",
+         "the bedroom, the bathroom and the living room."
+        ],
+        "answer": "C",
+        "why": "They were originally in the bedroom and bathroom only; a living room cord has since been added and there is none in the kitchen."
+       },
+       {
+        "n": 14,
+        "q": "To reserve a seat on the minibus, residents should",
+        "options": [
+         "phone reception.",
+         "write their name on a sheet in the lobby.",
+         "tell the driver in person."
+        ],
+        "answer": "B",
+        "why": "She says not to phone reception and explains the sign-up sheet on the lobby noticeboard."
+       },
+       {
+        "n": 15,
+        "q": "What does the speaker say about the guest suite?",
+        "options": [
+         "It is free of charge.",
+         "It can be booked for a maximum of five nights in a row.",
+         "It can only be used by relatives."
+        ],
+        "answer": "B",
+        "why": "It costs 25 pounds a night; the limit is five nights in a row, and friends may use it too."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "Which day is each activity held? Choose the correct letter, A-F, next to Questions 16-20.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Monday"
+       },
+       {
+        "k": "B",
+        "t": "Tuesday"
+       },
+       {
+        "k": "C",
+        "t": "Wednesday"
+       },
+       {
+        "k": "D",
+        "t": "Thursday"
+       },
+       {
+        "k": "E",
+        "t": "Friday"
+       },
+       {
+        "k": "F",
+        "t": "Saturday"
+       }
+      ],
+      "items": [
+       {
+        "n": 16,
+        "q": "Pottery class",
+        "answer": "B",
+        "why": "Pottery is on Tuesdays; it used to be on Mondays."
+       },
+       {
+        "n": 17,
+        "q": "Bridge club",
+        "answer": "A",
+        "why": "The bridge club now meets on Monday afternoons."
+       },
+       {
+        "n": 18,
+        "q": "Choir",
+        "answer": "C",
+        "why": "The choir rehearses on Wednesday evenings."
+       },
+       {
+        "n": 19,
+        "q": "Gardening club",
+        "answer": "D",
+        "why": "Thursday mornings belong to the gardening club."
+       },
+       {
+        "n": 20,
+        "q": "Film night",
+        "answer": "E",
+        "why": "Film night is on Friday evenings; Saturday has only a market, which is not a club."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 3",
+    "context": "Two students, Zoe and Idris, compare notes on a marketing case study about a product that failed.",
+    "range": "21-30",
+    "speakers": {
+     "Zoe": "glassy",
+     "Idris": "bright"
+    },
+    "script": [
+     [
+      "Zoe",
+      "Hi, Idris. Did you manage to read through the Brewbox material I sent you?"
+     ],
+     [
+      "Idris",
+      "I did. All of it, even the footnotes. I still think it's a bit of a strange choice for our case study, though. I'd have gone for the electric scooter company."
+     ],
+     [
+      "Zoe",
+      "I know, but we couldn't find much on them. Our tutor said to choose something with plenty of published research, and there are dozens of articles on Brewbox, and the company's own reports, so we can back up everything we say."
+     ],
+     [
+      "Idris",
+      "That's true. Okay, so let me remind myself. Brewbox was the self-heating coffee can from Tallis Beverages, wasn't it?"
+     ],
+     [
+      "Zoe",
+      "Yes. You twist the base, there's a chemical reaction, and three minutes later you've got a hot drink without a kettle or a café."
+     ],
+     [
+      "Idris",
+      "And the launch campaign was all about that, wasn't it? I remember a slogan like 'hot coffee, anywhere'."
+     ],
+     [
+      "Zoe",
+      "Right. They did try a cheaper price later on, but at the start the whole message was convenience. Hiking, building sites, long train journeys, that sort of thing."
+     ],
+     [
+      "Idris",
+      "Which sounds like a great idea. So where did it go wrong?"
+     ],
+     [
+      "Zoe",
+      "Well, the first problem was the research. They did a survey before the launch, and the sample was perfectly big, about 1,200 people. But they all gave their answers at a commuter railway station."
+     ],
+     [
+      "Idris",
+      "So they were only talking to people who already bought takeaway coffee."
+     ],
+     [
+      "Zoe",
+      "Exactly. Nobody asked people who normally make their own at home, or who don't drink coffee on the move at all."
+     ],
+     [
+      "Idris",
+      "Hmm. Then there's the product itself. I read that it took ages to heat up."
+     ],
+     [
+      "Zoe",
+      "Actually, three minutes was fine. Customers said they could live with that. The real complaint was that the outside of the can got far too hot to hold. People were burning their fingers. The coffee itself got good reviews, by the way, so it wasn't the taste."
+     ],
+     [
+      "Idris",
+      "Right, I'd mixed that up. And did the company respond?"
+     ],
+     [
+      "Zoe",
+      "Slowly. They only redesigned the can with a cardboard sleeve eighteen months later, and by then the retailers had stopped stocking it. I think that's the key point in our conclusion. The idea was a good one, and customers liked the concept, but the execution let it down."
+     ],
+     [
+      "Idris",
+      "I agree. Though some people argue it was the advertising that failed."
+     ],
+     [
+      "Zoe",
+      "I looked at that, but they spent a lot on adverts, probably more than they should have, so I don't think we can say they were short of money for promotion."
+     ],
+     [
+      "Idris",
+      "Okay. So, shall we plan the presentation? We've got fifteen minutes in all."
+     ],
+     [
+      "Zoe",
+      "Yes. I thought we could start with something visual, maybe the radio advert."
+     ],
+     [
+      "Idris",
+      "A recording might be tricky to play in the lecture room. I think the original poster would be better. It's in the archive, and it's very colourful, so we could put that on the first slide."
+     ],
+     [
+      "Zoe",
+      "Good idea. Then in the first section I'll show the sales figures. I was going to do a pie chart, but that doesn't really show a trend, so I'll make a graph."
+     ],
+     [
+      "Idris",
+      "A line graph makes sense. Then I'll do the customer complaints. I found a whole discussion on an old consumer forum, and some of the comments are quite funny. I'll quote a few of those."
+     ],
+     [
+      "Zoe",
+      "Perfect. And in the third section we should compare Brewbox with a rival product. There was a Japanese self-heating drink that did much better."
+     ],
+     [
+      "Idris",
+      "Yes, I've read about that. It was sold in vending machines in Japan, I think, not in shops, so people didn't have to carry it around."
+     ],
+     [
+      "Zoe",
+      "That's right. So, that's three sections. For the conclusion, I'd like to finish with some recommendations for the company, rather than just a summary of what we've said."
+     ],
+     [
+      "Idris",
+      "Three recommendations, then. One about research, one about the design, and one about complaints."
+     ],
+     [
+      "Zoe",
+      "Sounds like a plan. Shall I make a start on the slides tonight?"
+     ],
+     [
+      "Idris",
+      "Yes, and I'll send you my notes on the forum by tomorrow. Then we can run through it together on Thursday."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 21,
+        "q": "Why did they choose Brewbox for their case study?",
+        "options": [
+         "Their tutor suggested it.",
+         "A lot of research has been published about it.",
+         "They had both used the product."
+        ],
+        "answer": "B",
+        "why": "Zoe says there are dozens of articles and company reports. The tutor only advised choosing something with plenty of research."
+       },
+       {
+        "n": 22,
+        "q": "The launch campaign for Brewbox mainly emphasised",
+        "options": [
+         "convenience.",
+         "a low price.",
+         "a healthy lifestyle."
+        ],
+        "answer": "A",
+        "why": "The message was 'hot coffee, anywhere'; a cheaper price was only tried later."
+       },
+       {
+        "n": 23,
+        "q": "What was wrong with the pre-launch survey?",
+        "options": [
+         "The sample was too small.",
+         "It only questioned people who already bought takeaway coffee.",
+         "It was never completed."
+        ],
+        "answer": "B",
+        "why": "The sample of 1,200 was big enough, but everyone was questioned at a commuter railway station."
+       },
+       {
+        "n": 24,
+        "q": "What did customers complain about most?",
+        "options": [
+         "The time it took to heat up",
+         "The can becoming too hot to hold",
+         "The taste of the coffee"
+        ],
+        "answer": "B",
+        "why": "Three minutes was acceptable and the coffee had good reviews; the can burned people's fingers."
+       },
+       {
+        "n": 25,
+        "q": "What will they say in their conclusion?",
+        "options": [
+         "The idea was good but the execution was poor.",
+         "The company did not spend enough on advertising.",
+         "The company should have lowered its price."
+        ],
+        "answer": "A",
+        "why": "Zoe says the concept was good but the execution let it down; she rejects the advertising argument."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "heading": "Presentation plan (15 minutes)",
+      "items": [
+       {
+        "n": 26,
+        "before": "Opening slide: the original advertising",
+        "after": "",
+        "answer": [
+         "poster"
+        ],
+        "why": "Zoe suggests the radio advert, but a recording would be tricky, so Idris proposes the poster."
+       },
+       {
+        "n": 27,
+        "before": "Section 1: sales figures shown on a",
+        "after": "",
+        "answer": [
+         "graph"
+        ],
+        "why": "Zoe rejects a pie chart because it does not show a trend, and decides on a graph."
+       },
+       {
+        "n": 28,
+        "before": "Section 2: quotations from comments on a consumer",
+        "after": "",
+        "answer": [
+         "forum"
+        ],
+        "why": "Idris found a discussion on an old consumer forum and will quote some comments."
+       },
+       {
+        "n": 29,
+        "before": "Section 3: comparison with a drink that was sold in vending machines in",
+        "after": "",
+        "answer": [
+         "Japan"
+        ],
+        "why": "The rival was a Japanese drink, sold in vending machines in Japan."
+       },
+       {
+        "n": 30,
+        "before": "Conclusion: three",
+        "after": "for the company",
+        "answer": [
+         "recommendations"
+        ],
+        "why": "Zoe wants to finish with recommendations rather than a summary."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 4",
+    "context": "A lecturer talks about the development of the lighthouse.",
+    "range": "31-40",
+    "speakers": {
+     "Lecturer": "deep"
+    },
+    "script": [
+     [
+      "Lecturer",
+      "Good afternoon, everyone. Today I'd like to trace the development of the lighthouse, from a simple fire on a hilltop to the precise optical machines that guided ships around the world's coasts for more than a century. I'll concentrate mainly on the technology of the light itself, then say a few words about the people who looked after it, and finish with what is happening to lighthouses today."
+     ],
+     [
+      "Lecturer",
+      "Let's begin in the ancient world. The best known early lighthouse was the Pharos of Alexandria, completed around 280 BC. We know very little about how its light worked, but historians believe there was a fire at the top, perhaps with a bronze mirror to throw the light further out to sea. For many centuries fires remained the standard. At first the fuel was wood, which was plentiful, but it burned quickly and had to be carried up the tower in huge quantities. Later, in Britain, many lights switched to coal, which lasted much longer and gave a brighter flame."
+     ],
+     [
+      "Lecturer",
+      "But open fires had serious drawbacks. They were at the mercy of the weather. Strong wind could make the flames roar one minute and almost vanish the next, and that was exactly when sailors needed the light most. There was also the smoke, which blackened any glass put around the fire, so the light was often dimmer than people thought."
+     ],
+     [
+      "Lecturer",
+      "The eighteenth century brought an important change of approach. In 1759, the engineer John Smeaton completed a new tower on the Eddystone rocks, off the south coast of England. Two earlier towers there had been built of wood, and both had been destroyed, one by storm and one by fire. Smeaton used candles, and the light was produced by only 24 of them, which sounds very little, but they were enough to be seen from several miles away. What really made the tower famous was how it was built. He used blocks of granite, cut so that they locked together like pieces of a jigsaw, and the tower stood for over a hundred years."
+     ],
+     [
+      "Lecturer",
+      "The real breakthrough in lighting came in the 1780s with the invention of the Argand lamp. This burned oil, using a hollow wick that allowed air to reach the flame from the inside as well as the outside. The result was a steady flame without smoke. Used on its own, it was a big improvement, but it became far more effective when it was combined with polished reflectors, which sent the light out across the sea instead of letting it spread in all directions."
+     ],
+     [
+      "Lecturer",
+      "Then, in the 1820s, a French engineer, Augustin Fresnel, designed a completely new kind of lens. Instead of a single thick piece of glass, which would have been enormously heavy, it was made from rings of prisms arranged in a pattern. The Fresnel lens collected light that would otherwise have been wasted and focused it into a single powerful beam. It could be seen at a much greater distance, and it used less fuel. Even better, the whole lens could be turned. In most lighthouses, it was driven by a clockwork mechanism, rather like the one in a grandfather clock, and the keeper had to wind it up every few hours, all through the night."
+     ],
+     [
+      "Lecturer",
+      "That brings me to the keepers themselves. It was a lonely and demanding job. They trimmed the wicks, polished the brass and the lenses, kept a log of the weather, and on remote rock stations the men could be cut off for weeks at a time. Many families lived in cottages beside the tower, and in some places the keeper's wife and children helped to keep the light burning."
+     ],
+     [
+      "Lecturer",
+      "By the beginning of the twentieth century, oil was starting to give way to a new source of power, and over the following decades most lighthouses were converted to electricity. This also made it possible to operate lights without anyone being present. Automation was gradual, but it was relentless, and the last lighthouse in Britain to have resident keepers was automated in 1998. Nowadays almost every lighthouse in the world is controlled remotely."
+     ],
+     [
+      "Lecturer",
+      "So what is the future of lighthouses? Satellite navigation has greatly reduced the number of ships that depend on them, but they have not disappeared, because electronic systems can fail, and most authorities still keep them as a back-up. Meanwhile, the buildings themselves have found a second life. Some have become small museums, and a few are used as weather stations. But a growing number are now rented out as holiday cottages, where visitors can sleep at the top of the tower and watch the beam turn through the night. Thank you. Are there any questions?"
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "The development of the lighthouse",
+      "items": [
+       {
+        "n": 31,
+        "before": "Early fires burned wood; later, many British lights used",
+        "after": "",
+        "answer": [
+         "coal"
+        ],
+        "why": "Wood was the first fuel; in Britain many lights later switched to coal, which lasted longer."
+       },
+       {
+        "n": 32,
+        "before": "Problem with fires: flames were unreliable in strong",
+        "after": "",
+        "answer": [
+         "wind"
+        ],
+        "why": "Strong wind made the flames roar and then almost vanish."
+       },
+       {
+        "n": 33,
+        "before": "Smeaton's tower (1759) was lit by",
+        "after": "candles",
+        "answer": [
+         "24"
+        ],
+        "why": "The light came from only 24 candles."
+       },
+       {
+        "n": 34,
+        "before": "Smeaton built it with blocks of",
+        "after": "that locked together",
+        "answer": [
+         "granite"
+        ],
+        "why": "Earlier towers were wooden; Smeaton used granite blocks cut like a jigsaw."
+       },
+       {
+        "n": 35,
+        "before": "1780s: Argand oil lamp combined with polished",
+        "after": "",
+        "answer": [
+         "reflectors"
+        ],
+        "why": "Reflectors sent the light out to sea instead of in all directions."
+       },
+       {
+        "n": 36,
+        "before": "1820s: the Fresnel lens focused light into a single",
+        "after": "",
+        "answer": [
+         "beam"
+        ],
+        "why": "The lens collected wasted light and focused it into a single powerful beam."
+       },
+       {
+        "n": 37,
+        "before": "The lens was turned by a",
+        "after": "mechanism wound by the keeper",
+        "answer": [
+         "clockwork"
+        ],
+        "why": "The keeper wound a clockwork mechanism every few hours."
+       },
+       {
+        "n": 38,
+        "before": "Early 1900s: oil lamps gradually replaced by",
+        "after": "",
+        "answer": [
+         "electricity"
+        ],
+        "why": "Most lighthouses were converted to electricity, which also allowed unattended operation."
+       },
+       {
+        "n": 39,
+        "before": "Last British lighthouse automated in",
+        "after": "",
+        "answer": [
+         "1998"
+        ],
+        "why": "The last lighthouse with resident keepers was automated in 1998."
+       },
+       {
+        "n": 40,
+        "before": "Today many are rented out as holiday",
+        "after": "",
+        "answer": [
+         "cottages"
+        ],
+        "why": "Museums and weather stations are mentioned, but a growing number are rented out as holiday cottages."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "reading": {
+  "sections": [
+   {
+    "title": "Section 1",
+    "range": "1-14",
+    "passages": [
+     {
+      "title": "Ashdown Road Surgery: how to make an appointment",
+      "paras": [
+       "A  By telephone. Our phone lines open at 8.00 am. Calls are answered in the order in which they are received, and while you wait you will be told how many callers are ahead of you. The lines are always busiest between 8.00 and 9.30 am on Mondays, so if your request is not urgent, we suggest that you call after 10.30 am or use our online service instead.",
+       "B  Online. To use our online service, register once at reception and show photo ID. You will receive a username by text message within two working days. After that you can book, change or cancel routine appointments at any hour of the day or night. Appointments with doctors can be booked up to four weeks in advance, and appointments with nurses up to six weeks in advance.",
+       "C  Same-day appointments. Each morning we keep around a third of our appointments free for patients who feel that they need to be seen that day. To ask for one, you must telephone between 8.00 and 10.00 am. A receptionist will ask for brief details so that the duty doctor can decide who should be seen first. Please note that same-day appointments cannot be used for repeat prescriptions or for sick notes, which can be ordered online or at reception.",
+       "D  Telephone consultations. Many problems can be dealt with over the phone, which saves you a journey. If the doctor decides that you need to be seen in person, the receptionist will offer you the first available appointment, which may be on the same day. A doctor will call you at some point within three hours of your request. The call may come from a withheld number, so please keep your phone with you and answer it, even if you do not recognise the number.",
+       "E  Missed appointments. Last year, patients failed to attend 1,430 appointments at this surgery. Each one is time that another patient could have used. If you cannot come, please cancel at least two hours beforehand, by phone, online, or by replying to the reminder we send you. Patients who miss three appointments in a year will receive a letter and may be asked to meet the practice manager."
+      ]
+     },
+     {
+      "title": "Fernhill Pharmacy: free prescription delivery",
+      "paras": [
+       "F  Who can use the service? Delivery is free for anyone who is over 70, who has a disability or a long-term health condition, or who lives more than three miles from the pharmacy. Other customers can use the service for a charge of £3.50 per delivery.",
+       "G  How does it work? Ask your doctor to send your prescription electronically to Fernhill Pharmacy. We will text you when your medicines are ready and ask you to choose a delivery slot. Deliveries are made from Monday to Friday, between 10.00 am and 4.00 pm. If you reply to our text before 2.00 pm, we will deliver the following working day.",
+       "H  Safe delivery. Our drivers wear photo identity badges and will ask you to sign to confirm that you have received your medicines. If nobody is at home, we will not leave medicines with a neighbour or in a porch. We will try again on the next working day, and after two failed attempts the package will be returned to the pharmacy.",
+       "I  Medicines that must be kept cold. Insulin and some eye drops are delivered in insulated bags, and only in the morning, before 1.00 pm. Please put them in the fridge as soon as they arrive.",
+       "J  If something goes wrong. Our helpline is open from 9.00 am to 5.30 pm on weekdays. If your delivery is late, or if anything is missing from the package, please call us and we will arrange a replacement as quickly as possible. We regard every delivery as part of your care, so please do not hesitate to contact us if you are worried about your medicines."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "The two texts have paragraphs labelled A-J. Which paragraph contains the following information? Choose the correct letter, A-J.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Paragraph A"
+       },
+       {
+        "k": "B",
+        "t": "Paragraph B"
+       },
+       {
+        "k": "C",
+        "t": "Paragraph C"
+       },
+       {
+        "k": "D",
+        "t": "Paragraph D"
+       },
+       {
+        "k": "E",
+        "t": "Paragraph E"
+       },
+       {
+        "k": "F",
+        "t": "Paragraph F"
+       },
+       {
+        "k": "G",
+        "t": "Paragraph G"
+       },
+       {
+        "k": "H",
+        "t": "Paragraph H"
+       },
+       {
+        "k": "I",
+        "t": "Paragraph I"
+       },
+       {
+        "k": "J",
+        "t": "Paragraph J"
+       }
+      ],
+      "items": [
+       {
+        "n": 1,
+        "q": "a way of finding out how many other people are waiting to speak to the surgery",
+        "answer": "A",
+        "why": "Paragraph A says callers are told how many are ahead of them."
+       },
+       {
+        "n": 2,
+        "q": "the fact that one kind of health worker can be booked further ahead than another",
+        "answer": "B",
+        "why": "Paragraph B: doctors four weeks ahead, nurses six weeks ahead."
+       },
+       {
+        "n": 3,
+        "q": "a type of request that cannot be dealt with by a same-day appointment",
+        "answer": "C",
+        "why": "Paragraph C says repeat prescriptions and sick notes are excluded."
+       },
+       {
+        "n": 4,
+        "q": "the number of appointments that patients did not attend last year",
+        "answer": "E",
+        "why": "Paragraph E gives the figure of 1,430."
+       },
+       {
+        "n": 5,
+        "q": "what happens if nobody is at home to receive a delivery",
+        "answer": "H",
+        "why": "Paragraph H: nothing is left with neighbours; the driver returns the next day and then takes the package back after two failed attempts."
+       },
+       {
+        "n": 6,
+        "q": "a type of medicine that is only delivered in the morning",
+        "answer": "I",
+        "why": "Paragraph I: insulin and some eye drops are delivered before 1.00 pm."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the text for each answer.",
+      "items": [
+       {
+        "n": 7,
+        "before": "To obtain an online username, patients must show",
+        "after": "at reception.",
+        "answer": [
+         "photo ID"
+        ],
+        "why": "Paragraph B: register once at reception and show photo ID."
+       },
+       {
+        "n": 8,
+        "before": "The receptionist asks for",
+        "after": "so that the duty doctor can decide who is seen first.",
+        "answer": [
+         "brief details"
+        ],
+        "why": "Paragraph C."
+       },
+       {
+        "n": 9,
+        "before": "Patients who miss",
+        "after": "appointments in a year may be asked to meet the practice manager.",
+        "answer": [
+         "three"
+        ],
+        "why": "Paragraph E: three missed appointments lead to a letter and possibly a meeting."
+       },
+       {
+        "n": 10,
+        "before": "Customers who are not eligible for free delivery pay",
+        "after": "for each delivery.",
+        "answer": [
+         "£3.50",
+         "3.50"
+        ],
+        "why": "Paragraph F gives a charge of £3.50 per delivery."
+       }
+      ]
+     },
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information in the texts? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 11,
+        "q": "The surgery's telephone lines are especially busy at the start of the week.",
+        "answer": "TRUE",
+        "why": "Paragraph A: busiest between 8.00 and 9.30 am on Mondays."
+       },
+       {
+        "n": 12,
+        "q": "A doctor who makes a telephone consultation will always call from the surgery's main number.",
+        "answer": "FALSE",
+        "why": "Paragraph D: the call may come from a withheld number."
+       },
+       {
+        "n": 13,
+        "q": "A driver may leave medicines with a neighbour if the customer is out.",
+        "answer": "FALSE",
+        "why": "Paragraph H says they will not leave medicines with a neighbour."
+       },
+       {
+        "n": 14,
+        "q": "Drivers from the pharmacy can take payment from customers at the door.",
+        "answer": "NOT GIVEN",
+        "why": "Nothing is said about taking payment during delivery."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Section 2",
+    "range": "15-27",
+    "passages": [
+     {
+      "title": "Meridian Freight Ltd: dress code and identity card policy",
+      "paras": [
+       "Dress code. We want every member of staff to look professional, whatever their job. From Monday to Thursday, office staff are expected to wear business dress. On Fridays, staff who are not meeting customers that day may wear smart casual clothes, including dark jeans without tears or holes. Staff who are meeting customers should wear business dress every day of the week, including Fridays. In July and August, sandals are acceptable in the office, but they are never allowed in the warehouse, where safety rules apply at all times. Warehouse staff are provided free of charge with safety boots and a high-visibility jacket, and these must be worn whenever they are on the warehouse floor. Worn-out items will be replaced on request, and staff should ask their line manager if they are unsure whether an item of clothing is suitable. Managers will always explain any concern in a polite and private way, and no employee will be sent home without a conversation first.",
+       "Identity cards. Every employee receives a photo identity card during their first week. The card must be worn on a lanyard and be clearly visible at all times on company premises. Permanent staff wear a blue lanyard, contractors wear an orange one, and visitors are given a green one when they sign in at reception. Visitors must be accompanied by a member of staff throughout their visit, and staff must not hold doors open for people who are not wearing a card.",
+       "Lost or damaged cards. If your card is lost or stolen, you must report it to the security office within 24 hours so that it can be cancelled. The first replacement is free, but any further card will cost £8. Cards must never be lent to another person, even for a short time. When you leave the company, you must return your card to your manager on your last working day."
+      ]
+     },
+     {
+      "title": "Chairing a meeting: six pieces of advice",
+      "paras": [
+       "A  Plan the agenda. Decide in advance what the meeting must achieve and put the most important items first, because attention falls as time passes. Send the agenda to everyone at least two days beforehand, together with any papers they will need to read, so that nobody arrives unprepared. If a meeting has no clear purpose, consider cancelling it and sending an email instead.",
+       "B  Start on time. If you wait for latecomers, you teach everybody that being late has no cost. Begin at the agreed time, and do not repeat what has been said for people who arrive late; they can ask a colleague afterwards.",
+       "C  Give each item a time limit. Write the number of minutes next to each item on the agenda and ask someone to act as timekeeper. When an item overruns, ask the group whether it is worth taking time from another topic.",
+       "D  Hear every voice. In most meetings one or two people do most of the talking. If this happens, go round the table and ask each person in turn for their view, starting with the most junior, who may be influenced by what the others say if they speak last.",
+       "E  Handle disagreement calmly. When two people disagree, summarise each position fairly in a sentence or two. If the issue cannot be settled in a few minutes, note it down, set it aside for a separate discussion with the people concerned, and move on to the next item. Nobody should feel that they have lost the argument; the aim is to reach the best decision for the whole team, not to find a winner.",
+       "F  Finish clearly. In the last few minutes, review each decision and say who will do what, and by when. Send a short written record to everyone within 24 hours, because decisions that are not written down are quickly forgotten."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information in the text about Meridian Freight Ltd? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 15,
+        "q": "Staff who are meeting customers may wear jeans on Fridays.",
+        "answer": "FALSE",
+        "why": "Staff meeting customers must wear business dress every day, including Fridays."
+       },
+       {
+        "n": 16,
+        "q": "Sandals may be worn in the office during part of the summer.",
+        "answer": "TRUE",
+        "why": "In July and August sandals are acceptable in the office."
+       },
+       {
+        "n": 17,
+        "q": "The company pays for staff to buy business clothes.",
+        "answer": "NOT GIVEN",
+        "why": "Only safety boots and a jacket for warehouse staff are mentioned as being provided."
+       },
+       {
+        "n": 18,
+        "q": "Contractors wear the same colour of lanyard as permanent staff.",
+        "answer": "FALSE",
+        "why": "Permanent staff wear blue; contractors wear orange."
+       },
+       {
+        "n": 19,
+        "q": "Visitors must always have a member of staff with them.",
+        "answer": "TRUE",
+        "why": "Visitors must be accompanied throughout their visit."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the text for each answer.",
+      "items": [
+       {
+        "n": 20,
+        "before": "Warehouse staff receive safety boots and a",
+        "after": "jacket at no cost.",
+        "answer": [
+         "high-visibility"
+        ],
+        "why": "The text says warehouse staff are provided with safety boots and a high-visibility jacket."
+       },
+       {
+        "n": 21,
+        "before": "Permanent employees wear a",
+        "after": "lanyard.",
+        "answer": [
+         "blue"
+        ],
+        "why": "Permanent staff wear a blue lanyard."
+       },
+       {
+        "n": 22,
+        "before": "A lost card must be reported to the",
+        "after": "within 24 hours.",
+        "answer": [
+         "security office"
+        ],
+        "why": "The lost-card paragraph names the security office."
+       },
+       {
+        "n": 23,
+        "before": "After the first replacement, each new card costs",
+        "after": ".",
+        "answer": [
+         "£8",
+         "8"
+        ],
+        "why": "The first replacement is free; any further card costs £8."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "The text about chairing a meeting has six paragraphs, A-F. Which paragraph contains the following advice? Choose the correct letter, A-F.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Paragraph A"
+       },
+       {
+        "k": "B",
+        "t": "Paragraph B"
+       },
+       {
+        "k": "C",
+        "t": "Paragraph C"
+       },
+       {
+        "k": "D",
+        "t": "Paragraph D"
+       },
+       {
+        "k": "E",
+        "t": "Paragraph E"
+       },
+       {
+        "k": "F",
+        "t": "Paragraph F"
+       }
+      ],
+      "items": [
+       {
+        "n": 24,
+        "q": "asking each person in turn to give their opinion",
+        "answer": "D",
+        "why": "Paragraph D: go round the table."
+       },
+       {
+        "n": 25,
+        "q": "putting a difficult issue aside to be discussed later",
+        "answer": "E",
+        "why": "Paragraph E: note it down and set it aside for a separate discussion."
+       },
+       {
+        "n": 26,
+        "q": "not going back over what has been said for people who arrive late",
+        "answer": "B",
+        "why": "Paragraph B: do not repeat what has been said for latecomers."
+       },
+       {
+        "n": 27,
+        "q": "sending a written summary soon after the meeting",
+        "answer": "F",
+        "why": "Paragraph F: a short written record within 24 hours."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Section 3",
+    "range": "28-40",
+    "passages": [
+     {
+      "title": "Wolves return to the Aldervane",
+      "paras": [
+       "A  By the middle of the twentieth century, the wolf had been wiped out across much of Western Europe. In the Aldervane, a mountainous region of dense forests and sheep pastures, the last recorded wolf was killed in 1934. For the next eighty years the animal survived only in folk tales, in the names of a few villages, and in the stories grandparents told to make children stay close to home. Hunting had played its part, but so had the clearing of forests for farmland and a long-standing bounty paid by local councils for every wolf killed. When the bounty was finally abolished, there were simply no animals left to protect, and few people expected to see one again.",
+       "B  Then, in 2012, a hunter's trail camera captured a blurred image of a grey animal crossing a frozen stream. Wildlife officers were doubtful, because it could easily have been a large dog. But DNA taken from droppings and from fur caught on a tree proved that it was a young male wolf that had travelled more than 400 kilometres from a population in the neighbouring country. Within three years a female had joined him, and in the spring of 2016 the first litter of pups born in the region for more than eighty years was recorded. By 2023 there were thought to be eleven packs.",
+       "C  The response has been divided, and nowhere more so than among farmers. Tomas Vrenn, who keeps about four hundred sheep, lost fourteen lambs in a single night in 2018. A compensation scheme pays for confirmed kills, but farmers complain that payments can take up to six months to arrive, and that an inspector must reach the carcass before scavengers destroy the evidence. Many have therefore turned to prevention. Farms that installed electric fences and also bought guard dogs reported that their losses fell by about 60 per cent, while those that tried only one of the two measures saw little difference.",
+       "D  Ecologists point to wider effects. Red deer, which had grown in number without predators, had been eating young trees along the river banks, and in some places willow and aspen are now growing back, bringing birds and insects with them. Beavers, which depend on young willow for food and building material, have been seen in streams where they had been absent for generations, and the pools they create have attracted frogs and fish. Some ecologists argue that these changes show how the removal of a single predator can disturb a whole system, and how slowly such a system can recover. Yet Dr Ilse Marchetti, who leads a research team at the regional university, is cautious. She warns that results from North America, where wolves have been shown to change the behaviour of deer across entire landscapes, may not apply in Europe, where the countryside is crossed by roads and farms, and where hunters also kill deer. Her team studied five valleys: in two of them deer numbers had fallen noticeably, but in the other three they had not changed.",
+       "E  Tourism has been affected too. A few businesses now offer wolf-watching weekends, although the animals are shy and visitors almost never see one. Instead, guides take groups to look for tracks and to listen for howling at dusk. One guesthouse owner says her bookings have increased by a fifth. A survey carried out last year found that 38 per cent of visitors said that the wolves were one of their reasons for choosing the region. Other hoteliers, however, worry that walkers will stay away if they feel unsafe. A local bakery has even begun selling wolf-shaped biscuits, which have proved popular with families, and a café on the old forest road now displays photographs of the tracks that guides have found. Not everyone is amused, and one shopkeeper complained that the region was making money out of an animal that had cost its farmers dearly.",
+       "F  In fact, wolves very seldom attack people, and there has been no attack on a human in the Aldervane since their return. Officials advise walkers to keep dogs on leads and never to feed wild animals. Even so, the fear remains, particularly among parents. Two primary schools stopped holding lessons in the forest after the first sightings, and the region has responded by sending rangers into classrooms to explain how wolves behave and how to react if one is seen. The rangers explain that wolves normally avoid people, that a healthy wolf will usually run away at the sound of a human voice, and that the safest response to a sighting is to stay calm and back away slowly. Teachers say that the children, in particular, are now far less frightened than their parents.",
+       "G  The regional government's management plan, published last year, permits the killing of individual wolves that repeatedly attack livestock, but only after non-lethal measures have failed. Conservation groups say that even this goes too far, while some farmers feel that it does not go far enough. Dr Marchetti believes that the argument is less about numbers than about trust. In her view, people's willingness to live alongside wolves depends far more on whether they feel that their concerns are heard than on how many animals there are. 'The wolf is not the real problem,' she says. 'The real problem is the disagreement between neighbours.'"
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "The text has seven paragraphs, A-G. Which paragraph contains the following information? Choose the correct letter, A-G.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Paragraph A"
+       },
+       {
+        "k": "B",
+        "t": "Paragraph B"
+       },
+       {
+        "k": "C",
+        "t": "Paragraph C"
+       },
+       {
+        "k": "D",
+        "t": "Paragraph D"
+       },
+       {
+        "k": "E",
+        "t": "Paragraph E"
+       },
+       {
+        "k": "F",
+        "t": "Paragraph F"
+       },
+       {
+        "k": "G",
+        "t": "Paragraph G"
+       }
+      ],
+      "items": [
+       {
+        "n": 28,
+        "q": "a description of how scientists proved that the animal in the picture was a wolf",
+        "answer": "B",
+        "why": "Paragraph B: DNA from droppings and fur."
+       },
+       {
+        "n": 29,
+        "q": "a complaint about how long it takes to receive money",
+        "answer": "C",
+        "why": "Paragraph C: payments can take up to six months."
+       },
+       {
+        "n": 30,
+        "q": "a reason why research from another continent may not apply",
+        "answer": "D",
+        "why": "Paragraph D: Europe has roads and farms, and hunters also kill deer."
+       },
+       {
+        "n": 31,
+        "q": "an effort to teach children about wolves",
+        "answer": "F",
+        "why": "Paragraph F: rangers are sent into classrooms."
+       },
+       {
+        "n": 32,
+        "q": "the circumstances in which an individual wolf may legally be killed",
+        "answer": "G",
+        "why": "Paragraph G: repeated attacks on livestock after non-lethal measures have failed."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 33,
+        "q": "How did wildlife officers react to the photograph taken in 2012?",
+        "options": [
+         "They were certain it showed a wolf.",
+         "They doubted that it showed a wolf.",
+         "They asked the hunter to take more pictures.",
+         "They kept it secret from the public."
+        ],
+        "answer": "B",
+        "why": "Paragraph B: they were doubtful because it could have been a large dog."
+       },
+       {
+        "n": 34,
+        "q": "What reduced losses of sheep on some farms?",
+        "options": [
+         "Larger payments for farmers",
+         "More inspectors",
+         "Using fences together with guard dogs",
+         "Hunting wolves"
+        ],
+        "answer": "C",
+        "why": "Paragraph C: losses fell by about 60 per cent on farms with both fences and guard dogs; one measure alone made little difference."
+       },
+       {
+        "n": 35,
+        "q": "What did Dr Marchetti's research find?",
+        "options": [
+         "Deer numbers had fallen in two of the five valleys.",
+         "Deer numbers had fallen in every valley.",
+         "Willow and aspen had disappeared from the river banks.",
+         "Hunters had killed fewer deer."
+        ],
+        "answer": "A",
+        "why": "Paragraph D: two of the five valleys showed a noticeable fall; the other three did not change."
+       },
+       {
+        "n": 36,
+        "q": "What does the writer say about wolf-watching tours?",
+        "options": [
+         "Most visitors see a wolf.",
+         "They have been stopped by the government.",
+         "They take place only in winter.",
+         "They concentrate on signs of wolves rather than the animals themselves."
+        ],
+        "answer": "D",
+        "why": "Paragraph E: the animals are shy, so guides take groups to look for tracks and listen for howling."
+       }
+      ]
+     },
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information in the text? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 37,
+        "q": "The first wolf to be photographed in 2012 had come from a neighbouring country.",
+        "answer": "TRUE",
+        "why": "Paragraph B: it had travelled more than 400 kilometres from a population in the neighbouring country."
+       },
+       {
+        "n": 38,
+        "q": "Wolf pups had been born in the region in most years before 2016.",
+        "answer": "FALSE",
+        "why": "Paragraph B: the 2016 litter was the first born in the region for more than eighty years."
+       },
+       {
+        "n": 39,
+        "q": "Tourism income in the region has risen since the wolves returned.",
+        "answer": "NOT GIVEN",
+        "why": "Only one guesthouse's bookings and a visitor survey are mentioned, not the region's tourism income."
+       },
+       {
+        "n": 40,
+        "q": "Dr Marchetti believes that the number of wolves is the main factor in how well local people accept them.",
+        "answer": "FALSE",
+        "why": "She says acceptance depends far more on whether people feel heard than on how many animals there are."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "writing": {
+  "task1": {
+   "kind": "letter (formal)",
+   "min": 150,
+   "prompt": "You recently flew with an airline, and when you collected your luggage at the airport you found that your suitcase had been damaged.\n\nWrite a letter to the airline. In your letter:\n- describe what happened and what damage was done\n- explain what was inside the suitcase and how this has affected you\n- say what you would like the airline to do\n\nWrite at least 150 words. You do NOT need to write any addresses.\n\nBegin your letter as follows:\nDear Sir or Madam,"
+  },
+  "task2": {
+   "kind": "problem and solution essay",
+   "min": 250,
+   "prompt": "In many cities around the world, traffic congestion is getting worse every year.\n\nWhat problems does this cause, and what can be done to solve them?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+  }
+ }
+}

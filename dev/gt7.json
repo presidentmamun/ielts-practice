@@ -288,7 +288,8 @@
        }
       ]
      }
-    ]
+    ],
+    "audio": "audio_ms/gt7-p1.mp3"
    },
    {
     "title": "Part 2",
@@ -471,7 +472,8 @@
        }
       ]
      }
-    ]
+    ],
+    "audio": "audio_ms/gt7-p2.mp3"
    },
    {
     "title": "Part 3",
@@ -732,7 +734,8 @@
        }
       ]
      }
-    ]
+    ],
+    "audio": "audio_ms/gt7-p3.mp3"
    },
    {
     "title": "Part 4",
@@ -891,7 +894,8 @@
        }
       ]
      }
-    ]
+    ],
+    "audio": "audio_ms/gt7-p4.mp3"
    }
   ]
  },

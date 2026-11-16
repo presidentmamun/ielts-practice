@@ -1,0 +1,1400 @@
+{
+ "id": "gt9",
+ "module": "GT",
+ "title": "General Training Test 9",
+ "listening": {
+  "parts": [
+   {
+    "title": "Part 1",
+    "context": "A man phones a restaurant to book a table for a large family party.",
+    "range": "1-10",
+    "speakers": {
+     "Hannah": "nz_f",
+     "Callum": "buttery"
+    },
+    "script": [
+     [
+      "Hannah",
+      "Good morning, Saltmarsh Kitchen, Hannah speaking. How can I help?"
+     ],
+     [
+      "Callum",
+      "Oh, hello. I'd like to book a table for a family party, please. It's quite a large group, so I wanted to check that you can manage that."
+     ],
+     [
+      "Hannah",
+      "We can certainly try. Could I take your name first?"
+     ],
+     [
+      "Callum",
+      "Yes, it's Callum Dunmore. That's D-U-N-M-O-R-E."
+     ],
+     [
+      "Hannah",
+      "Thank you, Mr Dunmore. And when were you thinking of?"
+     ],
+     [
+      "Callum",
+      "Saturday the 14th of June, I think. No, hang on. My mother's flight doesn't land until the Friday night, so it had better be the following Saturday. That's the 21st."
+     ],
+     [
+      "Hannah",
+      "The 21st of June. Let me have a look. Yes, we do have space that evening. What time would you like?"
+     ],
+     [
+      "Callum",
+      "Well, we were hoping for 7 o'clock, but there'll be a few young children, so something a bit earlier might be better."
+     ],
+     [
+      "Hannah",
+      "I'm afraid 7 o'clock is already taken. I could offer you 6.30 or else 8.30."
+     ],
+     [
+      "Callum",
+      "Then 6.30 would be perfect."
+     ],
+     [
+      "Hannah",
+      "Lovely. And how many people will there be?"
+     ],
+     [
+      "Callum",
+      "Twelve, originally, but my two cousins have just told me they'd like to come as well, so it's fourteen now. Five of those are children under ten."
+     ],
+     [
+      "Hannah",
+      "Fourteen, fine. For a party that size I'd suggest our conservatory. It's a separate room at the back with its own door onto the garden, so it's quieter for the little ones. The alternative is the main dining room, but we would have to push several tables together there."
+     ],
+     [
+      "Callum",
+      "The conservatory sounds ideal. Is there an extra charge for it?"
+     ],
+     [
+      "Hannah",
+      "No, there's no charge, as long as everybody has the set menu."
+     ],
+     [
+      "Callum",
+      "And what does that cost?"
+     ],
+     [
+      "Hannah",
+      "It's three courses at 22 pounds 50 per person. The lunchtime version is cheaper, it's 19 pounds 50, but that's only served before 3 o'clock. Children under ten can have the smaller menu, which is 11 pounds."
+     ],
+     [
+      "Callum",
+      "That's fine. So 22 pounds 50 for the adults, then."
+     ],
+     [
+      "Hannah",
+      "That's right. Now, do any of your guests have special dietary requirements?"
+     ],
+     [
+      "Callum",
+      "Yes, actually. My nephew is allergic to peanuts, so we'll need to be careful. And my sister is vegetarian, but I assume that's no problem."
+     ],
+     [
+      "Hannah",
+      "Not at all, there's a vegetarian choice on every course. I'll make a note of the nut allergy for the kitchen. The chefs check all the sauces and desserts whenever we have a guest with an allergy, so please don't worry."
+     ],
+     [
+      "Callum",
+      "Thank you, that's reassuring. Oh, and it's my parents' fortieth wedding anniversary, so I wondered whether you could provide a cake."
+     ],
+     [
+      "Hannah",
+      "Of course. Our pastry chef makes them to order. The usual flavours are chocolate, vanilla or lemon."
+     ],
+     [
+      "Callum",
+      "Well, my mother doesn't like chocolate, and my father says vanilla is boring, so lemon, please."
+     ],
+     [
+      "Hannah",
+      "Lemon, wonderful. Would you like a message written on it?"
+     ],
+     [
+      "Callum",
+      "Just Happy Anniversary, Mum and Dad. Nothing fancy."
+     ],
+     [
+      "Hannah",
+      "Lovely. Now, for a group of this size we do ask for a deposit to confirm the booking. Our website says 40 pounds, but that's for parties of up to ten. For fourteen guests it's 50 pounds, and it comes off your final bill on the night."
+     ],
+     [
+      "Callum",
+      "That's fine. Can I pay by card over the phone?"
+     ],
+     [
+      "Hannah",
+      "Yes, you can, or you can pay online within 48 hours, whichever you prefer."
+     ],
+     [
+      "Callum",
+      "I'll do it now, if that's all right, but let me find my card first. In the meantime, do you need a contact number?"
+     ],
+     [
+      "Hannah",
+      "Yes, please. A mobile is best, in case we need to reach you on the day."
+     ],
+     [
+      "Callum",
+      "It's 07739 554 210."
+     ],
+     [
+      "Hannah",
+      "07739 554 210. Thank you. I'll send you a confirmation message in a few minutes, and the menu too, so you can choose your courses in advance if you'd like to. That does help the kitchen on a busy Saturday."
+     ],
+     [
+      "Callum",
+      "That's very kind. Right, I've found my card, so shall I read out the number?"
+     ],
+     [
+      "Hannah",
+      "Yes, go ahead, whenever you're ready."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "Saltmarsh Kitchen: group booking form",
+      "items": [
+       {
+        "n": 1,
+        "before": "Surname:",
+        "after": "",
+        "answer": [
+         "Dunmore"
+        ],
+        "why": "He spells it D-U-N-M-O-R-E."
+       },
+       {
+        "n": 2,
+        "before": "Date: Saturday",
+        "after": "",
+        "answer": [
+         "21 June",
+         "21st June",
+         "June 21",
+         "21",
+         "21st"
+        ],
+        "why": "He first says the 14th, then corrects himself because his mother's flight arrives on the Friday night: the following Saturday, the 21st."
+       },
+       {
+        "n": 3,
+        "before": "Time:",
+        "after": "pm",
+        "answer": [
+         "6.30"
+        ],
+        "why": "7 o'clock is already taken, so he accepts 6.30; 8.30 is also offered but not chosen."
+       },
+       {
+        "n": 4,
+        "before": "Number of guests:",
+        "after": "",
+        "answer": [
+         "14"
+        ],
+        "why": "Twelve was the original number, but two cousins join, making fourteen."
+       },
+       {
+        "n": 5,
+        "before": "Seating: in the",
+        "after": "",
+        "answer": [
+         "conservatory"
+        ],
+        "why": "The receptionist suggests the conservatory rather than the main dining room and he agrees."
+       },
+       {
+        "n": 6,
+        "before": "Set menu price per adult: £",
+        "after": "",
+        "answer": [
+         "22.50",
+         "22 pounds 50"
+        ],
+        "why": "The set menu is 22 pounds 50; 19 pounds 50 is the lunchtime price and 11 pounds is for children."
+       },
+       {
+        "n": 7,
+        "before": "Guest who is allergic to:",
+        "after": "",
+        "answer": [
+         "peanuts"
+        ],
+        "why": "His nephew is allergic to peanuts; the sister is vegetarian, which is not an allergy."
+       },
+       {
+        "n": 8,
+        "before": "Flavour of anniversary cake:",
+        "after": "",
+        "answer": [
+         "lemon"
+        ],
+        "why": "Chocolate and vanilla are both rejected, so he asks for lemon."
+       },
+       {
+        "n": 9,
+        "before": "Deposit: £",
+        "after": "",
+        "answer": [
+         "50"
+        ],
+        "why": "The website says 40 pounds, but that is for parties of up to ten; for fourteen it is 50 pounds."
+       },
+       {
+        "n": 10,
+        "before": "Mobile number:",
+        "after": "",
+        "answer": [
+         "07739 554 210",
+         "07739554210"
+        ],
+        "why": "He says his mobile is 07739 554 210."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 2",
+    "context": "A guide gives an introductory talk to visitors at a restored textile mill.",
+    "range": "11-20",
+    "speakers": {
+     "Greg": "aus_m"
+    },
+    "script": [
+     [
+      "Greg",
+      "Good morning, everyone, and welcome to Calloway Mill. My name's Greg, and I'll be your guide for the next hour or so. Before we go in, let me tell you a little about the building, because the rooms are much more interesting when you know what you're looking at."
+     ],
+     [
+      "Greg",
+      "The mill was built in 1838 by a local family, the Calloways, and it made woollen cloth. For its first twenty years or so it was driven by a waterwheel on the river you can see behind me, but that couldn't supply enough power once the business grew, so in 1861 the owners installed a steam engine. It was the steam engine that drove the machines through the mill's busiest years, when more than 600 people worked here, and it's the engine you'll see running later this morning. The waterwheel was kept as a back-up until 1920 and then sold for scrap, I'm sorry to say, and electricity only arrived in the 1930s, although some of the old machines never converted."
+     ],
+     [
+      "Greg",
+      "Now, you'd be forgiven for thinking the mill closed because of cheap imports, which is what happened to so many mills in this part of the country. In fact that wasn't the main problem here. By 1983 the machinery was nearly a hundred years old, and the owners were told that replacing it would cost more than the business could ever earn back. So they closed the doors, and the building stood empty for almost thirty years. Part of the roof fell in during a storm, and for a while there was talk of knocking the whole place down to build flats."
+     ],
+     [
+      "Greg",
+      "Fortunately, a group of local people formed a trust to save it. The restoration took six years and cost about 4 million pounds. People often assume it was all paid for by the government, but that's not so. A national heritage grant did pay for the roof and the outer walls, which was a huge help, and a handful of local companies contributed as well. But the biggest single source of money was donations from ordinary local people. Nearly three thousand households gave something, and I think that's a wonderful thing. It's the reason we call this a community mill."
+     ],
+     [
+      "Greg",
+      "Right, let me explain how the visit works. We'll start in the weaving shed, which is just through that archway. I should say that most of the looms you'll see there are not the originals. Those were scrapped when the mill closed, so the trust bought a dozen looms from another mill, further north, which had shut down. They work beautifully, and we run them at half past eleven and again at 2 o'clock. It does get very loud in there, so there are ear defenders in a box by the door, and I'd ask you all to take a pair. You're welcome to take photographs, but please don't touch the machines, however tempting it is."
+     ],
+     [
+      "Greg",
+      "From the weaving shed we'll go up the stairs to the Dye Room. Cloth was dyed here in huge copper tubs, and the display shows how the colours were made from plants and roots, which you can smell as well as see. Then we move on to the Spinning Floor. There are some fine old spinning machines up there, but what people tell me they remember afterwards are the recordings. We've collected memories from former mill workers, and you can sit and listen to them describe the heat, the noise and the jokes. Please do take your time over those."
+     ],
+     [
+      "Greg",
+      "Next comes the Archive Room, where you can look through old photographs of the mill and the workers' wage books. Some visitors even find the names of their own grandparents, so keep your eyes open. After that we'll stop at the Counting House Café. It overlooks the canal, so it's a pleasant place to sit down with a drink if the weather's poor. You don't have to stop, of course, but most people do. We'll finish in the Mill Shop, which sells cloth woven right here on the looms we've just seen, as well as scarves and blankets. Many people find that a lovely souvenir, so I'd save a little money for it."
+     ],
+     [
+      "Greg",
+      "The Engine House is the one place I've missed out. We'll come back to it at 11.30 for the steam demonstration, but it's not part of the main walk, so don't worry if you can't see it yet."
+     ],
+     [
+      "Greg",
+      "One last thing before we start. The floors are uneven in places, so please watch your step, particularly on the stairs, and if anyone needs a lift, just let me know. Right, if you'd like to follow me, we'll go through to the weaving shed."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 11,
+        "q": "What powered the machines when the mill was at its busiest?",
+        "options": [
+         "a steam engine",
+         "a waterwheel",
+         "electricity"
+        ],
+        "answer": "A",
+        "why": "The waterwheel came first but was too weak, and electricity came in the 1930s; the steam engine drove the machines in the busiest years."
+       },
+       {
+        "n": 12,
+        "q": "Why did the mill close in 1983?",
+        "options": [
+         "Cheap imports reduced its sales.",
+         "Its roof collapsed in a storm.",
+         "New machinery would have cost too much."
+        ],
+        "answer": "C",
+        "why": "Greg says imports were not the main problem; the machinery was old and replacing it would cost more than the business could earn. The roof fell in later, while the building was empty."
+       },
+       {
+        "n": 13,
+        "q": "What was the largest source of money for the restoration?",
+        "options": [
+         "a national heritage grant",
+         "donations from local people",
+         "contributions from local companies"
+        ],
+        "answer": "B",
+        "why": "The grant paid for the roof and outer walls, but the biggest single source was donations from ordinary local people."
+       },
+       {
+        "n": 14,
+        "q": "Where did most of the looms in the weaving shed come from?",
+        "options": [
+         "another mill that had closed",
+         "the original mill",
+         "a museum"
+        ],
+        "answer": "A",
+        "why": "The original looms were scrapped, so the trust bought a dozen from a mill further north that had shut down."
+       },
+       {
+        "n": 15,
+        "q": "What does Greg ask visitors in the weaving shed to do?",
+        "options": [
+         "avoid taking photographs",
+         "wear ear protection",
+         "stay on marked paths"
+        ],
+        "answer": "B",
+        "why": "Because it is very loud he asks everyone to take ear defenders; photographs are allowed, but not touching the machines."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "Which part of the mill is each of the following found in? Choose the correct letter, A-G.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Engine House"
+       },
+       {
+        "k": "B",
+        "t": "Dye Room"
+       },
+       {
+        "k": "C",
+        "t": "Weaving Shed"
+       },
+       {
+        "k": "D",
+        "t": "Spinning Floor"
+       },
+       {
+        "k": "E",
+        "t": "Mill Shop"
+       },
+       {
+        "k": "F",
+        "t": "Counting House Café"
+       },
+       {
+        "k": "G",
+        "t": "Archive Room"
+       }
+      ],
+      "items": [
+       {
+        "n": 16,
+        "q": "a display about colours made from plants",
+        "answer": "B",
+        "why": "In the Dye Room the display shows how colours were made from plants and roots."
+       },
+       {
+        "n": 17,
+        "q": "recordings of former workers' memories",
+        "answer": "D",
+        "why": "The Spinning Floor has recordings of former mill workers describing the heat, noise and jokes."
+       },
+       {
+        "n": 18,
+        "q": "old wage books",
+        "answer": "G",
+        "why": "The Archive Room holds old photographs and the workers' wage books."
+       },
+       {
+        "n": 19,
+        "q": "a view over the canal",
+        "answer": "F",
+        "why": "The Counting House Café overlooks the canal."
+       },
+       {
+        "n": 20,
+        "q": "cloth woven on the mill's own looms",
+        "answer": "E",
+        "why": "The Mill Shop sells cloth woven on the looms the visitors have just seen."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 3",
+    "context": "Two students plan a survey of student sleeping habits for a research project.",
+    "range": "21-30",
+    "speakers": {
+     "Isla": "airy",
+     "Josh": "deep"
+    },
+    "script": [
+     [
+      "Isla",
+      "Right, Josh, Dr Mehta has approved our proposal, so now we have to work out exactly how we're going to run this survey on student sleeping habits."
+     ],
+     [
+      "Josh",
+      "Great. I've been thinking about the numbers. I'd love to get responses from 200 students, because the more we have, the more reliable the results are."
+     ],
+     [
+      "Isla",
+      "I'm not sure that's realistic, Josh. We've only got three weeks to analyse everything, and Dr Mehta did say 150 would already be a lot. I think we'd be better off aiming for 100 and doing a proper job of it."
+     ],
+     [
+      "Josh",
+      "Hmm, okay. A hundred, then. It's still enough to show some patterns."
+     ],
+     [
+      "Isla",
+      "Exactly. Now, how do we reach them? My first idea was to stand in the library and ask people to fill it in on the spot."
+     ],
+     [
+      "Josh",
+      "I'm not convinced. Think who's in the library late in the evening. Mostly people who stay up late anyway, so our sample would be biased."
+     ],
+     [
+      "Isla",
+      "That's a good point. We could hand out paper copies at the end of lectures, I suppose."
+     ],
+     [
+      "Josh",
+      "Then we'd have to type every answer in ourselves. No, I'd rather put a link on the student portal. Everyone checks it, and the answers come straight into a spreadsheet."
+     ],
+     [
+      "Isla",
+      "Fair enough. The portal it is."
+     ],
+     [
+      "Josh",
+      "Do you think we could use sleep trackers as well? A lot of people wear smart watches now, and the data would be much more accurate than what people remember."
+     ],
+     [
+      "Isla",
+      "I did wonder about that, but I looked it up, and apparently fewer than one in five students actually own one. We'd end up with a tiny, unusual group. And getting ethics approval for health data would take ages anyway, but the main problem is how few people would take part."
+     ],
+     [
+      "Josh",
+      "Right, so questionnaire only. How long should it be? I was thinking about ten minutes, so we can ask everything."
+     ],
+     [
+      "Isla",
+      "Ten minutes is too long. People start clicking anything just to finish. If it takes about five minutes, most of them will complete it. That's maybe twelve questions."
+     ],
+     [
+      "Josh",
+      "Okay, five minutes, then. And when do we send it? I'd say during the exam period, because that's when sleep matters most."
+     ],
+     [
+      "Isla",
+      "Dr Mehta warned me about that. Everyone's sleep is unusual during exams, so the results wouldn't be typical. The first week of term is no good either, because routines haven't settled. Let's wait until the middle of the term."
+     ],
+     [
+      "Josh",
+      "Good thinking. Mid-term it is."
+     ],
+     [
+      "Isla",
+      "Now the questions themselves. I've drafted a few and I'd like your opinion. This first one asks, do you use your phone in bed, and which apps do you use?"
+     ],
+     [
+      "Josh",
+      "Hmm, that's really two questions in one, isn't it? Some people use their phone but only for an alarm. We should split it."
+     ],
+     [
+      "Isla",
+      "You're right. Next, how much sleep do you get?"
+     ],
+     [
+      "Josh",
+      "That's far too vague. Do you mean on a weeknight or at weekends? During term or in the holidays? We need to say exactly, something like, on a typical weeknight during term."
+     ],
+     [
+      "Isla",
+      "Good, I'll change it. This one's more delicate. Do you ever take sleeping tablets?"
+     ],
+     [
+      "Josh",
+      "Some people might be uncomfortable answering that. It's quite personal. I'd make it optional, or put it right at the end."
+     ],
+     [
+      "Isla",
+      "Okay. I've also written, do you agree that a lack of sleep ruins your studies?"
+     ],
+     [
+      "Josh",
+      "That's a leading question. It tells people what answer we expect. Let's ask, how does tiredness affect your studies, and give them a scale, from not at all to a great deal."
+     ],
+     [
+      "Isla",
+      "Fine. And the last one is, how many cups of coffee or tea do you drink each week?"
+     ],
+     [
+      "Josh",
+      "Honestly, nobody remembers that accurately. Asking about yesterday would be better, or just yesterday's total."
+     ],
+     [
+      "Isla",
+      "Yes, that makes sense. Let me rewrite the whole thing tonight and send it to you in the morning."
+     ],
+     [
+      "Josh",
+      "Perfect. Then we can test it on a few friends before it goes live."
+     ],
+     [
+      "Isla",
+      "Good idea. Let's meet at the library cafe on Thursday and go through the results of that test."
+     ],
+     [
+      "Josh",
+      "Sounds good. See you then."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 21,
+        "q": "How many students do they decide to survey?",
+        "options": [
+         "200",
+         "150",
+         "100"
+        ],
+        "answer": "C",
+        "why": "Josh suggests 200, Isla says even 150 would be a lot, and they agree on 100."
+       },
+       {
+        "n": 22,
+        "q": "How will they reach students?",
+        "options": [
+         "by asking people in the library",
+         "by putting a link on the student portal",
+         "by handing out paper copies"
+        ],
+        "answer": "B",
+        "why": "The library would give a biased sample and paper copies would need typing in; Josh proposes the portal and Isla agrees."
+       },
+       {
+        "n": 23,
+        "q": "Why do they decide not to use sleep trackers?",
+        "options": [
+         "Too few students own one.",
+         "They would be too expensive.",
+         "Students would not agree to wear them."
+        ],
+        "answer": "A",
+        "why": "Isla found that fewer than one in five students own one, so the group would be tiny and unusual; ethics approval is mentioned but is not the main problem."
+       },
+       {
+        "n": 24,
+        "q": "How long should the questionnaire take to complete?",
+        "options": [
+         "ten minutes",
+         "twelve minutes",
+         "five minutes"
+        ],
+        "answer": "C",
+        "why": "Josh suggests ten minutes, but Isla says people would give up and proposes about five. Twelve is the number of questions, not minutes."
+       },
+       {
+        "n": 25,
+        "q": "When will they send out the survey?",
+        "options": [
+         "in the first week of term",
+         "in the middle of the term",
+         "during the exam period"
+        ],
+        "answer": "B",
+        "why": "Exam-time sleep is atypical and routines are unsettled in the first week, so they choose mid-term."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "What problem do the students identify with each of the following draft questions? Choose the correct letter, A-F.",
+      "options": [
+       {
+        "k": "A",
+        "t": "It is too vague."
+       },
+       {
+        "k": "B",
+        "t": "It is a leading question."
+       },
+       {
+        "k": "C",
+        "t": "It asks two things at once."
+       },
+       {
+        "k": "D",
+        "t": "People will not remember accurately."
+       },
+       {
+        "k": "E",
+        "t": "It is too personal."
+       },
+       {
+        "k": "F",
+        "t": "It repeats another question."
+       }
+      ],
+      "items": [
+       {
+        "n": 26,
+        "q": "Do you use your phone in bed, and which apps do you use?",
+        "answer": "C",
+        "why": "Josh says it is really two questions in one."
+       },
+       {
+        "n": 27,
+        "q": "How much sleep do you get?",
+        "answer": "A",
+        "why": "Josh says it is far too vague because it does not say weeknight or weekend, term or holiday."
+       },
+       {
+        "n": 28,
+        "q": "Do you ever take sleeping tablets?",
+        "answer": "E",
+        "why": "Josh says some people might be uncomfortable answering because it is quite personal."
+       },
+       {
+        "n": 29,
+        "q": "Do you agree that a lack of sleep ruins your studies?",
+        "answer": "B",
+        "why": "Josh calls it a leading question that tells people what answer is expected."
+       },
+       {
+        "n": 30,
+        "q": "How many cups of coffee or tea do you drink each week?",
+        "answer": "D",
+        "why": "Josh says nobody remembers that accurately and suggests asking about yesterday."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 4",
+    "context": "A lecturer talks about the history of map-making.",
+    "range": "31-40",
+    "speakers": {
+     "Lecturer": "glassy"
+    },
+    "script": [
+     [
+      "Lecturer",
+      "Good afternoon, everyone. Today I want to look at the history of map-making, and I'll try to show that maps have never been simply pictures of the world. They have always reflected what people knew, what they believed and what they needed."
+     ],
+     [
+      "Lecturer",
+      "Let's start at the very beginning. Some of the earliest surviving maps were scratched into stone in various parts of the world, but the best known examples come from ancient Babylon, where mapmakers pressed their plans into tablets made of clay. One of these, about 2,600 years ago, shows the world as a flat disc surrounded by water. Clay was cheap and it baked hard, which is why so many have survived."
+     ],
+     [
+      "Lecturer",
+      "The Greeks brought a more scientific approach. In the second century, the scholar Ptolemy collected the geographical knowledge of his time and gave every place on his maps a position, using lines of latitude and longitude. Those lines are still the basis of the grid we use today, and the idea was so useful that it was copied again and again, though it was forgotten in Europe for many centuries."
+     ],
+     [
+      "Lecturer",
+      "In the Middle Ages, European maps changed completely, and they were often more about faith than about geography. The big world maps drawn by monks were designed to show the Christian view of history. Many people assume that Rome was placed at the centre, but in fact it was Jerusalem, because it was the holiest city. These maps are fascinating, but you couldn't use one to find your way anywhere."
+     ],
+     [
+      "Lecturer",
+      "Sailors needed something far more practical, and from the thirteenth century they began to use charts that showed coastlines and harbours with great accuracy. These were drawn on vellum, a fine kind of calf skin, and covered with a web of straight lines which helped a navigator to steer. Some of them were so valuable that captains guarded them like treasure."
+     ],
+     [
+      "Lecturer",
+      "A big step forward came in 1569, when the Flemish mapmaker Gerardus Mercator published a world map with a new kind of projection. Its great advantage was that a straight line drawn on the map showed a constant compass bearing, so a captain could simply follow it. That's why it was so popular with sailors. But there was a price. The projection made countries near the poles look far too large, and Greenland, for example, appears about the size of Africa, when really it is much smaller. Many school atlases continued to use that map for hundreds of years, which is why so many people have a distorted idea of the sizes of countries."
+     ],
+     [
+      "Lecturer",
+      "In the eighteenth century, maps became much more accurate because of a method of surveying called triangulation. Surveyors measured one line very carefully on the ground, and then used angles to calculate all the other distances by creating a network of triangles across the country. It was slow, hard work. The survey of one country took more than sixty years, but the results were extraordinary. At the same time mapmakers found a way to show hills. They used contour lines, which join places of the same height, so a map could now show the shape of the land as well as the position of the towns."
+     ],
+     [
+      "Lecturer",
+      "The twentieth century changed everything again. Aerial photographs were first used for making maps during the First World War, when armies urgently needed to know what the enemy's positions looked like from above. After that, photographs taken from planes became the standard way of drawing a map, and later satellites took over, providing images of the entire planet."
+     ],
+     [
+      "Lecturer",
+      "And what about today? Paper maps have largely been replaced by digital ones, which we carry around with us. Those maps are updated constantly, not by teams of surveyors, but by data collected from mobile phones, which show where traffic is slow or where a new road has opened. In a sense, every one of us has become a mapmaker, though most of us don't realise it."
+     ],
+     [
+      "Lecturer",
+      "Next week we'll look at how these changes affected the way people think about space and place, and I'd like you to read the chapter on projections before then. Thank you, everyone."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+      "heading": "The history of map-making",
+      "items": [
+       {
+        "n": 31,
+        "before": "Earliest maps: drawn on tablets made of",
+        "after": "",
+        "answer": [
+         "clay"
+        ],
+        "why": "Some maps were scratched into stone, but the Babylonian examples were pressed into clay tablets."
+       },
+       {
+        "n": 32,
+        "before": "Ptolemy: gave places positions using latitude and",
+        "after": "",
+        "answer": [
+         "longitude"
+        ],
+        "why": "He used lines of latitude and longitude."
+       },
+       {
+        "n": 33,
+        "before": "Medieval world maps: had",
+        "after": "at the centre",
+        "answer": [
+         "Jerusalem"
+        ],
+        "why": "Many people assume Rome, but it was Jerusalem, the holiest city."
+       },
+       {
+        "n": 34,
+        "before": "Sailors' charts: drawn on",
+        "after": "",
+        "answer": [
+         "vellum"
+        ],
+        "why": "They were drawn on vellum, a fine kind of calf skin."
+       },
+       {
+        "n": 35,
+        "before": "Mercator's map: straight lines showed a constant",
+        "after": "",
+        "answer": [
+         "compass bearing"
+        ],
+        "why": "A straight line on the map showed a constant compass bearing."
+       },
+       {
+        "n": 36,
+        "before": "Mercator's map: countries near the poles looked too",
+        "after": "",
+        "answer": [
+         "large"
+        ],
+        "why": "The projection made them look far too large."
+       },
+       {
+        "n": 37,
+        "before": "18th century: surveyors used a method called",
+        "after": "",
+        "answer": [
+         "triangulation"
+        ],
+        "why": "The method was triangulation."
+       },
+       {
+        "n": 38,
+        "before": "Contour lines: join places of the same",
+        "after": "",
+        "answer": [
+         "height"
+        ],
+        "why": "Contour lines join places of the same height."
+       },
+       {
+        "n": 39,
+        "before": "Aerial photographs first used in the",
+        "after": "",
+        "answer": [
+         "First World War"
+        ],
+        "why": "Aerial photographs were first used for mapmaking during the First World War."
+       },
+       {
+        "n": 40,
+        "before": "Digital maps updated using data from",
+        "after": "",
+        "answer": [
+         "mobile phones"
+        ],
+        "why": "Modern maps are updated with data collected from mobile phones."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "reading": {
+  "sections": [
+   {
+    "title": "Section 1",
+    "range": "1-14",
+    "passages": [
+     {
+      "title": "Riverside Leisure Centre: Membership Options",
+      "paras": [
+       "Riverside Leisure Centre offers four types of membership, so you can choose the one that suits your lifestyle. Every new member receives a free induction session with a fitness adviser, and may bring a guest once a month at no charge.",
+       "Standard Membership costs 38 pounds a month and gives unlimited use of the gym, the swimming pool and the sports hall at any time. Badminton and squash courts can be reserved up to one week ahead through our app. Standard members also receive 10 per cent off all food and drink in the Poolside Café.",
+       "Off-Peak Membership, at 24 pounds a month, is for people who prefer quieter times. It covers the same facilities as Standard Membership, but only on weekdays between 9.30 am and 4 pm, and after 8 pm. Many of our retired members and people who work shifts choose this option.",
+       "Family Membership, at 65 pounds a month, covers two adults and up to three children aged 5 to 15 living at the same address. Children under 12 may not use the gym, but they are welcome in the pool and the soft play area, and family members pay a reduced rate for weekend swimming lessons.",
+       "Student Membership costs 19 pounds a month and is open to anyone aged 16 or over in full-time education. A valid student card must be shown when joining. It must be renewed every September.",
+       "If you would rather not commit to a membership, you can pay as you go. A single visit to the pool or gym costs 7 pounds 50, with no monthly payment.",
+       "All new members pay a one-off joining fee of 15 pounds. Membership can be frozen for up to three months if you are ill or travelling, and we ask for a doctor's note in the case of illness. To cancel, please give us 30 days' notice in writing."
+      ]
+     },
+     {
+      "title": "Harbourside Street Market: New Opening Hours",
+      "paras": [
+       "Harbourside Street Market, which has traded every Saturday on Quay Street for more than thirty years, will open on extra days from Saturday 1 March. The change follows a six-week trial last autumn and a survey of shoppers and stallholders carried out by the market committee.",
+       "Thursday trading is the main new feature. The market will open on Thursdays from 10 am to 3 pm, a time chosen to suit people who work on Saturdays, and parents with young children. Stallholders who would like a Thursday pitch must apply by 15 February. The Thursday fee will be half the Saturday fee of 20 pounds.",
+       "Saturday hours are also changing. The market will now open at 8 am, one hour earlier than at present, but will close at 4 pm instead of 5 pm, because the survey showed that very few shoppers visit in the last hour and many stallholders said they were packing up early anyway.",
+       "The Makers' Market, held on the first Sunday of every month from 11 am to 4 pm, is not affected and will continue exactly as before. Hot-food stalls will remain at the Fish Steps end of the street, and live music will not start before 11 am, to keep noise down for nearby residents.",
+       "The committee has not yet decided whether the market should also open on Fridays during the summer. This question will be discussed again at the committee's meeting in June, and stallholders and shoppers are invited to send their views to the market office."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "Look at the information about Riverside Leisure Centre. Which type of membership does each statement describe? Choose the correct letter, A-E.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Standard Membership"
+       },
+       {
+        "k": "B",
+        "t": "Off-Peak Membership"
+       },
+       {
+        "k": "C",
+        "t": "Family Membership"
+       },
+       {
+        "k": "D",
+        "t": "Student Membership"
+       },
+       {
+        "k": "E",
+        "t": "Pay as you go"
+       }
+      ],
+      "items": [
+       {
+        "n": 1,
+        "q": "There is no regular monthly payment.",
+        "answer": "E",
+        "why": "Only pay as you go is described as having no monthly payment."
+       },
+       {
+        "n": 2,
+        "q": "Proof of eligibility must be shown when joining.",
+        "answer": "D",
+        "why": "A valid student card must be shown when joining."
+       },
+       {
+        "n": 3,
+        "q": "Members get a discount in the café.",
+        "answer": "A",
+        "why": "Standard members receive 10 per cent off food and drink in the Poolside Café."
+       },
+       {
+        "n": 4,
+        "q": "It covers more than one person.",
+        "answer": "C",
+        "why": "Family Membership covers two adults and up to three children."
+       },
+       {
+        "n": 5,
+        "q": "It is popular with people who have retired.",
+        "answer": "B",
+        "why": "Many retired members choose the Off-Peak option."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the text for each answer.",
+      "items": [
+       {
+        "n": 6,
+        "before": "Courts can be reserved up to",
+        "after": "ahead through the app.",
+        "answer": [
+         "one week"
+        ],
+        "why": "Courts can be reserved up to one week ahead."
+       },
+       {
+        "n": 7,
+        "before": "New members must pay a one-off",
+        "after": "of 15 pounds.",
+        "answer": [
+         "joining fee"
+        ],
+        "why": "All new members pay a one-off joining fee of 15 pounds."
+       },
+       {
+        "n": 8,
+        "before": "Membership can be frozen for up to",
+        "after": "months.",
+        "answer": [
+         "three"
+        ],
+        "why": "It can be frozen for up to three months."
+       }
+      ]
+     },
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information about Harbourside Street Market? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 9,
+        "q": "Saturday trading will start an hour earlier than at present.",
+        "answer": "TRUE",
+        "why": "The market will open at 8 am, one hour earlier than at present."
+       },
+       {
+        "n": 10,
+        "q": "Most stallholders would prefer to trade on Thursdays.",
+        "answer": "NOT GIVEN",
+        "why": "The text does not say which day stallholders prefer."
+       },
+       {
+        "n": 11,
+        "q": "The Makers' Market will stop when the new hours begin.",
+        "answer": "FALSE",
+        "why": "It is not affected and will continue exactly as before."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 12,
+        "q": "Why will the market close earlier on Saturdays?",
+        "options": [
+         "Stallholders asked for longer lunch breaks.",
+         "Residents complained about the noise.",
+         "Very few shoppers come in the last hour.",
+         "The Thursday market will need more staff."
+        ],
+        "answer": "C",
+        "why": "The survey showed that very few shoppers visit in the last hour."
+       },
+       {
+        "n": 13,
+        "q": "What must stallholders do to get a Thursday pitch?",
+        "options": [
+         "pay the full Saturday fee",
+         "apply before 15 February",
+         "attend a committee meeting",
+         "work on the first Sunday of the month"
+        ],
+        "answer": "B",
+        "why": "They must apply by 15 February; the Thursday fee is half the Saturday fee, not the full fee."
+       },
+       {
+        "n": 14,
+        "q": "What will happen in June?",
+        "options": [
+         "Friday opening will be discussed.",
+         "The Thursday market will be reviewed.",
+         "Hot-food stalls will be moved.",
+         "A new market office will open."
+        ],
+        "answer": "A",
+        "why": "The committee will discuss again whether to open on Fridays in summer."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Section 2",
+    "range": "15-27",
+    "passages": [
+     {
+      "title": "Calder & Finch Insurance: Staff Handbook, Section 6: Flexible Working",
+      "paras": [
+       "We recognise that people work best when their working pattern fits in with their lives. All employees who have completed six months of service may ask for a flexible working arrangement. Requests are considered fairly, and each one is judged on its merits.",
+       "There are several kinds of arrangement. Staff on compressed hours complete their full-time hours in four days instead of five. Those on a staggered start may begin work at any time between 7.30 am and 10 am, and finish accordingly. Remote working allows employees to do their job from home for up to two days a week. Part-time and job-share arrangements are also available. Whichever arrangement you have, you must be available to colleagues and customers during our core hours of 10 am to 3 pm, Monday to Thursday.",
+       "To apply, complete Form FW1 and give it to your line manager. Your manager will reply in writing within four weeks and may arrange a meeting to discuss your request. A request can be refused only for a clear business reason, and you will be told what that reason is. If you disagree with the decision, you may appeal to the Human Resources Director within 14 days.",
+       "All new arrangements begin with an eight-week trial period, after which you and your manager will meet to decide whether the pattern is working. If it is not, you may return to your previous hours without any penalty.",
+       "Employees working from home are provided with a laptop and a headset. The company does not provide furniture, although a one-off allowance of 150 pounds is available towards a desk or chair. We do not contribute to the cost of broadband or electricity, and you remain responsible for keeping your work area safe."
+      ]
+     },
+     {
+      "title": "Annual Appraisal: How the Process Works",
+      "paras": [
+       "A  The appraisal gives every employee the chance to look back at the past year, to discuss their achievements and difficulties, and to agree goals for the year ahead. It is not intended as a way of catching people out. Its purpose is to help each person to do their job well and to develop in their career.",
+       "B  Appraisals take place each April, and a shorter progress review is held in October. Employees receive their appraisal form three weeks beforehand, which gives them plenty of time to prepare.",
+       "C  Before the meeting, you complete a self-assessment, describing what you have done well and what you found hard. You should support it with evidence such as customer comments or examples of completed projects. Your manager will also ask three or four of your co-workers for their views, and will share a summary with you.",
+       "D  The meeting lasts about an hour and takes place in a private room. You are expected to do most of the talking. Your manager will not raise any serious problem for the first time at an appraisal: anything of that kind should have been discussed with you as soon as it happened.",
+       "E  You will be given one of four ratings, ranging from Outstanding to Needs Improvement. If you are rated as Needs Improvement, your manager will agree a support plan with you, including monthly meetings for the next six months, to help you reach the required standard.",
+       "F  Ratings are linked to the annual pay review, which takes place in July. Any training you and your manager agree on will be paid for by the Human Resources department, so please make sure your requests are recorded on the form. If you disagree with your rating, you may use the company's grievance procedure."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the text for each answer.",
+      "items": [
+       {
+        "n": 15,
+        "before": "Employees can ask for flexible working after",
+        "after": "of service.",
+        "answer": [
+         "six months"
+        ],
+        "why": "Employees who have completed six months of service may ask."
+       },
+       {
+        "n": 16,
+        "before": "Staff on compressed hours complete their full-time hours in",
+        "after": "days.",
+        "answer": [
+         "four"
+        ],
+        "why": "Compressed hours mean full-time hours in four days instead of five."
+       },
+       {
+        "n": 17,
+        "before": "An application form should be given to the employee's",
+        "after": ".",
+        "answer": [
+         "line manager"
+        ],
+        "why": "Form FW1 is given to your line manager."
+       },
+       {
+        "n": 18,
+        "before": "A new arrangement starts with an eight-week",
+        "after": "period.",
+        "answer": [
+         "trial"
+        ],
+        "why": "All new arrangements begin with an eight-week trial period."
+       }
+      ]
+     },
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information in the Flexible Working text? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 19,
+        "q": "Most requests for flexible working are approved.",
+        "answer": "NOT GIVEN",
+        "why": "The text says requests are judged on merit but gives no figures."
+       },
+       {
+        "n": 20,
+        "q": "Employees who work from home are given a laptop.",
+        "answer": "TRUE",
+        "why": "They are provided with a laptop and a headset."
+       },
+       {
+        "n": 21,
+        "q": "The company pays part of the cost of employees' broadband.",
+        "answer": "FALSE",
+        "why": "The company does not contribute to broadband or electricity costs."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "The appraisal text has six paragraphs, A-F. Which paragraph contains the following information? Choose the correct letter, A-F.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Paragraph A"
+       },
+       {
+        "k": "B",
+        "t": "Paragraph B"
+       },
+       {
+        "k": "C",
+        "t": "Paragraph C"
+       },
+       {
+        "k": "D",
+        "t": "Paragraph D"
+       },
+       {
+        "k": "E",
+        "t": "Paragraph E"
+       },
+       {
+        "k": "F",
+        "t": "Paragraph F"
+       }
+      ],
+      "items": [
+       {
+        "n": 22,
+        "q": "a reference to feedback gathered from co-workers",
+        "answer": "C",
+        "why": "Paragraph C says the manager asks three or four co-workers for their views."
+       },
+       {
+        "n": 23,
+        "q": "how long the meeting lasts",
+        "answer": "D",
+        "why": "Paragraph D says the meeting lasts about an hour."
+       },
+       {
+        "n": 24,
+        "q": "what happens after the lowest rating",
+        "answer": "E",
+        "why": "Paragraph E describes the support plan for Needs Improvement."
+       },
+       {
+        "n": 25,
+        "q": "the aim of the appraisal",
+        "answer": "A",
+        "why": "Paragraph A explains the purpose of the appraisal."
+       },
+       {
+        "n": 26,
+        "q": "a link with salary",
+        "answer": "F",
+        "why": "Paragraph F says ratings are linked to the annual pay review."
+       },
+       {
+        "n": 27,
+        "q": "the time of year of the second, shorter check",
+        "answer": "B",
+        "why": "Paragraph B says a shorter progress review is held in October."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Section 3",
+    "range": "28-40",
+    "passages": [
+     {
+      "title": "The Public Park: A Short History",
+      "paras": [
+       "A  Today we take the public park for granted: a patch of grass, some trees and a few benches, open to anyone and free of charge. Yet the idea is surprisingly recent. For most of history, green space belonged to the powerful. Medieval kings hunted in royal forests, and noble families walled in their estates with orchards, gardens and herds of deer. Ordinary people had village commons where they grazed their animals, but these were working land, not places of relaxation. The notion that a town should set aside land purely for the health and enjoyment of its inhabitants emerged only in the early nineteenth century.",
+       "B  The driving force was the rapid growth of industrial cities. Between 1800 and 1850 the population of many British towns doubled, as people left the countryside to work in factories. Housing was crowded, the air was thick with smoke, and open land disappeared under bricks. Doctors began to warn that disease spread fastest where people had no access to fresh air, and a parliamentary committee reported that towns lacked any place where working families could take exercise. Reformers went further, arguing that parks would improve behaviour as well as health, by drawing men away from the public houses on their days off.",
+       "C  The earliest public parks were funded by private generosity rather than public money. In 1842 a textile merchant in the northern town of Ashbury, Josiah Pell, bought forty acres of marshland and gave it to the town on condition that it be kept free for all visitors for ever. The landscape designer Edmund Hale drained the marsh and laid out a lake, a bandstand and carefully separate paths for carriages and for people on foot. Within a decade, dozens of towns had followed Ashbury's example, though some tried to cover their costs by charging admission on certain days, so that wealthier visitors could avoid the crowds.",
+       "D  By the 1850s, local councils had been given the legal power to pay for parks from local taxes, and park design became a matter of civic pride. Designers borrowed ideas from the landscape gardens of country houses, creating artificial hills, winding paths and views that hid the surrounding city. Rules were strict. Signs forbade ball games, walking on the grass and loud singing, and uniformed keepers enforced them. Critics complained that the parks were designed to make the poor behave rather than to let them enjoy themselves, and attendance on weekdays was often low as a result.",
+       "E  This began to change as the century ended. Campaigns by working people won the right to play football and cricket, and councils added playgrounds, running tracks and bowling greens. Bandstands became the heart of the park: on summer Sunday afternoons, brass bands played to crowds of thousands. Parks also played a part in wartime. During the First World War, many flower beds were dug up to grow vegetables, and iron railings were taken away and melted down for metal.",
+       "F  In the decades after 1945, however, parks fell into decline. Public money went to housing and roads, council budgets shrank, and many parks were neglected: the toilets were locked, the lakes silted up and the equipment was vandalised. By the 1980s some city parks had gained a reputation as unsafe places, and a number were sold off for building. Few people at the time seemed to mind, which suggests how little parks were valued.",
+       "G  The turning point came in the 1990s, when a national heritage fund began to pay for the restoration of historic parks. At the same time, thousands of volunteer groups were formed by local residents, who organised litter picks, planted flower beds and ran events. Research also began to show that time spent among trees and grass reduces stress and helps people to recover from illness, which gave councils a new reason to take parks seriously. The long closures of recent years, when many people had little else to enjoy, reminded millions of how much they valued a nearby patch of green.",
+       "H  Yet the future is far from secure. Council budgets are again under pressure, and some authorities have handed the running of their parks to charities or private companies, which sometimes ask visitors to pay for events or facilities. Whether parks will remain open to all, as Josiah Pell intended when he made his gift, may well be the great question for the next generation."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "Reading Passage 3 has eight paragraphs, A-H. Which paragraph contains the following information? Choose the correct letter, A-H.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Paragraph A"
+       },
+       {
+        "k": "B",
+        "t": "Paragraph B"
+       },
+       {
+        "k": "C",
+        "t": "Paragraph C"
+       },
+       {
+        "k": "D",
+        "t": "Paragraph D"
+       },
+       {
+        "k": "E",
+        "t": "Paragraph E"
+       },
+       {
+        "k": "F",
+        "t": "Paragraph F"
+       },
+       {
+        "k": "G",
+        "t": "Paragraph G"
+       },
+       {
+        "k": "H",
+        "t": "Paragraph H"
+       }
+      ],
+      "items": [
+       {
+        "n": 28,
+        "q": "an example of a person giving land to a town",
+        "answer": "C",
+        "why": "Paragraph C: Josiah Pell gave forty acres to Ashbury."
+       },
+       {
+        "n": 29,
+        "q": "a reason why parks fell into poor condition",
+        "answer": "F",
+        "why": "Paragraph F: public money went to housing and roads and budgets shrank."
+       },
+       {
+        "n": 30,
+        "q": "a belief that parks would keep men away from public houses",
+        "answer": "B",
+        "why": "Paragraph B: reformers argued parks would draw men away from public houses."
+       },
+       {
+        "n": 31,
+        "q": "an example of how parks helped in wartime",
+        "answer": "E",
+        "why": "Paragraph E: flower beds were dug up to grow vegetables in the First World War."
+       },
+       {
+        "n": 32,
+        "q": "a description of the rules visitors had to obey",
+        "answer": "D",
+        "why": "Paragraph D: signs forbade ball games, walking on the grass and loud singing."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 33,
+        "q": "What does the writer say about green space before the nineteenth century?",
+        "options": [
+         "It did not exist in towns.",
+         "It mostly belonged to powerful people.",
+         "It was used for sport.",
+         "It was open to everyone."
+        ],
+        "answer": "B",
+        "why": "Paragraph A: for most of history green space belonged to the powerful; commons were working land."
+       },
+       {
+        "n": 34,
+        "q": "What condition did Josiah Pell attach to his gift?",
+        "options": [
+         "The park must have a lake.",
+         "The designer must be Edmund Hale.",
+         "Visitors must pay on some days.",
+         "The park must stay free for everyone."
+        ],
+        "answer": "D",
+        "why": "He gave the land on condition that it be kept free for all visitors for ever. Charging admission was what some other towns did."
+       },
+       {
+        "n": 35,
+        "q": "What criticism of nineteenth-century council parks is mentioned?",
+        "options": [
+         "They were designed to control the poor.",
+         "They were too expensive.",
+         "They were too far from city centres.",
+         "They had too few trees."
+        ],
+        "answer": "A",
+        "why": "Critics said the parks were designed to make the poor behave rather than to let them enjoy themselves."
+       },
+       {
+        "n": 36,
+        "q": "What does the writer say happened in the 1990s?",
+        "options": [
+         "Many parks were sold for building.",
+         "Councils spent more on housing.",
+         "Restoration was funded and residents became involved.",
+         "Fewer people visited parks."
+        ],
+        "answer": "C",
+        "why": "A national heritage fund paid for restoration and volunteer groups were formed. Selling parks happened in the 1980s."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "heading": "The history of the public park",
+      "items": [
+       {
+        "n": 37,
+        "before": "Doctors warned that disease spread fastest where people lacked",
+        "after": ".",
+        "answer": [
+         "fresh air"
+        ],
+        "why": "Paragraph B: disease spread fastest where people had no access to fresh air."
+       },
+       {
+        "n": 38,
+        "before": "Ashbury's park had a bandstand and a",
+        "after": ".",
+        "answer": [
+         "lake"
+        ],
+        "why": "Paragraph C: Hale laid out a lake, a bandstand and separate paths."
+       },
+       {
+        "n": 39,
+        "before": "Later, councils added bowling greens and",
+        "after": ".",
+        "answer": [
+         "playgrounds",
+         "running tracks"
+        ],
+        "why": "Paragraph E: councils added playgrounds, running tracks and bowling greens."
+       },
+       {
+        "n": 40,
+        "before": "Since the 1990s,",
+        "after": "have helped to look after parks.",
+        "answer": [
+         "volunteer groups"
+        ],
+        "why": "Paragraph G: thousands of volunteer groups were formed."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "writing": {
+  "task1": {
+   "kind": "letter (formal)",
+   "min": 150,
+   "prompt": "There is a busy road near your home with a pedestrian crossing that you think is dangerous. Many children use it on their way to school.\n\nWrite a letter to the town council. In your letter:\n- describe the crossing and why it is dangerous\n- explain what has happened there recently\n- say what you would like the council to do\n\nWrite at least 150 words. You do NOT need to write any addresses.\n\nBegin your letter as follows:\nDear Sir or Madam,"
+  },
+  "task2": {
+   "kind": "opinion essay (agree/disagree)",
+   "min": 250,
+   "prompt": "Write about the following topic:\n\nSome people think that all children should learn to cook at school.\n\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+  }
+ }
+}

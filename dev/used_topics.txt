@@ -1,0 +1,98 @@
+L: A man phones a sports centre to ask about membership.
+L: A librarian welcomes visitors on the reopening day of a town library.
+L: Two college students, Maya and Tom, discuss their project on canteen food waste with their tutor, Dr Evans.
+L: A lecture about urban heat islands.
+R: Evening courses at Hillcrest Adult Learning Centre
+R: Westbridge Council: changes to household waste collection
+R: Kerrigan Logistics: working from home policy
+R: Your first week at Brightwell Hospital: a guide for new staff
+R: The return of the night train
+W: You recently stayed at a hotel and left a valuable item in your room.
+W: Some people believe that working from home benefits both employees and employers. Others think it causes more 
+L: A woman phones a company to hire a van for moving house.
+L: An organiser gives information about a weekend food festival.
+L: Two trainee nurses, Priya and Ben, discuss a group assignment about sleep with their supervisor.
+L: A talk about the history and future of honeybees in cities.
+R: Choosing a home internet package
+R: Northgate Station: lost property
+R: Hartley Engineering: training and development
+R: Working safely in the warehouse
+R: Why do we keep pets?
+W: You live in a flat. For the last few weeks, your neighbour has been making a lot of noise late at night.
+W: In many countries, people are living longer than ever before.
+L: A man calls a language school to ask about evening Japanese classes.
+L: A ranger talks to visitors at the start of a guided walk in a nature reserve.
+L: Two business students, Lena and Kwame, talk about a work placement report.
+L: A lecture on the history of the shipping container.
+R: Five gyms in Eastbrook
+R: Notice to residents: Elm Court water supply
+R: Greenleaf Supermarkets: guidance for new checkout staff
+R: How to make a good impression in your first job
+R: The four-day working week
+W: You have seen an advertisement for a part-time job at a local museum.
+W: Some people think that children should start learning a foreign language at primary school. Others believe it 
+L: A woman reports a lost bag to a bus company.
+L: A manager welcomes new volunteers at a community garden.
+L: Two students, Hana and Marco, and their lecturer discuss a survey about cycling to college.
+L: A talk about how memory works and how to study effectively.
+R: Weekend breaks from Lakeside Travel
+R: Riverside Medical Practice: booking appointments
+R: Thornbury Hotels: holiday leave for staff
+R: Tips for writing a CV
+R: The quiet revolution of the electric bicycle
+W: Your company is sending you to another country for a three-month training course. You need somewhere to live d
+W: Some people think that the best way to reduce traffic in cities is to make public transport free. Others think
+L: A man enquires about renting a room in a shared house.
+L: A radio presenter gives information about a city's new bike-share scheme.
+L: A tutor and two students, Aisha and Felix, discuss a presentation on social media and local businesses.
+L: A lecture about the history of tea.
+R: Summer activities for children at Millbrook Library
+R: Clearwater Gym: guidance for members during refurbishment
+R: Northway Bank: dress code for staff
+R: Applying for a work permit for a seasonal job: frequently asked questions
+R: Why we procrastinate
+W: You recently bought a piece of equipment for your kitchen from a shop, but it does not work properly.
+W: Nowadays many people spend a lot of time on their mobile phones, even when they are with friends and family.
+L: A woman phones to book a table and a cake for a birthday dinner at a restaurant.
+L: A guide speaks to visitors at the start of a tour of a chocolate factory.
+L: Two apprentices, Sam and Leila, discuss their electrical engineering course with their trainer.
+L: A talk about noise pollution and health.
+R: Five removal companies
+R: Hilltop Community Centre: room hire
+R: Coastline Care Homes: induction for new care assistants
+R: Saving energy in the office
+R: The science of queuing
+W: A friend from another country wants to visit your city for a few days and has asked you for advice.
+W: Some people say that it is better to work for a large company, while others prefer to work for a small company
+L: A man phones a lakeside holiday park to book a cabin for a week in June.
+L: A volunteer coordinator welcomes new volunteers to a community garden.
+L: Two apprentices and their trainer review a customer-service training project.
+L: A lecture on the history of the bicycle and its return to cities.
+R: Eastgate Swimming Pool: new timetable and pool rules
+R: Fairhaven Furniture Project: collection and delivery
+R: Expenses claims: guidance for staff
+R: Reporting accidents at work
+R: Bees in the city
+L: A woman phones a removal company to arrange moving house.
+L: A guide gives an introductory talk at a maritime museum.
+L: Two students, Nadia and Dan, discuss a group presentation on recycling plastics.
+L: A lecture on how sleep affects learning and memory.
+R: Marlbury Town Council: changes to bus routes and fares from 4 January
+R: Eastfield College: evening cooking classes for adults
+R: Ostler & Reeve: annual leave and sickness absence, a guide for new employees
+R: Writing effective work emails
+R: The revival of the canals
+L: A student phones a landlady to ask about renting a room in a shared house.
+L: A university librarian explains the library's services to new students.
+L: Two students and their tutor discuss the design of a psychology experiment on attention.
+L: A lecturer talks about the domestication of the horse and its effects on human societies.
+R: The Story of Glass
+R: Trees for the Street
+R: Does Choice Really Overload Us?
+L: A woman phones a language school to enrol on an evening course.
+L: The manager of a new student residence describes the facilities and rules to new residents.
+L: Two students discuss their fieldwork report on coastal erosion.
+L: A lecture on the invention of paper and how it spread across the world.
+R: How birds find their way
+R: The rise and fall of the telegraph
+R: Is boredom good for us?
