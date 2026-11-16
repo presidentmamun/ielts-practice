@@ -213,6 +213,9 @@ dev/_backup*/
 dev/__pycache__/
 dev/*.log
 dev/*.txt
+
+# local Firebase tests, rules and test account (never publish)
+dev/firebase/
 """)
 open(os.path.join(SITE, ".nojekyll"), "w").write("")
 print("built", SITE, "| tests:", len(files) - 1, "| free recordings:", n_audio, "| members' recordings:", n_prem, "| version:", version)

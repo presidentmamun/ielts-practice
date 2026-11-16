@@ -58,9 +58,10 @@ h1,h2,h3{text-wrap:balance}
 .hdr{max-width:780px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px))}
 .brand{display:flex;align-items:center;gap:12px;min-width:0}
 .logo{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--accent);color:var(--accent-ink);font-family:var(--f-num);font-weight:600;font-size:15px;flex:none;box-shadow:inset 0 -5px 0 rgba(255,230,138,.9)}
+.hdr .btn{white-space:nowrap}
 .brand h1{font-size:19px;font-weight:700;letter-spacing:-.01em;line-height:1.2}
 .brand p{font-size:13px;color:var(--muted)}
-.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:10;display:grid;grid-template-columns:repeat(3,1fr);background:var(--surface);border-top:1px solid var(--line);padding:6px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px))}
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:10;display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border-top:1px solid var(--line);padding:6px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px))}
 .tabbar button{display:flex;flex-direction:column;align-items:center;gap:2px;border:0;background:none;padding:6px 4px;border-radius:12px;font-size:12.5px;font-weight:600;color:var(--muted);min-height:52px}
 .tabbar button[aria-selected="true"]{color:var(--accent);background:var(--accent-soft)}
 @media (min-width:761px){
@@ -68,6 +69,19 @@ h1,h2,h3{text-wrap:balance}
   .tabbar{position:static;max-width:748px;margin:6px auto 14px;border:1px solid var(--line);border-radius:14px;padding:5px;gap:4px}
   .tabbar button{flex-direction:row;justify-content:center;gap:8px;font-size:15px;min-height:44px}
 }
+.rtitle{font-size:18px;font-weight:700}
+.rctl{display:flex;align-items:center;justify-content:center;gap:22px;margin:10px 0 12px}
+.rctl .pbtn{width:64px;height:64px}
+.rctl .iconbtn{width:48px;height:48px;border-radius:50%}
+.radio .prow{flex-wrap:wrap}
+.unit.now .ut b{color:var(--accent)}
+.unit.now .go{display:none}
+.miniplayer{position:fixed;left:8px;right:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px));z-index:11;display:flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--accent);border-radius:14px;padding:6px;box-shadow:var(--shadow)}
+.miniplayer .mgo{flex:1;min-width:0;display:flex;align-items:center;gap:8px;border:0;background:none;text-align:left;font-weight:600;padding:6px 8px;color:var(--accent)}
+.miniplayer .mgo span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink)}
+.miniplayer .iconbtn{width:40px;height:40px}
+.home.hasmini{padding-bottom:calc(144px + env(safe-area-inset-bottom,0px))}
+@media (min-width:761px){.miniplayer{left:auto;right:20px;bottom:20px;width:360px}.home.hasmini{padding-bottom:90px}}
 .h{font-size:22px;font-weight:700;letter-spacing:-.01em;margin-top:6px}
 .lead{color:var(--muted);margin:4px 0 14px;max-width:60ch}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--R);box-shadow:var(--shadow);padding:16px;margin-bottom:14px}
@@ -296,7 +310,11 @@ const IC = {
   chart: '<path d="M5 20V11M12 20V4M19 20v-6"/>',
   clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
   doc: '<path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7"/>',
-  flag: '<path d="M5 21V4h12l-2 4 2 4H5"/>'
+  flag: '<path d="M5 21V4h12l-2 4 2 4H5"/>',
+  prev: '<path d="M19 5v14L9 12z" fill="currentColor"/><path d="M6 5v14"/>',
+  next: '<path d="M5 5v14l10-7z" fill="currentColor"/><path d="M18 5v14"/>',
+  shuffle: '<path d="M3 7h3c5 0 7 10 12 10h3M3 17h3c1.6 0 2.9-1 4-2.4M14 9.4C15.1 8 16.4 7 18 7h3"/><path d="M18.5 4.5L21 7l-2.5 2.5M18.5 14.5L21 17l-2.5 2.5"/>',
+  x: '<path d="M6 6l12 12M18 6L6 18"/>'
 };
 const ic = (n, s = 20) => `<svg class="ic" width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[n]}</svg>`;
 
@@ -435,15 +453,16 @@ function progressHTML(){
 function renderHome(){
   S.view = "home"; S.run = null; stopAudio(); clearInterval(tick);
   const res = LS.get("resume", null), canResume = res && hasDraft(res.id);
-  const tabs = [["practice", "Practice", "book"], ["test", "Mock test", "clock"], ["progress", "Progress", "chart"]];
-  $("#app").innerHTML = `<div class="home">
+  const tabs = [["practice", "Practice", "book"], ["listen", "Listen", "headphones"], ["test", "Mock test", "clock"], ["progress", "Progress", "chart"]];
+  const mini = RADIO.i >= 0 && S.tab !== "listen";
+  $("#app").innerHTML = `<div class="home ${mini ? "hasmini" : ""}">
     <header class="hdr"><div class="brand"><span class="logo">7.5</span><div><h1>IELTS Practice Desk</h1><p>${S.module === "GT" ? "General Training" : "Academic"} · computer-delivered format</p></div></div>
       <span style="display:flex;gap:8px;align-items:center">${AUTH.user ? `<button class="iconbtn avatar" id="acct" aria-label="Your account" title="${esc(AUTH.user.name)}">${esc((AUTH.user.name || "?").trim()[0].toUpperCase())}</button>` : `<button class="btn small" id="acct">Log in</button>`}
       <button class="iconbtn" id="settings" aria-label="Settings" title="Settings">${ic("sliders")}</button></span></header>
     <nav class="tabbar" aria-label="Sections">${tabs.map(([id, name, icon]) => `<button data-tab="${id}" aria-selected="${S.tab === id}">${ic(icon, 20)}<span>${name}</span></button>`).join("")}</nav>
     <main class="wrap">
       ${canResume ? `<button class="resume" id="resume">${ic("play", 26)}<span><small>Continue where you stopped</small><b>${esc(res.title)}</b></span></button>` : ""}
-      ${S.tab === "practice" ? practiceHTML() : S.tab === "test" ? testHTML() : progressHTML()}
+      ${S.tab === "practice" ? practiceHTML() : S.tab === "listen" ? listenHTML() : S.tab === "test" ? testHTML() : progressHTML()}
       <details class="about"><summary>About this app and official practice material</summary>
         <p>Recordings here are made with AI voices. Before the exam, also listen to official tests recorded by real speakers:</p>
         <ul><li><a href="https://ielts.org/take-a-test/preparation-resources/sample-test-questions" target="_blank" rel="noopener">ielts.org: sample test questions</a></li>
@@ -451,7 +470,9 @@ function renderHome(){
           <li><a href="https://ielts.idp.com/prepare" target="_blank" rel="noopener">IDP: prepare and practice</a></li></ul>
         <p>Tip: on a phone, use "Add to Home Screen" to open this like an app, even offline.</p>
         <p style="margin-top:8px">All questions, passages and recordings are original practice material. This is a free, independent tool and is not affiliated with or endorsed by IELTS, the British Council, IDP or Cambridge University Press &amp; Assessment.</p></details>
-    </main></div>`;
+    </main>
+    ${mini ? `<div class="miniplayer"><button class="mgo" id="mgo" aria-label="Open the Listen page">${ic("headphones", 18)}<span id="mtitle"></span></button><button class="iconbtn" id="mpp" aria-label="Pause">${ic("pause", 18)}</button><button class="iconbtn" id="mx" aria-label="Stop listening">${ic("x", 18)}</button></div>` : ""}</div>`;
+  bindRadio();
   $("#settings").onclick = settingsBox;
   $("#acct").onclick = () => AUTH.user ? settingsBox() : accountBox("login");
   const rb = $("#resume"); if (rb) rb.onclick = () => startUnit(res.id);
@@ -766,7 +787,7 @@ function startUnit(id){
   if (r.mode === "practice") { const d = LS.get("draft:" + id, null);
     if (d) Object.assign(r, {answers: d.answers || {}, st: d.st || {}, first: d.first || {}, essays: d.essays || {}, cur: Math.min(d.cur || 0, r.pages.length - 1)});
     else if (r.skill === "W") { const old = LS.get("essay:" + id, ""); if (old) r.essays[0] = old } }
-  S.run = r; S.view = "run"; renderRun(); startTimer(); scrollTo(0, 0);
+  stopRadio(); S.run = r; S.view = "run"; renderRun(); startTimer(); scrollTo(0, 0);
 }
 function saveDraft(){
   const r = S.run; if (!r || r.mode !== "practice" || r.done) return;
@@ -969,7 +990,7 @@ const cuesOf = part => { const c = part.premium && PREM.key ? part.pcues : part.
 async function openAudio(pg){
   const part = pg.sec, id = pg.test.id + ":" + pg.si + ":" + (PREM.key ? "m" : "f");
   if (AU && AU.id === id) return AU;
-  stopAudio();
+  stopAudio(); stopRadio();
   if (LS.get("engine2", "recorded") === "browser") return null;
   let src = null, url = null; const token = loadToken;
   if (part.premium && PREM.key) {
@@ -1014,6 +1035,127 @@ function updatePlayerUI(){
   const ln = i >= 0 && $(`[data-line="${i}"]`, box);
   if (ln) { ln.classList.add("cur"); box.scrollTo({top: ln.offsetTop - box.clientHeight / 2 + ln.offsetHeight / 2, behavior: "smooth"}) }
 }
+/* ---------- Listen: every recording as one playlist, made to keep playing with the screen locked ----------
+   One <audio> element is reused for the whole playlist: phones only let a page start the next track in the
+   background when it is the same element that was already playing. */
+const RADIO = {a: null, list: [], i: -1, url: null, pre: null, token: 0, sleepAt: 0, saved: 0, text: false};
+function radioTracks(){
+  const out = [];
+  moduleTests().forEach(t => t.listening.parts.forEach((p, pi) => { if (p.audio || (p.premium && PREM.key)) out.push({id: t.id + ":" + pi, test: t, part: p, title: `${shortTitle(t)} · ${p.title}`, sub: p.context}) }));
+  return out;
+}
+async function trackSrc(tr){
+  if (tr.part.premium && PREM.key) return {blob: true, src: URL.createObjectURL(new Blob([await decryptBuf(PREM.key, await (await fetch(tr.part.premium)).arrayBuffer())], {type: "audio/mpeg"}))};
+  return {blob: false, src: tr.part.audio};
+}
+const dropSrc = s => { if (s && s.blob) URL.revokeObjectURL(s.src) };
+function radioNextIndex(){ const n = RADIO.list.length; if (n < 2) return 0; if (!LS.get("rshuffle", false)) return (RADIO.i + 1) % n; let j; do { j = Math.floor(Math.random() * n) } while (j === RADIO.i); return j }
+async function radioPlay(i, at){
+  stopAudio(); const list = RADIO.list = radioTracks(); if (!list.length) return;
+  i = ((i % list.length) + list.length) % list.length; const tr = list[i], token = ++RADIO.token;
+  if (!RADIO.a) { const a = RADIO.a = new Audio(); a.preload = "auto"; a.preservesPitch = true;
+    a.onended = () => radioPlay(RADIO.nextI ?? RADIO.i + 1);
+    a.onplay = a.onpause = a.onloadedmetadata = radioUI;
+    a.ontimeupdate = () => { const now = Date.now();
+      if (RADIO.sleepAt && now >= RADIO.sleepAt) { RADIO.sleepAt = 0; a.pause() }
+      if (now - RADIO.saved > 5000 && RADIO.i >= 0) { RADIO.saved = now; LS.set("radio", {id: RADIO.list[RADIO.i].id, t: Math.floor(a.currentTime)}) }
+      radioUI() };
+    a.onerror = () => { if (RADIO.i >= 0 && a.getAttribute("src")) radioNote("This recording could not be loaded. Check your connection.") } }
+  const a = RADIO.a; RADIO.i = i; RADIO.line = -2; radioNote(""); radioUI();
+  try {
+    const s = RADIO.pre && RADIO.pre.id === tr.id ? RADIO.pre.s : await trackSrc(tr);
+    if (RADIO.pre && RADIO.pre.s !== s) dropSrc(RADIO.pre.s); RADIO.pre = null;
+    if (token !== RADIO.token) return dropSrc(s);
+    const old = RADIO.url; RADIO.url = s.blob ? s.src : null;
+    a.src = s.src; a.defaultPlaybackRate = a.playbackRate = +LS.get("rate", 1);
+    if (at > 0) a.addEventListener("loadedmetadata", () => { if (token === RADIO.token && at < a.duration - 5) a.currentTime = at }, {once: true});
+    await a.play(); if (old) URL.revokeObjectURL(old);
+  } catch(e) { if (token === RADIO.token && e?.name !== "AbortError") radioNote(e?.name === "NotAllowedError" ? "Press play to start." : "This recording could not be played.") }
+  if (token !== RADIO.token) return;
+  LS.set("radio", {id: tr.id, t: Math.floor(at || 0)});
+  try {
+    if ("mediaSession" in navigator) { const ms = navigator.mediaSession;
+      ms.metadata = new MediaMetadata({title: tr.title, artist: tr.sub, album: "IELTS Practice Desk · Listen", artwork: [{src: "icon-512.png", sizes: "512x512", type: "image/png"}]});
+      ms.setActionHandler("play", () => a.play()); ms.setActionHandler("pause", () => a.pause());
+      ms.setActionHandler("previoustrack", () => radioPlay(RADIO.i - 1)); ms.setActionHandler("nexttrack", () => radioPlay(RADIO.nextI ?? RADIO.i + 1));
+      ms.setActionHandler("seekbackward", () => { a.currentTime = Math.max(0, a.currentTime - 10) }); ms.setActionHandler("seekforward", () => { a.currentTime = Math.min(a.duration || 1e9, a.currentTime + 10) });
+    }
+  } catch(e){}
+  // decide what comes next now, and get a members' recording ready while this one plays
+  RADIO.nextI = radioNextIndex(); const nt = list[RADIO.nextI];
+  if (nt && nt.id !== tr.id && nt.part.premium && PREM.key) trackSrc(nt).then(s => { if (token === RADIO.token) RADIO.pre = {id: nt.id, s}; else dropSrc(s) }).catch(() => {});
+  radioUI();
+}
+function stopRadio(){
+  if (RADIO.i < 0 && !RADIO.a) return;
+  RADIO.token++; RADIO.i = -1; RADIO.sleepAt = 0;
+  if (RADIO.a) { try { RADIO.a.pause(); RADIO.a.removeAttribute("src"); RADIO.a.load() } catch(e){} }
+  if (RADIO.url) { URL.revokeObjectURL(RADIO.url); RADIO.url = null }
+  if (RADIO.pre) { dropSrc(RADIO.pre.s); RADIO.pre = null }
+  try { ["previoustrack", "nexttrack", "seekbackward", "seekforward"].forEach(k => navigator.mediaSession.setActionHandler(k, null)) } catch(e){}
+}
+function radioNote(t){ RADIO.note = t; const el = $("#rnote"); if (el) el.textContent = t }
+/* the track the Listen page shows when nothing is playing: where the learner stopped last time */
+function radioSaved(list){ const sv = LS.get("radio", null), i = sv ? list.findIndex(x => x.id === sv.id) : -1; return i >= 0 ? {i, t: sv.t || 0} : {i: 0, t: 0} }
+function radioToggle(){ const a = RADIO.a; if (RADIO.i >= 0 && a) return a.paused ? a.play().catch(() => {}) : a.pause(); const sv = radioSaved(radioTracks()); radioPlay(sv.i, sv.t) }
+function listenHTML(){
+  const list = radioTracks(), rate = +LS.get("rate", 1);
+  if (!list.length) return `<h2 class="h">Just listen</h2><div class="card empty">Recordings are not available yet.</div>`;
+  return `<h2 class="h">Just listen</h2>
+    <p class="lead">No questions. The recordings play one after another and keep playing when you lock your phone, like music. Good for the bus, a walk, or before sleep.</p>
+    <div class="card radio">
+      <div class="rtitle" id="rtitle"></div><div class="note" id="rsub"></div>
+      <div class="pline" style="margin-top:8px"><input type="range" id="rbar" min="0" max="1" step="0.1" value="0" aria-label="Position in the recording"><span id="rtime" class="num"></span></div>
+      <div class="rctl"><button class="iconbtn" id="rprev" aria-label="Previous recording">${ic("prev", 22)}</button><button class="pbtn" id="rpp" aria-label="Play">${ic("play", 28)}</button><button class="iconbtn" id="rnext" aria-label="Next recording">${ic("next", 22)}</button></div>
+      <div class="prow"><button class="mini" id="rshuf" aria-pressed="${!!LS.get("rshuffle", false)}">${ic("shuffle", 14)} Shuffle</button>
+        <select class="mini" id="rrate" aria-label="Speed">${[0.75, 0.9, 1, 1.1, 1.25].map(v => `<option value="${v}" ${rate === v ? "selected" : ""}>${v}×</option>`).join("")}</select>
+        <select class="mini" id="rsleep" aria-label="Sleep timer"><option value="0">Sleep timer</option>${[15, 30, 60].map(m => `<option value="${m}">Stop in ${m} min</option>`).join("")}</select>
+        <span class="sp"></span><button class="mini" id="rtext" aria-pressed="${RADIO.text}">${ic("doc", 14)} Text</button></div>
+      <p class="note" id="rnote" role="status" style="margin-top:6px">${esc(RADIO.note || "")}</p>
+      <div class="script" id="rscript" hidden style="margin:8px 0 0"></div>
+    </div>
+    <div class="card"><div class="thead"><h3>All recordings</h3><span class="note">${list.length} recordings · about ${Math.round(list.length * 2.3)} min</span></div>
+      ${list.map((tr, i) => `<button class="unit" data-track="${i}"><span class="ut"><b>${esc(tr.title)}</b><span>${esc(tr.sub)}</span></span><span class="badge live" hidden>playing</span><span class="go">${ic("play", 16)}</span></button>`).join("")}</div>`;
+}
+function bindRadio(){
+  const on = (id, ev, fn) => { const el = $(id); if (el) el[ev] = fn };
+  on("#rpp", "onclick", radioToggle); on("#mpp", "onclick", radioToggle);
+  on("#rprev", "onclick", () => radioPlay((RADIO.i >= 0 ? RADIO.i : radioSaved(radioTracks()).i) - 1));
+  on("#rnext", "onclick", () => radioPlay(RADIO.i >= 0 ? (RADIO.nextI ?? RADIO.i + 1) : radioSaved(radioTracks()).i + 1));
+  on("#rbar", "oninput", e => { if (RADIO.i >= 0 && isFinite(RADIO.a.duration)) RADIO.a.currentTime = +e.target.value });
+  on("#rshuf", "onclick", e => { const v = !LS.get("rshuffle", false); LS.set("rshuffle", v); e.currentTarget.setAttribute("aria-pressed", v); if (RADIO.i >= 0) RADIO.nextI = radioNextIndex() });
+  on("#rrate", "onchange", e => { LS.set("rate", +e.target.value); if (RADIO.a) RADIO.a.defaultPlaybackRate = RADIO.a.playbackRate = +e.target.value });
+  on("#rsleep", "onchange", e => { const m = +e.target.value; RADIO.sleepAt = m ? Date.now() + m * 60000 : 0; radioNote(m ? `Listening will stop in ${m} minutes.` : "") });
+  on("#rtext", "onclick", e => { RADIO.text = !RADIO.text; e.currentTarget.setAttribute("aria-pressed", RADIO.text); RADIO.line = -2; radioUI() });
+  on("#rscript", "onclick", e => { const p = e.target.closest("[data-line]"), tr = RADIO.list[RADIO.i], c = tr && cuesOf(tr.part); if (p && c) { RADIO.a.currentTime = c[+p.dataset.line]; RADIO.a.play().catch(() => {}) } });
+  on("#mgo", "onclick", () => { S.tab = "listen"; LS.set("tab", "listen"); renderHome(); scrollTo(0, 0) });
+  on("#mx", "onclick", () => { stopRadio(); renderHome() });
+  $$("[data-track]").forEach(b => b.onclick = () => radioPlay(+b.dataset.track));
+  radioUI();
+}
+function radioUI(){
+  const a = RADIO.a, live = RADIO.i >= 0, list = live ? RADIO.list : null, playing = live && a && !a.paused;
+  const mt = $("#mtitle"); if (mt && live) mt.textContent = list[RADIO.i].title;
+  const mp = $("#mpp"); if (mp) { mp.innerHTML = ic(playing ? "pause" : "play", 18); mp.setAttribute("aria-label", playing ? "Pause" : "Play") }
+  const title = $("#rtitle"); if (!title) return;
+  const shown = live ? list[RADIO.i] : (() => { const l = radioTracks(); return l[radioSaved(l).i] })();
+  title.textContent = shown.title; $("#rsub").textContent = shown.sub;
+  const bar = $("#rbar"); bar.disabled = !live; bar.max = live && isFinite(a.duration) ? a.duration : 1; if (!bar.matches(":active")) bar.value = live ? a.currentTime : 0;
+  $("#rtime").textContent = live ? `${fmt(a.currentTime)} / ${fmt(a.duration)}` : "";
+  const pp = $("#rpp"); pp.innerHTML = ic(playing ? "pause" : "play", 28); pp.setAttribute("aria-label", playing ? "Pause" : "Play");
+  $$("[data-track]").forEach((b, i) => { const on = live && i === RADIO.i; b.classList.toggle("now", on); $(".badge", b).hidden = !on });
+  const box = $("#rscript"); box.hidden = !RADIO.text;
+  if (!RADIO.text) return;
+  const cues = cuesOf(shown.part);
+  if (box.dataset.id !== shown.id) { box.dataset.id = shown.id; box.className = "script" + (cues ? " tap" : ""); RADIO.line = -2;
+    box.innerHTML = shown.part.script.map(([w, t], i) => `<p data-line="${i}"><b>${esc(w)}:</b> ${esc(t)}</p>`).join(""); box.scrollTop = 0 }
+  let i = -1; if (live && cues) { const t = a.currentTime + .05; while (i + 1 < cues.length && cues[i + 1] <= t) i++ }
+  if (i === RADIO.line) return; RADIO.line = i;
+  $$(".cur", box).forEach(x => x.classList.remove("cur"));
+  const ln = i >= 0 && $(`[data-line="${i}"]`, box);
+  if (ln) { ln.classList.add("cur"); box.scrollTo({top: ln.offsetTop - box.clientHeight / 2 + ln.offsetHeight / 2, behavior: "smooth"}) }
+}
+
 const VOICE_ACCENT = {buttery: "en-GB", airy: "en-GB", rounded: "en-GB", bright: "en-GB", glassy: "en-US", deep: "en-US", aus_f: "en-AU", aus_m: "en-AU", nz_f: "en-NZ", nz_m: "en-NZ"};
 function browserVoices(){ try { return speechSynthesis.getVoices().filter(v => /^en(-|_)/i.test(v.lang)) } catch(e){ return [] } }
 function speakBrowser(part, rate){
