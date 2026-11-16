@@ -99,6 +99,10 @@ head = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Free IELTS practice in the computer-delivered format: Listening, Reading and Writing, practice at your own pace or timed mock tests, with explanations and band estimates.">
+<link rel="canonical" href="https://ielts.iwate-bd.org/">
+<meta property="og:title" content="IELTS Practice Desk">
+<meta property="og:url" content="https://ielts.iwate-bd.org/">
+<meta property="og:image" content="https://ielts.iwate-bd.org/icon-512.png">
 <meta name="theme-color" content="#0b7a80">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png">

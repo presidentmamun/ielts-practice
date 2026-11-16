@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /dev/
+Disallow: /premium/
+
+Sitemap: https://ielts.iwate-bd.org/sitemap.xml
