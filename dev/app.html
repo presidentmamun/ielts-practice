@@ -46,6 +46,7 @@ h1,h2,h3{text-wrap:balance}
 .btn:disabled{opacity:.5;cursor:not-allowed}
 .iconbtn{display:inline-grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);background:var(--surface);border-radius:12px;flex:none}
 .iconbtn:hover{border-color:var(--accent)}
+.iconbtn.avatar{border-radius:50%;background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:700}
 .linkbtn{border:0;background:none;padding:0;color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:2px}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface);max-width:100%}
 .seg button{border:0;background:none;padding:9px 14px;font-weight:600;min-height:42px}
@@ -250,7 +251,7 @@ textarea.essay:focus{border-color:var(--accent);outline:0}
 .modal .row{display:flex;gap:8px;justify-content:flex-end;margin-top:16px;flex-wrap:wrap}
 .field{margin-top:16px}
 .field>label,.field>.lab{display:block;font-size:12.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-.field select,.field input[type=password]{min-height:44px;border:1.5px solid var(--line);border-radius:8px;padding:6px 10px;background:var(--surface);width:100%}
+.field select,.field input:not([type=checkbox]){min-height:44px;border:1.5px solid var(--line);border-radius:8px;padding:6px 10px;background:var(--surface);width:100%}
 .result{max-width:680px}
 .bigband{font-family:var(--f-num);font-size:48px;font-weight:600;color:var(--accent);line-height:1}
 .scoreline{display:flex;gap:28px;align-items:flex-end;flex-wrap:wrap;margin:16px 0}
@@ -341,14 +342,14 @@ async function loadAttempts(){
   } catch(e){}
 }
 async function saveAttempt(a){
-  S.attempts.unshift(a); LS.set("attempts", S.attempts.slice(0, 60));
+  S.attempts.unshift(a); LS.set("attempts", S.attempts.slice(0, 60)); queuePush();
   const col = await attemptsCol();
   if (col) { try { await col.doc().set(a) } catch(e){} }
 }
 function saveUnit(id, res){
   const old = S.units[id];
   S.units[id] = {...res, best: Math.max(res.score ?? 0, old?.best ?? 0)};
-  LS.set("units", S.units);
+  LS.set("units", S.units); queuePush();
 }
 
 /* ---------- loading ---------- */
@@ -437,7 +438,8 @@ function renderHome(){
   const tabs = [["practice", "Practice", "book"], ["test", "Mock test", "clock"], ["progress", "Progress", "chart"]];
   $("#app").innerHTML = `<div class="home">
     <header class="hdr"><div class="brand"><span class="logo">7.5</span><div><h1>IELTS Practice Desk</h1><p>${S.module === "GT" ? "General Training" : "Academic"} · computer-delivered format</p></div></div>
-      <button class="iconbtn" id="settings" aria-label="Settings" title="Settings">${ic("sliders")}</button></header>
+      <span style="display:flex;gap:8px;align-items:center">${AUTH.user ? `<button class="iconbtn avatar" id="acct" aria-label="Your account" title="${esc(AUTH.user.name)}">${esc((AUTH.user.name || "?").trim()[0].toUpperCase())}</button>` : `<button class="btn small" id="acct">Log in</button>`}
+      <button class="iconbtn" id="settings" aria-label="Settings" title="Settings">${ic("sliders")}</button></span></header>
     <nav class="tabbar" aria-label="Sections">${tabs.map(([id, name, icon]) => `<button data-tab="${id}" aria-selected="${S.tab === id}">${ic(icon, 20)}<span>${name}</span></button>`).join("")}</nav>
     <main class="wrap">
       ${canResume ? `<button class="resume" id="resume">${ic("play", 26)}<span><small>Continue where you stopped</small><b>${esc(res.title)}</b></span></button>` : ""}
@@ -451,6 +453,7 @@ function renderHome(){
         <p style="margin-top:8px">All questions, passages and recordings are original practice material. This is a free, independent tool and is not affiliated with or endorsed by IELTS, the British Council, IDP or Cambridge University Press &amp; Assessment.</p></details>
     </main></div>`;
   $("#settings").onclick = settingsBox;
+  $("#acct").onclick = () => AUTH.user ? settingsBox() : accountBox("login");
   const rb = $("#resume"); if (rb) rb.onclick = () => startUnit(res.id);
   $$("[data-tab]").forEach(b => b.onclick = () => { S.tab = b.dataset.tab; LS.set("tab", S.tab); renderHome(); scrollTo(0, 0) });
   $$("[data-pskill]").forEach(b => b.onclick = () => { S.pskill = b.dataset.pskill; LS.set("pskill", S.pskill); renderHome() });
@@ -466,9 +469,9 @@ function settingsBox(){
     <div class="field"><span class="lab">Your exam</span><div class="seg"><button data-mod="GT" aria-pressed="${S.module === "GT"}">General Training</button><button data-mod="AC" aria-pressed="${S.module === "AC"}">Academic</button></div></div>
     <div class="field"><span class="lab">Appearance</span><div class="seg">${["auto", "light", "dark"].map(t => `<button data-theme-set="${t}" aria-pressed="${theme === t}">${t[0].toUpperCase() + t.slice(1)}</button>`).join("")}</div></div>
     <div class="field"><label for="engine">Listening voice</label><select id="engine"><option value="recorded" ${engine !== "browser" ? "selected" : ""}>Recorded AI voices (recommended)</option><option value="browser" ${engine === "browser" ? "selected" : ""}>This device's built-in voice</option></select></div>
-    ${PREM.available ? `<div class="field"><span class="lab">Natural voices for members</span>${PREM.key
-      ? `<p class="note">Signed in. Listening uses the most natural voices (British, Australian, American, New Zealand).</p><button class="btn small" id="psignout" style="margin-top:8px">Sign out</button>`
-      : `<form id="pform" style="display:flex;gap:8px"><input id="ppass" type="password" autocomplete="current-password" placeholder="Access key" aria-label="Access key"><button class="btn primary" id="pbtn">Sign in</button></form><p class="note" id="perr" role="status" style="margin-top:6px">Have an access key? Enter it to unlock the more natural recordings.</p>`}</div>` : ""}
+    <div class="field"><span class="lab">Your account</span>${AUTH.user
+      ? `<p><b>${esc(AUTH.user.name)}</b> <span class="note">· ${esc(AUTH.user.email)}</span></p><p class="note" style="margin-top:4px">${PREM.key ? "Listening uses the more natural voices. " : ""}Your progress is saved to your account.</p><button class="btn small" id="signout" style="margin-top:8px">Log out</button>`
+      : `<p class="note">A free account gives you more natural listening voices and keeps your progress when you change phone.</p><div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn primary small" id="goSignup">Create a free account</button><button class="btn small" id="goLogin">Log in</button></div>`}</div>
     <div class="row"><button class="btn primary" id="sclose">Done</button></div></div>`;
   document.body.appendChild(d);
   const close = () => { d.remove(); if (S.view === "home") renderHome() };
@@ -476,14 +479,99 @@ function settingsBox(){
   $$("[data-mod]", d).forEach(b => b.onclick = () => { S.module = b.dataset.mod; LS.set("module", S.module); $$("[data-mod]", d).forEach(x => x.setAttribute("aria-pressed", x === b)) });
   $$("[data-theme-set]", d).forEach(b => b.onclick = () => { LS.set("theme", b.dataset.themeSet); applyTheme(); $$("[data-theme-set]", d).forEach(x => x.setAttribute("aria-pressed", x === b)) });
   $("#engine", d).onchange = e => LS.set("engine2", e.target.value);
-  const pf = $("#pform", d);
-  if (pf) pf.onsubmit = async e => {
-    e.preventDefault(); const pass = $("#ppass", d).value.trim(); if (!pass) return;
-    $("#pbtn", d).disabled = true; $("#perr", d).textContent = "Checking…";
-    try { PREM.key = await premKey(pass); LS.set("pk", pass); d.remove(); settingsBox() }
-    catch(err) { $("#perr", d).textContent = "That access key is not correct."; $("#pbtn", d).disabled = false }
+  const so = $("#signout", d); if (so) so.onclick = () => { signOut(); d.remove(); settingsBox() };
+  const gs = $("#goSignup", d); if (gs) gs.onclick = () => { d.remove(); accountBox("signup") };
+  const gl = $("#goLogin", d); if (gl) gl.onclick = () => { d.remove(); accountBox("login") };
+}
+
+/* ---------- accounts: free sign-up and login, kept on the companion WordPress site ---------- */
+const API = "https://iwate-bd.org/wp-json/ielts/v1";
+const RESET_URL = "https://iwate-bd.org/wp-login.php?action=lostpassword";
+const AUTH = {user: LS.get("auth", null)};
+async function api(path, body, keepalive){
+  let r;
+  try { r = await fetch(API + path, {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(body || {}), credentials: "omit", keepalive: !!keepalive}) }
+  catch(e) { throw {code: "offline", message: "Could not reach the server. Check your connection and try again."} }
+  const j = await r.json().catch(() => null);
+  if (!r.ok || !j) throw {code: j?.code || "http_" + r.status, message: j?.code?.startsWith("ielts_") && j.message ? j.message : "Something went wrong. Please try again in a moment."};
+  return j;
+}
+/* everything worth keeping when the learner changes device */
+function progressBlob(){
+  const drafts = {};
+  try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith("draft:")) drafts[k.slice(6)] = LS.get(k, null) } } catch(e){}
+  return {v: 1, units: S.units, attempts: S.attempts.slice(0, 60), drafts, resume: LS.get("resume", null), at: Date.now()};
+}
+const attemptKey = a => [a.at, a.testId, a.skill, a.task || ""].join("|");
+function mergeProgress(p){
+  if (!p || typeof p !== "object") return;
+  for (const [id, u] of Object.entries(p.units || {})) {
+    const m = S.units[id]; if (!u || typeof u !== "object") continue;
+    if (!m || String(u.at || "") > String(m.at || "")) S.units[id] = {...u, best: Math.max(u.best ?? 0, m?.best ?? 0)};
+    else m.best = Math.max(m.best ?? 0, u.best ?? 0);
+  }
+  LS.set("units", S.units);
+  const seen = new Set(S.attempts.map(attemptKey));
+  (Array.isArray(p.attempts) ? p.attempts : []).forEach(a => { if (a && a.at && !seen.has(attemptKey(a))) { seen.add(attemptKey(a)); S.attempts.push(a) } });
+  S.attempts.sort((a, b) => String(b.at).localeCompare(String(a.at))); S.attempts = S.attempts.slice(0, 60); LS.set("attempts", S.attempts);
+  for (const [id, d] of Object.entries(p.drafts || {})) {   // unfinished practice from another device, unless it was finished since
+    if (!d || hasDraft(id)) continue;
+    const u = S.units[id]; if (u && Date.parse(u.at) >= (d.at || 0)) continue;
+    LS.set("draft:" + id, d);
+  }
+  if (!LS.get("resume", null) && p.resume && hasDraft(p.resume.id)) LS.set("resume", p.resume);
+}
+let pushTimer = null;
+const authFail = e => { if (e?.code === "ielts_token") { signOut(true); if (S.view === "home" && !$(".modal")) renderHome() } };
+function pushNow(keepalive){ clearTimeout(pushTimer); pushTimer = null; if (AUTH.user) api("/progress", {token: AUTH.user.token, progress: progressBlob()}, keepalive).catch(authFail) }
+function queuePush(){ if (!AUTH.user) return; clearTimeout(pushTimer); pushTimer = setTimeout(pushNow, 4000) }
+addEventListener("pagehide", () => { if (pushTimer) pushNow(true) });
+async function useKey(k){ if (!k || !PREM.available) return; try { PREM.key = await premKey(k); LS.set("pk", k) } catch(e){} }
+async function startSession(s){
+  AUTH.user = {token: s.token || AUTH.user?.token, name: s.name, email: s.email}; LS.set("auth", AUTH.user);
+  await useKey(s.key); mergeProgress(s.progress); queuePush();
+}
+async function syncPull(){
+  if (!AUTH.user) return;
+  try { await startSession(await api("/me", {token: AUTH.user.token})) } catch(e) { authFail(e) }
+}
+function signOut(silent){
+  const t = AUTH.user?.token; clearTimeout(pushTimer); pushTimer = null;
+  AUTH.user = null; PREM.key = null; LS.del("auth"); LS.del("pk"); stopAudio();
+  if (t && !silent) api("/logout", {token: t}).catch(() => {});
+}
+function accountBox(mode){
+  const signup = mode === "signup", d = document.createElement("div"); d.className = "modal";
+  d.innerHTML = `<div class="box" role="dialog" aria-modal="true" aria-label="${signup ? "Create a free account" : "Log in"}"><h3>${signup ? "Create a free account" : "Log in"}</h3>
+    <p class="note">${signup ? "Free. You get more natural listening voices, and your progress stays with you when you change phone." : "Welcome back."}</p>
+    <form id="aform" novalidate>
+      ${signup ? `<div class="field"><label for="aname">Your name</label><input id="aname" type="text" autocomplete="name" maxlength="60" required></div>` : ""}
+      <div class="field"><label for="aemail">Email</label><input id="aemail" type="email" autocomplete="email" inputmode="email" required></div>
+      <div class="field"><label for="apass">Password${signup ? " (at least 8 characters)" : ""}</label><input id="apass" type="password" autocomplete="${signup ? "new-password" : "current-password"}" minlength="8" required></div>
+      ${signup ? `<input type="text" id="awebsite" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">` : ""}
+      <p class="note" id="aerr" role="alert" style="margin-top:10px;color:var(--bad);min-height:20px"></p>
+      <div class="row" style="margin-top:6px"><button type="button" class="btn" id="acancel">Cancel</button><button class="btn primary" id="ago">${signup ? "Create account" : "Log in"}</button></div>
+    </form>
+    <p class="note" style="margin-top:14px">${signup ? `Already have an account? <button class="linkbtn" id="aswap">Log in</button>`
+      : `New here? <button class="linkbtn" id="aswap">Create a free account</button> · <a href="${RESET_URL}" target="_blank" rel="noopener" style="color:var(--accent)">Forgot password?</a>`}</p></div>`;
+  document.body.appendChild(d);
+  const close = () => { d.remove(); if (S.view === "home") renderHome() };
+  $("#acancel", d).onclick = close; d.onclick = e => { if (e.target === d) close() };
+  $("#aswap", d).onclick = () => { d.remove(); accountBox(signup ? "login" : "signup") };
+  (signup ? $("#aname", d) : $("#aemail", d)).focus();
+  $("#aform", d).onsubmit = async e => {
+    e.preventDefault(); const err = $("#aerr", d), go = $("#ago", d);
+    const name = signup ? $("#aname", d).value.trim() : "", email = $("#aemail", d).value.trim(), password = $("#apass", d).value;
+    if (signup && !name) return err.textContent = "Please enter your name.";
+    if (!/^\S+@\S+\.\S+$/.test(email)) return err.textContent = "Please enter a valid email address.";
+    if (signup ? password.length < 8 : !password) return err.textContent = signup ? "Choose a password with at least 8 characters." : "Please enter your password.";
+    go.disabled = true; err.textContent = ""; go.textContent = "Please wait…";
+    try {
+      const s = await api(signup ? "/signup" : "/login", signup ? {name, email, password, website: $("#awebsite", d).value} : {email, password});
+      if (s.pending) { d.remove(); return confirmBox({title: "Account created", text: "Your account is waiting for approval. You can log in once it has been approved.", yes: "OK"}, () => {}) }
+      await startSession(s); close();
+    } catch(x) { err.textContent = x?.message || "Something went wrong. Please try again."; go.disabled = false; go.textContent = signup ? "Create account" : "Log in" }
   };
-  const so = $("#psignout", d); if (so) so.onclick = () => { PREM.key = null; LS.del("pk"); d.remove(); settingsBox() };
 }
 
 /* ---------- building a run ----------
@@ -526,8 +614,8 @@ function startUnit(id){
 }
 function saveDraft(){
   const r = S.run; if (!r || r.mode !== "practice" || r.done) return;
-  LS.set("draft:" + r.id, {answers: r.answers, st: r.st, first: r.first, essays: r.essays, cur: r.cur});
-  LS.set("resume", {id: r.id, title: r.title, at: Date.now()});
+  LS.set("draft:" + r.id, {answers: r.answers, st: r.st, first: r.first, essays: r.essays, cur: r.cur, at: Date.now()});
+  LS.set("resume", {id: r.id, title: r.title, at: Date.now()}); queuePush();
 }
 let tick = null;
 function startTimer(){
@@ -1036,7 +1124,8 @@ function confirmBox(o, ok){
   await Promise.all(S.index.tests.map(t => loadTest(t.id).catch(() => null)));
   renderHome();
   try { speechSynthesis.getVoices() } catch(e){}
-  initPremium().then(() => { if (S.view === "home" && !$(".modal")) renderHome() });
-  loadAttempts().then(() => { if (S.view === "home" && !$(".modal")) renderHome() });
+  const fresh = () => { if (S.view === "home" && !$(".modal")) renderHome() };
+  await Promise.all([initPremium(), loadAttempts()]); fresh();
+  await syncPull(); fresh();
 })();
 </script>

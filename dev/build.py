@@ -52,10 +52,12 @@ def cues(mp3, n):
     return None
 
 
+rekey = False
 try:  # keep the old check value when the key still opens it, so the file does not change on every build
     aes.decrypt(base64.b64decode(meta["check"])[:12], base64.b64decode(meta["check"])[12:], None)
 except Exception:
     meta["check"] = base64.b64encode(enc(b"ielts-desk-ok")).decode()
+    rekey = True  # the key changed: every recording must be encrypted again with the new one
 json.dump(meta, open(meta_path, "w"))
 
 n_audio = n_prem = 0
@@ -75,7 +77,7 @@ for f in files[1:]:
         ms = os.path.join(HERE, "audio_ms", name + ".mp3")
         dst = os.path.join(PDIR, name + ".bin")
         if os.path.exists(ms):
-            if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(ms):
+            if rekey or not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(ms):
                 open(dst, "wb").write(enc(open(ms, "rb").read()))
             part["premium"] = f"premium/{name}.bin"; n_prem += 1
             c = cues(ms, len(part["script"]))
