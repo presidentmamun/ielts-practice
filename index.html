@@ -428,15 +428,15 @@ function chartHTML(c){
         a0 = a1; return out }).join("");
       return `<figure><svg viewBox="0 0 200 200" role="img" aria-label="${esc(s.name)}">${slices}</svg><figcaption>${esc(s.name)}</figcaption></figure>` }).join("")}</div>${legend(L)}`;
   else {
-    const W = 640, H = 330, ml = 50, mr = 10, mt = 12, mb = 34, pw = W - ml - mr, ph = H - mt - mb, bw = pw / L.length;
+    const W = 460, H = 290, ml = 44, mr = 8, mt = 12, mb = 34, short = unit.length <= 2 ? unit : "", pw = W - ml - mr, ph = H - mt - mb, bw = pw / L.length;
     const max = niceMax(Math.max(0, ...Sr.flatMap(s => s.data))), y = v => mt + ph - ph * v / max;
     let g = ""; for (let k = 0; k <= 5; k++) { const v = max * k / 5, yy = y(v).toFixed(1);
-      g += `<line x1="${ml}" x2="${W - mr}" y1="${yy}" y2="${yy}" stroke="var(--line)"/><text x="${ml - 6}" y="${+yy + 4}" text-anchor="end" font-size="12" fill="var(--muted)">${+v.toFixed(2)}${esc(unit)}</text>` }
-    L.forEach((l, i) => { g += `<text x="${(ml + bw * (i + .5)).toFixed(1)}" y="${H - mb + 20}" text-anchor="middle" font-size="12" fill="var(--muted)">${esc(trunc(String(l), Math.max(6, Math.floor(bw / 7))))}</text>` });
+      g += `<line x1="${ml}" x2="${W - mr}" y1="${yy}" y2="${yy}" stroke="var(--line)"/><text x="${ml - 6}" y="${+yy + 4}" text-anchor="end" font-size="13" fill="var(--muted)">${+v.toFixed(2)}${esc(short)}</text>` }
+    L.forEach((l, i) => { g += `<text x="${(ml + bw * (i + .5)).toFixed(1)}" y="${H - mb + 20}" text-anchor="middle" font-size="13" fill="var(--muted)">${esc(trunc(String(l), Math.max(5, Math.floor(bw / 7.5))))}</text>` });
     if (c.type === "line") Sr.forEach((s, j) => { const pts = s.data.map((v, i) => [(ml + bw * (i + .5)).toFixed(1), y(v).toFixed(1)]);
       g += `<polyline points="${pts.map(p => p.join(",")).join(" ")}" fill="none" stroke="${col(j)}" stroke-width="2.5" stroke-linejoin="round" ${j % 2 ? `stroke-dasharray="${j === 1 ? "7 4" : "2 4"}"` : ""}/>` + pts.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="3.5" fill="${col(j)}"/>`).join("") });
     else { const gw = bw * .74, w = gw / Sr.length; Sr.forEach((s, j) => s.data.forEach((v, i) => { g += `<rect x="${(ml + bw * i + (bw - gw) / 2 + w * j).toFixed(1)}" y="${y(v).toFixed(1)}" width="${Math.max(1, w - 2).toFixed(1)}" height="${Math.max(0, ph * v / max).toFixed(1)}" rx="2" fill="${col(j)}"/>` })) }
-    body = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.title || "Chart")}" style="width:100%;height:auto">${g}</svg>${legend(Sr.map(s => s.name))}`;
+    body = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.title || "Chart")}" style="width:100%;height:auto">${g}</svg>${unit && !short ? `<div class="note" style="text-align:center">Unit: ${esc(unit)}</div>` : ""}${L.some(l => String(l).length > Math.max(5, Math.floor(bw / 7.5))) ? `<div class="note" style="text-align:center">${L.map(esc).join(" · ")}</div>` : ""}${legend(Sr.map(s => s.name))}`;
   }
   return `<figure class="chart"><figcaption class="chtitle">${esc(c.title || "")}</figcaption>${body}</figure>`;
 }

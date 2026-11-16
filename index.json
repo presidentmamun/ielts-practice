@@ -35,6 +35,30 @@
    "module": "GT",
    "title": "General Training Test 6",
    "file": "gt6.json"
+  },
+  {
+   "id": "gt7",
+   "module": "GT",
+   "title": "General Training Test 7",
+   "file": "gt7.json"
+  },
+  {
+   "id": "gt8",
+   "module": "GT",
+   "title": "General Training Test 8",
+   "file": "gt8.json"
+  },
+  {
+   "id": "ac1",
+   "module": "AC",
+   "title": "Academic Test 1",
+   "file": "ac1.json"
+  },
+  {
+   "id": "ac2",
+   "module": "AC",
+   "title": "Academic Test 2",
+   "file": "ac2.json"
   }
  ],
  "planned": {

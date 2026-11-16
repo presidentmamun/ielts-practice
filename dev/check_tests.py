@@ -81,7 +81,7 @@ def check(test, tid):
             if not (isinstance(line, list) and len(line) == 2 and line[0] in sp and str(line[1]).strip()): E.append(f"Listening part {i}: bad script line {str(line)[:50]!r}"); break
         if len(sp) != (2 if i in (1, 3) else 1) and not (i == 3 and len(sp) == 3) and not (i == 1 and len(sp) == 2): W.append(f"Listening part {i}: {len(sp)} speakers (usual: parts 1 and 3 conversations, 2 and 4 one speaker)")
         n = sum(words(l[1]) for l in p.get("script") or [] if isinstance(l, list) and len(l) == 2)
-        if not 330 <= n <= 700: W.append(f"Listening part {i}: script has {n} words (usual 380-600)")
+        if not 560 <= n <= 850: W.append(f"Listening part {i}: script has {n} words (real exam length: 600-800)")
         if sum(len(g.get("items", [])) for g in p.get("groups") or []) != 10: E.append(f"Listening part {i}: needs exactly 10 questions")
     groups("Listening", parts, lambda p: " ".join(str(l[1]) for l in p.get("script") or [] if isinstance(l, list) and len(l) == 2))
 
