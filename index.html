@@ -128,6 +128,9 @@ mark{background:var(--mark);color:inherit;border-radius:2px;cursor:pointer}
 .player{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;margin-bottom:14px;background:var(--bg)}
 .player .status{font-size:14px}
 .bigplay{font-size:17px;padding:12px 22px}
+.pline{display:flex;align-items:center;gap:10px;flex:1 1 220px;min-width:0}
+.pline input{flex:1;min-width:0;accent-color:var(--accent)}
+.pline .num{font-size:13px;white-space:nowrap}
 .step{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
 .script p{margin:4px 0;font-size:14px}
 .script b{color:var(--accent)}
@@ -247,6 +250,14 @@ function renderHome(){
       <p class="note">${S.mode==="practice"
         ? "Practice: no time pressure, check each question group, replay audio and read the transcript."
         : "Test: real timing (Listening 30 min, Reading 60 min, Writing 60 min), audio plays once, band score at the end."}</p>
+      ${PREM.available ? `<section class="panel" aria-label="Natural voices">
+        <div class="step">Listening voices</div>
+        ${PREM.key
+          ? `<div class="controls"><span><b>Signed in.</b> Listening uses natural voices (British, Australian, American, New Zealand).</span><button class="btn small" id="psignout">Sign out</button></div>`
+          : `<form id="pform" class="controls"><span>Free: open-source AI voices. Members: natural voices.</span>
+              <span style="display:flex;gap:8px;flex-wrap:wrap"><input id="ppass" type="password" autocomplete="current-password" placeholder="Access key" aria-label="Access key" style="border:1px solid var(--line);border-radius:var(--r);padding:7px 10px;background:var(--bg);min-width:0;width:170px">
+              <button class="btn primary" id="pbtn">Sign in</button></span></form><p class="note" id="perr" role="status"></p>`}
+      </section>` : ""}
 
       <section class="panel" aria-label="Your progress">
         <div class="chip">Best band so far · ${S.module==="GT"?"General Training":"Academic"}</div>
@@ -288,6 +299,14 @@ function renderHome(){
       <p class="note">All questions, passages and recordings in this app are original practice material. It is a free, independent tool and is not affiliated with or endorsed by IELTS, the British Council, IDP or Cambridge University Press &amp; Assessment.</p>
     </div>
   </div>`;
+  const pf = $("#pform");
+  if (pf) pf.onsubmit = async e => {
+    e.preventDefault(); const pass = $("#ppass").value.trim(); if (!pass) return;
+    $("#pbtn").disabled = true; $("#perr").textContent = "Checking…";
+    try { PREM.key = await premKey(pass); LS.set("pk", pass); renderHome() }
+    catch(err) { $("#perr").textContent = "That access key is not correct."; $("#pbtn").disabled = false }
+  };
+  const so = $("#psignout"); if (so) so.onclick = () => { PREM.key = null; LS.set("pk", null); renderHome() };
   $("#m-gt").onclick = () => { S.module = "GT"; LS.set("module", "GT"); renderHome() };
   $("#m-ac").onclick = () => { S.module = "AC"; LS.set("module", "AC"); renderHome() };
   $("#md-p").onclick = () => { S.mode = "practice"; LS.set("mode", "practice"); renderHome() };
@@ -440,18 +459,52 @@ function bindHighlight(pane, key){
 }
 
 /* listening */
-let ttsRef = null, synthQueue = null, mp3 = null;
-function playFile(src, rate){
+/* members' natural voices: encrypted files, unlocked in the browser with the access key */
+const PREM = {available: false, key: null};
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+async function decryptBuf(key, buf){ const u = new Uint8Array(buf); return crypto.subtle.decrypt({name: "AES-GCM", iv: u.slice(0, 12)}, key, u.slice(12)) }
+async function premKey(pass){
+  const meta = await (await fetch("premium/meta.json")).json();
+  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pass), "PBKDF2", false, ["deriveKey"]);
+  const key = await crypto.subtle.deriveKey({name: "PBKDF2", salt: b64(meta.salt), iterations: meta.iter, hash: "SHA-256"}, base, {name: "AES-GCM", length: 256}, false, ["decrypt"]);
+  await decryptBuf(key, b64(meta.check).buffer);
+  return key;
+}
+async function initPremium(){
+  try { const r = await fetch("premium/meta.json", {method: "HEAD"}); PREM.available = r.ok } catch(e){ PREM.available = false }
+  const p = LS.get("pk", null);
+  if (PREM.available && p && window.crypto?.subtle) { try { PREM.key = await premKey(p) } catch(e){ LS.set("pk", null) } }
+}
+let ttsRef = null, synthQueue = null, mp3 = null, playToken = 0;
+const fmt = s => isFinite(s) ? Math.floor(s / 60) + ":" + String(Math.floor(s % 60)).padStart(2, "0") : "0:00";
+function updatePlayerUI(){
+  const a = mp3, bar = $("#pbar"), tm = $("#ptime"), pp = $("#ppause");
+  if (bar) { bar.max = a && isFinite(a.duration) ? a.duration : 1; bar.value = a ? a.currentTime : 0; bar.disabled = !a || S.run?.mode === "test" }
+  if (tm) tm.textContent = a ? `${fmt(a.currentTime)} / ${fmt(a.duration)}` : "0:00 / 0:00";
+  if (pp) { pp.hidden = !a || S.run?.mode === "test"; pp.textContent = a && a.paused ? "▶ Resume" : "❚❚ Pause" }
+}
+function playFile(src, rate, token){
   return new Promise((resolve, reject) => {
-    const a = new Audio(src); mp3 = a; a.playbackRate = rate;
-    a.onended = () => { if (mp3 === a) mp3 = null; resolve() };
+    if (token !== playToken) return reject({code: "stopped"});   // a newer Play press already won
+    const a = new Audio(src); mp3 = a; a.playbackRate = rate; a.preservesPitch = true;
+    a.onended = () => { if (mp3 === a) mp3 = null; updatePlayerUI(); resolve() };
     a.onerror = () => reject({code: "file_error", message: "the audio file could not be loaded"});
+    a.ontimeupdate = a.onloadedmetadata = a.onpause = a.onplay = updatePlayerUI;
     a._stop = () => reject({code: "stopped"});
+    try {
+      if ("mediaSession" in navigator) {
+        navigator.mediaSession.metadata = new MediaMetadata({title: (S.run?.sections?.[S.run.cur]?.title || "Listening"), artist: S.run?.test?.title || "IELTS Practice Desk"});
+        navigator.mediaSession.setActionHandler("pause", () => { if (S.run?.mode !== "test") a.pause() });
+        navigator.mediaSession.setActionHandler("play", () => a.play());
+      }
+    } catch(e){}
     a.play().catch(e => reject({code: "play_error", message: e?.message}));
   });
 }
 function stopAudio(){
+  playToken++;
   try { if (mp3) { mp3.pause(); const s = mp3._stop; mp3 = null; s && s() } } catch(e){}
+  updatePlayerUI();
   try { ttsRef && ttsRef.stop() } catch(e){}
   try { speechSynthesis.cancel() } catch(e){}
   if (S.run) S.run.playing = false; synthQueue = null;
@@ -485,9 +538,18 @@ async function playPart(pi){
   const lines = part.script.map(([who, text]) => ({text, voice: part.speakers[who] || "buttery", language: "en"}));
   const rate = +(LS.get("rate", 1));
   const engine = LS.get("engine2", "recorded");
+  stopAudio(); const token = playToken;   // only one recording can play at a time
   r.playing = true; setStatus(`Playing ${part.title}…`);
   try {
-    if (engine !== "browser" && part.audio) await playFile(part.audio, rate);
+    if (engine !== "browser" && part.premium && PREM.key) {
+      setStatus(`Loading ${part.title}…`);
+      const plain = await decryptBuf(PREM.key, await (await fetch(part.premium)).arrayBuffer());
+      if (token !== playToken) throw {code: "stopped"};
+      const url = URL.createObjectURL(new Blob([plain], {type: "audio/mpeg"}));
+      setStatus(`Playing ${part.title}…`);
+      try { await playFile(url, rate, token) } finally { URL.revokeObjectURL(url) }
+    }
+    else if (engine !== "browser" && part.audio) await playFile(part.audio, rate, token);
     else { if (engine !== "browser") setStatus("The AI voice audio for this part is still being prepared, so the Phone/PC voice is used."); await speakBrowser(lines, rate) }
     if (S.run === r) { r.playing = false; r.heard = r.heard || {}; r.heard[pi] = true; setStatus(`${part.title} finished.`) }
   } catch(e) {
@@ -514,6 +576,8 @@ function renderListening(){
     <div class="player">
       ${practice ? `<button class="btn primary bigplay" id="play">▶ ${r.playing ? "Playing…" : "Play " + esc(part.title)}</button><button class="btn" id="stop">■ Stop</button>`
                  : `<button class="btn primary bigplay" id="play" ${r.started_audio ? "disabled" : ""}>▶ ${r.started_audio ? "Recording in progress" : "Start the recording"}</button>`}
+      <button class="btn" id="ppause" hidden>❚❚ Pause</button>
+      <div class="pline"><input type="range" id="pbar" min="0" max="1" step="0.1" value="0" aria-label="Position in recording" disabled><span id="ptime" class="num">0:00 / 0:00</span></div>
       <details class="note"><summary>Audio settings</summary>
         <label>Voice <select id="engine"><option value="recorded" ${engine !== "browser" ? "selected" : ""}>AI voice (recommended)</option><option value="browser" ${engine === "browser" ? "selected" : ""}>Phone/PC built-in voice</option></select></label>
         ${practice ? `<label style="margin-left:10px">Speed <select id="rate">${[0.8, 0.9, 1, 1.1, 1.2].map(v => `<option ${+rate === v ? "selected" : ""}>${v}</option>`).join("")}</select></label>` : ""}
@@ -530,9 +594,12 @@ function renderListening(){
   const rs = $("#rate"); if (rs) rs.onchange = e => LS.set("rate", +e.target.value);
   const ss = $("#showscript"); if (ss) ss.onclick = () => { r.showScript = true; renderRun() };
   if (practice) {
-    $("#play").onclick = () => { stopAudio(); playPart(r.cur).catch(() => {}) };
+    $("#play").onclick = () => playPart(r.cur).catch(() => {});
     $("#stop").onclick = () => { stopAudio(); setStatus("Stopped.") };
+    $("#ppause").onclick = () => { if (mp3) mp3.paused ? mp3.play() : mp3.pause() };
+    $("#pbar").oninput = e => { if (mp3 && isFinite(mp3.duration)) mp3.currentTime = +e.target.value };
   } else $("#play").onclick = () => runListeningTest();
+  updatePlayerUI();
 }
 
 /* writing */
@@ -673,6 +740,7 @@ function confirmBox(text, ok){
 (async () => {
   try { await loadIndex() } catch(e) { $("#app").innerHTML = `<div class="wrap"><p>Could not load the tests. Reload the page to try again.</p></div>`; return }
   renderHome();
+  await initPremium(); if (S.view === "home") renderHome();
   try { speechSynthesis.getVoices() } catch(e){}
   await loadAttempts(); if (S.view === "home") renderHome();
 })();
