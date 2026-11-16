@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Free practice for computer-delivered IELTS-style tests: Listening, Reading and Writing with band estimates and explanations.">
+<meta name="theme-color" content="#0a6b72">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<style>html{color-scheme:light}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.5 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>IELTS Practice Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap">
+<style>
+/* Layout: an exam console. Fixed top bar (timer), work area (split pane for reading), question navigator pinned to the bottom. Home is a single column of tests. */
+:root{
+  --bg:#f3f5f7; --surface:#ffffff; --ink:#16202a; --muted:#5a6672; --line:#d6dce3;
+  --accent:#0a6b72; --accent-ink:#ffffff; --accent-soft:#e1f0f1;
+  --mark:#ffe68a; --good:#1d7a4b; --good-soft:#e2f3ea; --bad:#b0281f; --bad-soft:#fbe7e5; --flag:#b86e00;
+  --f-ui:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-read:"Newsreader",Georgia,"Times New Roman",serif;
+  --f-num:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+  --r:8px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e1318; --surface:#161d24; --ink:#e4eaf0; --muted:#97a3ae; --line:#2b3540;
+  --accent:#4cb3bb; --accent-ink:#06191b; --accent-soft:#16343a;
+  --mark:#6e5a12; --good:#5cc68e; --good-soft:#123324; --bad:#f08a80; --bad-soft:#3a1714; --flag:#e4a640; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1318; --surface:#161d24; --ink:#e4eaf0; --muted:#97a3ae; --line:#2b3540;
+  --accent:#4cb3bb; --accent-ink:#06191b; --accent-soft:#16343a;
+  --mark:#6e5a12; --good:#5cc68e; --good-soft:#123324; --bad:#f08a80; --bad-soft:#3a1714; --flag:#e4a640; color-scheme:dark}
+html,body,#app{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:15px;line-height:1.5}
+*{box-sizing:border-box}
+button,select,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{text-wrap:balance;margin:0}
+.muted{color:var(--muted)}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:8px 14px;font-weight:500}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.small{padding:5px 10px;font-size:13px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface)}
+.seg button{border:0;background:none;padding:7px 14px;font-weight:500}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+
+/* home */
+.brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brand h1{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.brand .band{font-family:var(--f-num);font-size:13px;color:var(--accent)}
+.homegrid{display:grid;gap:20px;margin-top:18px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px}
+.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.testrow{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:14px 0;border-top:1px solid var(--line)}
+.testrow:first-of-type{border-top:0}
+.testrow h3{font-size:16px}
+.skills{display:flex;gap:8px;flex-wrap:wrap}
+.skillbtn{display:flex;flex-direction:column;align-items:flex-start;min-width:110px;border:1px solid var(--line);background:var(--bg);border-radius:var(--r);padding:8px 12px;text-align:left}
+.skillbtn:hover{border-color:var(--accent)}
+.skillbtn b{font-size:14px}
+.skillbtn span{font-size:12px;color:var(--muted);font-family:var(--f-num)}
+.placeholder{padding:12px 0;color:var(--muted);font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.stat{border:1px solid var(--line);border-radius:var(--r);padding:12px}
+.stat .v{font-family:var(--f-num);font-size:26px;font-weight:600}
+.stat .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.hist{width:100%;border-collapse:collapse;font-size:14px}
+.hist td,.hist th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left}
+.hist th{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.num{font-family:var(--f-num);font-variant-numeric:tabular-nums}
+.links a{color:var(--accent)}
+.links li{margin:4px 0}
+
+/* runner */
+.run{display:flex;flex-direction:column;height:100%}
+.topbar{display:flex;align-items:center;gap:12px;justify-content:space-between;padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));background:var(--surface);border-bottom:1px solid var(--line);flex-wrap:wrap}
+.topbar .title{font-weight:600}
+.timer{font-family:var(--f-num);font-size:18px;font-weight:600;padding:4px 10px;border-radius:6px;background:var(--accent-soft);color:var(--accent)}
+.timer.low{background:var(--bad-soft);color:var(--bad)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;padding:8px max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px))}
+.tabs button{border:1px solid var(--line);border-bottom:0;border-radius:8px 8px 0 0;background:var(--bg);padding:6px 14px;font-weight:500}
+.tabs button[aria-selected="true"]{background:var(--surface);color:var(--accent)}
+.work{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);background:var(--surface)}
+.work.single{grid-template-columns:1fr}
+.pane{overflow:auto;padding:18px max(16px,env(safe-area-inset-left,0px)) 24px;min-width:0}
+.pane+.pane{border-left:1px solid var(--line)}
+.passage h2{font-size:20px;font-family:var(--f-read);font-weight:600;margin:0 0 10px}
+.passage p{font-family:var(--f-read);font-size:17px;line-height:1.65;max-width:68ch;margin:0 0 12px}
+.passage + .passage{margin-top:26px;padding-top:18px;border-top:1px dashed var(--line)}
+mark{background:var(--mark);color:inherit;border-radius:2px;cursor:pointer}
+.hlbtn{position:fixed;z-index:20}
+.group{margin-bottom:22px}
+.group .instr{font-weight:600;margin-bottom:6px}
+.group h4{margin:6px 0 8px;font-size:15px}
+.q{padding:8px 10px;border-radius:6px;margin:4px 0;scroll-margin-top:12px}
+.q.flagged{box-shadow:inset 3px 0 0 var(--flag)}
+.q .n{font-family:var(--f-num);font-weight:600;color:var(--accent);margin-right:6px}
+.gapline{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px}
+.gapline input{width:150px;max-width:100%;border:1px solid var(--line);border-radius:5px;padding:3px 8px;background:var(--bg)}
+.opts{display:grid;gap:4px;margin-top:4px}
+.opts label{display:flex;gap:8px;align-items:flex-start;padding:4px 6px;border-radius:5px}
+.opts label:hover{background:var(--bg)}
+.optbox{border:1px solid var(--line);border-radius:var(--r);padding:8px 12px;margin:6px 0 10px;font-size:14px;display:grid;gap:2px}
+.optbox b{font-family:var(--f-num);margin-right:6px}
+.mrow{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.mrow select{border:1px solid var(--line);border-radius:5px;padding:3px 6px;background:var(--bg);min-width:90px}
+.q.right{background:var(--good-soft)}
+.q.wrong{background:var(--bad-soft)}
+.why{font-size:13px;margin-top:4px;color:var(--muted)}
+.why b{color:var(--ink)}
+.navbar{display:flex;gap:4px;flex-wrap:wrap;align-items:center;padding:8px max(16px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:var(--surface);border-top:1px solid var(--line)}
+.navbar button{width:32px;height:30px;border:1px solid var(--line);border-radius:5px;background:var(--bg);font-family:var(--f-num);font-size:12px;padding:0}
+.navbar button.done{background:var(--accent-soft);border-color:var(--accent)}
+.navbar button.flag{box-shadow:inset 0 -3px 0 var(--flag)}
+.navbar button.right{background:var(--good-soft);border-color:var(--good)}
+.navbar button.wrong{background:var(--bad-soft);border-color:var(--bad)}
+.navbar .sp{flex:1}
+.player{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;margin-bottom:14px;background:var(--bg)}
+.player .status{font-size:14px}
+.bigplay{font-size:17px;padding:12px 22px}
+.step{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.script p{margin:4px 0;font-size:14px}
+.script b{color:var(--accent)}
+.prompt{white-space:pre-wrap;font-family:var(--f-read);font-size:17px;line-height:1.6}
+textarea.essay{width:100%;min-height:340px;border:1px solid var(--line);border-radius:var(--r);padding:12px;background:var(--bg);font-family:var(--f-ui);font-size:15px;line-height:1.6;resize:vertical}
+.wc{font-family:var(--f-num);font-size:13px}
+.fb{border:1px solid var(--line);border-radius:var(--r);padding:12px;margin-top:12px;font-size:14px}
+.fb .crit{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;margin:8px 0}
+.fb .crit b{font-family:var(--f-num)}
+.fb ul{margin:4px 0 8px;padding-left:20px}
+.corr{border-left:3px solid var(--accent);padding:4px 10px;margin:6px 0}
+.corr del{color:var(--bad)}
+.corr ins{color:var(--good);text-decoration:none}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:grid;place-items:center;z-index:30;padding:16px}
+.modal .box{background:var(--surface);border-radius:12px;padding:20px;max-width:420px;width:100%;border:1px solid var(--line)}
+.modal .row{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}
+.result h2{font-size:22px}
+.bigband{font-family:var(--f-num);font-size:44px;font-weight:600;color:var(--accent);line-height:1}
+.note{font-size:13px;color:var(--muted)}
+@media (max-width:760px){
+  .work{grid-template-columns:1fr;overflow:auto}
+  .pane{overflow:visible}
+  .pane+.pane{border-left:0;border-top:1px solid var(--line)}
+  .testrow{grid-template-columns:1fr}
+  .passage p{font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+
+<div id="app"><div class="wrap"><p class="muted">Loading tests…</p></div></div>
+
+<script>
+"use strict";
+/* ---------- data + helpers ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const LS = {get(k, d){try{const v = localStorage.getItem(k); return v ? JSON.parse(v) : d}catch(e){return d}},
+            set(k, v){try{localStorage.setItem(k, JSON.stringify(v))}catch(e){}}};
+const TIME = {L: 30*60, R: 60*60, W: 60*60};
+const SKILL = {L: "Listening", R: "Reading", W: "Writing"};
+// Approximate raw-score to band conversion (published IELTS guidance; exact cut-offs vary slightly between versions)
+const BANDS = {
+  L:  [[39,9],[37,8.5],[35,8],[32,7.5],[30,7],[26,6.5],[23,6],[18,5.5],[16,5],[13,4.5],[11,4],[8,3.5],[6,3],[4,2.5],[0,0]],
+  RGT:[[40,9],[39,8.5],[37,8],[36,7.5],[34,7],[32,6.5],[30,6],[27,5.5],[23,5],[19,4.5],[15,4],[12,3.5],[9,3],[6,2.5],[0,0]],
+  RAC:[[39,9],[37,8.5],[35,8],[33,7.5],[30,7],[27,6.5],[23,6],[19,5.5],[15,5],[13,4.5],[10,4],[8,3.5],[6,3],[4,2.5],[0,0]]
+};
+const band = (key, s) => (BANDS[key].find(([m]) => s >= m) || [0,0])[1];
+const norm = s => String(s ?? "").toLowerCase().replace(/[£$,]/g, "").replace(/\s+/g, " ").replace(/\.$/, "").trim();
+const normLoose = s => norm(s).replace(/^(a|an|the)\s+/, "").replace(/[\s-]/g, "");
+const countWords = t => (t.trim().match(/\S+/g) || []).length;
+
+const S = {index: null, tests: {}, module: LS.get("module", "GT"), mode: LS.get("mode", "practice"), view: "home",
+           run: null, attempts: [], caps: {}};
+
+/* ---------- capabilities (all optional) ---------- */
+async function cap(name){
+  if (S.caps[name] !== undefined) return S.caps[name];
+  try { S.caps[name] = window.claude?.use ? await window.claude.use(name) : null } catch(e){ S.caps[name] = null }
+  return S.caps[name];
+}
+async function attemptsCol(){
+  const db = await cap("db"), user = await cap("user");
+  if (!db || !user) return null;
+  try { const id = await user.id(); return id ? db.collection("data/users/" + id + "/attempts") : null } catch(e){ return null }
+}
+async function loadAttempts(){
+  const local = LS.get("attempts", []);
+  S.attempts = local;
+  const col = await attemptsCol();
+  if (!col) return;
+  try {
+    const snap = await col.orderBy("at", "desc").limit(60).get();
+    S.attempts = snap.docs.map(d => d.data());
+    LS.set("attempts", S.attempts.slice(0, 60));
+  } catch(e){}
+}
+async function saveAttempt(a){
+  S.attempts.unshift(a); LS.set("attempts", S.attempts.slice(0, 60));
+  const col = await attemptsCol();
+  if (col) { try { await col.doc().set(a) } catch(e){} }
+}
+
+/* ---------- loading ---------- */
+async function loadIndex(){
+  const r = await fetch("index.json"); S.index = await r.json();
+}
+async function loadTest(id){
+  if (S.tests[id]) return S.tests[id];
+  const meta = S.index.tests.find(t => t.id === id);
+  const r = await fetch(meta.file); S.tests[id] = await r.json(); return S.tests[id];
+}
+
+/* ---------- home ---------- */
+function bestBand(module, skill){
+  const xs = S.attempts.filter(a => a.module === module && a.skill === skill && a.band != null);
+  return xs.length ? Math.max(...xs.map(a => a.band)) : null;
+}
+function renderHome(){
+  S.view = "home"; stopAudio();
+  const tests = S.index.tests.filter(t => t.module === S.module || (S.module === "AC" && t.module === "GT"));
+  const planned = S.index.planned?.[S.module] ?? 20;
+  const recent = S.attempts.filter(a => a.module === S.module).slice(0, 8);
+  $("#app").innerHTML = `
+  <div class="wrap">
+    <div class="brand"><h1>IELTS Practice Desk</h1><span class="band">computer-delivered format</span></div>
+    <div class="homegrid">
+      <section class="panel controls" aria-label="Settings">
+        <div><div class="step">Step 1 · Your exam</div><div class="seg" role="group" aria-label="Module">
+          <button id="m-gt" aria-pressed="${S.module==="GT"}">General Training</button>
+          <button id="m-ac" aria-pressed="${S.module==="AC"}">Academic</button>
+        </div></div>
+        <div><div class="step">Step 2 · How to practise</div><div class="seg" role="group" aria-label="Mode">
+          <button id="md-p" aria-pressed="${S.mode==="practice"}">Practice</button>
+          <button id="md-t" aria-pressed="${S.mode==="test"}">Test (timed)</button>
+        </div></div>
+      </section>
+      <p class="note">${S.mode==="practice"
+        ? "Practice: no time pressure, check each question group, replay audio and read the transcript."
+        : "Test: real timing (Listening 30 min, Reading 60 min, Writing 60 min), audio plays once, band score at the end."}</p>
+
+      <section class="panel" aria-label="Your progress">
+        <div class="chip">Best band so far · ${S.module==="GT"?"General Training":"Academic"}</div>
+        <div class="stats" style="margin-top:10px">
+          ${["L","R","W"].map(k => { const b = bestBand(S.module, k); return `<div class="stat"><div class="v">${b ?? "–"}</div><div class="k">${SKILL[k]}</div></div>` }).join("")}
+          <div class="stat"><div class="v">${S.attempts.filter(a => a.module === S.module).length}</div><div class="k">Attempts</div></div>
+        </div>
+        ${recent.length ? `<div style="overflow-x:auto;margin-top:12px"><table class="hist"><thead><tr><th>Date</th><th>Test</th><th>Skill</th><th>Mode</th><th>Score</th><th>Band</th></tr></thead><tbody>
+          ${recent.map(a => `<tr><td class="num">${esc(a.at.slice(0,10))}</td><td>${esc(a.testTitle)}</td><td>${SKILL[a.skill]}</td><td>${a.mode}</td><td class="num">${a.total ? a.score + "/" + a.total : "–"}</td><td class="num">${a.band ?? "–"}</td></tr>`).join("")}
+        </tbody></table></div>` : `<p class="placeholder">Your scores will appear here after your first attempt.</p>`}
+      </section>
+
+      <section class="panel" aria-label="Tests">
+        <div class="step">Step 3 · Pick a test and a skill</div>
+        <div class="chip">${S.module==="GT"?"General Training":"Academic"} tests · ${tests.length} of ${planned} ready</div>
+        ${tests.map(t => `
+          <div class="testrow">
+            <div><h3>${esc(S.module==="AC" ? t.title.replace("General Training", "Shared") : t.title)}</h3>
+            <div class="note">${S.module==="AC" ? "Listening is the same in both modules" : "Listening · Reading · Writing"}</div></div>
+            <div class="skills">
+              <button class="skillbtn" data-go="${t.id}:L"><b>Listening</b><span>40 q · 30 min</span></button>
+              ${S.module===t.module ? `<button class="skillbtn" data-go="${t.id}:R"><b>Reading</b><span>40 q · 60 min</span></button>
+              <button class="skillbtn" data-go="${t.id}:W"><b>Writing</b><span>2 tasks · 60 min</span></button>` : ""}
+            </div>
+          </div>`).join("")}
+        <p class="placeholder">${S.module==="GT" ? "More General Training tests are being added." : "Academic Reading and Writing tests are being added; use the shared Listening tests meanwhile."}</p>
+      </section>
+
+      <section class="panel links" aria-label="Real recordings">
+        <div class="chip">Official practice with real recorded voices</div>
+        <p class="note" style="margin:6px 0">Listening here uses synthetic voices. Before the exam, also try official tests recorded by real speakers:</p>
+        <ul>
+          <li><a href="https://ielts.org/take-a-test/preparation-resources/sample-test-questions" target="_blank" rel="noopener">ielts.org: sample test questions</a></li>
+          <li><a href="https://takeielts.britishcouncil.org/take-ielts/prepare/free-ielts-practice-tests" target="_blank" rel="noopener">British Council: free practice tests</a></li>
+          <li><a href="https://ielts.idp.com/prepare" target="_blank" rel="noopener">IDP: prepare and practice</a></li>
+        </ul>
+        <p class="note">Tip: open this page on your phone and use "Add to Home Screen" to launch it like an app.</p>
+      </section>
+      <p class="note">All questions, passages and recordings in this app are original practice material. It is a free, independent tool and is not affiliated with or endorsed by IELTS, the British Council, IDP or Cambridge University Press &amp; Assessment.</p>
+    </div>
+  </div>`;
+  $("#m-gt").onclick = () => { S.module = "GT"; LS.set("module", "GT"); renderHome() };
+  $("#m-ac").onclick = () => { S.module = "AC"; LS.set("module", "AC"); renderHome() };
+  $("#md-p").onclick = () => { S.mode = "practice"; LS.set("mode", "practice"); renderHome() };
+  $("#md-t").onclick = () => { S.mode = "test"; LS.set("mode", "test"); renderHome() };
+  document.querySelectorAll("[data-go]").forEach(b => b.onclick = () => { const [id, k] = b.dataset.go.split(":"); startRun(id, k) });
+}
+
+/* ---------- runner ---------- */
+async function startRun(id, skill){
+  const test = await loadTest(id);
+  const sections = skill === "L" ? test.listening.parts : skill === "R" ? test.reading.sections : [test.writing.task1, test.writing.task2];
+  const qs = [];
+  if (skill !== "W") sections.forEach((s, si) => s.groups.forEach(g => g.items.forEach(it => qs.push({...it, g, si}))));
+  S.run = {test, skill, sections, qs, cur: 0, answers: {}, flags: {}, checked: {}, done: false,
+           mode: S.mode, left: TIME[skill], started: Date.now(), essays: ["", ""], feedback: [null, null], playing: false};
+  const saved = LS.get("draft-" + id + "-" + skill, null);
+  if (saved && S.mode === "practice") { S.run.answers = saved.answers || {}; S.run.essays = saved.essays || ["", ""] }
+  S.view = "run"; renderRun(); startTimer();
+}
+let tick = null;
+function startTimer(){
+  clearInterval(tick);
+  tick = setInterval(() => {
+    const r = S.run; if (!r || r.done) return clearInterval(tick);
+    if (r.mode === "test") { r.left--; if (r.left <= 0) { finish(true); return } }
+    const el = $("#timer"); if (el) el.outerHTML = timerHTML();
+  }, 1000);
+}
+function timerHTML(){
+  const r = S.run;
+  const secs = r.mode === "test" ? Math.max(0, r.left) : Math.floor((Date.now() - r.started) / 1000);
+  const m = String(Math.floor(secs / 60)).padStart(2, "0"), s = String(secs % 60).padStart(2, "0");
+  const low = r.mode === "test" && secs < 300;
+  return `<span id="timer" class="timer ${low ? "low" : ""}" title="${r.mode === "test" ? "Time left" : "Time spent"}">${m}:${s}</span>`;
+}
+function saveDraft(){
+  const r = S.run; if (!r || r.mode !== "practice") return;
+  LS.set("draft-" + r.test.id + "-" + r.skill, {answers: r.answers, essays: r.essays});
+}
+function renderRun(){
+  const r = S.run;
+  const tabs = r.skill === "W" ? ["Task 1", "Task 2"] : r.sections.map(s => s.title);
+  $("#app").innerHTML = `
+  <div class="run">
+    <header class="topbar">
+      <div><button class="btn small" id="home">← Tests</button> <span class="title">${esc(r.test.title)} · ${SKILL[r.skill]}</span> <span class="chip">${r.mode}</span></div>
+      <div style="display:flex;gap:10px;align-items:center">${timerHTML()}<button class="btn primary small" id="finish">${r.done ? "Back to results" : "Finish"}</button></div>
+    </header>
+    <nav class="tabs" role="tablist">${tabs.map((t, i) => `<button role="tab" aria-selected="${i === r.cur}" data-tab="${i}">${esc(t)}</button>`).join("")}</nav>
+    <div id="work" class="work ${r.skill === "L" ? "single" : ""}"></div>
+    ${r.skill !== "W" ? `<footer class="navbar" id="navbar"></footer>` : ""}
+  </div>`;
+  $("#home").onclick = () => confirmBox(r.done ? null : "Leave this test? Your answers in practice mode are kept as a draft.", () => { clearInterval(tick); saveDraft(); renderHome() });
+  $("#finish").onclick = () => r.done ? renderResult() : confirmBox("Finish and see your score?", () => finish(false));
+  document.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => { r.cur = +b.dataset.tab; renderRun() });
+  if (r.skill === "R") renderReading();
+  else if (r.skill === "L") renderListening();
+  else renderWriting();
+  if (r.skill !== "W") renderNav();
+}
+function renderNav(){
+  const r = S.run, nav = $("#navbar"); if (!nav) return;
+  nav.innerHTML = r.qs.map(q => {
+    const a = r.answers[q.n]; let cls = a ? "done" : "";
+    if (r.done || r.checked[q.n] !== undefined) cls = isRight(q, a) ? "right" : "wrong";
+    if (r.flags[q.n]) cls += " flag";
+    return `<button class="${cls}" data-q="${q.n}" aria-label="Question ${q.n}">${q.n}</button>`;
+  }).join("") + `<span class="sp"></span><button class="btn small" id="flagbtn" style="width:auto;padding:0 10px">Flag for review</button>`;
+  nav.querySelectorAll("[data-q]").forEach(b => b.onclick = () => gotoQ(+b.dataset.q));
+  $("#flagbtn").onclick = () => { const n = S.run.lastQ; if (n) { r.flags[n] = !r.flags[n]; renderNav(); const el = $("#q-" + n); el && el.classList.toggle("flagged", !!r.flags[n]) } };
+}
+function gotoQ(n){
+  const r = S.run, q = r.qs.find(x => x.n === n);
+  if (q && q.si !== r.cur) { r.cur = q.si; renderRun() }
+  const el = $("#q-" + n); if (el) { el.scrollIntoView({block: "center"}); const inp = el.querySelector("input,select"); inp && inp.focus({preventScroll: true}) }
+  r.lastQ = n;
+}
+function isRight(q, a){
+  if (a == null || a === "") return false;
+  if (q.g.type === "gap") return q.answer.some(x => normLoose(x) === normLoose(a));
+  return String(a).toUpperCase() === String(q.answer).toUpperCase();
+}
+function answerText(q){ return q.g.type === "gap" ? q.answer[0] : q.answer }
+
+function groupHTML(g, si){
+  const r = S.run, show = n => r.done || r.checked[n] !== undefined;
+  const qwrap = (it, inner) => {
+    const st = show(it.n) ? (isRight({...it, g}, r.answers[it.n]) ? "right" : "wrong") : "";
+    return `<div class="q ${st} ${r.flags[it.n] ? "flagged" : ""}" id="q-${it.n}">${inner}${show(it.n) ? `<div class="why"><b>Answer: ${esc(answerText({...it, g}))}</b>. ${esc(it.why || "")}</div>` : ""}</div>`;
+  };
+  let body = "";
+  if (g.type === "gap") {
+    body = (g.heading ? `<h4>${esc(g.heading)}</h4>` : "") + g.items.map(it => qwrap(it,
+      `<div class="gapline"><span class="n">${it.n}</span><span>${esc(it.before)}</span><input id="a-${it.n}" data-n="${it.n}" autocomplete="off" spellcheck="false" value="${esc(r.answers[it.n] || "")}" ${r.done ? "disabled" : ""} aria-label="Answer ${it.n}"><span>${esc(it.after)}</span></div>`)).join("");
+  } else if (g.type === "mcq") {
+    body = g.items.map(it => qwrap(it, `<div><span class="n">${it.n}</span>${esc(it.q)}</div><div class="opts">${it.options.map((o, i) => {
+      const k = "ABCDEFG"[i];
+      return `<label><input type="radio" name="a-${it.n}" data-n="${it.n}" value="${k}" ${r.answers[it.n] === k ? "checked" : ""} ${r.done ? "disabled" : ""}> <span><b>${k}</b> ${esc(o)}</span></label>` }).join("")}</div>`)).join("");
+  } else if (g.type === "tfng" || g.type === "ynng") {
+    const vals = g.type === "tfng" ? ["TRUE", "FALSE", "NOT GIVEN"] : ["YES", "NO", "NOT GIVEN"];
+    body = g.items.map(it => qwrap(it, `<div class="mrow"><div><span class="n">${it.n}</span>${esc(it.q)}</div>
+      <select id="a-${it.n}" data-n="${it.n}" ${r.done ? "disabled" : ""} aria-label="Answer ${it.n}"><option value="">–</option>${vals.map(v => `<option ${r.answers[it.n] === v ? "selected" : ""}>${v}</option>`).join("")}</select></div>`)).join("");
+  } else if (g.type === "match") {
+    body = `<div class="optbox">${g.options.map(o => `<div><b>${esc(o.k)}</b>${esc(o.t)}</div>`).join("")}</div>` +
+      g.items.map(it => qwrap(it, `<div class="mrow"><div><span class="n">${it.n}</span>${esc(it.q)}</div>
+      <select id="a-${it.n}" data-n="${it.n}" ${r.done ? "disabled" : ""} aria-label="Answer ${it.n}"><option value="">–</option>${g.options.map(o => `<option value="${esc(o.k)}" ${r.answers[it.n] === o.k ? "selected" : ""}>${esc(o.k)}</option>`).join("")}</select></div>`)).join("");
+  }
+  const nums = g.items.map(i => i.n);
+  const checkBtn = r.mode === "practice" && !r.done ? `<button class="btn small" data-check="${nums.join(",")}">Check answers ${nums[0]}–${nums[nums.length - 1]}</button>` : "";
+  return `<div class="group"><div class="instr">Questions ${nums[0]}–${nums[nums.length - 1]}</div><div class="muted" style="margin-bottom:6px">${esc(g.instr)}</div>${body}${checkBtn}</div>`;
+}
+function bindAnswers(root){
+  const r = S.run;
+  root.querySelectorAll("[data-n]").forEach(el => {
+    const ev = el.tagName === "INPUT" && el.type !== "radio" ? "input" : "change";
+    el.addEventListener(ev, () => { r.answers[el.dataset.n] = el.value; saveDraft(); renderNav() });
+    el.addEventListener("focus", () => { r.lastQ = +el.dataset.n });
+  });
+  root.querySelectorAll("[data-check]").forEach(b => b.onclick = () => {
+    b.dataset.check.split(",").forEach(n => r.checked[n] = true); renderRun();
+    const first = b.dataset.check.split(",")[0]; const el = $("#q-" + first); el && el.scrollIntoView({block: "start"});
+  });
+}
+
+/* reading */
+function renderReading(){
+  const r = S.run, sec = r.sections[r.cur];
+  $("#work").innerHTML = `<div class="pane" id="ppane">${sec.passages.map(p => `<article class="passage"><h2>${esc(p.title)}</h2>${p.paras.map(x => `<p>${esc(x)}</p>`).join("")}</article>`).join("")}
+    <p class="note">Select text to highlight it. Click a highlight to remove it.</p></div>
+    <div class="pane" id="qpane">${sec.groups.map(g => groupHTML(g, r.cur)).join("")}</div>`;
+  const key = "hl-" + r.test.id + "-" + r.cur;
+  if (r[key]) $("#ppane").innerHTML = r[key];
+  bindAnswers($("#qpane")); bindHighlight($("#ppane"), key);
+}
+function bindHighlight(pane, key){
+  let btn = null;
+  const clear = () => { btn && btn.remove(); btn = null };
+  pane.addEventListener("mouseup", () => setTimeout(() => {
+    const sel = getSelection(); clear();
+    if (!sel || sel.isCollapsed || !pane.contains(sel.anchorNode)) return;
+    const rect = sel.getRangeAt(0).getBoundingClientRect();
+    btn = document.createElement("button"); btn.className = "btn small primary hlbtn"; btn.textContent = "Highlight";
+    btn.style.left = Math.max(8, Math.min(innerWidth - 100, rect.left)) + "px"; btn.style.top = Math.max(8, rect.top - 40) + "px";
+    btn.onmousedown = e => e.preventDefault();
+    btn.onclick = () => { try { const range = sel.getRangeAt(0); const m = document.createElement("mark"); m.appendChild(range.extractContents()); range.insertNode(m); sel.removeAllRanges(); S.run[key] = pane.innerHTML } catch(e){} clear() };
+    document.body.appendChild(btn);
+  }, 0));
+  pane.addEventListener("click", e => { const m = e.target.closest("mark"); if (m) { m.replaceWith(...m.childNodes); S.run[key] = pane.innerHTML } });
+  document.addEventListener("scroll", clear, true);
+}
+
+/* listening */
+let ttsRef = null, synthQueue = null, mp3 = null;
+function playFile(src, rate){
+  return new Promise((resolve, reject) => {
+    const a = new Audio(src); mp3 = a; a.playbackRate = rate;
+    a.onended = () => { if (mp3 === a) mp3 = null; resolve() };
+    a.onerror = () => reject({code: "file_error", message: "the audio file could not be loaded"});
+    a._stop = () => reject({code: "stopped"});
+    a.play().catch(e => reject({code: "play_error", message: e?.message}));
+  });
+}
+function stopAudio(){
+  try { if (mp3) { mp3.pause(); const s = mp3._stop; mp3 = null; s && s() } } catch(e){}
+  try { ttsRef && ttsRef.stop() } catch(e){}
+  try { speechSynthesis.cancel() } catch(e){}
+  if (S.run) S.run.playing = false; synthQueue = null;
+}
+const VOICE_ACCENT = {buttery: "en-GB", airy: "en-AU", glassy: "en-US", rounded: "en-GB"};
+function browserVoices(){
+  try { return speechSynthesis.getVoices().filter(v => /^en(-|_)/i.test(v.lang)) } catch(e){ return [] }
+}
+function speakBrowser(lines, rate){
+  return new Promise((resolve, reject) => {
+    if (!("speechSynthesis" in window)) return reject({code: "unavailable"});
+    const vs = browserVoices(); const pick = (voice, i) => {
+      const want = VOICE_ACCENT[voice] || "en-GB"; const same = vs.filter(v => v.lang.replace("_", "-").startsWith(want));
+      const pool = same.length ? same : vs; return pool.length ? pool[i % pool.length] : null };
+    const order = [...new Set(lines.map(l => l.voice))];
+    let i = 0; synthQueue = {cancel: false};
+    const q = synthQueue;
+    const next = () => {
+      if (q.cancel || synthQueue !== q) return reject({code: "stopped"});
+      if (i >= lines.length) return resolve();
+      const l = lines[i++]; const u = new SpeechSynthesisUtterance(l.text);
+      const v = pick(l.voice, order.indexOf(l.voice)); if (v) { u.voice = v; u.lang = v.lang } else u.lang = "en-GB";
+      u.rate = rate; u.onend = () => setTimeout(next, 350); u.onerror = () => setTimeout(next, 50);
+      speechSynthesis.speak(u);
+    };
+    next();
+  });
+}
+async function playPart(pi){
+  const r = S.run, part = r.sections[pi];
+  const lines = part.script.map(([who, text]) => ({text, voice: part.speakers[who] || "buttery", language: "en"}));
+  const rate = +(LS.get("rate", 1));
+  const engine = LS.get("engine2", "recorded");
+  r.playing = true; setStatus(`Playing ${part.title}…`);
+  try {
+    if (engine !== "browser" && part.audio) await playFile(part.audio, rate);
+    else { if (engine !== "browser") setStatus("The AI voice audio for this part is still being prepared, so the Phone/PC voice is used."); await speakBrowser(lines, rate) }
+    if (S.run === r) { r.playing = false; r.heard = r.heard || {}; r.heard[pi] = true; setStatus(`${part.title} finished.`) }
+  } catch(e) {
+    if (S.run === r) { r.playing = false; setStatus(e?.code === "stopped" || e?.code === "viewer_stopped" || e?.reason === "viewer_stopped" ? "Stopped." : "Audio could not play: " + (e?.message || e?.code || "unknown error")) }
+    throw e;
+  }
+}
+function setStatus(t){ const el = $("#pstatus"); if (el) el.textContent = t; if (S.run) S.run.status = t }
+async function runListeningTest(){
+  const r = S.run; if (r.started_audio) return; r.started_audio = true;
+  for (let pi = 0; pi < r.sections.length; pi++) {
+    if (S.run !== r || r.done) return;
+    r.cur = pi; renderRun();
+    for (let s = 30; s > 0; s--) { if (S.run !== r || r.done) return; setStatus(`${r.sections[pi].title}: you have ${s} seconds to read questions ${r.sections[pi].range}.`); await new Promise(z => setTimeout(z, 1000)) }
+    try { await playPart(pi) } catch(e) { if (S.run !== r) return; break }
+  }
+  if (S.run === r && !r.done) setStatus("The recording has finished. Check your answers, then press Finish.");
+}
+function renderListening(){
+  const r = S.run, part = r.sections[r.cur];
+  const engine = LS.get("engine2", "recorded"), rate = LS.get("rate", 1);
+  const practice = r.mode === "practice";
+  $("#work").innerHTML = `<div class="pane" id="qpane">
+    <div class="player">
+      ${practice ? `<button class="btn primary bigplay" id="play">▶ ${r.playing ? "Playing…" : "Play " + esc(part.title)}</button><button class="btn" id="stop">■ Stop</button>`
+                 : `<button class="btn primary bigplay" id="play" ${r.started_audio ? "disabled" : ""}>▶ ${r.started_audio ? "Recording in progress" : "Start the recording"}</button>`}
+      <details class="note"><summary>Audio settings</summary>
+        <label>Voice <select id="engine"><option value="recorded" ${engine !== "browser" ? "selected" : ""}>AI voice (recommended)</option><option value="browser" ${engine === "browser" ? "selected" : ""}>Phone/PC built-in voice</option></select></label>
+        ${practice ? `<label style="margin-left:10px">Speed <select id="rate">${[0.8, 0.9, 1, 1.1, 1.2].map(v => `<option ${+rate === v ? "selected" : ""}>${v}</option>`).join("")}</select></label>` : ""}
+      </details>
+      <span class="status" id="pstatus" style="flex-basis:100%">${esc(r.status || (practice ? part.context : "The recording plays once. Each part starts with 30 seconds to read the questions."))}</span>
+    </div>
+    <p class="muted">${esc(part.context)}</p>
+    ${part.groups.map(g => groupHTML(g, r.cur)).join("")}
+    ${(practice && (r.showScript || r.done)) || r.done ? `<details class="script" ${r.showScript ? "open" : ""}><summary>Transcript</summary>${part.script.map(([w, t]) => `<p><b>${esc(w)}:</b> ${esc(t)}</p>`).join("")}</details>`
+      : practice ? `<button class="btn small" id="showscript">Show transcript</button>` : ""}
+  </div>`;
+  bindAnswers($("#qpane"));
+  $("#engine").onchange = e => LS.set("engine2", e.target.value);
+  const rs = $("#rate"); if (rs) rs.onchange = e => LS.set("rate", +e.target.value);
+  const ss = $("#showscript"); if (ss) ss.onclick = () => { r.showScript = true; renderRun() };
+  if (practice) {
+    $("#play").onclick = () => { stopAudio(); playPart(r.cur).catch(() => {}) };
+    $("#stop").onclick = () => { stopAudio(); setStatus("Stopped.") };
+  } else $("#play").onclick = () => runListeningTest();
+}
+
+/* writing */
+function renderWriting(){
+  const r = S.run, ti = r.cur, task = r.sections[ti], fb = r.feedback[ti];
+  const wc = countWords(r.essays[ti]);
+  $("#work").innerHTML = `<div class="pane"><div class="chip">Task ${ti + 1} · ${esc(task.kind)} · at least ${task.min} words · suggested ${ti ? 40 : 20} min</div>
+    <div class="prompt" style="margin-top:10px">${esc(task.prompt)}</div></div>
+    <div class="pane"><textarea class="essay" id="essay" spellcheck="false" placeholder="Write your answer here…" ${r.done && r.mode === "test" ? "readonly" : ""}>${esc(r.essays[ti])}</textarea>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px">
+      <span class="wc" id="wc">${wc} words ${wc < task.min ? "· " + (task.min - wc) + " more to reach the minimum" : "· minimum reached"}</span>
+      ${r.mode === "practice" || r.done ? `<button class="btn primary small" id="fbbtn">Check my writing</button>` : ""}
+    </div>
+    <div id="fb">${fb ? fbHTML(fb) : ""}</div>
+    <p class="note">Spell check is off, as in the real computer test.</p></div>`;
+  $("#essay").addEventListener("input", e => { r.essays[ti] = e.target.value; const n = countWords(e.target.value); $("#wc").textContent = n + " words " + (n < task.min ? "· " + (task.min - n) + " more to reach the minimum" : "· minimum reached"); saveDraft() });
+  const b = $("#fbbtn"); if (b) b.onclick = () => getFeedback(ti);
+}
+function fbHTML(f){
+  if (f.error) return `<div class="fb">${esc(f.error)}</div>`;
+  if (f.loading) return `<div class="fb">Reading your answer and scoring it…</div>`;
+  return `<div class="fb"><div style="display:flex;gap:14px;align-items:center"><div class="bigband">${esc(f.overall)}</div><div class="note">Estimated band. This is an AI estimate for practice, not an official score.</div></div>
+    <div class="crit">${Object.entries(f.criteria || {}).map(([k, v]) => `<b>${esc(v.band)}</b><span><strong>${esc(k)}</strong>: ${esc(v.note)}</span>`).join("")}</div>
+    ${f.strengths?.length ? `<div><strong>What works</strong><ul>${f.strengths.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}
+    ${f.improve?.length ? `<div><strong>What to fix first</strong><ul>${f.improve.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}
+    ${f.corrections?.length ? `<div><strong>Corrections</strong>${f.corrections.map(c => `<div class="corr"><del>${esc(c.original)}</del><br><ins>${esc(c.better)}</ins><div class="note">${esc(c.why)}</div></div>`).join("")}</div>` : ""}
+    ${f.nextStep ? `<p><strong>Next practice step:</strong> ${esc(f.nextStep)}</p>` : ""}</div>`;
+}
+async function getFeedback(ti){
+  const r = S.run, task = r.sections[ti], text = r.essays[ti].trim();
+  const box = $("#fb");
+  if (countWords(text) < 40) { r.feedback[ti] = {error: "Write at least 40 words first, so there is enough to assess."}; box.innerHTML = fbHTML(r.feedback[ti]); return }
+  const sample = await cap("sample");
+  if (!sample) { box.innerHTML = selfCheckHTML(ti, text, task); return }
+  r.feedback[ti] = {loading: true}; box.innerHTML = fbHTML(r.feedback[ti]);
+  const c1 = ti === 0 ? (S.module === "AC" ? "Task Achievement" : "Task Achievement") : "Task Response";
+  const prompt = `You are an experienced IELTS examiner. Assess this IELTS ${S.module === "AC" ? "Academic" : "General Training"} Writing Task ${ti + 1} answer using the public band descriptors.
+Be accurate and strict, as a real examiner would be. Penalise answers under ${task.min} words under ${c1}. Do not inflate scores.
+
+TASK:
+${task.prompt}
+
+CANDIDATE ANSWER (${countWords(text)} words):
+${text}
+
+Return ONLY JSON in this shape:
+{"overall": <band 0-9 in 0.5 steps>,
+ "criteria": {"${c1}": {"band": <n>, "note": "<one sentence>"}, "Coherence and Cohesion": {"band": <n>, "note": "..."}, "Lexical Resource": {"band": <n>, "note": "..."}, "Grammatical Range and Accuracy": {"band": <n>, "note": "..."}},
+ "strengths": ["<max 3 short points>"],
+ "improve": ["<max 4 short, specific points, most important first>"],
+ "corrections": [{"original": "<exact phrase from the answer>", "better": "<corrected phrase>", "why": "<short reason>"}],
+ "nextStep": "<one concrete exercise for the next practice session>"}
+Give up to 6 corrections, choosing the errors that cost the most marks.`;
+  try {
+    const f = await sample.json(prompt, {modelTier: "default"});
+    r.feedback[ti] = f;
+    if (S.run === r) { const el = $("#fb"); el && (el.innerHTML = fbHTML(f)) }
+    if (f && typeof f.overall === "number") saveAttempt({testId: r.test.id, testTitle: r.test.title, module: S.module, skill: "W", task: ti + 1, mode: r.mode, band: f.overall, score: null, total: null, words: countWords(text), at: new Date().toISOString()});
+  } catch(e) {
+    r.feedback[ti] = {error: e?.code === "rate_limited" ? "Too many requests right now. Try again in a minute." : e?.code === "not_granted" ? "AI feedback was not allowed for this page." : "Feedback failed: " + (e?.message || "unknown error")};
+    if (S.run === r) { const el = $("#fb"); el && (el.innerHTML = fbHTML(r.feedback[ti])) }
+  }
+}
+
+function selfCheckHTML(ti, text, task){
+  const wc = countWords(text), paras = text.split(/\n\s*\n/).filter(p => p.trim()).length;
+  const links = (text.match(/\b(however|moreover|furthermore|in addition|therefore|for example|for instance|on the other hand|in conclusion|as a result|although|while|whereas)\b/gi) || []).length;
+  const sents = text.split(/[.!?]+/).filter(s => s.trim()); const avg = sents.length ? Math.round(wc / sents.length) : 0;
+  const checks = ti === 0 ? [
+      "Did you cover all three bullet points in the task?",
+      "Is the tone right for the reader (formal, semi-formal or informal)?",
+      "Does the letter open and close in a suitable way (e.g. Dear Sir or Madam ... Yours faithfully)?",
+      "Is the purpose of the letter clear in the first two lines?"] : [
+      "Does your introduction answer the exact question that was asked?",
+      "Does each body paragraph have one clear main idea with an example?",
+      "Is your own opinion clear and consistent from start to finish?",
+      "Does the conclusion sum up your position without new ideas?"];
+  const row = (ok, t) => `<li>${ok ? "✓" : "✗"} ${esc(t)}</li>`;
+  return `<div class="fb"><strong>Self-check</strong>
+    <ul>${row(wc >= task.min, `${wc} words (minimum ${task.min})`)}${row(paras >= (ti ? 4 : 3), `${paras} paragraphs (aim for ${ti ? "4-5" : "3-4"})`)}${row(links >= 3, `${links} linking expressions`)}${row(avg >= 12 && avg <= 25, `average sentence length ${avg} words`)}</ul>
+    <strong>Ask yourself</strong><ul>${checks.map(c => `<li>${esc(c)}</li>`).join("")}</ul>
+    <p class="note">AI band feedback is only available in the private version of this app.</p></div>`;
+}
+
+/* finish + results */
+function finish(timeUp){
+  const r = S.run; if (r.done) return renderResult();
+  r.done = true; clearInterval(tick); stopAudio();
+  if (r.skill !== "W") {
+    const score = r.qs.filter(q => isRight(q, r.answers[q.n])).length;
+    const key = r.skill === "L" ? "L" : (r.test.module === "GT" ? "RGT" : "RAC");
+    r.score = score; r.band = band(key, score);
+    const byType = {};
+    r.qs.forEach(q => { const t = q.g.type; byType[t] = byType[t] || [0, 0]; byType[t][1]++; if (isRight(q, r.answers[q.n])) byType[t][0]++ });
+    r.byType = byType;
+    saveAttempt({testId: r.test.id, testTitle: r.test.title, module: S.module, skill: r.skill, mode: r.mode, score, total: r.qs.length, band: r.band, byType, at: new Date().toISOString(), timeUp: !!timeUp});
+    try { localStorage.removeItem("draft-" + r.test.id + "-" + r.skill) } catch(e){}
+  }
+  renderResult();
+}
+const TYPE_NAME = {gap: "Completion (gap fill)", mcq: "Multiple choice", tfng: "True / False / Not Given", ynng: "Yes / No / Not Given", match: "Matching"};
+function renderResult(){
+  const r = S.run; S.view = "result";
+  if (r.skill === "W") {
+    $("#app").innerHTML = `<div class="wrap result"><button class="btn small" id="home">← Tests</button>
+      <h2 style="margin-top:14px">${esc(r.test.title)} · Writing</h2>
+      <p class="muted">Get AI feedback on each task. Task 2 counts twice as much as Task 1 in the real test.</p>
+      <div class="stats">${[0, 1].map(i => `<div class="stat"><div class="v">${r.feedback[i]?.overall ?? "–"}</div><div class="k">Task ${i + 1} · ${countWords(r.essays[i])} words</div></div>`).join("")}</div>
+      <div style="margin-top:14px;display:flex;gap:8px"><button class="btn primary" id="review">Open tasks and feedback</button></div></div>`;
+    $("#home").onclick = renderHome; $("#review").onclick = () => { S.view = "run"; renderRun() };
+    return;
+  }
+  $("#app").innerHTML = `<div class="wrap result"><button class="btn small" id="home">← Tests</button>
+    <h2 style="margin-top:14px">${esc(r.test.title)} · ${SKILL[r.skill]}</h2>
+    <div style="display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin:14px 0">
+      <div><div class="bigband">${r.band}</div><div class="note">estimated band</div></div>
+      <div><div class="bigband num" style="color:var(--ink)">${r.score}<span style="font-size:22px">/${r.qs.length}</span></div><div class="note">correct answers</div></div>
+    </div>
+    <div class="panel"><div class="chip">By question type</div>
+      <table class="hist" style="margin-top:8px"><tbody>${Object.entries(r.byType).map(([t, [c, n]]) => `<tr><td>${TYPE_NAME[t] || t}</td><td class="num">${c}/${n}</td><td class="num">${Math.round(100 * c / n)}%</td></tr>`).join("")}</tbody></table>
+      <p class="note">Band conversion follows the published IELTS raw-score tables and is approximate.</p></div>
+    <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="review">Review answers with explanations</button><button class="btn" id="again">Try again</button></div></div>`;
+  $("#home").onclick = renderHome;
+  $("#review").onclick = () => { S.view = "run"; r.cur = 0; renderRun() };
+  $("#again").onclick = () => startRun(r.test.id, r.skill);
+}
+
+/* modal */
+function confirmBox(text, ok){
+  if (!text) return ok();
+  const d = document.createElement("div"); d.className = "modal";
+  d.innerHTML = `<div class="box" role="dialog" aria-modal="true"><p>${esc(text)}</p><div class="row"><button class="btn" id="cn">Cancel</button><button class="btn primary" id="cy">Yes</button></div></div>`;
+  document.body.appendChild(d); $("#cy", d).focus();
+  $("#cn", d).onclick = () => d.remove(); $("#cy", d).onclick = () => { d.remove(); ok() };
+}
+
+/* boot */
+(async () => {
+  try { await loadIndex() } catch(e) { $("#app").innerHTML = `<div class="wrap"><p>Could not load the tests. Reload the page to try again.</p></div>`; return }
+  renderHome();
+  try { speechSynthesis.getVoices() } catch(e){}
+  await loadAttempts(); if (S.view === "home") renderHome();
+})();
+</script>
+
+<script>if ("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));</script>
+</body>
+</html>
