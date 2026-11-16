@@ -243,6 +243,14 @@ input.gap:focus{border-color:var(--accent);outline:0}
 
 /* writing */
 .prompt{white-space:pre-wrap;font-family:var(--f-read);font-size:18px;line-height:1.6}
+.chart{margin:16px 0 0;border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--surface)}
+.chtitle{font-weight:600;font-size:15px;margin-bottom:8px;text-align:center}
+.chleg{display:flex;gap:6px 14px;flex-wrap:wrap;justify-content:center;font-size:13.5px;margin-top:8px}
+.chleg span{display:inline-flex;align-items:center;gap:6px}
+.chleg i{width:12px;height:12px;border-radius:3px;display:inline-block}
+.chpies{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.chpies figure{margin:0;width:min(46%,200px);text-align:center;font-size:14px;font-weight:600}
+.chtable th:first-child{color:var(--ink);text-transform:none;font-size:14px;letter-spacing:0}
 .helper{border:1px solid var(--line);border-radius:12px;padding:4px 14px;margin-top:14px;background:var(--surface2);font-size:15px}
 .helper summary{cursor:pointer;font-weight:600;padding:8px 0}
 .helper ol,.helper ul{margin:4px 0 10px;padding-left:22px}
@@ -259,6 +267,8 @@ textarea.essay:focus{border-color:var(--accent);outline:0}
 .corr ins{color:var(--good);text-decoration:none}
 
 /* modal + results */
+.ptr{position:fixed;top:calc(4px + env(safe-area-inset-top,0px));left:50%;transform:translate(-50%,0);z-index:40;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:8px 16px;font-size:14px;font-weight:600;color:var(--muted);box-shadow:var(--shadow);pointer-events:none;white-space:nowrap}
+.ptr.go{color:var(--accent);border-color:var(--accent)}
 .modal{position:fixed;inset:0;background:rgba(8,12,16,.5);display:grid;place-items:center;z-index:30;padding:16px}
 .modal .box{background:var(--surface);border-radius:var(--R);padding:20px;max-width:460px;width:100%;border:1px solid var(--line);max-height:90vh;overflow:auto;box-shadow:var(--shadow)}
 .modal h3{font-size:18px;margin-bottom:8px}
@@ -377,10 +387,41 @@ async function loadTest(id){
   const meta = S.index.tests.find(t => t.id === id);
   const r = await fetch(meta.file); S.tests[id] = await r.json(); return S.tests[id];
 }
-const moduleTests = () => S.index.tests.filter(t => t.module === S.module || (S.module === "AC" && t.module === "GT")).map(t => S.tests[t.id]).filter(Boolean);
+const moduleTests = () => S.index.tests.filter(t => t.module === S.module || (S.module === "AC" && t.module === "GT")).map(t => S.tests[t.id]).filter(Boolean)
+  .sort((a, b) => (a.module !== S.module) - (b.module !== S.module));   // this module's own tests first, then shared Listening
 const ownTests = () => moduleTests().filter(t => t.module === S.module);   // tests whose Reading and Writing belong to this module
 const secsOf = (test, skill) => skill === "L" ? test.listening.parts : skill === "R" ? test.reading.sections : [test.writing.task1, test.writing.task2];
-const shortTitle = t => t.title.replace("General Training ", "").replace("Academic ", "");
+const shortTitle = t => t.module === S.module ? t.title.replace("General Training ", "").replace("Academic ", "") : t.title.replace("General Training ", "GT ");
+
+/* ---------- charts for Academic Writing Task 1 (drawn from the numbers in the test file) ---------- */
+const CH_COL = ["#0e8a91", "#e08a2c", "#7b61c9", "#c8483c", "#4a9a4a", "#7a8794"];
+function niceMax(v){ const p = Math.pow(10, Math.floor(Math.log10(v > 0 ? v : 1))), m = (v > 0 ? v : 1) / p; return (m <= 1 ? 1 : m <= 2 ? 2 : m <= 2.5 ? 2.5 : m <= 5 ? 5 : 10) * p }
+function chartHTML(c){
+  if (!c || !Array.isArray(c.labels) || !Array.isArray(c.series) || !c.series.length) return "";
+  const unit = c.unit || "", L = c.labels, Sr = c.series, col = i => CH_COL[i % CH_COL.length];
+  const legend = names => `<div class="chleg">${names.map((n, i) => `<span><i style="background:${col(i)}"></i>${esc(n)}</span>`).join("")}</div>`;
+  let body;
+  if (c.type === "table") body = `<div style="overflow-x:auto"><table class="hist chtable"><thead><tr><th></th>${Sr.map(s => `<th>${esc(s.name)}</th>`).join("")}</tr></thead><tbody>${L.map((l, i) => `<tr><th>${esc(l)}</th>${Sr.map(s => `<td class="num">${esc(s.data[i])}${esc(unit)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+  else if (c.type === "pie") body = `<div class="chpies">${Sr.map(s => {
+      const tot = s.data.reduce((a, b) => a + b, 0) || 1; let a0 = -Math.PI / 2;
+      const slices = s.data.map((v, i) => { const a1 = a0 + 2 * Math.PI * v / tot, mid = (a0 + a1) / 2, pt = (r, a) => (100 + r * Math.cos(a)).toFixed(1) + " " + (100 + r * Math.sin(a)).toFixed(1);
+        const out = (v >= tot ? `<circle cx="100" cy="100" r="90" fill="${col(i)}"/>` : `<path d="M100 100L${pt(90, a0)}A90 90 0 ${a1 - a0 > Math.PI ? 1 : 0} 1 ${pt(90, a1)}Z" fill="${col(i)}" stroke="var(--surface)" stroke-width="1.5"/>`)
+          + (v / tot >= .06 ? `<text x="${(100 + 58 * Math.cos(mid)).toFixed(1)}" y="${(104 + 58 * Math.sin(mid)).toFixed(1)}" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">${esc(v)}${esc(unit)}</text>` : "");
+        a0 = a1; return out }).join("");
+      return `<figure><svg viewBox="0 0 200 200" role="img" aria-label="${esc(s.name)}">${slices}</svg><figcaption>${esc(s.name)}</figcaption></figure>` }).join("")}</div>${legend(L)}`;
+  else {
+    const W = 640, H = 330, ml = 50, mr = 10, mt = 12, mb = 34, pw = W - ml - mr, ph = H - mt - mb, bw = pw / L.length;
+    const max = niceMax(Math.max(0, ...Sr.flatMap(s => s.data))), y = v => mt + ph - ph * v / max;
+    let g = ""; for (let k = 0; k <= 5; k++) { const v = max * k / 5, yy = y(v).toFixed(1);
+      g += `<line x1="${ml}" x2="${W - mr}" y1="${yy}" y2="${yy}" stroke="var(--line)"/><text x="${ml - 6}" y="${+yy + 4}" text-anchor="end" font-size="12" fill="var(--muted)">${+v.toFixed(2)}${esc(unit)}</text>` }
+    L.forEach((l, i) => { g += `<text x="${(ml + bw * (i + .5)).toFixed(1)}" y="${H - mb + 20}" text-anchor="middle" font-size="12" fill="var(--muted)">${esc(trunc(String(l), Math.max(6, Math.floor(bw / 7))))}</text>` });
+    if (c.type === "line") Sr.forEach((s, j) => { const pts = s.data.map((v, i) => [(ml + bw * (i + .5)).toFixed(1), y(v).toFixed(1)]);
+      g += `<polyline points="${pts.map(p => p.join(",")).join(" ")}" fill="none" stroke="${col(j)}" stroke-width="2.5" stroke-linejoin="round" ${j % 2 ? `stroke-dasharray="${j === 1 ? "7 4" : "2 4"}"` : ""}/>` + pts.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="3.5" fill="${col(j)}"/>`).join("") });
+    else { const gw = bw * .74, w = gw / Sr.length; Sr.forEach((s, j) => s.data.forEach((v, i) => { g += `<rect x="${(ml + bw * i + (bw - gw) / 2 + w * j).toFixed(1)}" y="${y(v).toFixed(1)}" width="${Math.max(1, w - 2).toFixed(1)}" height="${Math.max(0, ph * v / max).toFixed(1)}" rx="2" fill="${col(j)}"/>` })) }
+    body = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.title || "Chart")}" style="width:100%;height:auto">${g}</svg>${legend(Sr.map(s => s.name))}`;
+  }
+  return `<figure class="chart"><figcaption class="chtitle">${esc(c.title || "")}</figcaption>${body}</figure>`;
+}
 const hasDraft = id => !!LS.get("draft:" + id, null);
 
 /* ---------- home ---------- */
@@ -496,7 +537,8 @@ function settingsBox(){
           : `<p class="note" style="margin-top:4px;color:var(--bad)">Your email is not confirmed yet. <button class="linkbtn" id="goVerify">Confirm it</button></p>`}
         <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn small" id="signout">Log out</button>${AUTH.isAdmin ? `<button class="btn small" id="goAdmin">Learners</button>` : ""}</div>`
       : `<p class="note">A free account keeps your progress when you change phone. Approved learners also get more natural listening voices.</p><div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn primary small" id="goSignup">Create a free account</button><button class="btn small" id="goLogin">Log in</button></div>`}</div>
-    <div class="row"><button class="btn primary" id="sclose">Done</button></div></div>`;
+    <div class="row"><button class="btn" id="srefresh">Refresh the app</button><button class="btn primary" id="sclose">Done</button></div></div>`;
+  setTimeout(() => { const rf = $("#srefresh", d); if (rf) rf.onclick = () => { rf.disabled = true; rf.textContent = "Refreshing…"; refreshApp() } }, 0);
   document.body.appendChild(d);
   const close = () => { d.remove(); if (S.view === "home") renderHome() };
   $("#sclose", d).onclick = close; d.onclick = e => { if (e.target === d) close() };
@@ -1269,7 +1311,7 @@ function renderWriting(){
   const wcText = n => n + " words · " + (n < task.min ? (task.min - n) + " more to reach the minimum" : "minimum reached");
   $("#work").innerHTML = `<div class="pane" id="ppane"><div class="ghead"><span class="gnum">Task ${ti + 1}</span><span class="gtype">${esc(task.kind)}</span></div>
       <p class="note">At least ${task.min} words · about ${ti ? 40 : 20} minutes in the real test</p>
-      <div class="prompt" style="margin-top:12px">${esc(task.prompt)}</div>
+      <div class="prompt" style="margin-top:12px">${esc(task.prompt)}</div>${task.chart ? chartHTML(task.chart) : ""}
       ${practice || r.done ? `<details class="helper"><summary>How to plan this answer</summary><ol>${tips.plan.map(x => `<li>${esc(x)}</li>`).join("")}</ol></details>
       <details class="helper"><summary>Useful phrases</summary><ul>${tips.phrases.map(x => `<li>${esc(x)}</li>`).join("")}</ul></details>` : ""}</div>
     <div class="pane" id="qpane"><textarea class="essay" id="essay" spellcheck="false" autocorrect="off" placeholder="Write your answer here…" ${r.done && !practice ? "readonly" : ""}>${esc(text)}</textarea>
@@ -1305,7 +1347,7 @@ async function getFeedback(pi){
 Be accurate and strict, as a real examiner would be. Penalise answers under ${task.min} words under ${c1}. Do not inflate scores.
 
 TASK:
-${task.prompt}
+${task.prompt}${task.chart ? "\n\nDATA SHOWN TO THE CANDIDATE (" + task.chart.type + "): " + JSON.stringify(task.chart) : ""}
 
 CANDIDATE ANSWER (${countWords(text)} words):
 ${text}
@@ -1414,6 +1456,37 @@ function confirmBox(o, ok){
   $("#cn", d).onclick = () => d.remove(); d.onclick = e => { if (e.target === d) d.remove() };
   $("#cy", d).onclick = () => { d.remove(); ok() };
 }
+
+/* ---------- refresh: an installed app has no reload button, so pull down on the home screen ---------- */
+async function refreshApp(){
+  const tip = $("#ptr"); if (tip) { tip.textContent = "Refreshing…"; tip.classList.add("go") }
+  try {   // ask for the newest version first, and wait for it to take over before reloading
+    const reg = await navigator.serviceWorker?.getRegistration();
+    if (reg) { await reg.update();
+      if (reg.installing || reg.waiting) await new Promise(r => { const t = setTimeout(r, 8000); navigator.serviceWorker.addEventListener("controllerchange", () => { clearTimeout(t); r() }, {once: true}) }) }
+  } catch(e){}
+  location.reload();
+}
+(() => {
+  let y0 = null, pull = 0, tip = null;
+  const drop = () => { if (tip) { tip.remove(); tip = null } };
+  addEventListener("touchstart", e => { y0 = S.view === "home" && !$(".modal") && scrollY <= 0 && e.touches.length === 1 ? e.touches[0].clientY : null; pull = 0 }, {passive: true});
+  addEventListener("touchmove", e => {
+    if (y0 == null) return; pull = e.touches[0].clientY - y0;
+    if (pull < 16 || scrollY > 0) return drop();
+    if (!tip) { tip = document.createElement("div"); tip.id = "ptr"; tip.className = "ptr"; document.body.appendChild(tip) }
+    tip.textContent = pull > 110 ? "Release to refresh" : "Pull down to refresh"; tip.classList.toggle("go", pull > 110);
+    tip.style.transform = `translate(-50%, ${Math.min(pull, 150) / 2.2}px)`;
+  }, {passive: true});
+  const end = () => { if (y0 == null) return; y0 = null; if (tip && pull > 110) refreshApp(); else drop() };
+  addEventListener("touchend", end); addEventListener("touchcancel", () => { y0 = null; drop() });
+  // pick up a new version by itself: check whenever the app comes back to the front, reload when it is safe to
+  if ("serviceWorker" in navigator) {
+    const had = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener("controllerchange", () => { if (had && S.view === "home" && RADIO.i < 0 && !$(".modal")) location.reload() });
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) navigator.serviceWorker.getRegistration().then(r => r && r.update()).catch(() => {}) });
+  }
+})();
 
 /* ---------- boot ---------- */
 (async () => {
