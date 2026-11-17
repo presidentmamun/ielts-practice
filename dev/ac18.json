@@ -1,0 +1,1369 @@
+{
+ "id": "ac18",
+ "module": "AC",
+ "title": "Academic Test 18",
+ "listening": {
+  "parts": [
+   {
+    "title": "Part 1",
+    "context": "A man phones a community choir to ask about joining.",
+    "range": "1-10",
+    "speakers": {
+     "Fiona": "aus_f",
+     "Daniel": "bright"
+    },
+    "script": [
+     [
+      "Fiona",
+      "Good evening, Harbourside Community Choir, Fiona speaking."
+     ],
+     [
+      "Daniel",
+      "Oh, hello. My name's Daniel. I saw a poster for your choir in the library, and I wondered whether you're still taking new members."
+     ],
+     [
+      "Fiona",
+      "We are, yes. We always welcome new singers at the start of the autumn term, and we've still got a few places left. Can I take some details for the membership form?"
+     ],
+     [
+      "Daniel",
+      "Of course. Go ahead."
+     ],
+     [
+      "Fiona",
+      "Lovely. What's your surname?"
+     ],
+     [
+      "Daniel",
+      "It's Whitcombe. That's W-H-I-T-C-O-M-B-E."
+     ],
+     [
+      "Fiona",
+      "Thanks. And a contact number?"
+     ],
+     [
+      "Daniel",
+      "My mobile is 07846 220 913. Sorry, let me say that again more slowly. 07846 220 913."
+     ],
+     [
+      "Fiona",
+      "Got it. Now, have you sung in a choir before?"
+     ],
+     [
+      "Daniel",
+      "Years ago, at school. I think I was a tenor then, but my voice has dropped quite a lot since, so these days I'd say I'm a baritone."
+     ],
+     [
+      "Fiona",
+      "A baritone, that's good news. We're a bit short of low voices at the moment. Do you read music, by the way?"
+     ],
+     [
+      "Daniel",
+      "Just about. I'm slow, but I can follow a line. My sister plays the piano, and she used to drill me on the notes when we were children, so some of it stuck."
+     ],
+     [
+      "Fiona",
+      "That's fine. Most people pick it up as they go along, and we have a few members who can sit beside you in the first weeks and help you find your place. Now, I'd better tell you when we rehearse."
+     ],
+     [
+      "Daniel",
+      "I think the poster said Tuesday evenings?"
+     ],
+     [
+      "Fiona",
+      "Ah, that's the old poster. We moved to Wednesdays in September, because the hall kept getting double-booked on Tuesdays."
+     ],
+     [
+      "Daniel",
+      "Wednesday's actually better for me. What time do you start?"
+     ],
+     [
+      "Fiona",
+      "Doors open at 7, and people usually arrive early to chat and have a cup of tea, but the singing itself begins at 7.30. We finish at 9.30 sharp, because the caretaker locks up."
+     ],
+     [
+      "Daniel",
+      "So 7.30 for the singing. And where is it? Is that the church hall on Quay Road, next to the bakery?"
+     ],
+     [
+      "Fiona",
+      "Not quite. The church next to the bakery is the Baptist one. We meet at the Methodist church hall, which is further along Quay Road, opposite the post office."
+     ],
+     [
+      "Daniel",
+      "Right, I know where you mean. Now, what does it cost?"
+     ],
+     [
+      "Fiona",
+      "The fee is 65 pounds a term. That covers all the music and the tea and coffee. It was 55 pounds last year, but we've had to put it up because the hall rent has gone up."
+     ],
+     [
+      "Daniel",
+      "Is there a discount for anyone?"
+     ],
+     [
+      "Fiona",
+      "Students and people over 65 pay 40 pounds, but I don't think that applies to you."
+     ],
+     [
+      "Daniel",
+      "No, I'll be paying the full amount. That sounds reasonable."
+     ],
+     [
+      "Fiona",
+      "Good. We'll be rehearsing for our Christmas concert from the first week, so you'll be thrown in at the deep end. The concert is on the 14th of December, at the Corn Exchange in the town centre."
+     ],
+     [
+      "Daniel",
+      "The Corn Exchange! I've always wanted to sing there. Do I have to buy a folder for the music?"
+     ],
+     [
+      "Fiona",
+      "No, folders and copies are all provided. The only thing you need to bring is a pencil, so that you can mark in the conductor's instructions. People always forget, and then we run out of spares."
+     ],
+     [
+      "Daniel",
+      "A pencil. I can manage that."
+     ],
+     [
+      "Fiona",
+      "Last question, and it's just so I can tell the committee. How did you hear about us? You mentioned a poster."
+     ],
+     [
+      "Daniel",
+      "Well, I saw the poster first, but it was really the article in the community newsletter that made me ring. A neighbour pointed it out to me. There was a lovely photograph of last year's concert."
+     ],
+     [
+      "Fiona",
+      "Oh, that's good to know. The newsletter editor will be pleased. So, Daniel, we'll see you on Wednesday at 7. Come a little early and I'll introduce you to the other baritones."
+     ],
+     [
+      "Daniel",
+      "Great. Thanks very much, Fiona. I'm looking forward to it."
+     ],
+     [
+      "Fiona",
+      "You're welcome. Goodbye for now."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "Harbourside Community Choir: membership form",
+      "items": [
+       {
+        "n": 1,
+        "before": "Surname:",
+        "after": "",
+        "answer": [
+         "Whitcombe"
+        ],
+        "why": "Daniel spells his surname W-H-I-T-C-O-M-B-E."
+       },
+       {
+        "n": 2,
+        "before": "Mobile number:",
+        "after": "",
+        "answer": [
+         "07846 220 913",
+         "07846220913"
+        ],
+        "why": "He gives 07846 220 913 and repeats it."
+       },
+       {
+        "n": 3,
+        "before": "Voice type:",
+        "after": "",
+        "answer": [
+         "baritone"
+        ],
+        "why": "He says he was a tenor at school, but now he is a baritone; the voice has changed, so tenor is wrong."
+       },
+       {
+        "n": 4,
+        "before": "Rehearsals every",
+        "after": "evening",
+        "answer": [
+         "Wednesday"
+        ],
+        "why": "Daniel mentions Tuesday from the old poster, but Fiona says they moved to Wednesdays."
+       },
+       {
+        "n": 5,
+        "before": "Singing begins at",
+        "after": "p.m.",
+        "answer": [
+         "7.30",
+         "7:30",
+         "730"
+        ],
+        "why": "Doors open at 7, but the singing begins at 7.30."
+       },
+       {
+        "n": 6,
+        "before": "Venue:",
+        "after": "church hall, Quay Road",
+        "answer": [
+         "Methodist"
+        ],
+        "why": "The Baptist church is next to the bakery; the choir meets at the Methodist church hall."
+       },
+       {
+        "n": 7,
+        "before": "Fee per term: £",
+        "after": "",
+        "answer": [
+         "65"
+        ],
+        "why": "The fee is 65 pounds; 55 was last year's fee and 40 is the concession rate that does not apply."
+       },
+       {
+        "n": 8,
+        "before": "Christmas concert at the",
+        "after": "",
+        "answer": [
+         "Corn Exchange"
+        ],
+        "why": "Fiona says the concert is at the Corn Exchange in the town centre."
+       },
+       {
+        "n": 9,
+        "before": "Members must bring a",
+        "after": "",
+        "answer": [
+         "pencil"
+        ],
+        "why": "Folders and copies are provided; the only thing to bring is a pencil."
+       },
+       {
+        "n": 10,
+        "before": "Heard about choir through the community",
+        "after": "",
+        "answer": [
+         "newsletter"
+        ],
+        "why": "He saw the poster first, but the article in the community newsletter made him ring."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 2",
+    "context": "A guide welcomes visitors at the start of a day out on a heritage steam railway.",
+    "range": "11-20",
+    "speakers": {
+     "Megan": "nz_f"
+    },
+    "script": [
+     [
+      "Megan",
+      "Good morning, everyone, and welcome to the Thornley Valley Railway. My name's Megan, and I'll be your guide for the first part of today's journey, so let me tell you a little about us before the train leaves the platform."
+     ],
+     [
+      "Megan",
+      "The line opened in 1871 to carry stone and farm produce down the valley, and passengers soon followed. By the 1960s, though, fewer and fewer people were using it, and in 1966 it was closed. A number of former railwaymen offered their services, and I'm often asked whether it was they who reopened it. In fact they were happy to help, but it was a group of local residents who got together, formed a society and raised the money to buy the track. The first trains ran again in 1974, and we've been running ever since."
+     ],
+     [
+      "Megan",
+      "Today we're a charity, and nearly everyone you'll meet is a volunteer, from the drivers to the people in the ticket office. People assume our biggest worry is the cost of coal, and it's true that prices have gone up, but we have a good supply contract. The floods two winters ago damaged part of the track, but that's been repaired. What really keeps our committee awake at night is that the average age of our volunteers is now 66. We desperately need younger people to learn the skills, so if any of you know a teenager who loves engines, please send them our way."
+     ],
+     [
+      "Megan",
+      "Now, a few practical points about your ticket. Your day ticket lets you get on and off at any of our five stations as often as you like, so do make use of that. Trains run roughly every 40 minutes. First class carriages cost a little extra, I'm afraid, and bicycles are only carried on Sunday services, so if you've brought one today you'll have to leave it at the car park."
+     ],
+     [
+      "Megan",
+      "If you're thinking about lunch, there are two places to eat. The shop at Eastleigh, our terminus, sells sandwiches, but my own recommendation is the cafe at Marsh End station. It's in the old signal box, and the soup is made by a volunteer who used to be a professional chef. The cafe at Hollin Cross is closed at the moment for repairs, so please don't get off there expecting a cup of tea."
+     ],
+     [
+      "Megan",
+      "There's something new for this year too. We'd hoped to open a dining carriage, but that's still being restored, and the children's play area has been put off until next year. What we have managed to do is open an exhibition in the old goods shed at Hollin Cross, about how the railway was used during the Second World War. There are photographs, uniforms and some letters written by the station staff, and it's free to anyone with a day ticket."
+     ],
+     [
+      "Megan",
+      "Finally, let me introduce you to the engines you may see today. We have five locomotives in the fleet, and each has its own character. Sir Aldous is the oldest, built in 1897, and he's looking splendid after a repaint. He's quite slow these days, so he mostly pulls the morning trains. Merlin has a more dramatic history. He was found rusting in a scrapyard in Wales, and it took our volunteers eleven years to bring him back to life. You can see a photograph of him in that state in the museum carriage."
+     ],
+     [
+      "Megan",
+      "Tilly is our smallest engine. She never carried a single passenger in her working life, because she was built to move wagons around a goods yard, and she still does a bit of that for us on maintenance days. Brockwell, named after the village rather than after a person, is the one many of our regulars are asking about this morning, because she isn't running at the moment. She's in the workshop having new boiler tubes fitted, and we expect her back next spring."
+     ],
+     [
+      "Megan",
+      "And that leaves The Duchess, who's drawing our train today. She's the fastest engine on the line, and when she's on form she can reach 45 miles an hour, which, believe me, feels a lot faster when you're sitting behind her. She has a beautiful deep whistle, so keep an ear out as we cross the viaduct."
+     ],
+     [
+      "Megan",
+      "If you have any questions during the journey, you'll find our staff in the red jackets in every carriage. They know almost everything about the railway, and what they don't know, they'll make up with enthusiasm. Now, I can see the guard checking his watch, so please take your seats. Enjoy the trip."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 11,
+        "q": "Who took the action that saved the line after it closed?",
+        "options": [
+         "former railway employees",
+         "local residents",
+         "the county council"
+        ],
+        "answer": "B",
+        "why": "Megan says former railwaymen offered help, but it was local residents who formed a society and bought the track."
+       },
+       {
+        "n": 12,
+        "q": "What is the railway's biggest problem at present?",
+        "options": [
+         "the rising price of coal",
+         "finding younger volunteers",
+         "damage to the track caused by flooding"
+        ],
+        "answer": "B",
+        "why": "Coal prices are covered by a contract and the flood damage has been repaired; the real worry is the volunteers' average age of 66."
+       },
+       {
+        "n": 13,
+        "q": "With a day ticket, visitors may",
+        "options": [
+         "leave and rejoin the train at any station",
+         "travel in a first class carriage",
+         "take a bicycle on the train"
+        ],
+        "answer": "A",
+        "why": "The ticket allows them to get on and off at any of the five stations. First class costs extra and bicycles are only carried on Sundays."
+       },
+       {
+        "n": 14,
+        "q": "Megan recommends having lunch at",
+        "options": [
+         "Eastleigh station",
+         "Marsh End station",
+         "Hollin Cross station"
+        ],
+        "answer": "B",
+        "why": "She recommends the cafe in the old signal box at Marsh End. Eastleigh has only a shop and the Hollin Cross cafe is closed."
+       },
+       {
+        "n": 15,
+        "q": "What is new at the railway this year?",
+        "options": [
+         "a dining carriage",
+         "a children's play area",
+         "an exhibition about wartime"
+        ],
+        "answer": "C",
+        "why": "The dining carriage is still being restored and the play area is postponed; the new exhibition about the Second World War has opened."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "What does Megan say about each of the following locomotives? Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+      "options": [
+       {
+        "k": "A",
+        "t": "It was built outside Britain."
+       },
+       {
+        "k": "B",
+        "t": "It has only ever been used for goods."
+       },
+       {
+        "k": "C",
+        "t": "It was rescued from a scrapyard."
+       },
+       {
+        "k": "D",
+        "t": "It is being repaired at present."
+       },
+       {
+        "k": "E",
+        "t": "It is the fastest on the line."
+       },
+       {
+        "k": "F",
+        "t": "It is the oldest in the fleet."
+       },
+       {
+        "k": "G",
+        "t": "It is named after a local person."
+       }
+      ],
+      "items": [
+       {
+        "n": 16,
+        "q": "Sir Aldous",
+        "answer": "F",
+        "why": "She says he is the oldest, built in 1897."
+       },
+       {
+        "n": 17,
+        "q": "Merlin",
+        "answer": "C",
+        "why": "He was found rusting in a scrapyard in Wales."
+       },
+       {
+        "n": 18,
+        "q": "Tilly",
+        "answer": "B",
+        "why": "She never carried a passenger and was built to move wagons around a goods yard."
+       },
+       {
+        "n": 19,
+        "q": "Brockwell",
+        "answer": "D",
+        "why": "She is in the workshop having new boiler tubes fitted. Her name comes from a village, so G is wrong."
+       },
+       {
+        "n": 20,
+        "q": "The Duchess",
+        "answer": "E",
+        "why": "Megan calls her the fastest engine on the line."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 3",
+    "context": "Two students, Chloe and Rahul, discuss their lab report on plant growth under coloured light with their tutor, Dr Mason.",
+    "range": "21-30",
+    "speakers": {
+     "Dr Mason": "nz_m",
+     "Chloe": "airy",
+     "Rahul": "buttery"
+    },
+    "script": [
+     [
+      "Dr Mason",
+      "Come in, both of you. Right, I've had a look at the draft of your lab report on plant growth under coloured light, and on the whole it's a good piece of work. Shall we go through it?"
+     ],
+     [
+      "Chloe",
+      "Yes please. We were quite pleased with it, though we're worried about the method section."
+     ],
+     [
+      "Dr Mason",
+      "Let's start at the beginning. Remind me why you chose radish seedlings."
+     ],
+     [
+      "Rahul",
+      "Mainly because they germinate so quickly. We needed results within the two weeks we had in the lab, and radishes show a clear difference in just a few days. We did think about lettuce, but that would have taken far too long."
+     ],
+     [
+      "Chloe",
+      "We also read that radishes are cheap and easy to handle, but speed was the main reason."
+     ],
+     [
+      "Dr Mason",
+      "Sensible. Now, you mention in the draft that you had to repeat the first set of seedlings. What happened there?"
+     ],
+     [
+      "Rahul",
+      "It was a silly mistake, really. We put the four boxes side by side on one shelf, and the light from the red lamp was leaking into the box next to it. So the blue group wasn't getting only blue light."
+     ],
+     [
+      "Chloe",
+      "We thought at first the bulbs were getting too hot, which would have been a different problem, but it was definitely the light spilling over. So we put dividers between the boxes and started again."
+     ],
+     [
+      "Dr Mason",
+      "Good, and you should say so in the report, because it shows you understood the control. But here's my main concern with the method section. You've listed the colours, the number of seedlings and the watering, but nowhere do you say how far the lamps were from the plants."
+     ],
+     [
+      "Rahul",
+      "Oh. We kept them all the same, about 30 centimetres, but you're right, we never wrote it down."
+     ],
+     [
+      "Dr Mason",
+      "It matters, because light intensity falls off with distance. Anyone repeating the experiment would need that figure. Now, the results. What did you find under the red light?"
+     ],
+     [
+      "Chloe",
+      "That was the surprising bit. Those seedlings grew the tallest, much taller than the ones under white light, but they were thin and floppy. Some of them fell over. I'd expected the tallest ones to be the healthiest."
+     ],
+     [
+      "Rahul",
+      "And the blue group were shorter but much sturdier, with thicker stems."
+     ],
+     [
+      "Dr Mason",
+      "That's a well-known pattern, and it brings me to the discussion section. You've explained your own results, but you haven't compared them with anything. You need to look at what published studies say about red and blue wavelengths, and say whether your data agree. Don't worry about speculating too much, a little speculation is fine as long as you label it."
+     ],
+     [
+      "Chloe",
+      "So we should add a paragraph comparing our findings with other research."
+     ],
+     [
+      "Dr Mason",
+      "Exactly. Now, a few smaller things to fix before you hand it in. First, the graphs. They're clear, but I can't tell what the numbers on the vertical axis mean. Label every axis with the correct units."
+     ],
+     [
+      "Rahul",
+      "Centimetres for height, and days along the bottom. Sorry, we rushed those."
+     ],
+     [
+      "Dr Mason",
+      "Second, in your results table you give the range for each group, the tallest and shortest seedling. That's useful, but I also want the mean for each group, so I can compare them at a glance."
+     ],
+     [
+      "Chloe",
+      "We can easily add a column for the mean."
+     ],
+     [
+      "Dr Mason",
+      "Third, you say that the differences are due to the light colour alone. Be careful. Measuring a seedling with a ruler, especially a floppy one, involves human error, so you should mention that as a limitation. Say how you tried to reduce it."
+     ],
+     [
+      "Rahul",
+      "We always measured at the same time of day, and Chloe checked my readings."
+     ],
+     [
+      "Dr Mason",
+      "Put that in the report. Next, references. I want them in Harvard style, and at the moment some are in one style and some in another."
+     ],
+     [
+      "Chloe",
+      "Right, we'll go through them all. Is Harvard the one with the author and the year in brackets?"
+     ],
+     [
+      "Dr Mason",
+      "That's it. Finally, the deadline. It's this Thursday at noon on the online system, but since you're making changes I'll give you an extra day. Make it Friday at noon, and not a minute later."
+     ],
+     [
+      "Rahul",
+      "Thank you, Dr Mason. That helps a lot."
+     ],
+     [
+      "Dr Mason",
+      "Good. Send me the final version when you've done it, and well done on the experiment."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 21,
+        "q": "Why did the students choose radish seedlings?",
+        "options": [
+         "They grow quickly.",
+         "They are cheap to buy.",
+         "They are easy to measure."
+        ],
+        "answer": "A",
+        "why": "Rahul says mainly because they germinate so quickly. Cheapness is mentioned by Chloe but called secondary."
+       },
+       {
+        "n": 22,
+        "q": "Why did they have to repeat the first set of seedlings?",
+        "options": [
+         "Light was leaking between the boxes.",
+         "One of the lamps became too hot.",
+         "Some of the seedlings were not watered."
+        ],
+        "answer": "A",
+        "why": "Red light leaked into the next box. Chloe says they had first thought the bulbs were too hot, but it was the spilled light."
+       },
+       {
+        "n": 23,
+        "q": "What is Dr Mason's main criticism of the method section?",
+        "options": [
+         "It is too short.",
+         "It does not say how far the lamps were from the plants.",
+         "It does not describe the watering."
+        ],
+        "answer": "B",
+        "why": "She says nowhere do they state the distance of the lamps; the colours, numbers and watering are listed."
+       },
+       {
+        "n": 24,
+        "q": "What do the students say about the seedlings under red light?",
+        "options": [
+         "They were tall but weak.",
+         "They had the most leaves.",
+         "They died within a few days."
+        ],
+        "answer": "A",
+        "why": "Chloe says they grew the tallest but were thin and floppy."
+       },
+       {
+        "n": 25,
+        "q": "What advice does Dr Mason give about the discussion section?",
+        "options": [
+         "Avoid any speculation.",
+         "Make it shorter.",
+         "Compare the results with published research."
+        ],
+        "answer": "C",
+        "why": "She says they must look at what published studies say and say whether their data agree. A little speculation is allowed."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "heading": "Changes to make before handing in the report",
+      "items": [
+       {
+        "n": 26,
+        "before": "Label the axes of every graph with the correct",
+        "after": "",
+        "answer": [
+         "units"
+        ],
+        "why": "She asks them to label every axis with the correct units."
+       },
+       {
+        "n": 27,
+        "before": "In the results table, add the",
+        "after": "for each group",
+        "answer": [
+         "mean"
+        ],
+        "why": "Dr Mason wants the mean as well as the range."
+       },
+       {
+        "n": 28,
+        "before": "Mention",
+        "after": "error as a limitation of measuring the seedlings",
+        "answer": [
+         "human"
+        ],
+        "why": "She says measuring with a ruler involves human error."
+       },
+       {
+        "n": 29,
+        "before": "Put the references in",
+        "after": "style",
+        "answer": [
+         "Harvard"
+        ],
+        "why": "She wants Harvard style."
+       },
+       {
+        "n": 30,
+        "before": "Hand the report in by noon on",
+        "after": "",
+        "answer": [
+         "Friday"
+        ],
+        "why": "The original deadline was Thursday, but she gives an extra day, so Friday."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 4",
+    "context": "A lecturer talks about the rise of the weekend and leisure time.",
+    "range": "31-40",
+    "speakers": {
+     "Professor": "deep"
+    },
+    "script": [
+     [
+      "Professor",
+      "Today I'd like to talk about something we all take for granted: the weekend. It seems such a natural unit of time that it is hard to imagine life without it, yet the two-day break from work is barely a hundred years old. How it came about says a good deal about the relationship between work, religion and consumer society."
+     ],
+     [
+      "Professor",
+      "Let's begin before the factory age. In many trades in Britain, workers kept an informal tradition known as Saint Monday. Having been paid at the end of the week, and often having spent Sunday socialising, they simply did not turn up on the Monday. Craftsmen worked in irregular bursts, with long hours towards the end of the week to make up for the lost day. This was not laziness; they were in control of their own time."
+     ],
+     [
+      "Professor",
+      "The factories of the early nineteenth century changed all this. Machines needed to be run at fixed times, and owners wanted a disciplined workforce that arrived at the same hour every day. Saint Monday became the target of employers, who complained about absenteeism. But workers had to be given something in return, and in the middle of the century legislation started to grant a half-day holiday on Saturday in many industries."
+     ],
+     [
+      "Professor",
+      "It's interesting to ask who actually supported this change. Employers saw a rested worker as a more productive one. Churches and social reformers argued that free time on Saturday afternoon would give working people an alternative to the public house, and that it would reduce drunkenness, which many reformers saw as the great social evil of the age. Whatever the motive, the Saturday half-day had a remarkable effect. People suddenly had a free afternoon, and entire industries grew up to fill it. Professional football is the best example. Clubs which had begun as church teams or works teams drew crowds of thousands, because spectators finally had Saturday afternoons free."
+     ],
+     [
+      "Professor",
+      "The full two-day weekend arrived later, and it began in a quite specific place. In 1908 a cotton mill in New England introduced the first five-day working week. The reason was religious. The mill employed many Jewish workers who did not work on Saturdays, and the owner decided it was easier to close the mill for two days than to manage a workforce with different days off. Other mills in the region gradually followed."
+     ],
+     [
+      "Professor",
+      "Then, in 1926, came the decision that did more than any other to establish the weekend as the norm. Henry Ford announced that his car plants would move to a five-day week of 40 hours with no cut in pay. Critics said he had gone mad. But Ford's reasoning was shrewd. He argued that workers with more free time would need more things to do and more things to buy. In other words, he saw his workers as potential consumers, and he wanted them to have leisure time in which to use the cars they were building."
+     ],
+     [
+      "Professor",
+      "The Great Depression of the 1930s gave a further push. With millions out of work, governments and employers began to see shorter working weeks as a way of sharing the available jobs among more people. A shorter week was no longer a luxury but a social necessity, and by the end of the decade the five-day week was common across much of the industrialised world."
+     ],
+     [
+      "Professor",
+      "What followed was a boom in leisure industries. Having free time at weekends created demand, and the most obvious beneficiary was the motor industry. Families began to take day trips in the car, and the car became a symbol of weekend freedom. Cinemas, holiday resorts, sports clubs and department stores all adjusted their business to a seven-day pattern in which weekends were the busiest time."
+     ],
+     [
+      "Professor",
+      "But the story doesn't end happily. Many sociologists now talk about the problem of time poverty. Even though we have more free time on paper than our grandparents did, many people feel they have less of it, because work follows them home through phones and email, and because the time that is free is crowded with tasks. It is also unevenly spread. Those who work in retail, hospitality and health care often work at weekends, so the weekend as a shared break is something that applies mainly to office workers."
+     ],
+     [
+      "Professor",
+      "Where does this leave us? Some countries and companies are now experimenting with a four-day week, and early trials in several places have been encouraging, with productivity holding steady and staff reporting less stress. Whether such trials can be extended to the whole economy is another question. But what history tells us is that the length of the working week has never been fixed. It has always been the result of argument, and it is likely to continue to change."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "heading": "The rise of the weekend",
+      "items": [
+       {
+        "n": 31,
+        "before": "Before factories, many workers took an informal day off called Saint",
+        "after": "",
+        "answer": [
+         "Monday"
+        ],
+        "why": "The tradition was known as Saint Monday."
+       },
+       {
+        "n": 32,
+        "before": "Reformers hoped a free Saturday afternoon would reduce",
+        "after": "",
+        "answer": [
+         "drunkenness"
+        ],
+        "why": "They argued it would reduce drunkenness."
+       },
+       {
+        "n": 33,
+        "before": "Professional",
+        "after": "clubs attracted large crowds on Saturday afternoons",
+        "answer": [
+         "football"
+        ],
+        "why": "Professional football is the best example of an industry that grew to fill the free afternoon."
+       },
+       {
+        "n": 34,
+        "before": "The first five-day working week was introduced in a",
+        "after": "mill in New England in 1908",
+        "answer": [
+         "cotton"
+        ],
+        "why": "The 1908 five-day week began in a New England cotton mill."
+       },
+       {
+        "n": 35,
+        "before": "Henry Ford wanted his workers to become",
+        "after": "who could use the cars they made",
+        "answer": [
+         "consumers"
+        ],
+        "why": "He saw his workers as potential consumers."
+       },
+       {
+        "n": 36,
+        "before": "In the Depression, a shorter week was seen as a way of sharing",
+        "after": "",
+        "answer": [
+         "jobs"
+        ],
+        "why": "Shorter weeks were a way of sharing the available jobs among more people."
+       },
+       {
+        "n": 37,
+        "before": "The motor industry benefited most because families went on day trips by",
+        "after": "",
+        "answer": [
+         "car"
+        ],
+        "why": "Families began to take day trips in the car."
+       },
+       {
+        "n": 38,
+        "before": "Many people today suffer from time",
+        "after": "even though they have more free time on paper",
+        "answer": [
+         "poverty"
+        ],
+        "why": "Sociologists talk about the problem of time poverty."
+       },
+       {
+        "n": 39,
+        "before": "Workers in retail, hospitality and",
+        "after": "often work at weekends",
+        "answer": [
+         "healthcare"
+        ],
+        "why": "These are the three sectors named as often working weekends."
+       },
+       {
+        "n": 40,
+        "before": "Trials of a four-day",
+        "after": "have been encouraging",
+        "answer": [
+         "week"
+        ],
+        "why": "Experiments with a four-day week have been encouraging, with productivity holding steady."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "reading": {
+  "sections": [
+   {
+    "title": "Passage 1",
+    "range": "1-13",
+    "passages": [
+     {
+      "title": "The Games Reborn",
+      "paras": [
+       "A  The idea of reviving the Olympic Games was far from new by the time it took hold in the 1890s. Contests with the Olympic name had been staged in several countries during the nineteenth century, usually as local festivals with a flavour of antiquity. In 1850 a doctor in the English market town of Much Wenlock began a yearly sports meeting that mixed running and jumping with country pastimes, and in Greece a wealthy merchant named Evangelos Zappas paid for revival Games in Athens in 1859 and again in 1870 and 1875. These events were modest and dependent on a single sponsor, yet they kept alive the notion that the ancient festival might be recreated. What was missing was an organisation capable of turning a national curiosity into an international tradition.",
+       "B  That organisation was the brainchild of Pierre de Coubertin, a French aristocrat born in 1863. As a boy he had watched his country suffer defeat in war, and he grew up convinced that French schooling had made young men soft. On visits to English schools he saw team games being used to build character, and he returned home determined to give sport a place in education. His ambitions soon grew larger. Sport, he argued, could bring young people of different nations together on a friendly field and so make war less likely. In 1894 he gathered delegates from a dozen countries at the Sorbonne in Paris, where they agreed to found the International Olympic Committee and to hold the first modern Games two years later.",
+       "C  Athens duly hosted the 1896 Games, but their success was far from certain. Greece was short of money, and its government doubted that it could afford the event. The ancient stadium, a long marble arena, was rebuilt only because Georgios Averoff, a wealthy Greek businessman living in Egypt, donated the huge sum needed to complete it. Fourteen nations sent athletes, some 240 competitors in all, every one of them a man, and many of them were simply visitors who happened to be in the city and decided to take part. The programme included a new long-distance race, the marathon, which had no ancient equivalent and was devised to recall the legendary run of a messenger from a battlefield to Athens. The Greek crowd had hoped for a home victory in at least one of the running events and got its wish when a water carrier named Spyridon Louis won the marathon, to scenes of wild rejoicing.",
+       "D  The next two Games nearly destroyed the movement. In Paris in 1900 and in St Louis in 1904, the Olympics were tacked on to world's fairs and spread over many months, so that some competitors never realised they had taken part in the Olympics at all. Events were poorly publicised, and the crowds were small. Women competed for the first time in 1900, in tennis and golf among other sports, though only a handful of them took part. The St Louis Games were hampered by the cost and difficulty of crossing the Atlantic, and the great majority of the competitors came from the United States. Coubertin later admitted that he had been tempted to give up. It was an unofficial celebration held in Athens in 1906 that restored public confidence in the Games and persuaded the committee to continue.",
+       "E  Order came gradually. Until the Games of 1908 in London, the marathon had been run over a different distance each time. In London the course measured 26 miles and 385 yards, partly, so the story goes, so that it could start beneath the windows of the royal nursery and finish in front of the royal box, and that figure was adopted as the standard in 1921. Stockholm in 1912 was the first Games to use electronic timing and a photo-finish camera, removing at last the arguments that had followed so many close races. Antwerp in 1920 introduced the athletes' oath and the flag of five interlocking rings, which Coubertin had designed in 1913 to represent the union of the continents. The flag was flown for the first time at the Games in Antwerp, and it has been the symbol of the movement ever since.",
+       "F  Politics proved harder to tame than timekeeping. The Berlin Games of 1936 were used by the host government as a stage for propaganda, and during the Cold War the Games became another arena of rivalry between East and West. In 1980 and again in 1984 large groups of countries stayed away in protest at events that had nothing to do with sport. There was also a long dispute over money. Until the 1980s the rules insisted that competitors in most sports be amateurs, a principle that favoured those wealthy enough to train without pay, and that was widely evaded by athletes who were supported by their governments. The rules were gradually relaxed, and by the end of the decade professionals were allowed in most sports.",
+       "G  Today's Games bear little resemblance to the festival that opened in Athens. A separate Winter Games began in 1924, and the Paralympic movement, which grew out of a sports day for injured soldiers in 1948, now shares the host city's facilities. More than 10,000 athletes take part in the summer events, watched by a global television audience of billions. Yet scale has brought a cost: the price of staging the Games has risen so sharply that fewer cities are willing to bid for them. Coubertin hoped that sport would bring nations together. Whether a festival so large can still do that is a question his successors continue to debate."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "Which paragraph contains the following information? Choose the correct letter, A-G.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Paragraph A"
+       },
+       {
+        "k": "B",
+        "t": "Paragraph B"
+       },
+       {
+        "k": "C",
+        "t": "Paragraph C"
+       },
+       {
+        "k": "D",
+        "t": "Paragraph D"
+       },
+       {
+        "k": "E",
+        "t": "Paragraph E"
+       },
+       {
+        "k": "F",
+        "t": "Paragraph F"
+       },
+       {
+        "k": "G",
+        "t": "Paragraph G"
+       }
+      ],
+      "items": [
+       {
+        "n": 1,
+        "q": "a description of how the founder's early experiences shaped his ideas",
+        "answer": "B",
+        "why": "Paragraph B describes Coubertin's boyhood defeat in war and his visits to English schools."
+       },
+       {
+        "n": 2,
+        "q": "a description of earlier festivals that came before the modern Games",
+        "answer": "A",
+        "why": "Paragraph A describes the Much Wenlock meeting and the Zappas Games."
+       },
+       {
+        "n": 3,
+        "q": "a reference to inconsistency in the length of a race",
+        "answer": "E",
+        "why": "Paragraph E says the marathon had been run over a different distance each time until 1908."
+       },
+       {
+        "n": 4,
+        "q": "an explanation of why some early Games attracted little notice",
+        "answer": "D",
+        "why": "In paragraph D the Games were tacked on to world's fairs and poorly publicised."
+       },
+       {
+        "n": 5,
+        "q": "an example of a wealthy person who paid for a building",
+        "answer": "C",
+        "why": "In paragraph C, Averoff donated the money to complete the stadium."
+       }
+      ]
+     },
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information given in Reading Passage 1? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 6,
+        "q": "Coubertin first saw team games being used to build character in French schools.",
+        "answer": "FALSE",
+        "why": "Paragraph B: he saw this on visits to English schools; he believed French schooling had made young men soft."
+       },
+       {
+        "n": 7,
+        "q": "Fewer than 20 countries sent athletes to the 1896 Games.",
+        "answer": "TRUE",
+        "why": "Paragraph C says fourteen nations took part."
+       },
+       {
+        "n": 8,
+        "q": "The marathon attracted bigger crowds than any other event in 1896.",
+        "answer": "NOT GIVEN",
+        "why": "The passage says the crowd rejoiced at the marathon result but gives no comparison of crowd sizes."
+       },
+       {
+        "n": 9,
+        "q": "Most of the competitors at the 1904 Games came from the host country.",
+        "answer": "TRUE",
+        "why": "Paragraph D says the great majority came from the United States, where St Louis is."
+       },
+       {
+        "n": 10,
+        "q": "Electronic timing was used at the 1908 Games.",
+        "answer": "FALSE",
+        "why": "Paragraph E says it was first used in Stockholm in 1912."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+      "items": [
+       {
+        "n": 11,
+        "before": "The flag with five rings was first flown at the Games in",
+        "after": ".",
+        "answer": [
+         "Antwerp"
+        ],
+        "why": "Paragraph E says the flag was flown for the first time at the Games in Antwerp."
+       },
+       {
+        "n": 12,
+        "before": "A separate Winter Games began in",
+        "after": ".",
+        "answer": [
+         "1924"
+        ],
+        "why": "Paragraph G gives 1924."
+       },
+       {
+        "n": 13,
+        "before": "Until the 1980s, competitors in most sports were required to be",
+        "after": ".",
+        "answer": [
+         "amateurs"
+        ],
+        "why": "Paragraph F says the rules insisted that competitors be amateurs."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Passage 2",
+    "range": "14-26",
+    "passages": [
+     {
+      "title": "Built to Fly",
+      "paras": [
+       "A  Flight has evolved independently at least four times in the history of animal life: in insects, in the extinct pterosaurs, in birds and in bats. Of these, birds have pushed the activity furthest, crossing oceans and mountain ranges and, in the case of the Arctic tern, travelling between the poles in a single year. To a casual observer a bird in the air seems to be doing something effortless. The physics and biology behind it are anything but. Staying aloft means producing enough upward force to offset body weight and enough forward thrust to overcome drag, and doing both with an engine that must itself be carried through the air.",
+       "B  The first requirement is lift, which a bird obtains from the shape of its wing. Seen in cross-section, a wing is curved on top and flatter beneath. As the bird moves forward, air passing over the upper surface travels faster than air passing below, and the pressure above the wing drops, so that the wing is pushed upwards. Lift also depends on the angle at which the wing meets the airflow. Tilt it up and lift increases, but only to a point: if the angle becomes too steep, the smooth flow breaks up into turbulence and lift collapses, a condition known as a stall. Birds have a remedy that aircraft designers later copied. A small group of feathers on the leading edge, the alula, which grows from the bird's equivalent of a thumb, is raised when the bird slows to land. It guides air across the upper surface, delaying the stall and allowing the bird to touch down at a gentle speed.",
+       "C  The second requirement is lightness without fragility. Many of a bird's larger bones are hollow, and in some species the skeleton weighs less than the feathers. Hollow does not mean weak: inside the bones run thin cross-struts, arranged much as the girders in a bridge, which resist bending and twisting. Some bones that are separate in mammals are fused in birds, giving a rigid frame against which the wing muscles can pull. A deep keel runs down the breastbone, providing an anchor for these muscles, which may account for a fifth of the body mass in strong fliers. Even the heavy jaws and teeth of the bird's ancestors have been traded for a light beak, and the feathers, though large in area, are made of keratin and weigh almost nothing.",
+       "D  Powering this machinery requires a supply of oxygen that mammalian lungs would struggle to deliver. Birds solve the problem with a respiratory system that has no equivalent in other animals. Their lungs are connected to a series of air sacs which act like bellows, pushing air through the lungs in one direction only, so that fresh air flows across the gas-exchange surfaces both when the bird breathes in and when it breathes out. Our own lungs, by contrast, draw air in and push it out along the same passages, so that some stale air always remains. The advantage of the avian arrangement is greatest at altitude, where oxygen is scarce. Bar-headed geese regularly cross the Himalayas at heights above 6,000 metres, where a human climber would struggle to remain conscious without bottled oxygen, and they do so while flapping hard rather than gliding.",
+       "E  Even an efficient engine is expensive to run, and many large birds have therefore learned to borrow energy from the atmosphere. Eagles and vultures circle in thermals, columns of warm air that rise from sun-heated ground, gaining height without a single wingbeat and then gliding across to the next. Albatrosses, which live over open sea where thermals are rare, use a different trick known as dynamic soaring. Because wind speeds are lower near the surface of the waves than at heights of a few metres above them, a bird that climbs into the faster air, turns and swoops down again gains energy on each cycle. Measurements made with small heart-rate monitors have shown that an albatross travelling in this way uses little more energy than when sitting on its nest, which is how individuals manage to circle the Southern Ocean for weeks at a time.",
+       "F  At the opposite extreme from the albatross is the hummingbird, the only bird able to hover for long periods and even to fly backwards. Instead of flapping its wings up and down, it rotates them at the shoulder so that the tips trace a figure-of-eight, generating lift on both the forward and the backward stroke. A small species may beat its wings eighty times a second. The cost is enormous. To fuel such effort a hummingbird must feed every few minutes through the day, and at night, when it cannot feed, it lowers its body temperature and enters a state of torpor to avoid starving.",
+       "G  Birds that fly in flocks have found yet another way of saving energy. Many species, from geese to ibises, travel in a V or an angled line. Researchers who fitted a group of northern bald ibises with tiny sensors that recorded the position and wingbeat timing of each bird found that the followers positioned themselves in the rising air swirling off the wingtip of the bird in front and flapped in step with it to make the best use of it. Such precision matters on the longest journeys. In 2007 a bar-tailed godwit fitted with a satellite transmitter flew non-stop from Alaska to New Zealand, a trip of more than 11,000 kilometres that lasted eight days without a pause to eat, drink or sleep. Scientists are still unsure how the bird managed to stay awake for so long, or how its body coped with the strain."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "Reading Passage 2 has seven paragraphs, A-G. Choose the correct heading for paragraphs B-F from the list of headings below. Write the correct letter, A-G, next to Questions 14-18.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Making use of other creatures' efforts"
+       },
+       {
+        "k": "B",
+        "t": "How a curved surface lifts a bird"
+       },
+       {
+        "k": "C",
+        "t": "Strength without weight"
+       },
+       {
+        "k": "D",
+        "t": "A breathing system unlike our own"
+       },
+       {
+        "k": "E",
+        "t": "Borrowing energy from the air"
+       },
+       {
+        "k": "F",
+        "t": "Staying still in mid-air"
+       },
+       {
+        "k": "G",
+        "t": "The risks of flying at great heights"
+       }
+      ],
+      "items": [
+       {
+        "n": 14,
+        "q": "Paragraph B",
+        "answer": "B",
+        "why": "Paragraph B explains how the curved shape of the wing creates lift."
+       },
+       {
+        "n": 15,
+        "q": "Paragraph C",
+        "answer": "C",
+        "why": "It describes hollow, strutted bones and light feathers."
+       },
+       {
+        "n": 16,
+        "q": "Paragraph D",
+        "answer": "D",
+        "why": "It explains the one-way airflow through bird lungs, unlike our own."
+       },
+       {
+        "n": 17,
+        "q": "Paragraph E",
+        "answer": "E",
+        "why": "It describes thermals and dynamic soaring, in which birds gain energy from the atmosphere."
+       },
+       {
+        "n": 18,
+        "q": "Paragraph F",
+        "answer": "F",
+        "why": "It is about the hummingbird hovering."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 19,
+        "q": "According to paragraph B, what is the function of the alula?",
+        "options": [
+         "It helps the bird to take off.",
+         "It prevents a stall when the bird is moving slowly.",
+         "It increases the bird's speed in level flight.",
+         "It reduces the noise of the wings."
+        ],
+        "answer": "B",
+        "why": "It is raised when the bird slows to land and delays the stall."
+       },
+       {
+        "n": 20,
+        "q": "Why are the hollow bones of a bird not fragile?",
+        "options": [
+         "They are thicker than those of mammals.",
+         "They are fused into a single piece.",
+         "They contain internal supports.",
+         "They are covered with a layer of keratin."
+        ],
+        "answer": "C",
+        "why": "Paragraph C says thin cross-struts run inside the bones. Some bones are fused, but not all into one piece."
+       },
+       {
+        "n": 21,
+        "q": "What does the example of the bar-headed goose show?",
+        "options": [
+         "Birds cannot fly above 6,000 metres without gliding.",
+         "Birds' lungs work well in thin air.",
+         "Birds can survive without oxygen for short periods.",
+         "Humans could cross the Himalayas with training."
+        ],
+        "answer": "B",
+        "why": "The geese cross the Himalayas flapping hard, illustrating the efficiency of the avian respiratory system at altitude."
+       },
+       {
+        "n": 22,
+        "q": "What did the research on northern bald ibises discover?",
+        "options": [
+         "Birds at the back of the line fly faster.",
+         "The leading bird flaps more slowly than the others.",
+         "Followers take advantage of rising air from the bird ahead.",
+         "Birds change position every few minutes."
+        ],
+        "answer": "C",
+        "why": "The followers positioned themselves in the rising air swirling off the wingtip of the bird in front."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+      "items": [
+       {
+        "n": 23,
+        "before": "Albatrosses gain energy because wind speeds vary at different",
+        "after": "above the waves.",
+        "answer": [
+         "heights"
+        ],
+        "why": "Paragraph E says wind speeds are lower near the surface than at heights of a few metres above."
+       },
+       {
+        "n": 24,
+        "before": "Eagles and vultures gain height in columns of warm air called",
+        "after": ".",
+        "answer": [
+         "thermals"
+        ],
+        "why": "Paragraph E names the columns of warm rising air as thermals."
+       },
+       {
+        "n": 25,
+        "before": "When hovering, a hummingbird's wing tips trace a",
+        "after": ".",
+        "answer": [
+         "figure-of-eight",
+         "figure of eight"
+        ],
+        "why": "Paragraph F says the tips trace a figure-of-eight."
+       },
+       {
+        "n": 26,
+        "before": "The tagged godwit flew non-stop for more than",
+        "after": "kilometres.",
+        "answer": [
+         "11,000",
+         "11000"
+        ],
+        "why": "Paragraph G says the trip was more than 11,000 kilometres."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Passage 3",
+    "range": "27-40",
+    "passages": [
+     {
+      "title": "The Price of Looking",
+      "paras": [
+       "A  Half a century ago an economist observed that a wealth of information creates a poverty of attention. The remark now reads like a prophecy. Most of the digital services we use are free at the point of use, and their owners earn their money by selling advertisers a share of our time. What is being traded, in other words, is not the content of a video or a feed but the glance of the person watching it. Commentators have taken to calling this arrangement the attention economy, and I think the label is accurate. Whatever one makes of the more dramatic claims made on its behalf, it describes a real feature of the way many companies make their money, and it explains why so many products seem designed to keep us looking for just a little longer.",
+       "B  The techniques are familiar enough: endless scrolling that removes any natural stopping point, videos that begin playing the moment the last one ends, and notifications that arrive at unpredictable moments. Tobias Renner, a former product designer, has likened such features to a slot machine in every pocket, arguing that they exploit our weakness for unpredictable rewards. The comparison is vivid, but I find it too flattering to the industry. It implies a master plan drawn up by psychologists. In my experience of how these products are built, the reality is duller and, in a way, more troubling: teams test hundreds of small variations and keep whichever one keeps people on the screen longest. Nobody needs to understand why it works for it to work.",
+       "C  How much harm does all this do? Surveys have linked heavy use of social media to poor sleep and low mood, particularly among teenagers, and the headlines have been alarming. But the evidence is more complicated than the headlines suggest. A study of several hundred thousand adolescents found a connection that was real but small, no larger than the link between wearing spectacles and doing well at school. Much of the data also rests on people's own estimates of how long they spend online, and these are notoriously unreliable. I do not conclude from this that the technology is harmless; the studies simply cannot show it either way. What they do suggest is that confident claims in either direction are premature.",
+       "D  A more philosophical objection comes from Marguerite Aldous, who argues that attention is the foundation of a person's freedom. What we notice, she says, shapes what we care about, and what we care about shapes who we become; to steer someone's attention without their knowledge is therefore a deeper intrusion than persuading them with an argument they can reject. I find this persuasive as a statement of principle. Her remedy is less convincing. She proposes a legal right to attention, enforceable against companies, but it is hard to see how a court would decide whether a given notification had violated it. I am not persuaded that such a right could be made workable.",
+       "E  Defenders of the industry point out that anxiety about new media is as old as the media themselves. Ines Calloway, a psychologist, notes that critics said much the same about the novel, the newspaper and the radio, and that every one of those panics proved exaggerated. She has a point, and anyone who writes on this subject would do well to keep it in mind. But the argument has its limits. A newspaper was identical for every reader and could not watch how each of them responded; today's services can adjust what they show, second by second, to the behaviour of each individual. That difference of degree is large enough, I think, to weaken the claim that we have been here before.",
+       "F  What should be done? The commonest advice is to take responsibility for ourselves: turn off notifications, set time limits, take regular breaks from the screen. Such habits help some people, but as a general solution I find them unconvincing. They place the burden on the individual, who is up against teams of engineers, and they treat as a personal failing what is really a structural problem. A better comparison is with food labelling and safety rules, where society decided that consumers should not have to be experts to be protected. Sensible rules might include switching off autoplay by default, giving users clear control over what is recommended to them, and requiring companies to publish how their recommendation systems work. Regulators are slow, and the companies are unlikely to reform of their own accord, since the business model rewards exactly the behaviour critics deplore.",
+       "G  Ultimately, I suspect the debate about whether these products are addictive is the wrong one. Addiction is a medical term that sits awkwardly with a habit most people manage reasonably well. The more important question is who gets to decide what deserves our attention: ourselves, or those who profit from it. That question will not be settled by research alone. It will be settled, as questions about working hours and factory conditions once were, by public argument and, eventually, by law."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "ynng",
+      "instr": "Do the following statements agree with the views of the writer in Reading Passage 3? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "items": [
+       {
+        "n": 27,
+        "q": "The term 'attention economy' describes a genuine feature of how many companies earn money.",
+        "answer": "YES",
+        "why": "In paragraph A the writer says the label is accurate."
+       },
+       {
+        "n": 28,
+        "q": "The writer agrees with Renner that the design of digital products follows a plan drawn up by psychologists.",
+        "answer": "NO",
+        "why": "In paragraph B the writer calls the comparison too flattering and says the products are built by testing small variations."
+       },
+       {
+        "n": 29,
+        "q": "The writer thinks research on teenagers proves that social media is harmless.",
+        "answer": "NO",
+        "why": "In paragraph C he says the studies cannot show it either way."
+       },
+       {
+        "n": 30,
+        "q": "The writer believes that people's own estimates of their screen time may be inaccurate.",
+        "answer": "YES",
+        "why": "Paragraph C calls these estimates notoriously unreliable."
+       },
+       {
+        "n": 31,
+        "q": "The writer is convinced that a legal right to attention could work in practice.",
+        "answer": "NO",
+        "why": "In paragraph D he says he is not persuaded such a right could be made workable."
+       },
+       {
+        "n": 32,
+        "q": "The writer thinks that personalisation weakens the argument that every era has worried about new media.",
+        "answer": "YES",
+        "why": "In paragraph E he says the difference is large enough to weaken the claim that we have been here before."
+       },
+       {
+        "n": 33,
+        "q": "The writer believes children should be banned from using social media.",
+        "answer": "NOT GIVEN",
+        "why": "No such ban is discussed or proposed."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 34,
+        "q": "What is the writer's view of the slot machine comparison in paragraph B?",
+        "options": [
+         "It is exaggerated because slot machines involve money.",
+         "It overestimates how much planning lies behind these designs.",
+         "It is accurate but poorly explained.",
+         "It was made by someone with no experience of the industry."
+        ],
+        "answer": "B",
+        "why": "He says it implies a master plan drawn up by psychologists whereas in reality teams simply test small variations."
+       },
+       {
+        "n": 35,
+        "q": "What does the writer conclude from the study of teenagers in paragraph C?",
+        "options": [
+         "Social media has no effect on sleep.",
+         "Confident claims either way are premature.",
+         "Teenagers are not as affected as adults.",
+         "More surveys are needed to confirm the link."
+        ],
+        "answer": "B",
+        "why": "He says confident claims in either direction are premature."
+       },
+       {
+        "n": 36,
+        "q": "Why does the writer reject advice to take responsibility for ourselves?",
+        "options": [
+         "Most people ignore such advice.",
+         "It places the burden on individuals facing powerful companies.",
+         "It has been shown to be ineffective.",
+         "It treats technology as harmless."
+        ],
+        "answer": "B",
+        "why": "Paragraph F says it places the burden on the individual, who is up against teams of engineers."
+       },
+       {
+        "n": 37,
+        "q": "What does the writer say is the reason the companies are unlikely to reform voluntarily?",
+        "options": [
+         "They do not believe the evidence of harm.",
+         "Regulators have prevented them.",
+         "Their business model depends on the behaviour critics deplore.",
+         "Users do not want the changes."
+        ],
+        "answer": "C",
+        "why": "He says the business model rewards exactly that behaviour."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "Look at the following statements (Questions 38-40) and the list of people below. Match each statement with the correct person, A, B, C or D. You may use any letter more than once.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Tobias Renner"
+       },
+       {
+        "k": "B",
+        "t": "Marguerite Aldous"
+       },
+       {
+        "k": "C",
+        "t": "Ines Calloway"
+       },
+       {
+        "k": "D",
+        "t": "The writer"
+       }
+      ],
+      "items": [
+       {
+        "n": 38,
+        "q": "A person's ability to direct their own attention is the basis of their freedom.",
+        "answer": "B",
+        "why": "Paragraph D: Aldous argues that attention is the foundation of a person's freedom."
+       },
+       {
+        "n": 39,
+        "q": "Fears about new forms of media have repeatedly turned out to be exaggerated.",
+        "answer": "C",
+        "why": "Paragraph E: Calloway says every one of the earlier panics proved exaggerated."
+       },
+       {
+        "n": 40,
+        "q": "Digital products exploit people's weakness for unpredictable rewards.",
+        "answer": "A",
+        "why": "Paragraph B: Renner compares them to slot machines that exploit this weakness."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "writing": {
+  "task1": {
+   "kind": "pie chart report",
+   "min": 150,
+   "prompt": "The pie charts below show the types of waste produced by one city in 2005 and in 2022.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+   "chart": {
+    "type": "pie",
+    "title": "Household waste produced by a city, by type (%)",
+    "unit": "%",
+    "labels": [
+     "Food",
+     "Paper and cardboard",
+     "Plastic",
+     "Glass",
+     "Garden waste",
+     "Other"
+    ],
+    "series": [
+     {
+      "name": "2005",
+      "data": [
+       28,
+       30,
+       12,
+       9,
+       14,
+       7
+      ]
+     },
+     {
+      "name": "2022",
+      "data": [
+       22,
+       21,
+       24,
+       6,
+       17,
+       10
+      ]
+     }
+    ]
+   }
+  },
+  "task2": {
+   "kind": "advantages and disadvantages essay",
+   "min": 250,
+   "prompt": "Nowadays many children use tablet computers from a very early age.\n\nDo the advantages of this development outweigh the disadvantages?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+  }
+ }
+}

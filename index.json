@@ -115,6 +115,12 @@
    "file": "gt19.json"
   },
   {
+   "id": "gt20",
+   "module": "GT",
+   "title": "General Training Test 20",
+   "file": "gt20.json"
+  },
+  {
    "id": "ac1",
    "module": "AC",
    "title": "Academic Test 1",
@@ -203,6 +209,24 @@
    "module": "AC",
    "title": "Academic Test 15",
    "file": "ac15.json"
+  },
+  {
+   "id": "ac16",
+   "module": "AC",
+   "title": "Academic Test 16",
+   "file": "ac16.json"
+  },
+  {
+   "id": "ac17",
+   "module": "AC",
+   "title": "Academic Test 17",
+   "file": "ac17.json"
+  },
+  {
+   "id": "ac18",
+   "module": "AC",
+   "title": "Academic Test 18",
+   "file": "ac18.json"
   },
   {
    "id": "ac19",

@@ -1,0 +1,1330 @@
+{
+ "id": "ac16",
+ "module": "AC",
+ "title": "Academic Test 16",
+ "listening": {
+  "parts": [
+   {
+    "title": "Part 1",
+    "context": "A man phones a caravan park to book a pitch for his caravan.",
+    "range": "1-10",
+    "speakers": {
+     "Ruth": "nz_f",
+     "Graham": "buttery"
+    },
+    "script": [
+     [
+      "Ruth",
+      "Good morning, Ferndale Caravan Park, Ruth speaking."
+     ],
+     [
+      "Graham",
+      "Oh, good morning. I'd like to book a pitch for our caravan, please. Just a few nights in June, if you have anything."
+     ],
+     [
+      "Ruth",
+      "I'm sure we can find something for you. I'll just take some details first. Could I have your surname?"
+     ],
+     [
+      "Graham",
+      "Yes, it's Whitcombe. That's W-H-I-T-C-O-M-B-E."
+     ],
+     [
+      "Ruth",
+      "Thank you, Mr Whitcombe. And where will you be travelling from? Just the postcode is fine."
+     ],
+     [
+      "Graham",
+      "We're in Darlington, so it's DL7 9QF."
+     ],
+     [
+      "Ruth",
+      "DL7 9QF. Lovely. And is there a number we can reach you on?"
+     ],
+     [
+      "Graham",
+      "My mobile is best. It's 07915 380 264. Oh, sorry, I've swapped the last two digits round. It's 07915 380 246."
+     ],
+     [
+      "Ruth",
+      "07915 380 246. Got that. Now, the size of the caravan matters, because it decides which pitch we can give you. How long is it?"
+     ],
+     [
+      "Graham",
+      "Well, the brochure says 7 metres, but that includes the towbar. The caravan itself is 6.5 metres."
+     ],
+     [
+      "Ruth",
+      "Then I'll put down 6.5. Anything up to 7 metres fits on our standard pitches, so that's no problem at all. When were you hoping to arrive?"
+     ],
+     [
+      "Graham",
+      "Thursday the 13th, if that's possible."
+     ],
+     [
+      "Ruth",
+      "Let me have a look. Ah, I'm afraid we're completely full on the Thursday night. There's a caravan club rally that weekend. I could offer you Friday, 14 June."
+     ],
+     [
+      "Graham",
+      "Friday would be fine, actually. That gives us a bit more time to pack on the Thursday."
+     ],
+     [
+      "Ruth",
+      "And how many nights would you like to stay?"
+     ],
+     [
+      "Graham",
+      "We were going to say 4, but my wife's sister might join us for the weekend, so we'd better make it 5. We'd leave on the Wednesday."
+     ],
+     [
+      "Ruth",
+      "5 nights, Friday to Wednesday. That's fine. Do you have any preference about where on the site you'd like to be?"
+     ],
+     [
+      "Graham",
+      "We'd love to be near the lake, if you've got anything."
+     ],
+     [
+      "Ruth",
+      "Oh, the lakeside pitches are all taken that week, I'm afraid. They go very early. What I can do is a pitch right next to the woods. It's much quieter, and it has a firm hard standing, so you won't get stuck if it rains."
+     ],
+     [
+      "Graham",
+      "That sounds ideal, actually. We prefer somewhere quiet. We'll take it."
+     ],
+     [
+      "Ruth",
+      "Wonderful. I'll note that down."
+     ],
+     [
+      "Graham",
+      "And what's the charge per night?"
+     ],
+     [
+      "Ruth",
+      "In June it's 28 pounds 50 a night, and that includes the electric hook-up. In July and August it goes up to 32 pounds, but you'll be well before that."
+     ],
+     [
+      "Graham",
+      "That's very reasonable. Can I ask about the lake? Do you hire anything out?"
+     ],
+     [
+      "Ruth",
+      "We do. There are bikes and kayaks, both by the day, from the little shop beside reception."
+     ],
+     [
+      "Graham",
+      "We're bringing our own bikes, but we'd like to hire 2 kayaks for one day, if that's all right. Probably the Saturday."
+     ],
+     [
+      "Ruth",
+      "No problem at all. You can pay for those when you collect them. Now, we ask for a deposit to secure the booking. It's usually 50 pounds, but for stays of less than a week it's 40 pounds."
+     ],
+     [
+      "Graham",
+      "Can I pay by card now?"
+     ],
+     [
+      "Ruth",
+      "Of course. I'll just put you through to the card machine in a moment. Before I do, a few things you should know. Reception is open from 8 until 6, but the main gate stays open all night, and you'll be given a code when you arrive."
+     ],
+     [
+      "Graham",
+      "Is there a speed limit on the site?"
+     ],
+     [
+      "Ruth",
+      "Yes, 5 miles an hour, and we ask everyone to keep to it, because there are lots of children about. Oh, and do you have any pets with you?"
+     ],
+     [
+      "Graham",
+      "Just one dog, a spaniel called Biscuit. He's very well behaved, I promise."
+     ],
+     [
+      "Ruth",
+      "That's fine, as long as he's on a lead around the site. There's a dog walking field behind the woods, which you'll like."
+     ],
+     [
+      "Graham",
+      "Marvellous. He'll be delighted. And will you send us something to confirm the booking?"
+     ],
+     [
+      "Ruth",
+      "Yes, I'll email you a confirmation this afternoon, together with a map of the site and the arrival instructions. If anything changes, just ring us on this number."
+     ],
+     [
+      "Graham",
+      "Thank you very much, Ruth. You've been very helpful."
+     ],
+     [
+      "Ruth",
+      "You're welcome, Mr Whitcombe. Now, let me put you through for the deposit."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "Ferndale Caravan Park: booking form",
+      "items": [
+       {
+        "n": 1,
+        "before": "Surname:",
+        "after": "",
+        "answer": [
+         "Whitcombe"
+        ],
+        "why": "He gives the name and spells it W-H-I-T-C-O-M-B-E."
+       },
+       {
+        "n": 2,
+        "before": "Postcode:",
+        "after": "",
+        "answer": [
+         "DL7 9QF"
+        ],
+        "why": "He says the postcode is DL7 9QF."
+       },
+       {
+        "n": 3,
+        "before": "Mobile number:",
+        "after": "",
+        "answer": [
+         "07915 380 246",
+         "07915380246"
+        ],
+        "why": "He first says 380 264, then corrects himself: 07915 380 246."
+       },
+       {
+        "n": 4,
+        "before": "Length of caravan:",
+        "after": "metres",
+        "answer": [
+         "6.5"
+        ],
+        "why": "The brochure says 7 metres, but that includes the towbar; the caravan itself is 6.5 metres."
+       },
+       {
+        "n": 5,
+        "before": "Arrival date: Friday",
+        "after": "June",
+        "answer": [
+         "14"
+        ],
+        "why": "The 13th is full because of a rally, so Ruth offers Friday, 14 June and he accepts."
+       },
+       {
+        "n": 6,
+        "before": "Number of nights:",
+        "after": "",
+        "answer": [
+         "5"
+        ],
+        "why": "He plans 4 nights but changes it to 5 because his wife's sister may join them."
+       },
+       {
+        "n": 7,
+        "before": "Pitch position: next to the",
+        "after": "",
+        "answer": [
+         "woods"
+        ],
+        "why": "The lakeside pitches are taken, so he accepts a pitch next to the woods."
+       },
+       {
+        "n": 8,
+        "before": "Cost per night: £",
+        "after": "(June)",
+        "answer": [
+         "28.50",
+         "28.5"
+        ],
+        "why": "In June it is 28 pounds 50; the 32 pounds is the July and August price."
+       },
+       {
+        "n": 9,
+        "before": "Extras: hire of 2",
+        "after": "for one day",
+        "answer": [
+         "kayaks"
+        ],
+        "why": "He is bringing his own bikes but wants to hire 2 kayaks."
+       },
+       {
+        "n": 10,
+        "before": "Deposit: £",
+        "after": "",
+        "answer": [
+         "40"
+        ],
+        "why": "The usual deposit is 50 pounds, but for stays of under a week it is 40 pounds."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 2",
+    "context": "A radio presenter reports on a community repair cafe.",
+    "range": "11-20",
+    "speakers": {
+     "Presenter": "aus_f"
+    },
+    "script": [
+     [
+      "Presenter",
+      "Hello, and welcome to Saturday Local. This week we're visiting a place where nothing gets thrown away until somebody has had a go at fixing it. It's the Coldwater Repair Cafe, and I spent a busy morning there last weekend. The cafe was the idea of Marion Hale, a retired teacher. A few years ago she read a council report about the amount of rubbish the town sends to landfill, and she says it worried her, but it didn't make her do anything. What did was a holiday in the Netherlands, where she wandered into a repair cafe by chance and saw people queueing happily with broken toasters and lamps. She came home determined to start one, and within a month she had found twelve volunteers. Her first repair, by the way, was her grandmother's old sewing machine, but that's another story. The cafe began in the library meeting room, but that was far too small. Next it moved to the church hall, which had plenty of space, but the lighting was so poor that nobody could see the tiny screws inside a radio. Since last spring it has been in the old bus depot on Quay Road, with room for fifty visitors at a time, a high roof and, importantly, a kettle. So how successful is it? When Marion started, she hoped that nine items in ten would be mended. In fact the real figure is about two thirds, which is still impressive when you consider that many of the things people bring are a last resort. You might expect the biggest problem to be a shortage of tools, but a hardware firm in town has lent most of them. Volunteers aren't the main headache either. No, the real difficulty is spare parts. Many modern gadgets are glued shut, and manufacturers don't sell the small components, so a repair that takes ten minutes can wait weeks for a part to arrive. Visitors don't pay for repairs. There's no fixed fee, and there's no membership either. Instead there's a tin by the door, and people put in whatever they feel is fair. That money buys the coffee and the odd spare part. Marion refuses to set a price, in case it keeps away someone who really can't afford it. Let me take you round, because each part of the cafe has its own character. The first table, just inside the door, is for electrical items such as kettles, lamps and radios. It's run by Mr Okoye, a retired engineer who has been mending things since he was ten years old, and nobody there would dream of touching a wire without his say-so. Beyond that is the bicycle corner. You'll only find it on the first Saturday of the month, because it needs the whole of the yard and the weather has to be kind. Along the back wall is the sewing station. Here the volunteers insist that you do the stitching yourself, with someone sitting beside you, because the aim is to teach people a skill, not just to hand back a mended coat. I tried it, and my hem is still holding. Next comes the furniture bench, where chairs, stools and little shelves are glued, clamped and sanded. It's a wonderful corner, but there are very few people in town who can work with wood, so Marion is desperate for more helpers there. If you've got a free Saturday and a steady hand, do get in touch. And finally, my favourite: the corner for toys and books. This is where the children gather, bringing teddy bears with split seams and picture books with torn spines, and watching the operation with enormous seriousness. One small boy told me he was going to be a bear surgeon when he grew up. The cafe opens every Saturday from 10 until 2, and you don't need to book. Bring along anything that's broken, and a bit of patience, and who knows? You might walk out with it working again. And if you'd like to help, Marion will be at the door with a smile and, of course, a cup of tea. Now, on to the weather."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 11,
+        "q": "What made Marion Hale decide to start a repair cafe?",
+        "options": [
+         "a council report on rubbish",
+         "a visit to a repair cafe on holiday",
+         "the breakdown of her grandmother's sewing machine"
+        ],
+        "answer": "B",
+        "why": "The council report worried her but did not make her act; it was seeing a repair cafe in the Netherlands that did. The sewing machine was merely her first repair."
+       },
+       {
+        "n": 12,
+        "q": "Where does the cafe meet now?",
+        "options": [
+         "in the library",
+         "in the church hall",
+         "in the old bus depot"
+        ],
+        "answer": "C",
+        "why": "The library was too small and the church hall too dark; since last spring it has used the old bus depot."
+       },
+       {
+        "n": 13,
+        "q": "What proportion of items are successfully mended?",
+        "options": [
+         "about two thirds",
+         "about half",
+         "nine out of ten"
+        ],
+        "answer": "A",
+        "why": "Nine in ten was only Marion's hope at the start; the real figure is about two thirds."
+       },
+       {
+        "n": 14,
+        "q": "What is the main difficulty for the volunteers?",
+        "options": [
+         "a lack of tools",
+         "a shortage of volunteers",
+         "getting hold of spare parts"
+        ],
+        "answer": "C",
+        "why": "Tools have been lent by a hardware firm and volunteers are not the main headache; the real difficulty is spare parts."
+       },
+       {
+        "n": 15,
+        "q": "How does the cafe collect money?",
+        "options": [
+         "by charging a fixed fee for each repair",
+         "by asking visitors for whatever they feel is fair",
+         "by charging an annual membership"
+        ],
+        "answer": "B",
+        "why": "There is no fixed fee and no membership; visitors put what they like in a tin."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "What does the speaker say about each part of the cafe? Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+      "options": [
+       {
+        "k": "A",
+        "t": "It is the busiest part of the cafe."
+       },
+       {
+        "k": "B",
+        "t": "It has a waiting list for visitors."
+       },
+       {
+        "k": "C",
+        "t": "It is led by a retired engineer."
+       },
+       {
+        "k": "D",
+        "t": "It is open on only one Saturday a month."
+       },
+       {
+        "k": "E",
+        "t": "It needs more volunteers."
+       },
+       {
+        "k": "F",
+        "t": "It is popular with children."
+       },
+       {
+        "k": "G",
+        "t": "It teaches visitors to do the repair themselves."
+       }
+      ],
+      "items": [
+       {
+        "n": 16,
+        "q": "The electrical table",
+        "answer": "C",
+        "why": "It is run by Mr Okoye, a retired engineer."
+       },
+       {
+        "n": 17,
+        "q": "The bicycle corner",
+        "answer": "D",
+        "why": "It is only open on the first Saturday of the month."
+       },
+       {
+        "n": 18,
+        "q": "The sewing station",
+        "answer": "G",
+        "why": "Volunteers insist that visitors do the stitching themselves, to learn the skill."
+       },
+       {
+        "n": 19,
+        "q": "The furniture bench",
+        "answer": "E",
+        "why": "Few people in town can work with wood, so Marion is desperate for more helpers."
+       },
+       {
+        "n": 20,
+        "q": "The toys and books corner",
+        "answer": "F",
+        "why": "Children gather there with teddy bears and picture books."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 3",
+    "context": "Two students, Kayla and Rhys, plan a documentary film about a local river.",
+    "range": "21-30",
+    "speakers": {
+     "Kayla": "glassy",
+     "Rhys": "aus_m"
+    },
+    "script": [
+     [
+      "Kayla",
+      "Hi, Rhys. Sorry I'm late. I've been in the library, trying to book the camera for next week."
+     ],
+     [
+      "Rhys",
+      "No problem. Any luck?"
+     ],
+     [
+      "Kayla",
+      "Yes, we've got it from Tuesday to Friday. So, shall we sort out the plan for the river documentary?"
+     ],
+     [
+      "Rhys",
+      "Definitely. I've got my notes here. First thing, what do we most want the film to show? When we talked last week, I thought we were going to do the history of the mills."
+     ],
+     [
+      "Kayla",
+      "We did think about that, but I'd rather look at the river as it is now. It was so polluted thirty years ago that there were no fish at all, and now there are otters. I think the story of how it recovered is much stronger."
+     ],
+     [
+      "Rhys",
+      "You're right. The mills have been done to death in the local museum anyway. And I suppose we could include how people use the river today, the anglers, the rowers and so on, but that can be a side thread."
+     ],
+     [
+      "Kayla",
+      "Exactly. The main message is recovery. Now, what about the drone? You said your cousin has one."
+     ],
+     [
+      "Rhys",
+      "He does, but I spoke to Dr Hale and she says the university won't insure it. If anything went wrong we'd be personally liable. It's not that I can't fly it, I've done it loads of times, and the noise doesn't bother the birds as far as we know."
+     ],
+     [
+      "Kayla",
+      "Fine, forget the drone. There's a viewpoint on Sedge Hill, isn't there? We can get a wide shot from there for nothing."
+     ],
+     [
+      "Rhys",
+      "Good idea. Now, who do we speak to first? I was thinking of the water company, but I suppose Mr Dunne would be the better start."
+     ],
+     [
+      "Kayla",
+      "The old fisherman? Why him?"
+     ],
+     [
+      "Rhys",
+      "Because he's lived there all his life and knows everybody. He's not the most important voice, but he can introduce us to the other people. He told me yesterday that he'd put us in touch with the conservation officer and the people at the water treatment works."
+     ],
+     [
+      "Kayla",
+      "Brilliant. Then he's our first interview. How do you want to open the film?"
+     ],
+     [
+      "Rhys",
+      "I wondered about recording underwater sounds, like bubbles and the clicking of stones."
+     ],
+     [
+      "Kayla",
+      "That would be lovely, but we'd need special microphones, and we haven't got any. What about starting with a sunrise shot over the weir, with the mist on the water? We can use the underwater idea if there's time later."
+     ],
+     [
+      "Rhys",
+      "Okay, sunrise it is. Now, let's go through the places we'll film. Old Mill Bridge first. What shall we do there?"
+     ],
+     [
+      "Kayla",
+      "I'd like to lay old photographs over the present-day view. There are some great ones in the archive, showing the river brown and dirty. If we line them up carefully, it'll show the contrast without any commentary."
+     ],
+     [
+      "Rhys",
+      "Nice. And Hawthorn Weir? We could take samples there, and compare the water with the water further downstream."
+     ],
+     [
+      "Kayla",
+      "Hmm, that would need the lab, and we don't have the time. What I'd like at the weir is a time-lapse of the water level rising as the tide comes in. It's amazing to watch."
+     ],
+     [
+      "Rhys",
+      "That works. Then Cutler's Meadow. The primary school there has been doing a river clean-up each spring, hasn't it?"
+     ],
+     [
+      "Kayla",
+      "Yes, the children collect rubbish from the bank. We should film them. It's a good contrast with the old days, and the teacher said she's happy for us to come."
+     ],
+     [
+      "Rhys",
+      "Then Sedge Marsh. The birds are nesting there in May, so we need to be quick."
+     ],
+     [
+      "Kayla",
+      "I'll book a day for that. Quiet footage of nests, nothing else. And finally the water treatment works."
+     ],
+     [
+      "Rhys",
+      "I think we should talk to the conservation officer there, to hear what the improvement means in practice. She's based there two days a week, so it's a convenient place for the interview."
+     ],
+     [
+      "Kayla",
+      "Perfect. Now, last thing. Dr Hale mentioned the commentary when I saw her. What did she say about it?"
+     ],
+     [
+      "Rhys",
+      "She said we should keep narration to a minimum. Let the pictures and the interviews carry the story. She said most student films talk far too much."
+     ],
+     [
+      "Kayla",
+      "I'll try. I tend to write a lot, so I'll have to be strict. Ten minutes is the limit, isn't it?"
+     ],
+     [
+      "Rhys",
+      "Yes, so we'll have to be selective. Right, I'll draw up a filming schedule tonight and email it to you."
+     ],
+     [
+      "Kayla",
+      "Great. And I'll write to Mr Dunne to ask when he's free. Thanks, Rhys. I think this is going to be good."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 21,
+        "q": "What do the students most want their documentary to show?",
+        "options": [
+         "the history of the old mills",
+         "how the river has recovered from pollution",
+         "how people use the river today"
+        ],
+        "answer": "B",
+        "why": "Kayla prefers the story of recovery; the mills are dropped and river use is only a side thread."
+       },
+       {
+        "n": 22,
+        "q": "Why will they not use a drone?",
+        "options": [
+         "The university will not insure it.",
+         "Rhys does not know how to fly it.",
+         "It would disturb the birds."
+        ],
+        "answer": "A",
+        "why": "Dr Hale says the university won't insure it. Rhys can fly it, and noise does not bother the birds as far as is known."
+       },
+       {
+        "n": 23,
+        "q": "Why do they choose Mr Dunne for their first interview?",
+        "options": [
+         "He is the most important person to hear.",
+         "He works for the water company.",
+         "He can put them in touch with other people."
+        ],
+        "answer": "C",
+        "why": "Rhys says he is not the most important voice but can introduce them to others."
+       },
+       {
+        "n": 24,
+        "q": "How do they decide to open the film?",
+        "options": [
+         "with a sunrise shot over the weir",
+         "with recordings made underwater",
+         "with old photographs of the river"
+        ],
+        "answer": "A",
+        "why": "Underwater sounds need special microphones they lack, so they choose the sunrise shot; the old photographs are for Old Mill Bridge."
+       },
+       {
+        "n": 25,
+        "q": "What does their tutor advise about commentary?",
+        "options": [
+         "Write it as a team.",
+         "Use as little as possible.",
+         "Ask a professional to record it."
+        ],
+        "answer": "B",
+        "why": "Dr Hale told them to keep narration to a minimum."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "What do the students plan to film at each place? Choose FIVE answers from the box and write the correct letter, A-F, next to Questions 26-30.",
+      "options": [
+       {
+        "k": "A",
+        "t": "a time-lapse of the water level rising"
+       },
+       {
+        "k": "B",
+        "t": "birds nesting"
+       },
+       {
+        "k": "C",
+        "t": "an interview with a conservation officer"
+       },
+       {
+        "k": "D",
+        "t": "old photographs placed over the present-day view"
+       },
+       {
+        "k": "E",
+        "t": "a comparison of water samples"
+       },
+       {
+        "k": "F",
+        "t": "schoolchildren clearing rubbish"
+       }
+      ],
+      "items": [
+       {
+        "n": 26,
+        "q": "Old Mill Bridge",
+        "answer": "D",
+        "why": "Kayla wants archive photographs laid over the present-day view."
+       },
+       {
+        "n": 27,
+        "q": "Hawthorn Weir",
+        "answer": "A",
+        "why": "Water samples are rejected as needing the lab; a time-lapse of the rising tide is chosen."
+       },
+       {
+        "n": 28,
+        "q": "Cutler's Meadow",
+        "answer": "F",
+        "why": "They will film the primary school children collecting rubbish from the bank."
+       },
+       {
+        "n": 29,
+        "q": "Sedge Marsh",
+        "answer": "B",
+        "why": "Nesting birds, filmed quietly in May."
+       },
+       {
+        "n": 30,
+        "q": "the water treatment works",
+        "answer": "C",
+        "why": "They plan to interview the conservation officer there."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 4",
+    "context": "A lecturer talks about the history of the elevator and its effect on tall buildings.",
+    "range": "31-40",
+    "speakers": {
+     "Lecturer": "nz_m"
+    },
+    "script": [
+     [
+      "Lecturer",
+      "Good afternoon, everyone. Today I want to look at one of the quiet machines that shaped the modern city: the elevator, or lift, and its partnership with the tall building. Let's begin with a puzzle. Why did nobody build very tall buildings before the nineteenth century? Engineering was part of the answer, but not the main part. The real problem was the stairs. Before lifts, few people were willing to climb more than five or six floors, so the grandest, most expensive rooms in any building were on the lower levels, and the cheapest rooms were on the top floors, where only servants and poorer tenants lived. The elevator turned that order upside down. Lifting machines, of course, are very old. Hoists with ropes and pulleys were used in ancient times, but they carried goods, not people. In mines and warehouses of the early industrial period, freight lifts were driven by animals, by falling water, and later by steam, which gave a smoother and more powerful pull. Passengers used them rarely, and with good reason. The great fear was the rope. If it broke, the platform fell, and ropes did snap, because they were made of hemp and wore out quickly. The solution came in the 1850s, from an American mechanic called Elisha Otis. He did not invent the lift itself. What he invented was a safety brake: a spring-loaded device which gripped the guide rails if the rope gave way. He demonstrated it at a public exhibition in New York in 1854. Standing on a platform high above the crowd, he ordered the rope to be cut. The platform dropped a few centimetres, and then stopped. It is said that he called out to the astonished crowd that all was safe. Within a few years he was selling lifts to factories and hotels. The first lift built to carry ordinary passengers was fitted in a department store in New York in 1857, and it was an immediate attraction. Shoppers went up and down simply for the novelty of it, and store owners soon realised that upper floors could be as valuable as the ground floor. But steam had its limits. Steam lifts were slow and tended to be noisy, and so engineers turned to hydraulics, which used water pressure to push a piston. Hydraulic lifts were smooth and reliable, but a piston cannot be longer than the shaft it moves in, so they were suitable only for buildings of about ten floors. The breakthrough came in the 1880s, when the electric motor arrived. Electric lifts could be installed in a tall building and travel much higher at much greater speeds, and from then on the skyscraper was possible. In those early decades, each lift had an attendant, who stood inside and worked a handle to start and stop the car. Stopping precisely at each floor took skill, and attendants were employed in thousands. It was only in the first half of the twentieth century that automatic lifts with push-buttons became common, partly because passengers were gradually persuaded to trust a machine without a person in it. Today, the main challenge is not height but traffic. A super-tall building needs so many lifts that they would occupy most of the floor space. One answer is a sky lobby. Passengers take a fast express lift to a floor halfway up, and there they change to a local lift for the upper floors. In this way, a handful of shafts can serve many levels, and so the space required for lifts is reduced. The other modern challenge is weight. A steel cable for a very tall building is so heavy that most of its strength is needed just to hold itself up. One manufacturer has therefore developed cables made of carbon fibre, which are much lighter than steel and so allow lifts to travel much further without a change. Software has also changed how we use the lift. In a destination control system, passengers key in their floor before they enter, and a computer groups people going to the same place into the same car. The result is a shorter waiting time at the lobby, and a smoother flow of people at busy times of day. Finally, what of the future? Engineers have already tested a lift that moves without any ropes at all, driven by magnets, like a train. Because it doesn't depend on a cable, it can in theory travel sideways as well as up and down, and several cars could share a single shaft. That may be some way off, but when the lift changes, the city changes with it. I'd like to finish with a question for your seminar next week. If lifts can move sideways, will buildings need to be tall at all?"
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE OR TWO WORDS for each answer.",
+      "heading": "The elevator and the tall building",
+      "items": [
+       {
+        "n": 31,
+        "before": "Before lifts existed, the cheapest rooms in a building were on the",
+        "after": "floors",
+        "answer": [
+         "top"
+        ],
+        "why": "Because people would not climb many stairs, the cheapest rooms were on the top floors."
+       },
+       {
+        "n": 32,
+        "before": "Early freight lifts were driven by animals, water and later by",
+        "after": "",
+        "answer": [
+         "steam"
+        ],
+        "why": "Freight lifts were driven by animals, falling water and later steam."
+       },
+       {
+        "n": 33,
+        "before": "People feared lifts because the rope could",
+        "after": "",
+        "answer": [
+         "snap",
+         "break"
+        ],
+        "why": "The great fear was that the rope would snap."
+       },
+       {
+        "n": 34,
+        "before": "Otis showed his safety brake at an",
+        "after": "in New York in 1854",
+        "answer": [
+         "exhibition"
+        ],
+        "why": "He demonstrated it at a public exhibition in 1854."
+       },
+       {
+        "n": 35,
+        "before": "The first passenger lift was installed in a",
+        "after": "in 1857",
+        "answer": [
+         "department store"
+        ],
+        "why": "The first lift for ordinary passengers was fitted in a department store in New York in 1857."
+       },
+       {
+        "n": 36,
+        "before": "In early electric lifts, an",
+        "after": "worked the handle that started and stopped the car",
+        "answer": [
+         "attendant"
+        ],
+        "why": "Each lift had an attendant who worked a handle."
+       },
+       {
+        "n": 37,
+        "before": "Super-tall buildings use a",
+        "after": "where passengers change from express to local lifts",
+        "answer": [
+         "sky lobby"
+        ],
+        "why": "Passengers change lifts at a sky lobby halfway up."
+       },
+       {
+        "n": 38,
+        "before": "Cables made of",
+        "after": "fibre are lighter than steel ones",
+        "answer": [
+         "carbon"
+        ],
+        "why": "A manufacturer has developed carbon fibre cables, much lighter than steel."
+       },
+       {
+        "n": 39,
+        "before": "Destination control reduces",
+        "after": "time in the lobby",
+        "answer": [
+         "waiting"
+        ],
+        "why": "Passengers key in their floor first, which shortens waiting time."
+       },
+       {
+        "n": 40,
+        "before": "A rope-free lift driven by magnets might one day travel",
+        "after": "as well as up and down",
+        "answer": [
+         "sideways"
+        ],
+        "why": "Without a cable the lift can in theory travel sideways as well as up and down."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "reading": {
+  "sections": [
+   {
+    "title": "Passage 1",
+    "range": "1-13",
+    "passages": [
+     {
+      "title": "The Invention of the Barcode",
+      "paras": [
+       "A  In the late 1940s, the owner of a regional supermarket chain visited the dean of an engineering college and asked whether students could devise a way of recording purchases automatically. The dean refused, but a graduate student named Alan Pryce, who had overheard the conversation in a corridor, was intrigued. Together with his friend Dorothea Vance, a part-time lecturer in physics, he began to work on the problem. At that time every item in a shop was priced by hand, and each price was then typed into a till by an assistant. Errors were frequent, queues were long, and shop owners had little reliable information about which products were actually selling. The two friends believed that a machine which could identify a product at the checkout would solve all three difficulties at once, and they set about building one in a rented garage near the campus.",
+       "B  Their first idea borrowed from an unlikely source. Vance had been using ultraviolet ink to mark samples in her laboratory, and she suggested printing patterns in an ink that glowed under special light. The system worked in principle, but the ink faded within a few days, and the equipment needed to read it was the size of a small wardrobe. Pryce then remembered the dots and dashes of telegraph code. One afternoon, while sitting on a beach, he drew his fingers through the sand and watched the parallel lines they left behind. If the dots and dashes were stretched downwards into thin vertical lines of different thickness, he realised, the result would be a pattern that was easy to print and that could be read as light passed across it. He sketched the idea on the back of an envelope, and he kept the envelope for the rest of his life.",
+       "C  Turning the pattern into a working scanner took far longer than inventing it. The first reader used a powerful bulb, a photographic tube and an oscilloscope to display the result, and it became so hot that a fan had to be taped to the bench to cool it. It could tell thick lines from thin ones only if the card was drawn across it at a steady speed, which no shop assistant could be expected to manage. Pryce and Vance patented the design in 1952, but they could not find a manufacturer willing to build it. Most companies thought the machine too delicate and too costly for everyday use, and the patent lay largely ignored for the next ten years.",
+       "D  The invention was rescued by the laser, which became practical in the 1960s. A small, cheap beam could sweep across a label hundreds of times a second, so the speed at which the item moved no longer mattered. A railway company was the first to try a coloured version of the system, using it to identify freight wagons as they passed a reader beside the track. However, the labels became coated with dirt in the rain, and the scheme was abandoned after a few years. Meanwhile, grocers who had read about the technology began to press manufacturers for a standard that every product could carry, because a code that worked for only one chain was of little use to a supplier selling to hundreds of them.",
+       "E  Agreeing on a standard proved remarkably difficult. Different committees favoured different designs, and one group wanted a circular pattern, like a target, which could be read from any direction. In the end the committee chose a design of straight lines, because it could be printed with existing machines at almost no extra cost, whereas circular labels required new printing plates for every package. A further problem soon emerged. The first labels were printed so sharply that, when the ink spread a little on absorbent cardboard, neighbouring lines merged and the scanner could not read them. Manufacturers had to be persuaded to print the code on a smooth patch of the box, and some of them grumbled that it spoiled the appearance of their packaging.",
+       "F  The first purchase to be scanned in a real shop was a tin of tomatoes, in a small town store in 1975. Shoppers were at first suspicious. Some feared that the stripes carried hidden information about them, a few campaigners claimed that the technology would put cashiers out of work, and others complained that without price tags on every item they could no longer compare costs. Supermarkets responded by keeping price labels on the shelves, which is why you can still see them today. Within ten years, however, most large supermarkets had installed scanners, and the time taken to serve each customer had fallen by about a third. Shops also gained an accurate record of what they sold, so that they could order stock far more efficiently.",
+       "G  The barcode has since moved far beyond the supermarket. Hospitals use it to match patients to their medicines, libraries use it to track books, and airlines print it on boarding passes. Newer two-dimensional codes, which are square and store far more information, can be read by a mobile phone. Yet Pryce and Vance received little reward. Their patent expired before the technology became widespread, and Pryce, who had returned to teaching, learned of the first supermarket scanner from a newspaper. Vance, who lived until the 1990s, would say only that she was pleased to see that the idea worked, and that she had always known it would work if only somebody were patient enough to find the right kind of light."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "Reading Passage 1 has seven paragraphs, A-G. Which paragraph contains the following information? Choose the correct letter, A-G.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Paragraph A"
+       },
+       {
+        "k": "B",
+        "t": "Paragraph B"
+       },
+       {
+        "k": "C",
+        "t": "Paragraph C"
+       },
+       {
+        "k": "D",
+        "t": "Paragraph D"
+       },
+       {
+        "k": "E",
+        "t": "Paragraph E"
+       },
+       {
+        "k": "F",
+        "t": "Paragraph F"
+       },
+       {
+        "k": "G",
+        "t": "Paragraph G"
+       }
+      ],
+      "items": [
+       {
+        "n": 1,
+        "q": "a description of the problem the inventors set out to solve",
+        "answer": "A",
+        "why": "Paragraph A explains that prices were typed by hand, errors were frequent and queues long."
+       },
+       {
+        "n": 2,
+        "q": "an explanation of why one label design was chosen over another",
+        "answer": "E",
+        "why": "The straight-line design was chosen because it could be printed with existing machines, unlike circular labels."
+       },
+       {
+        "n": 3,
+        "q": "a reference to the doubts the public had about the new system",
+        "answer": "F",
+        "why": "Shoppers were suspicious of hidden information and price comparison."
+       },
+       {
+        "n": 4,
+        "q": "a mention of the inventors' lack of financial reward",
+        "answer": "G",
+        "why": "Paragraph G says Pryce and Vance received little reward as their patent expired."
+       },
+       {
+        "n": 5,
+        "q": "an account of how the basic pattern was imagined",
+        "answer": "B",
+        "why": "Pryce imagined the lines while drawing in the sand on a beach."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+      "items": [
+       {
+        "n": 6,
+        "before": "Pryce's idea for the pattern came from lines he made in the",
+        "after": "",
+        "answer": [
+         "sand"
+        ],
+        "why": "Paragraph B: he drew his fingers through the sand."
+       },
+       {
+        "n": 7,
+        "before": "The first scanner became so hot that a",
+        "after": "was needed to cool it.",
+        "answer": [
+         "fan"
+        ],
+        "why": "Paragraph C: a fan was taped to the bench."
+       },
+       {
+        "n": 8,
+        "before": "The system became practical only after the arrival of the",
+        "after": "",
+        "answer": [
+         "laser"
+        ],
+        "why": "Paragraph D: the invention was rescued by the laser."
+       },
+       {
+        "n": 9,
+        "before": "An early coloured version of the system was tried by a",
+        "after": "company.",
+        "answer": [
+         "railway"
+        ],
+        "why": "Paragraph D: a railway company tried a coloured version on freight wagons."
+       }
+      ]
+     },
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information given in Reading Passage 1? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 10,
+        "q": "The dean asked Pryce to work on the problem of automatic recording.",
+        "answer": "FALSE",
+        "why": "The dean refused the request; Pryce only overheard the conversation."
+       },
+       {
+        "n": 11,
+        "q": "Pryce and Vance disagreed about who should own the patent.",
+        "answer": "NOT GIVEN",
+        "why": "Nothing is said about any disagreement over the patent."
+       },
+       {
+        "n": 12,
+        "q": "Circular labels were rejected partly because of the cost of printing them.",
+        "answer": "TRUE",
+        "why": "They would have required new printing plates for every package."
+       },
+       {
+        "n": 13,
+        "q": "Supermarkets removed shelf price labels once scanners were installed.",
+        "answer": "FALSE",
+        "why": "Supermarkets kept price labels on the shelves, as paragraph F says."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Passage 2",
+    "range": "14-26",
+    "passages": [
+     {
+      "title": "The Microbiome and Human Health",
+      "paras": [
+       "A  For most of the twentieth century, bacteria were regarded as enemies. Hospitals, kitchens and nurseries were scrubbed in the hope of removing them, and the discovery of antibiotics seemed to confirm that the best microbe was a dead one. Yet an adult human body carries roughly as many bacterial cells as human ones, most of them in the large intestine, and together with the fungi and viruses that live alongside them they form what scientists call the microbiome. Researchers now describe it as a kind of additional organ, one that digests food, trains the immune system and even appears to influence mood. The change of attitude has been dramatic, and it has led to a wave of research that would have seemed absurd to doctors a generation ago, and that has already begun to change how some illnesses are treated.",
+       "B  The first clues to this partnership came from animals raised without any microbes at all. Mice reared in sterile conditions were found to need about a third more food than ordinary mice to maintain their weight, because they could not extract all the energy from what they ate. Their intestines were thinner, and their immune defences were underdeveloped. When these animals were later given bacteria taken from healthy mice, their digestion and immunity improved within weeks. This suggested that the microbes were not passengers but contributors, and that the body had come to depend on them over millions of years of shared evolution.",
+       "C  A person's microbiome begins to form at birth. Babies delivered vaginally pick up bacteria from the mother during the journey, whereas those born by caesarean section acquire a different mixture, drawn mainly from the hospital environment and from the skin of the people who handle them. Breast milk contains sugars that infants cannot digest themselves but that feed particular helpful bacteria. By around the age of three, the community has settled into a pattern that resembles an adult's, and in most people it stays relatively stable for decades. Some studies suggest that these early differences may affect the risk of allergies later in life, but the evidence is far from settled.",
+       "D  After infancy, diet is the strongest influence on the community. In one experiment, volunteers who switched from a diet rich in vegetables and grains to one made up almost entirely of meat and cheese showed measurable changes in their gut bacteria within 24 hours. The community returned to normal soon after the volunteers resumed their usual meals, which suggests that short-term changes are temporary and that only long-term habits reshape it. Fibre appears especially important. Bacteria ferment it to produce fatty acids that nourish the cells lining the gut and reduce inflammation, and populations that eat little fibre tend to have less varied communities of bacteria.",
+       "E  Antibiotics, though they save lives, are blunt instruments. A single course may wipe out a large share of the gut bacteria. Most species return within a month or two, but some may never fully recover. Doctors have long known that patients treated with strong antibiotics can develop serious infections with a hardy bacterium that flourishes when its competitors disappear. One treatment, once greeted with disgust, is now used for the worst cases: transplanting material from a healthy donor's gut into the patient, so that a whole community of bacteria is restored at once. Cure rates above 80 per cent have been reported, far higher than those achieved with further antibiotics.",
+       "F  More controversial are claims that the microbiome affects conditions far from the gut. Studies have linked differences in gut bacteria to obesity, diabetes, depression and even Parkinson's disease. In one often-cited experiment, mice that received bacteria from an obese human donor gained more weight than mice given bacteria from a lean one. But such results are hard to apply to people. Most human studies can show only that two things occur together, not that one causes the other: people with depression may eat differently, and diet alone could change their bacteria. Several scientists have warned that commercial enthusiasm has run ahead of the evidence.",
+       "G  That warning applies particularly to the market in probiotic drinks and supplements. Few of the bacteria sold in them are the species that normally dominate the gut, and many fail to survive stomach acid. In trials, the benefits have mostly been modest, and they appear to depend on which strain is used and which condition is being treated. Researchers are therefore turning to more personalised approaches, in which a person's own bacteria are analysed and dietary advice is tailored accordingly. Even so, the experts' basic advice is not new: eat a varied diet with plenty of fibre, and avoid taking antibiotics unnecessarily. It may be less exciting than a miracle drink, but at present it is the best-supported advice that the science can offer, and it costs almost nothing to follow."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "Reading Passage 2 has seven paragraphs, A-G. Choose the correct heading for paragraphs B-F from the list of headings below. Write the correct letter, A-H.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Why bold claims should be treated with caution"
+       },
+       {
+        "k": "B",
+        "t": "A change of attitude towards bacteria"
+       },
+       {
+        "k": "C",
+        "t": "Evidence from animals reared without microbes"
+       },
+       {
+        "k": "D",
+        "t": "The price paid for treating infection"
+       },
+       {
+        "k": "E",
+        "t": "Fast but temporary effects of what we eat"
+       },
+       {
+        "k": "F",
+        "t": "How the first community of bacteria is acquired"
+       },
+       {
+        "k": "G",
+        "t": "Products that promise more than they deliver"
+       },
+       {
+        "k": "H",
+        "t": "The microbes that live on the skin"
+       }
+      ],
+      "items": [
+       {
+        "n": 14,
+        "q": "Paragraph B",
+        "answer": "C",
+        "why": "Paragraph B describes mice raised in sterile conditions."
+       },
+       {
+        "n": 15,
+        "q": "Paragraph C",
+        "answer": "F",
+        "why": "It explains how bacteria are picked up at birth and from breast milk."
+       },
+       {
+        "n": 16,
+        "q": "Paragraph D",
+        "answer": "E",
+        "why": "A change of diet altered bacteria within 24 hours but they soon returned to normal."
+       },
+       {
+        "n": 17,
+        "q": "Paragraph E",
+        "answer": "D",
+        "why": "Antibiotics save lives but leave patients open to serious infection."
+       },
+       {
+        "n": 18,
+        "q": "Paragraph F",
+        "answer": "A",
+        "why": "The paragraph warns that links are hard to prove and enthusiasm has run ahead of evidence. Heading G fits paragraph G, not F."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 19,
+        "q": "What does the writer say about the microbiome in paragraph A?",
+        "options": [
+         "It consists mostly of harmful species.",
+         "It carries out tasks that benefit the body.",
+         "It is found mainly in the stomach.",
+         "It has been ignored by hospitals."
+        ],
+        "answer": "B",
+        "why": "It digests food, trains the immune system and influences mood. Most of it is in the large intestine, not the stomach."
+       },
+       {
+        "n": 20,
+        "q": "What did the experiments on sterile mice show?",
+        "options": [
+         "The mice needed more food to stay the same weight.",
+         "The mice were stronger than ordinary mice.",
+         "The mice became ill when given bacteria.",
+         "The mice lived longer than ordinary mice."
+        ],
+        "answer": "A",
+        "why": "Mice reared without microbes needed about a third more food, because they could not extract all the energy from it."
+       },
+       {
+        "n": 21,
+        "q": "What happened in the experiment described in paragraph D?",
+        "options": [
+         "The volunteers' gut bacteria changed permanently.",
+         "The volunteers' health improved on a meat diet.",
+         "The change in bacteria took several weeks to appear.",
+         "The bacteria went back to normal after the volunteers changed their diet again."
+        ],
+        "answer": "D",
+        "why": "The changes appeared within 24 hours and the community returned to normal once usual meals were resumed."
+       },
+       {
+        "n": 22,
+        "q": "What does the writer suggest about probiotic products?",
+        "options": [
+         "They contain the species found in most people's guts.",
+         "They are more effective than a varied diet.",
+         "Their effects depend on the strain used and the condition treated.",
+         "They have been proved to have no benefit."
+        ],
+        "answer": "C",
+        "why": "Benefits are modest and appear to depend on strain and condition; few of the species are those that dominate the gut."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "items": [
+       {
+        "n": 23,
+        "before": "Breast milk contains",
+        "after": "that infants cannot digest but that feed helpful bacteria.",
+        "answer": [
+         "sugars"
+        ],
+        "why": "Paragraph C: breast milk contains sugars infants cannot digest themselves."
+       },
+       {
+        "n": 24,
+        "before": "Bacteria ferment fibre to produce",
+        "after": "that nourish the cells lining the gut.",
+        "answer": [
+         "fatty acids"
+        ],
+        "why": "Paragraph D."
+       },
+       {
+        "n": 25,
+        "before": "Serious infections can develop in patients on antibiotics because a hardy bacterium flourishes when its",
+        "after": "disappear.",
+        "answer": [
+         "competitors"
+        ],
+        "why": "Paragraph E."
+       },
+       {
+        "n": 26,
+        "before": "Many of the bacteria in probiotic products fail to survive",
+        "after": "",
+        "answer": [
+         "stomach acid"
+        ],
+        "why": "Paragraph G."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Passage 3",
+    "range": "27-40",
+    "passages": [
+     {
+      "title": "Putting It Off",
+      "paras": [
+       "A  Few failings are as widely shared as procrastination. Surveys suggest that about one adult in five is a chronic procrastinator, and that most students regularly delay their assignments. The popular explanation is that such people are lazy, or that they cannot manage their time. I want to argue that this explanation is mistaken, and that it has produced remedies that rarely work. If I am right, millions of people have been blaming themselves for the wrong thing, and spending money on the wrong cures.",
+       "B  Laziness cannot explain why people put off tasks that matter to them, such as a medical appointment or a letter to a friend. Lazy people do not worry; procrastinators, by contrast, typically feel anxious and guilty while they delay. Psychologists who study the habit increasingly regard it as a problem of managing emotion rather than time. The task triggers boredom, anxiety or self-doubt, and putting it off brings immediate relief. That relief is a reward, and rewarded behaviour tends to be repeated, so the habit strengthens with every delay. It is a vicious circle, and no timetable can break it, because the timetable does not touch the feeling that causes the avoidance. A student who feels dread when facing a blank page does not need a better calendar; she needs the dread to become bearable.",
+       "C  A second ingredient is the way the brain values the future. Experiments show that people consistently prefer a small reward now to a larger one later, and that the effect is greatest when the delay is long. A deadline in three months feels so remote that it carries little weight, while the same deadline tomorrow feels urgent. Economists call this present bias. It is tempting to conclude that procrastinators simply need stronger deadlines. I think this reading is too simple, since many people miss even firm deadlines, and since the pressure of a deadline can itself add to the anxiety that causes the delay in the first place.",
+       "D  Some commentators blame smartphones, and the idea has an obvious appeal. I am not convinced. Distraction is not new; earlier generations sharpened pencils, tidied the kitchen and wrote long letters to avoid the work in front of them. Surveys carried out before smartphones existed suggest that rates of procrastination among students were already high. Phones make avoidance easier, and they may make it more visible, but they do not create the wish to avoid. To blame the device is to mistake the opportunity for the motive. A person who truly wanted to start would put the phone in a drawer, and a person who does not want to start will find something else to do within minutes. The same is true of the internet in general, which has simply replaced the pile of unread magazines.",
+       "E  Then there is the productivity industry. Planners, applications and courses promise that better organisation will cure delay. The promise is attractive but, in my view, misguided. Organising a task is itself one of the favourite ways of avoiding it. Many procrastinators spend hours building elaborate lists and colour-coded calendars, and feel a pleasant sense of progress, without having begun the work at all. I know of no convincing evidence that such tools help chronic procrastinators in the long run, and I suspect that their main beneficiaries are the people who sell them. There is a certain irony in the fact that a person seeking to stop wasting time may waste a whole weekend choosing the perfect application.",
+       "F  More promising is research on self-compassion. In one study, students who had put off studying for an exam were asked to write a short note forgiving themselves. They then procrastinated less on the next exam than students who had not been asked to do so. The result seems counterintuitive, since we tend to assume that guilt motivates us. But guilt makes the task even more unpleasant, and so even easier to avoid. Another approach is to shrink the task: a person who commits to working for only five minutes will often carry on for much longer, because the hardest part, getting started, has already been done.",
+       "G  None of this means that procrastination is harmless. Chronic delay is linked to poorer health, because people postpone visits to the doctor, and to lower earnings. But treating it as a character flaw is both unkind and unhelpful. If my argument is sound, the sensible response is to make difficult tasks less threatening: to break them into small pieces, to begin with the least frightening part, and to stop punishing ourselves for the delays that have already occurred. Deadlines will always have their uses, and the habit will probably always be with us. But understanding what lies behind it may at least make us wiser about what to do."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "ynng",
+      "instr": "Do the following statements agree with the claims of the writer in Reading Passage 3? Choose YES if the statement agrees with the claims of the writer, NO if the statement contradicts the claims of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "items": [
+       {
+        "n": 27,
+        "q": "Most procrastinators are simply lazy people.",
+        "answer": "NO",
+        "why": "The writer argues that the laziness explanation is mistaken."
+       },
+       {
+        "n": 28,
+        "q": "Procrastinators usually feel anxious while they are delaying.",
+        "answer": "YES",
+        "why": "Paragraph B says procrastinators typically feel anxious and guilty."
+       },
+       {
+        "n": 29,
+        "q": "Setting firm deadlines is enough to cure procrastination.",
+        "answer": "NO",
+        "why": "The writer thinks this is too simple; many people miss firm deadlines."
+       },
+       {
+        "n": 30,
+        "q": "Smartphones are the main cause of procrastination among students.",
+        "answer": "NO",
+        "why": "The writer is not convinced; rates were high before smartphones."
+       },
+       {
+        "n": 31,
+        "q": "Organising a task can be a way of avoiding it.",
+        "answer": "YES",
+        "why": "Paragraph E says organising a task is a favourite way of avoiding it."
+       },
+       {
+        "n": 32,
+        "q": "Schools should teach students to forgive themselves.",
+        "answer": "NOT GIVEN",
+        "why": "The writer mentions a study on self-forgiveness but says nothing about teaching it in schools."
+       },
+       {
+        "n": 33,
+        "q": "Seeing procrastination as a flaw of character does not help.",
+        "answer": "YES",
+        "why": "Paragraph G calls it both unkind and unhelpful."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 34,
+        "q": "What does the writer say about the relief that comes from avoiding a task?",
+        "options": [
+         "It lasts for several days.",
+         "It makes the task seem easier.",
+         "It encourages the habit to continue.",
+         "It is felt only by anxious people."
+        ],
+        "answer": "C",
+        "why": "The relief is a reward, and rewarded behaviour is repeated, so the habit strengthens."
+       },
+       {
+        "n": 35,
+        "q": "What point does the writer make about present bias?",
+        "options": [
+         "It affects only poor planners.",
+         "It makes distant deadlines seem less important.",
+         "It is strongest for enjoyable tasks.",
+         "It makes people miss every deadline."
+        ],
+        "answer": "B",
+        "why": "A deadline in three months carries little weight; the other options go beyond the text."
+       },
+       {
+        "n": 36,
+        "q": "Why does the writer mention earlier generations sharpening pencils?",
+        "options": [
+         "to show that avoidance existed long before phones",
+         "to suggest that people once worked harder",
+         "to argue that technology has improved concentration",
+         "to recommend housework as a break"
+        ],
+        "answer": "A",
+        "why": "Distraction is not new, so phones cannot be the cause."
+       },
+       {
+        "n": 37,
+        "q": "What happened in the study of students who wrote a note to themselves?",
+        "options": [
+         "They studied less for the first exam.",
+         "They felt more guilty than before.",
+         "They found the next exam easier.",
+         "They put off studying less for the next exam."
+        ],
+        "answer": "D",
+        "why": "Those who forgave themselves procrastinated less on the next exam."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+      "items": [
+       {
+        "n": 38,
+        "before": "Chronic delay is linked to poorer health because people postpone visits to the",
+        "after": "",
+        "answer": [
+         "doctor"
+        ],
+        "why": "Paragraph G."
+       },
+       {
+        "n": 39,
+        "before": "The writer suggests that difficult tasks should be broken into small",
+        "after": "",
+        "answer": [
+         "pieces"
+        ],
+        "why": "Paragraph G."
+       },
+       {
+        "n": 40,
+        "before": "The writer also says that we should stop",
+        "after": "ourselves for past delays.",
+        "answer": [
+         "punishing"
+        ],
+        "why": "Paragraph G."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "writing": {
+  "task1": {
+   "kind": "bar chart report",
+   "min": 150,
+   "prompt": "The chart below shows the percentage of male and female workers employed in six sectors of the economy in the country of Veldmark in 2022.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+   "chart": {
+    "type": "bar",
+    "title": "Share of male and female workers by sector in Veldmark, 2022",
+    "unit": "%",
+    "labels": [
+     "Agriculture",
+     "Manufacturing",
+     "Construction",
+     "Retail",
+     "Health and education",
+     "Finance and business"
+    ],
+    "series": [
+     {
+      "name": "Men",
+      "data": [
+       9,
+       24,
+       17,
+       16,
+       10,
+       24
+      ]
+     },
+     {
+      "name": "Women",
+      "data": [
+       5,
+       11,
+       2,
+       24,
+       41,
+       17
+      ]
+     }
+    ]
+   }
+  },
+  "task2": {
+   "kind": "opinion essay (agree/disagree)",
+   "min": 250,
+   "prompt": "Some people believe that history is the most important subject that children study at school, because it helps them to understand the world they live in.\n\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+  }
+ }
+}
