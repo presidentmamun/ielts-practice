@@ -129,7 +129,8 @@ open(os.path.join(SITE, "sw.js"), "w", encoding="utf-8", newline="\n").write("""
 // (browsers ask for audio in byte ranges, so cached recordings are sliced here to answer those requests).
 const CACHE = "ielts-desk-%s";
 const SHELL = %s;
-self.addEventListener("install", e => e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())));
+// cache: "reload" skips the browser's own 10-minute cache, so a new version never stores the previous page
+self.addEventListener("install", e => e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL.map(u => new Request(u, {cache: "reload"})))).then(() => self.skipWaiting())));
 self.addEventListener("activate", e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 async function ranged(req, res) {
   const m = /bytes=(\\d+)-(\\d*)/.exec(req.headers.get("range") || "");

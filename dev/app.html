@@ -1535,7 +1535,7 @@ async function refreshApp(){
   // pick up a new version by itself: check whenever the app comes back to the front, reload when it is safe to
   if ("serviceWorker" in navigator) {
     const had = !!navigator.serviceWorker.controller;
-    navigator.serviceWorker.addEventListener("controllerchange", () => { if (had && S.view === "home" && RADIO.i < 0 && !$(".modal")) location.reload() });
+    navigator.serviceWorker.addEventListener("controllerchange", () => { if (had && S.view === "home" && (RADIO.i < 0 || !RADIO.a || RADIO.a.paused) && !$(".modal")) location.reload() });
     document.addEventListener("visibilitychange", () => { if (!document.hidden) navigator.serviceWorker.getRegistration().then(r => r && r.update()).catch(() => {}) });
   }
 })();
