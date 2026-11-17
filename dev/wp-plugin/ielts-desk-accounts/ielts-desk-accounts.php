@@ -2,7 +2,7 @@
 /**
  * Plugin Name: IELTS Desk Accounts
  * Description: Free sign-up and login for the IELTS Practice Desk app (ielts.iwate-bd.org). Learners get their own WordPress account (role "IELTS Learner"), confirm their email with a 6-digit code or a link, and keep their progress. Manage everyone under IELTS Desk in the admin menu: block, unblock, delete, or add a learner yourself.
- * Version: 1.1.0
+ * Version: 1.1.3
  * Author: Iwate BD
  * Requires at least: 5.6
  * Requires PHP: 7.4
@@ -122,6 +122,11 @@ final class IELTS_Desk_Accounts {
 				'permission_callback' => '__return_true',
 			) );
 		}
+		register_rest_route( self::NS, '/join', array(   // same as /signup; WordPress.com rate-limits addresses named "signup" hard
+			'methods'             => 'POST',
+			'callback'            => array( __CLASS__, 'r_signup' ),
+			'permission_callback' => '__return_true',
+		) );
 		register_rest_route( self::NS, '/confirm', array(
 			'methods'             => 'GET',
 			'callback'            => array( __CLASS__, 'r_confirm' ),
@@ -136,10 +141,11 @@ final class IELTS_Desk_Accounts {
 	/** At most $max tries per visitor address in $seconds. */
 	private static function throttle( $bucket, $max, $seconds ) {
 		$ip  = isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : '';
-		$key = 'ielts_rl_' . md5( $bucket . '|' . $ip );
+		$key = 'ielts_rl2_' . md5( $bucket . '|' . $ip );
 		$n   = (int) get_transient( $key );
 		if ( $n >= $max ) {
-			return self::err( 'ielts_slow', 'Too many attempts. Please wait a few minutes and try again.', 429 );
+			// 400, not 429: WordPress.com swaps a 429 for its own HTML page without CORS headers, so the app could not read it
+			return self::err( 'ielts_slow', 'Too many attempts. Please wait a while and try again.', 400 );
 		}
 		set_transient( $key, $n + 1, $seconds );
 		return true;
@@ -267,7 +273,7 @@ final class IELTS_Desk_Accounts {
 	/* ---------- routes ---------- */
 
 	public static function r_signup( $request ) {
-		$t = self::throttle( 'signup', 5, HOUR_IN_SECONDS );
+		$t = self::throttle( 'signup', 10, HOUR_IN_SECONDS );
 		if ( is_wp_error( $t ) ) {
 			return $t;
 		}
@@ -300,7 +306,7 @@ final class IELTS_Desk_Accounts {
 		}
 		$id = self::create( $name, $email, $pass, false );
 		if ( is_wp_error( $id ) ) {
-			return self::err( 'ielts_signup', 'Sign-up failed. Please try again.', 500 );
+			return self::err( 'ielts_signup', 'Sign-up failed (' . $id->get_error_code() . '). Please try again.', 500 );
 		}
 		if ( ! self::send_code( get_user_by( 'id', $id ), 'verify' ) ) {
 			return self::err( 'ielts_mail', 'Your account was made, but the email could not be sent. Choose "Send the code again" in a minute.', 500 );
