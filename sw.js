@@ -1,8 +1,8 @@
 // Offline support. The app and the tests are cached when the app is installed.
 // A recording is downloaded and cached in full the first time it is played, then served from the cache
 // (browsers ask for audio in byte ranges, so cached recordings are sliced here to answer those requests).
-const CACHE = "ielts-desk-271a0c3130";
-const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "premium/meta.json", "index.json", "gt1.json", "gt2.json", "gt3.json", "gt4.json", "gt5.json", "gt6.json", "gt7.json", "gt8.json", "gt9.json", "gt10.json", "gt11.json", "gt12.json", "gt13.json", "gt14.json", "gt15.json", "gt16.json", "gt17.json", "gt18.json", "gt19.json", "ac1.json", "ac2.json", "ac3.json", "ac4.json", "ac5.json", "ac6.json", "ac7.json", "ac8.json", "ac9.json", "ac10.json", "ac11.json", "ac13.json", "ac14.json", "ac15.json", "ac19.json", "ac20.json"];
+const CACHE = "ielts-desk-b0f2b55427";
+const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "premium/meta.json", "index.json", "gt1.json", "gt2.json", "gt3.json", "gt4.json", "gt5.json", "gt6.json", "gt7.json", "gt8.json", "gt9.json", "gt10.json", "gt11.json", "gt12.json", "gt13.json", "gt14.json", "gt15.json", "gt16.json", "gt17.json", "gt18.json", "gt19.json", "ac1.json", "ac2.json", "ac3.json", "ac4.json", "ac5.json", "ac6.json", "ac7.json", "ac8.json", "ac9.json", "ac10.json", "ac11.json", "ac12.json", "ac13.json", "ac14.json", "ac15.json", "ac19.json", "ac20.json"];
 self.addEventListener("install", e => e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())));
 self.addEventListener("activate", e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 async function ranged(req, res) {

@@ -1,0 +1,1383 @@
+{
+ "id": "ac12",
+ "module": "AC",
+ "title": "Academic Test 12",
+ "listening": {
+  "parts": [
+   {
+    "title": "Part 1",
+    "context": "A man phones a removal firm to arrange the delivery of a second-hand piano.",
+    "range": "1-10",
+    "speakers": {
+     "Chloe": "aus_f",
+     "Daniel": "bright"
+    },
+    "script": [
+     [
+      "Chloe",
+      "Good morning, Larkfield Piano Movers, Chloe speaking. How can I help you?"
+     ],
+     [
+      "Daniel",
+      "Oh, hello. Yes, I hope so. I've just bought a second-hand piano and I need to get it to my flat. Someone told me you specialise in that sort of thing."
+     ],
+     [
+      "Chloe",
+      "We do indeed. Pianos are all we move. I'll just take a few details and then I can give you a price. Could I have your surname first?"
+     ],
+     [
+      "Daniel",
+      "It's Whitcombe. That's W-H-I-T-C-O-M-B-E."
+     ],
+     [
+      "Chloe",
+      "Lovely, thank you, Mr Whitcombe. And a contact number, please?"
+     ],
+     [
+      "Daniel",
+      "Yes, my mobile is 07712 903 468."
+     ],
+     [
+      "Chloe",
+      "07712 903 468. Got it. Now, what sort of piano is it? Is it a grand?"
+     ],
+     [
+      "Daniel",
+      "Oh no, a grand piano would never fit in my living room. I wish it would! No, it's an upright. It's quite an old one, but the seller says it's been looked after."
+     ],
+     [
+      "Chloe",
+      "Fine. Uprights are a lot easier for the crew. And where will we be collecting it from?"
+     ],
+     [
+      "Daniel",
+      "From the seller's house. It's number 52, Kestrel Road. That's K-E-S-T-R-E-L."
+     ],
+     [
+      "Chloe",
+      "Right, 52 Kestrel Road. Is that in the town centre?"
+     ],
+     [
+      "Daniel",
+      "It's just outside, in Haldon. There's a driveway, so your van can park right outside the front door."
+     ],
+     [
+      "Chloe",
+      "That's good to know. And the delivery address?"
+     ],
+     [
+      "Daniel",
+      "It's 9 Mill Court, in Harbury. That's H-A-R-B-U-R-Y. I used to live in Hartley, but I moved last spring, so please don't use the old address if you have me on the system."
+     ],
+     [
+      "Chloe",
+      "No, you're a new customer, so I've nothing on file. Harbury, then. Now, is there a lift in the building?"
+     ],
+     [
+      "Daniel",
+      "I'm afraid not. I'm on the second floor, so it's two flights of stairs. I did say it would be about 20 steps when I enquired at another firm, but I counted them yesterday, and it's actually 28 steps in all."
+     ],
+     [
+      "Chloe",
+      "28 steps. Thank you for counting, because that does affect the price. With stairs we need a third person on the crew, so there's an extra charge."
+     ],
+     [
+      "Daniel",
+      "I see. Well, that's understandable. Can I ask when you could do it? I'd like it done next Friday, the 18th, if that's possible."
+     ],
+     [
+      "Chloe",
+      "Let me look at the diary. Oh dear, I'm afraid Friday is completely full. We could do the Saturday, the 19th of March. How would that be?"
+     ],
+     [
+      "Daniel",
+      "Saturday is fine. I'm not working at weekends. What time of day would you come?"
+     ],
+     [
+      "Chloe",
+      "Our morning crews are all booked, so I'm afraid it would have to be the afternoon. I can offer you 2.30. They'll collect first and should be with you within about an hour."
+     ],
+     [
+      "Daniel",
+      "Perfect. That gives me time to tidy up. Now, what will it cost?"
+     ],
+     [
+      "Chloe",
+      "For an upright piano on the ground floor, our price is 160 pounds. With the stairs, there's an extra 25 pounds. So the total comes to 185 pounds."
+     ],
+     [
+      "Daniel",
+      "185 pounds. That sounds reasonable. Does that include insurance in case anything is damaged?"
+     ],
+     [
+      "Chloe",
+      "Yes, it does. The cover is up to 5,000 pounds, which is more than enough for most second-hand uprights. We'll also bring our own protective blankets and straps, so you don't need to provide anything."
+     ],
+     [
+      "Daniel",
+      "That's a relief. Do I have to pay anything in advance?"
+     ],
+     [
+      "Chloe",
+      "We do ask for a deposit to hold the booking. It's 40 pounds. Would you like to pay by cheque? Some people prefer that."
+     ],
+     [
+      "Daniel",
+      "I haven't had a cheque book for years. Could I use my card instead? I can do it right now over the phone."
+     ],
+     [
+      "Chloe",
+      "Of course. A card is quicker anyway. I'll put you through to our payment line in a moment. One last thing. Please measure the front door and the turn on the stairs at your end, just in case the piano is wider than you expect."
+     ],
+     [
+      "Daniel",
+      "Good idea. I'll do that this evening. Thank you for your help, Chloe."
+     ],
+     [
+      "Chloe",
+      "My pleasure. I'll email you a confirmation as soon as the deposit has gone through. Goodbye, Mr Whitcombe."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "Larkfield Piano Movers: booking form",
+      "items": [
+       {
+        "n": 1,
+        "before": "Customer's surname:",
+        "after": "",
+        "answer": [
+         "Whitcombe"
+        ],
+        "why": "He spells his surname W-H-I-T-C-O-M-B-E."
+       },
+       {
+        "n": 2,
+        "before": "Phone number:",
+        "after": "",
+        "answer": [
+         "07712 903 468",
+         "07712903468"
+        ],
+        "why": "He gives his mobile number as 07712 903 468."
+       },
+       {
+        "n": 3,
+        "before": "Type of piano:",
+        "after": "",
+        "answer": [
+         "upright"
+        ],
+        "why": "Chloe asks if it is a grand; he says it would not fit and that it is an upright."
+       },
+       {
+        "n": 4,
+        "before": "Collect from: 52",
+        "after": "Road",
+        "answer": [
+         "Kestrel"
+        ],
+        "why": "He spells the street name K-E-S-T-R-E-L."
+       },
+       {
+        "n": 5,
+        "before": "Deliver to: 9 Mill Court,",
+        "after": "",
+        "answer": [
+         "Harbury"
+        ],
+        "why": "He spells Harbury; Hartley is his old town, which he says not to use."
+       },
+       {
+        "n": 6,
+        "before": "Number of steps to flat:",
+        "after": "",
+        "answer": [
+         "28"
+        ],
+        "why": "He first says about 20 but corrects this: he counted 28 steps."
+       },
+       {
+        "n": 7,
+        "before": "Date: Saturday",
+        "after": "March",
+        "answer": [
+         "19th",
+         "19"
+        ],
+        "why": "Friday the 18th is full, so Chloe offers Saturday the 19th, which he accepts."
+       },
+       {
+        "n": 8,
+        "before": "Time:",
+        "after": "pm",
+        "answer": [
+         "2.30",
+         "2:30",
+         "230"
+        ],
+        "why": "The mornings are booked, so the crew offers 2.30 in the afternoon."
+       },
+       {
+        "n": 9,
+        "before": "Total cost: £",
+        "after": "",
+        "answer": [
+         "185"
+        ],
+        "why": "160 pounds plus 25 pounds for the stairs makes 185 pounds; 160 is only the ground-floor price."
+       },
+       {
+        "n": 10,
+        "before": "Deposit to be paid by:",
+        "after": "",
+        "answer": [
+         "card"
+        ],
+        "why": "Cheque is suggested, but he has no cheque book and asks to use his card."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 2",
+    "context": "A guide gives an introductory talk to visitors at an old lighthouse.",
+    "range": "11-20",
+    "speakers": {
+     "Guide": "nz_f"
+    },
+    "script": [
+     [
+      "Guide",
+      "Good morning, everyone, and welcome to Skerrin Point Lighthouse. My name's Ruth, and I'll be taking you round the tower today. Before we go in, I'd like to give you a bit of background, and then explain what you'll see on each floor."
+     ],
+     [
+      "Guide",
+      "Let's start with why the lighthouse is here at all. A lot of visitors assume it was put up to guide the fishing boats back to the village, and the fishermen certainly did benefit. But the real reason is that reef out there, which sailors called the Grey Sisters. In the winter of 1859, three cargo ships were lost on it within a few weeks, and that finally persuaded the authorities to act. So the lighthouse was built to warn ships away from the rocks, not to lead them into harbour."
+     ],
+     [
+      "Guide",
+      "The tower was finished in 1861, though work had begun nearly nine years earlier. People often tell me it took so long because the money ran out. In fact the funding was never really a problem. The difficulty was access. There was no road to the headland, so every block of stone had to arrive by boat, and the boats could only land when the sea was calm. In a bad summer, the builders sometimes got to work on fewer than thirty days."
+     ],
+     [
+      "Guide",
+      "Now, the light itself. The first lamp burned vegetable oil, which was cheap and easy to get hold of locally. You may have heard that lighthouses burned whale oil, but that was never the case here. Around 1890 the oil was replaced by paraffin, which gave a much brighter flame, and electricity finally arrived in 1938. The big glass lens, which we'll see right at the top, has been here since the very beginning."
+     ],
+     [
+      "Guide",
+      "Three keepers lived at the lighthouse, and when the weather was bad they sometimes had to stay for weeks. At first the families were not allowed on the rock, but that was changed after a few years, and the cottages you can see behind me were built for them. There were always several children living here. A teacher was promised by the authorities, but she never came, so the children were taught at home by one of the keepers' wives. Several of them went on to become sailors, which perhaps isn't surprising."
+     ],
+     [
+      "Guide",
+      "In 1983 the lighthouse was made automatic. Some people think that was the year the light was switched off. In fact it kept shining, but it was controlled from a station on the mainland, so the last keeper left and nobody has lived here since. The tower was then neglected for years, and it only opened to the public in 1995, after a local trust took it over. We're still run by the trust."
+     ],
+     [
+      "Guide",
+      "Right, let's talk about what you'll see inside. We start on the ground floor, where you'll find our café. It's in what used to be the store for the oil. Please feel free to have a hot drink there when you come down. The exhibition of old photographs used to be on this floor, but we moved it, as you'll hear in a moment."
+     ],
+     [
+      "Guide",
+      "On the first floor is the radio room. It was added in the 1930s, so that keepers could contact the mainland, and the equipment is still there. You're welcome to put on the headphones and listen to recordings of the weather reports that the keepers had to send every morning."
+     ],
+     [
+      "Guide",
+      "The second floor is the keepers' bedroom, which we have set up to look exactly as it did a hundred years ago. There's a narrow bed, a small table and a coat that actually belonged to one of the keepers. Please don't sit on the bed, because the blankets are very fragile."
+     ],
+     [
+      "Guide",
+      "The third floor now contains the photograph exhibition. Many of the pictures were taken by the keepers themselves, and they show the storms, the ships that were rescued and the families living on the rock. It's a real record of life here, and it has the best view of the cottages."
+     ],
+     [
+      "Guide",
+      "And at the top is the lantern room, with the original lens. It's a remarkable object, made of hundreds of pieces of glass, and when the sun shines through it the whole room fills with light. You should be able to walk round it, but please don't touch the glass."
+     ],
+     [
+      "Guide",
+      "There's one more thing to mention. Outside the lantern room is the storm gallery, a narrow walkway that goes right round the tower. Normally you can go out on it, but I'm afraid it's closed today because of the wind, so you'll have to be content with looking through the windows. Now, if everyone is ready, please follow me, and mind the step at the door."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 11,
+        "q": "Why was the lighthouse built at Skerrin Point?",
+        "options": [
+         "To warn ships about a dangerous reef",
+         "To help fishing boats reach the village harbour",
+         "To mark the entrance to a new port"
+        ],
+        "answer": "A",
+        "why": "The guide says the fishermen benefited, but the real reason was the Grey Sisters reef, where three cargo ships were lost; it warns ships away, not into harbour."
+       },
+       {
+        "n": 12,
+        "q": "According to the guide, why did the building work take so long?",
+        "options": [
+         "The funds ran out several times.",
+         "Workers could reach the site only by boat in calm weather.",
+         "The design was changed half-way through."
+        ],
+        "answer": "B",
+        "why": "She rejects the idea that money was the problem; the difficulty was access, since stone came by boat that could land only in calm seas. Nothing is said about the design changing."
+       },
+       {
+        "n": 13,
+        "q": "What kind of fuel did the first lamp use?",
+        "options": [
+         "paraffin",
+         "vegetable oil",
+         "whale oil"
+        ],
+        "answer": "B",
+        "why": "The first lamp burned vegetable oil; whale oil was never used, and paraffin replaced the oil around 1890."
+       },
+       {
+        "n": 14,
+        "q": "What does the guide say about the keepers' children?",
+        "options": [
+         "They went to school in the village by boat.",
+         "They were taught at home by a keeper's wife.",
+         "They were taught by a teacher sent by the authorities."
+        ],
+        "answer": "B",
+        "why": "A teacher was promised but never came, so one of the keepers' wives taught them."
+       },
+       {
+        "n": 15,
+        "q": "What happened at the lighthouse in 1983?",
+        "options": [
+         "The light was switched off for good.",
+         "It opened to visitors for the first time.",
+         "It began to be controlled from the mainland."
+        ],
+        "answer": "C",
+        "why": "The light kept shining but was run from a station on the mainland; visitors only came from 1995."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "What can visitors see on each floor of the lighthouse? Choose FIVE answers from the box and write the correct letter, A-F, next to Questions 16-20.",
+      "options": [
+       {
+        "k": "A",
+        "t": "an exhibition of old photographs"
+       },
+       {
+        "k": "B",
+        "t": "the original lens"
+       },
+       {
+        "k": "C",
+        "t": "a keeper's bedroom"
+       },
+       {
+        "k": "D",
+        "t": "a radio room"
+       },
+       {
+        "k": "E",
+        "t": "the storm gallery"
+       },
+       {
+        "k": "F",
+        "t": "a cafe"
+       }
+      ],
+      "items": [
+       {
+        "n": 16,
+        "q": "Ground floor",
+        "answer": "F",
+        "why": "The ground floor holds the cafe, in the former oil store. The photographs used to be here but were moved."
+       },
+       {
+        "n": 17,
+        "q": "First floor",
+        "answer": "D",
+        "why": "The radio room, added in the 1930s, is on the first floor."
+       },
+       {
+        "n": 18,
+        "q": "Second floor",
+        "answer": "C",
+        "why": "The second floor is the keepers' bedroom, set up as it was a hundred years ago."
+       },
+       {
+        "n": 19,
+        "q": "Third floor",
+        "answer": "A",
+        "why": "The photograph exhibition is on the third floor."
+       },
+       {
+        "n": 20,
+        "q": "Top floor (lantern room)",
+        "answer": "B",
+        "why": "The original lens is in the lantern room. The storm gallery (E) is closed today, so it is not an answer."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 3",
+    "context": "Two students discuss how to plan a class debate on zoos.",
+    "range": "21-30",
+    "speakers": {
+     "Imogen": "rounded",
+     "Marcus": "deep"
+    },
+    "script": [
+     [
+      "Imogen",
+      "Marcus, have you got a minute? I'd like to sort out the debate for Dr Patel's ethics seminar. We only have a week."
+     ],
+     [
+      "Marcus",
+      "Sure. I was just thinking about it myself. I'm glad we chose zoos, to be honest. When I saw the three motions on the list, I nearly went for the one about genetically modified crops."
+     ],
+     [
+      "Imogen",
+      "Me too, but the local zoo closing last month was in the news all week, so it felt more relevant. And I guess it was a good idea that we picked it ourselves, rather than being given one."
+     ],
+     [
+      "Marcus",
+      "Yes. Now, the motion is that zoos have no place in the modern world, and we've been given the side in favour. That's you opening, isn't it?"
+     ],
+     [
+      "Imogen",
+      "Yes, and that's a problem. I used to love going to the zoo as a child. I still do, really. So I feel a bit like a traitor arguing that they should all be closed."
+     ],
+     [
+      "Marcus",
+      "I know what you mean, but that's the point of a debate. And you'll probably be more convincing because you understand why people like them. I'll be speaking against the motion, so I have to defend them."
+     ],
+     [
+      "Imogen",
+      "Right. Did you read Dr Patel's comments on last year's debates? He said too many students just showed upsetting photographs of animals in cages."
+     ],
+     [
+      "Marcus",
+      "Yes. He wants less emotion and more evidence. We should use pictures only if they actually prove something, such as the size of an enclosure compared with the territory of an animal in the wild."
+     ],
+     [
+      "Imogen",
+      "That's actually how I want to start. My opening statement will be about welfare, and especially how small the enclosures are for big cats and elephants. I thought of beginning with the cost of running zoos, but it's not as strong."
+     ],
+     [
+      "Marcus",
+      "Good choice. For my side, I'll talk about conservation. The best example is the breeding programme for golden lion tamarins in Brazil. Zoos bred enough animals to release hundreds into the wild, and that's very hard to argue with."
+     ],
+     [
+      "Imogen",
+      "Hmm. I can answer that, though. Most zoo animals are not endangered, and hardly any are ever released. But we'll need good statistics. I found some on the zoo association's website, but I'm not sure we can use them."
+     ],
+     [
+      "Marcus",
+      "No, I wouldn't. That site is written by the zoos themselves, so of course it's going to look good for them. Dr Patel will spot that immediately. Let's use the independent report from the university instead."
+     ],
+     [
+      "Imogen",
+      "Fair enough. What about education? That's usually the main argument in favour of zoos, isn't it?"
+     ],
+     [
+      "Marcus",
+      "It is, but I actually think it's the weakest one. There was a study that timed visitors at the enclosures, and the average was about two minutes. That's hardly enough for anyone to learn anything. I'd rather not rely on it, even though I'm supposed to be defending zoos."
+     ],
+     [
+      "Imogen",
+      "Honestly, I agree. So you'll leave out education and stay with conservation?"
+     ],
+     [
+      "Marcus",
+      "Yes, and I'd like some real evidence from inside a zoo. Do you think we could interview a former zoo keeper? There's one in my neighbourhood. I first thought of asking a vet, but a keeper sees the animals every day."
+     ],
+     [
+      "Imogen",
+      "That's a great idea. A keeper would know about the daily routine, and about how the animals behave. I could ask a few questions as well, if you give me the details."
+     ],
+     [
+      "Marcus",
+      "Sure. Now, timing. I think Dr Patel said five minutes for each speaker."
+     ],
+     [
+      "Imogen",
+      "He did, but he sent an email on Monday changing it. It's six minutes each now, plus two minutes for questions."
+     ],
+     [
+      "Marcus",
+      "Oh, I missed that. Six minutes is much better, so we can include a short example each. Right, we should rehearse. Are you free on Wednesday afternoon?"
+     ],
+     [
+      "Imogen",
+      "Not on Wednesday, I'm in the lab until six. Thursday would be fine, though. We could book one of the study rooms in the library."
+     ],
+     [
+      "Marcus",
+      "Thursday it is. I'll book a room and bring a stopwatch. And let's each write our notes before then, so we're not starting from nothing."
+     ],
+     [
+      "Imogen",
+      "Agreed. Thanks, Marcus. I feel a lot better about it now."
+     ],
+     [
+      "Marcus",
+      "No problem. It'll be fun. And you never know, you might even win."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 21,
+        "q": "How did the students come to choose the topic of zoos?",
+        "options": [
+         "The tutor gave it to them.",
+         "They chose it from a list of three motions.",
+         "It came from a visit to the local zoo."
+        ],
+        "answer": "B",
+        "why": "Marcus mentions the three motions on the list, and Imogen says they picked the topic themselves rather than being given one."
+       },
+       {
+        "n": 22,
+        "q": "How does Imogen feel about the side she has been given?",
+        "options": [
+         "She is uneasy because she enjoys zoos.",
+         "She is pleased because she knows a lot about the topic.",
+         "She is worried that she will not have enough time."
+        ],
+        "answer": "A",
+        "why": "She says she still loves zoos and feels like a traitor arguing that they should be closed."
+       },
+       {
+        "n": 23,
+        "q": "What did Dr Patel say about last year's debates?",
+        "options": [
+         "Students used too many upsetting pictures without evidence.",
+         "Students did not speak for long enough.",
+         "Students ignored the rules about timing."
+        ],
+        "answer": "A",
+        "why": "He criticised students who just showed upsetting photographs; he wants less emotion and more evidence."
+       },
+       {
+        "n": 24,
+        "q": "Why do they decide not to use the zoo association's website?",
+        "options": [
+         "Its figures are out of date.",
+         "It is written by people with an interest in the result.",
+         "It is too difficult to understand."
+        ],
+        "answer": "B",
+        "why": "Marcus says the site is written by the zoos themselves, so it will look good for them."
+       },
+       {
+        "n": 25,
+        "q": "What does Marcus say about the education argument?",
+        "options": [
+         "It is the strongest point in favour of zoos.",
+         "It is weak because visitors spend very little time at each enclosure.",
+         "It needs more research before it can be used."
+        ],
+        "answer": "B",
+        "why": "He calls it the weakest argument, since the average time at an enclosure was about two minutes."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "Plan for the debate",
+      "items": [
+       {
+        "n": 26,
+        "before": "Imogen's opening statement: the problem of small",
+        "after": "for large animals",
+        "answer": [
+         "enclosures"
+        ],
+        "why": "She will open with welfare and the small enclosures for big cats and elephants; the cost of running zoos is a rejected idea."
+       },
+       {
+        "n": 27,
+        "before": "Marcus's example: breeding programme for golden lion",
+        "after": "",
+        "answer": [
+         "tamarins"
+        ],
+        "why": "He names the breeding programme for golden lion tamarins in Brazil."
+       },
+       {
+        "n": 28,
+        "before": "Interview a former zoo",
+        "after": "",
+        "answer": [
+         "keeper"
+        ],
+        "why": "He first thought of a vet but prefers a keeper, who sees the animals every day."
+       },
+       {
+        "n": 29,
+        "before": "Time for each speaker:",
+        "after": "minutes",
+        "answer": [
+         "6",
+         "six"
+        ],
+        "why": "The tutor first said five, but an email changed it to six minutes."
+       },
+       {
+        "n": 30,
+        "before": "Practice session on",
+        "after": "in the library",
+        "answer": [
+         "Thursday"
+        ],
+        "why": "Imogen is busy on Wednesday, so they agree on Thursday."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 4",
+    "context": "A lecturer talks about the design of children's playgrounds.",
+    "range": "31-40",
+    "speakers": {
+     "Lecturer": "nz_m"
+    },
+    "script": [
+     [
+      "Lecturer",
+      "Good afternoon, everyone. Today I'd like to talk about the design of playgrounds. It may seem a minor subject, but playgrounds raise some big questions about childhood, safety and risk, and the way they have changed tells us a lot about how adults think about children."
+     ],
+     [
+      "Lecturer",
+      "Let's begin at the start of the twentieth century. The first public playgrounds were set up in crowded industrial cities, and their main aim was to keep children off the streets. Reformers worried about traffic, crime and disease, and they wanted somewhere supervised. The equipment was plain: swings, see-saws and slides, almost always made of iron, and set directly on concrete or packed earth. Not surprisingly, falls were common, and broken arms were considered a normal part of childhood."
+     ],
+     [
+      "Lecturer",
+      "After the Second World War, designers began to question this approach. The first big change was to the surface. Hard ground was gradually replaced by sand and then by bark, which is soft enough to cushion a fall. Rubber matting came later still, in the 1970s, and is now widespread. But the more interesting change was about what children actually did. In Northern Europe, observers noticed that children preferred bomb sites and empty building plots to the official playgrounds. So the first adventure playgrounds were created from rubble and old timber, and children were allowed to build their own huts and dens."
+     ],
+     [
+      "Lecturer",
+      "A landscape architect called Ingrid Solberg became the best-known voice in this movement. She argued that the most valuable thing a playground can offer is what she called loose parts, things that children can move, combine and change, such as planks, rope and stones. Fixed equipment, she said, tells a child what to do, but loose parts let the child decide. Research since then has largely supported her."
+     ],
+     [
+      "Lecturer",
+      "Let me give you one example. A study in the town of Ashby compared two playgrounds. One had a traditional design with a climbing frame and slide, and the other had a mixture of mounds, logs and movable materials. Researchers watched the children for several weeks. At the traditional playground, the children soon grew bored and mostly ran from one item to the next. At the second, they played for much longer and invented far more games. The designers of the first playground were surprised, because it had cost nearly three times as much."
+     ],
+     [
+      "Lecturer",
+      "That brings me to the question of risk. In the 1980s, many councils removed their higher equipment out of fear of accidents and lawsuits. But research suggests that this may have been a mistake. Children who never experience small risks, such as climbing a little too high, do not learn how to judge danger for themselves. In other words, a playground that is too safe can produce children who are less careful, not more. Today, most designers try to remove serious hazards, such as sharp edges, while keeping challenge. Many modern playgrounds also use natural features, like gentle hills, trees and boulders, rather than just plastic."
+     ],
+     [
+      "Lecturer",
+      "A second recent concern is inclusion. Many older playgrounds were technically open to everybody, but in practice they were not. A common example is the wood-chip surface. It is soft, and it's cheap, but a child in a wheelchair cannot push through it, and wheels can get stuck. As a result, children with disabilities could reach the playground but not the equipment. Better designs use firm, smooth paths that lead right up to the structures, and equipment that can be reached from a wheelchair, so that all the children can play together."
+     ],
+     [
+      "Lecturer",
+      "Finally, a word about parents. Parents want to see their children at all times, but children want freedom and, often, some privacy. Good designers deal with this by providing clear sightlines, which means low fences and open layouts, so adults can see everything from one spot. That way the adults can sit back and the children are not constantly watched over."
+     ],
+     [
+      "Lecturer",
+      "So what do these developments tell us? I'd suggest that the best playground is not the one with the most expensive equipment. It is the one that children can change, adapt and make their own. And that's a lesson that applies well beyond playgrounds, to the design of schools and neighbourhoods. Next week, we'll look at how some of these ideas are being applied in urban parks. Thank you."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "heading": "The history of playground design",
+      "items": [
+       {
+        "n": 31,
+        "before": "Early playgrounds were built to keep children off the",
+        "after": "",
+        "answer": [
+         "streets"
+        ],
+        "why": "The main aim of the first playgrounds was to keep children off the streets."
+       },
+       {
+        "n": 32,
+        "before": "Iron equipment was placed directly on hard ground such as",
+        "after": "",
+        "answer": [
+         "concrete",
+         "earth"
+        ],
+        "why": "The equipment was set directly on concrete or packed earth; only concrete is a single word that fits."
+       },
+       {
+        "n": 33,
+        "before": "After the war, sand and then",
+        "after": "replaced hard ground",
+        "answer": [
+         "bark"
+        ],
+        "why": "Hard ground was replaced by sand and then by bark; rubber matting came later still."
+       },
+       {
+        "n": 34,
+        "before": "The first adventure playgrounds were made from rubble and old",
+        "after": "",
+        "answer": [
+         "timber"
+        ],
+        "why": "They were created from rubble and old timber."
+       },
+       {
+        "n": 35,
+        "before": "Modern designers use natural features such as hills, trees and",
+        "after": "",
+        "answer": [
+         "boulders"
+        ],
+        "why": "The lecturer lists gentle hills, trees and boulders."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 36,
+        "q": "What did Ingrid Solberg believe about playgrounds?",
+        "options": [
+         "They should be built entirely from natural materials.",
+         "Children benefit most from things they can change themselves.",
+         "Fixed equipment is the safest option."
+        ],
+        "answer": "B",
+        "why": "She argued that loose parts, which children can move and change, are the most valuable thing; fixed equipment tells the child what to do."
+       },
+       {
+        "n": 37,
+        "q": "What did the study in Ashby show?",
+        "options": [
+         "The traditional playground was more popular with parents.",
+         "Children played longer and more imaginatively at the second playground.",
+         "The cheaper playground was more dangerous."
+        ],
+        "answer": "B",
+        "why": "At the traditional playground the children soon got bored; at the other they played longer and invented more games, although the first had cost nearly three times as much."
+       },
+       {
+        "n": 38,
+        "q": "What is the lecturer's view of the removal of high equipment in the 1980s?",
+        "options": [
+         "It was necessary because of the number of accidents.",
+         "It may have stopped children from learning to judge risk.",
+         "It was a good way of saving money."
+        ],
+        "answer": "B",
+        "why": "He says research suggests this may have been a mistake, because children who never face small risks do not learn to judge danger."
+       },
+       {
+        "n": 39,
+        "q": "What was the problem with wood-chip surfaces?",
+        "options": [
+         "They were too expensive to replace.",
+         "They were not soft enough to protect children.",
+         "They prevented wheelchair users from reaching the equipment."
+        ],
+        "answer": "C",
+        "why": "Wood chip is soft and cheap, but wheels get stuck in it, so children with disabilities could not reach the equipment."
+       },
+       {
+        "n": 40,
+        "q": "How do designers help parents to supervise their children?",
+        "options": [
+         "By providing clear sightlines across the playground",
+         "By putting seating next to every item of equipment",
+         "By building high fences around the playground"
+        ],
+        "answer": "A",
+        "why": "Low fences and open layouts give clear sightlines, so adults can see everything from one spot; high fences are not mentioned."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "reading": {
+  "sections": [
+   {
+    "title": "Passage 1",
+    "range": "1-13",
+    "passages": [
+     {
+      "title": "The long road to vaccination",
+      "paras": [
+       "A  For most of human history, smallpox was among the most feared of all diseases. It spread easily from person to person, and in a bad epidemic perhaps three in every ten people who caught it died. Those who survived were often left with deep scars, and some were blinded. Kings and peasants alike were affected: several European monarchs died of it, and whole villages were emptied during outbreaks. Yet people had noticed something long before anyone understood the cause. Anyone who recovered from smallpox never caught it a second time.",
+       "B  This observation lay behind a practice known as variolation, which had been used for centuries in parts of Asia, Africa and the Middle East. Material taken from the sores of a patient with a mild case was scratched into the skin of a healthy person, who usually developed a milder illness and was then protected for life. The method was far from safe: perhaps one or two patients in every hundred died, and those who were treated could pass the infection on to others. It reached Britain in the early eighteenth century, largely through Lady Mary Wortley Montagu, who had seen it in Constantinople, where her husband was serving as ambassador. She had her young son treated there in 1718 and her daughter in London three years later. Many doctors remained unconvinced, and a trial was arranged on six prisoners who had been condemned to death and who were promised their freedom if they survived. All six did so.",
+       "C  The next step came from the English countryside. Edward Jenner, a doctor in Gloucestershire, heard farm workers say that milkmaids who had caught cowpox, a mild disease of cattle, did not catch smallpox. Such stories were common, but Jenner decided to test one. In May 1796 he took material from a cowpox sore on the hand of a dairymaid, Sarah Nelmes, and scratched it into the arm of James Phipps, an eight-year-old boy. Some weeks later he deliberately exposed the boy to smallpox on several occasions, and the boy remained healthy. The Royal Society declined to publish Jenner's first report, so in 1798 he paid for a pamphlet himself. The word 'vaccine' comes from vacca, the Latin word for cow.",
+       "D  The new method spread rapidly, and by the early nineteenth century it was in use across Europe and in the Americas. Governments soon began to require it: Bavaria made vaccination compulsory in 1807, and Britain demanded it for infants in 1853. The rules provoked fierce opposition. Some people objected on religious grounds, and others argued that the state had no right to interfere with the body of a citizen. Real problems fed their fears, too, since vaccine passed directly from one arm to another sometimes carried other infections. Leagues against compulsory vaccination were formed, and in 1898 British parents who sincerely objected were finally allowed to refuse. The argument between public health and personal liberty, once begun, has never entirely ended.",
+       "E  Jenner never knew why his method worked. The explanation began to emerge only in the second half of the century, when Louis Pasteur and others showed that many diseases are caused by living microbes. Pasteur's key discovery came partly by accident in 1879. Cultures of the bacteria that cause chicken cholera, left untouched over a summer holiday, had weakened, and chickens injected with them became only mildly ill and afterwards resisted fresh doses of the germ. He went on to apply the principle of weakening a microbe to anthrax in farm animals and, in 1885, to rabies, when nine-year-old Joseph Meister, who had been bitten by a rabid dog, was given a course of injections and survived. A weakened or killed microbe, it seemed, could teach the body to defend itself.",
+       "F  The twentieth century brought vaccines against diphtheria, tetanus, whooping cough and many other diseases, and the focus shifted from protecting individuals to organising mass campaigns. Polio, which paralysed thousands of children every summer in the years after the Second World War, became the great challenge. In 1955 the results of a field trial involving about 1.8 million American children showed that Jonas Salk's vaccine, made from killed virus, was safe and effective. Albert Sabin's oral vaccine, made from weakened virus and given as drops or on a sugar lump, followed in the early 1960s. Because it was cheap and easy to give, it suited campaigns in poorer countries where trained nurses were scarce, and it brought polio close to extinction.",
+       "G  The most dramatic success of all was against smallpox itself. In 1967 the World Health Organization launched an intensified campaign. Rather than attempt to vaccinate everybody, teams tracked down each outbreak and then vaccinated everyone around the patient, a strategy known as ring vaccination. The method worked even in regions with few roads and no records of who lived where. The last natural case was recorded in Somalia in 1977, and in 1980 the disease was declared eradicated. It remains the only human disease to have been wiped out.",
+       "H  Today vaccination faces a different set of problems. New techniques, such as the use of genetic instructions in place of a whole microbe, mean that a vaccine can be designed within days of a virus's code being read. Yet many vaccines must be kept cold during transport, which is hard in remote areas, and in wealthy countries misinformation has made some parents hesitate. The old arguments, it seems, have not gone away, although the evidence for vaccination is stronger than it has ever been."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "The text has eight paragraphs, A-H. Choose the correct heading for paragraphs B-G from the list of headings below. Write the correct letter, A-H, next to Questions 1-6.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Mass campaigns and the race against polio"
+       },
+       {
+        "k": "B",
+        "t": "Public suspicion and legal compulsion"
+       },
+       {
+        "k": "C",
+        "t": "The first disease to be wiped out"
+       },
+       {
+        "k": "D",
+        "t": "A folk practice reaches Britain"
+       },
+       {
+        "k": "E",
+        "t": "An observation turned into an experiment"
+       },
+       {
+        "k": "F",
+        "t": "Weakening germs in the laboratory"
+       },
+       {
+        "k": "G",
+        "t": "New technology and remaining obstacles"
+       },
+       {
+        "k": "H",
+        "t": "A medical scandal that damaged trust"
+       }
+      ],
+      "items": [
+       {
+        "n": 1,
+        "q": "Paragraph B",
+        "answer": "D",
+        "why": "Paragraph B describes variolation and how Lady Mary Wortley Montagu brought it to Britain."
+       },
+       {
+        "n": 2,
+        "q": "Paragraph C",
+        "answer": "E",
+        "why": "Jenner turned a country belief about milkmaids into a test on a boy."
+       },
+       {
+        "n": 3,
+        "q": "Paragraph D",
+        "answer": "B",
+        "why": "The paragraph covers compulsory laws and the opposition and fears they raised."
+       },
+       {
+        "n": 4,
+        "q": "Paragraph E",
+        "answer": "F",
+        "why": "Pasteur weakened bacteria in his laboratory and used them to protect animals and people."
+       },
+       {
+        "n": 5,
+        "q": "Paragraph F",
+        "answer": "A",
+        "why": "The paragraph is about mass vaccination and the Salk and Sabin polio vaccines."
+       },
+       {
+        "n": 6,
+        "q": "Paragraph G",
+        "answer": "C",
+        "why": "Smallpox was declared eradicated in 1980, the only human disease wiped out; G (new technology) matches paragraph H, which is not asked."
+       }
+      ]
+     },
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information given in the text? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 7,
+        "q": "Lady Mary Wortley Montagu had both of her children treated in Constantinople.",
+        "answer": "FALSE",
+        "why": "Only her son was treated in Constantinople; her daughter was treated in London."
+       },
+       {
+        "n": 8,
+        "q": "All six prisoners in the variolation trial survived.",
+        "answer": "TRUE",
+        "why": "The text says all six did survive."
+       },
+       {
+        "n": 9,
+        "q": "Jenner paid James Phipps's family for taking part in his experiment.",
+        "answer": "NOT GIVEN",
+        "why": "No payment to the boy's family is mentioned."
+       },
+       {
+        "n": 10,
+        "q": "Sabin's polio vaccine appeared after the results of the Salk vaccine trial were published.",
+        "answer": "TRUE",
+        "why": "The Salk results came in 1955 and Sabin's vaccine followed in the early 1960s."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "items": [
+       {
+        "n": 11,
+        "before": "Vaccine passed directly from one arm to another sometimes carried other",
+        "after": ".",
+        "answer": [
+         "infections"
+        ],
+        "why": "Paragraph D says that vaccine passed from arm to arm sometimes carried other infections."
+       },
+       {
+        "n": 12,
+        "before": "Pasteur's chicken cholera cultures weakened because they were left over a",
+        "after": ".",
+        "answer": [
+         "summer holiday"
+        ],
+        "why": "Paragraph E says the cultures were left untouched over a summer holiday."
+       },
+       {
+        "n": 13,
+        "before": "Vaccinating everyone around a patient is known as",
+        "after": "vaccination.",
+        "answer": [
+         "ring"
+        ],
+        "why": "Paragraph G names the strategy ring vaccination."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Passage 2",
+    "range": "14-26",
+    "passages": [
+     {
+      "title": "From land to sea: the origin of the whales",
+      "paras": [
+       "A  Whales and dolphins are so perfectly adapted to life in water that it is easy to forget they are mammals. They breathe air, give birth to live young and feed their calves on milk. For generations naturalists puzzled over how such animals could have arisen, and until the late twentieth century the fossil record offered few clues. Charles Darwin himself once suggested that bears swimming with their mouths open might, over many generations, turn into something whale-like. The idea was ridiculed by critics, and he withdrew it from later editions of his book.",
+       "B  The first major breakthrough came in the early 1980s, when a team working in the river valleys of northern Pakistan described the skull of a creature they named Pakicetus. It lived about 50 million years ago and was roughly the size of a large wolf. It walked on four legs and probably spent its time wading in shallow streams to catch fish. At first sight it looked like an ordinary land mammal, but the structure of the bones around its ear was found only in whales. This was the first sign that the ancestors of whales had once lived on land, and had lived beside fresh water rather than the open sea.",
+       "C  Further discoveries soon followed. In 1994 researchers announced Ambulocetus, whose name means 'walking whale'. It was about three metres long and lived some 49 million years ago. Its powerful hind legs ended in large feet, and the animal probably swam by flexing its body up and down, undulating as an otter does, and then paddled with its feet. It could also move, rather clumsily, on land, much as a seal does. Rodhocetus, a little younger, had a pelvis that was no longer fused to its backbone, which freed the tail to become the main source of power in the water. By about 40 million years ago, Basilosaurus had appeared, a giant that grew to some 18 metres and had a long, almost snake-like body. It was fully aquatic, and its hind limbs were too small to bear its weight, perhaps a leftover from its walking ancestors.",
+       "D  One of the most striking confirmations came from a single bone in the ankle. Before the late 1990s, studies of DNA had suggested that the closest living relatives of whales were hippopotamuses, which seemed odd, since the fossils that were known seemed to point elsewhere. Then, in 2001, two teams unearthed ankle bones from early whales with a distinctive double-pulley shape. That feature had been thought to occur only in the even-toed hoofed mammals, the group that includes deer, pigs and camels. The finding linked whales firmly to that group. It did not mean that whales descended from hippos, however. Instead, whales and hippos both descended from a land-dwelling ancestor that lived some 55 million years ago, and the two lines separated and went their different ways.",
+       "E  The transformation of the body plan was gradual and involved nearly every part of the animal. The nostrils, which in Pakicetus sat at the tip of the snout, shifted back through successive fossils until they ended up at the top of the head as a blowhole, allowing a whale to breathe while barely breaking the surface. The front legs turned into flippers, while the back legs shrank. The tail developed broad horizontal flukes, which move up and down, unlike the vertical tail of a fish, a legacy of the flexible spine of a running mammal. Hearing changed as well: land mammals hear through an eardrum, but whales receive much of the sound through their lower jaw.",
+       "F  Living animals still carry evidence of this ancestry. The embryos of dolphins begin to grow tiny buds where hind limbs would be, but these vanish before birth. Very rarely, an individual is born with small hind fins, as happened with a bottlenose dolphin caught off Japan in 2006. Even adult whales keep a pair of small bones buried in the flesh where the hips would be. They are not attached to the backbone, and they now serve as anchor points for muscles used in reproduction. To an evolutionary biologist, these oddities are as telling as any fossil.",
+       "G  Why did these animals return to the water at all? Scientists still do not agree. The most popular suggestion is that the warm, shallow seas of the time were rich in fish and other prey, and that animals able to exploit them gained a decisive advantage over those that stayed ashore. Competition on land may have played a part, too. Once the first whales were established, the group diversified quickly. Toothed whales developed echolocation, a kind of natural sonar, while the ancestors of the great baleen whales later evolved plates in their mouths to filter tiny animals from the water. It would be a mistake, however, to imagine a single straight line from Pakicetus to the blue whale. Evolution works more like a bush with many branches, and most of those branches ended in extinction. The popular idea of a 'missing link', a single fossil that joins two groups, therefore misleads, since each fossil is only one twig on a crowded bush."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 14,
+        "q": "According to paragraph B, what was unusual about Pakicetus?",
+        "options": [
+         "It lived entirely in the sea.",
+         "It was far larger than any other land mammal.",
+         "The bones of its ear resembled those found only in whales.",
+         "It walked on two legs."
+        ],
+        "answer": "C",
+        "why": "Although it looked like an ordinary land mammal, the ear bones were found only in whales. It lived beside fresh water, not in the sea."
+       },
+       {
+        "n": 15,
+        "q": "What does the writer say about Ambulocetus in paragraph C?",
+        "options": [
+         "It could cope with life both on land and in water.",
+         "It was the direct ancestor of all later whales.",
+         "It swam in exactly the way a modern whale does.",
+         "Its hind legs were too weak to be of any use."
+        ],
+        "answer": "A",
+        "why": "It swam by undulating and paddling and could also move on land. The text never says it was the direct ancestor, and its legs were powerful."
+       },
+       {
+        "n": 16,
+        "q": "What was significant about the ankle bones found in 2001?",
+        "options": [
+         "They proved that whales descended from hippopotamuses.",
+         "They linked whales to the even-toed hoofed mammals.",
+         "They showed that whales had once had four legs.",
+         "They were the oldest whale fossils ever found."
+        ],
+        "answer": "B",
+        "why": "The double-pulley shape tied whales to the even-toed hoofed mammals; the text says explicitly that this did not mean whales descended from hippos."
+       },
+       {
+        "n": 17,
+        "q": "What point does the writer make about the idea of a 'missing link'?",
+        "options": [
+         "It has been disproved by DNA studies.",
+         "It will be found when more fossils are discovered.",
+         "It is misleading because evolution branches in many directions.",
+         "It applies only to whales and their relatives."
+        ],
+        "answer": "C",
+        "why": "In paragraph G the writer says evolution is like a bush with many branches, so the idea of a single link misleads."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "heading": "How early whales changed",
+      "items": [
+       {
+        "n": 18,
+        "before": "Pakicetus lived beside",
+        "after": "and probably caught fish in shallow water.",
+        "answer": [
+         "streams",
+         "fresh water"
+        ],
+        "why": "Paragraph B says it waded in shallow streams and lived beside fresh water."
+       },
+       {
+        "n": 19,
+        "before": "Ambulocetus swam by",
+        "after": "its body, like an otter.",
+        "answer": [
+         "undulating",
+         "flexing"
+        ],
+        "why": "Paragraph C says it swam by flexing its body up and down, undulating as an otter does."
+       },
+       {
+        "n": 20,
+        "before": "In Rodhocetus the",
+        "after": "became the main source of power in the water.",
+        "answer": [
+         "tail"
+        ],
+        "why": "Its pelvis was no longer fused to the backbone, which freed the tail."
+       },
+       {
+        "n": 21,
+        "before": "Basilosaurus had hind",
+        "after": "too small to bear its weight.",
+        "answer": [
+         "limbs"
+        ],
+        "why": "Paragraph C says its hind limbs were too small to bear its weight."
+       },
+       {
+        "n": 22,
+        "before": "The nostrils moved to the top of the head and formed a",
+        "after": ".",
+        "answer": [
+         "blowhole"
+        ],
+        "why": "Paragraph E says the nostrils ended up at the top of the head as a blowhole."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "Which paragraph contains the following information? Choose the correct letter, A-G. You may use any letter more than once.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Paragraph A"
+       },
+       {
+        "k": "B",
+        "t": "Paragraph B"
+       },
+       {
+        "k": "C",
+        "t": "Paragraph C"
+       },
+       {
+        "k": "D",
+        "t": "Paragraph D"
+       },
+       {
+        "k": "E",
+        "t": "Paragraph E"
+       },
+       {
+        "k": "F",
+        "t": "Paragraph F"
+       },
+       {
+        "k": "G",
+        "t": "Paragraph G"
+       }
+      ],
+      "items": [
+       {
+        "n": 23,
+        "q": "a feature of modern animals that reveals their ancestry",
+        "answer": "F",
+        "why": "Paragraph F describes the limb buds in dolphin embryos and the small hip bones in adult whales."
+       },
+       {
+        "n": 24,
+        "q": "an explanation of how two groups share an ancestor without one descending from the other",
+        "answer": "D",
+        "why": "Paragraph D says whales and hippos both descended from a common land ancestor."
+       },
+       {
+        "n": 25,
+        "q": "an example of a fossil whale which grew to a great length",
+        "answer": "C",
+        "why": "Basilosaurus, about 18 metres long, is described in paragraph C."
+       },
+       {
+        "n": 26,
+        "q": "a description of an organ changing position over time",
+        "answer": "E",
+        "why": "The nostrils shifted back from the snout to the top of the head in paragraph E."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Passage 3",
+    "range": "27-40",
+    "passages": [
+     {
+      "title": "Is handwriting still worth teaching?",
+      "paras": [
+       "A  Walk into a primary school today and you may find a class of seven-year-olds tapping on tablets where, a generation ago, they would have been bent over exercise books. The change has been quick, and in a growing number of education systems, handwriting has been squeezed to the margins of the curriculum or dropped altogether. The argument made in its favour is rarely a technical one, and is often a sentimental one. The argument against it is simple: adults hardly write anything longer than a shopping list by hand, so why spend precious lessons on a skill that will rarely be used? That argument deserves a hearing. It is correct about adult habits, but it does not follow that children should not be taught to write by hand, any more than the rarity of long-distance walking means that children should not learn to walk.",
+       "B  The strongest evidence concerns the youngest learners. In a study at the University of Halvern, a group of 42 four-year-olds who could not yet read were divided into three. One group learned new letters by drawing them freehand, another by typing them, and a third by tracing over printed shapes. A month later, the children who had drawn the letters were better at recognising them, and brain scans showed that they alone used the regions of the brain associated with reading when they looked at letters. The researchers suggested that the movements of forming a letter leave a trace in memory that pressing a key does not. Critics say that the sample was small. That is true, but similar results have appeared in several other laboratories, and the weight of evidence is stronger than sceptics usually admit.",
+       "C  What about older students? A much-quoted experiment compared students taking notes by hand with those using laptops in a lecture. The typists wrote down more, but much of it was copied word for word, and when they were tested later on their understanding of the ideas, they did worse. Handwriting is slower, so it forces the writer to select and rephrase. It would be wrong, though, to treat the result as the final word. Attempts to repeat the experiment have produced mixed results, and the effect seems to depend on the kind of test and on the habits of the student. The honest conclusion is that handwriting may help some students in some tasks, and that more research is needed.",
+       "D  Much of the public argument focuses on cursive, the joined-up style that many adults remember learning with pens and ink. Some education systems have already abolished it, and others have made it compulsory. Neither position is easy to defend. There is no convincing evidence that a joined-up script produces better writers than a clear, simple print, and children who struggle with joining letters can be left feeling that they are failures. What matters is that the writing is legible and can be produced at a comfortable speed. A school that teaches a clean, fluent hand has done its job, whatever style it chooses.",
+       "E  The real scandal lies elsewhere. In a survey of 300 primary school teachers, only about one in five said they had received any training in how to teach handwriting. Many had simply handed out copying sheets and hoped for the best. The results are predictable: children develop awkward habits, such as gripping the pen too tightly, which make writing tiring and slow. When pupils find writing painful, and exam markers find it hard to read, it is tempting for schools to conclude that handwriting has no future. In many cases the problem is not the skill but the way in which it is taught, and the sensible response is to improve the teaching, not to give up.",
+       "F  None of this means that keyboards should be banned. Typing is now a basic skill of adult life, and a child who cannot type fluently will be at a disadvantage. Yet a few schools have gone to the opposite extreme and forbidden any use of devices, which is as unhelpful as ignoring handwriting. The sensible course is to teach both. There is no reason why touch-typing should not begin at around the age of eight, when a child's hands are large enough for the keys, and when basic handwriting has been secured. The two skills support one another, because both rely on the same understanding of how letters and words are built.",
+       "G  Technology need not be the enemy of handwriting, either. A tablet with a stylus can show a child the correct order of strokes and give instant feedback, something a busy teacher cannot do for thirty pupils at once. Used in this way, devices could solve the very problem of poor teaching that is driving schools away from handwriting. What we should resist is the assumption that anything old-fashioned must be useless. Handwriting is best understood as a tool for thinking, not an exercise in nostalgia: the slow, deliberate act of putting words on paper helps many people to plan, to remember and to reflect. If we let it disappear, we may find, too late, that we have lost more than a way of making marks."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "ynng",
+      "instr": "Do the following statements agree with the views of the writer in the text? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "items": [
+       {
+        "n": 27,
+        "q": "Children should be taught to type as well as to write by hand.",
+        "answer": "YES",
+        "why": "In paragraph F the writer says the sensible course is to teach both skills."
+       },
+       {
+        "n": 28,
+        "q": "Joined-up writing ought to be compulsory in primary schools.",
+        "answer": "NO",
+        "why": "Paragraph D says there is no evidence that joined-up script is better and that neither compulsion nor abolition is easy to defend."
+       },
+       {
+        "n": 29,
+        "q": "Students should be forbidden from using laptops in lectures.",
+        "answer": "NOT GIVEN",
+        "why": "The writer discusses note-taking research but never proposes a ban on laptops."
+       },
+       {
+        "n": 30,
+        "q": "The research on handwriting and early reading is more convincing than critics suggest.",
+        "answer": "YES",
+        "why": "Paragraph B says the weight of evidence is stronger than sceptics usually admit."
+       },
+       {
+        "n": 31,
+        "q": "Most primary school teachers are well prepared to teach handwriting.",
+        "answer": "NO",
+        "why": "Only about one in five had received any training."
+       },
+       {
+        "n": 32,
+        "q": "Children's handwriting is worse now than it was fifty years ago.",
+        "answer": "NOT GIVEN",
+        "why": "The text describes poor habits today but makes no comparison with the past."
+       },
+       {
+        "n": 33,
+        "q": "Digital devices can support the teaching of handwriting.",
+        "answer": "YES",
+        "why": "Paragraph G says a tablet with a stylus can give feedback on how to form letters."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 34,
+        "q": "What does the writer say about the argument that adults rarely write by hand?",
+        "options": [
+         "It is factually mistaken.",
+         "It is accurate but does not prove its conclusion.",
+         "It is mainly a matter of sentiment.",
+         "It shows that schools should use more tablets."
+        ],
+        "answer": "B",
+        "why": "The writer says it is correct about adult habits, but it does not follow that children should not learn. The sentimental argument is the one in favour of handwriting."
+       },
+       {
+        "n": 35,
+        "q": "Why does the writer mention the Halvern study?",
+        "options": [
+         "to show that young children draw better than they type",
+         "to suggest that writing by hand helps children to recognise letters",
+         "to prove that brain scans are reliable",
+         "to argue that reading should start at four"
+        ],
+        "answer": "B",
+        "why": "Children who drew letters recognised them better a month later, and their brains showed reading-related activity."
+       },
+       {
+        "n": 36,
+        "q": "What is the writer's attitude to the research on note-taking?",
+        "options": [
+         "She accepts the findings without question.",
+         "She thinks the findings are completely wrong.",
+         "She is cautious because repeat studies have produced mixed results.",
+         "She regrets that so little research has been done."
+        ],
+        "answer": "C",
+        "why": "Paragraph C says the result should not be treated as final since later attempts gave mixed results."
+       },
+       {
+        "n": 37,
+        "q": "According to the writer, why do some schools abandon handwriting?",
+        "options": [
+         "They cannot afford the equipment.",
+         "The skill is often taught badly, so results are poor.",
+         "Parents have asked them to concentrate on typing.",
+         "Exam boards no longer require it."
+        ],
+        "answer": "B",
+        "why": "Paragraph E says poor teaching produces awkward habits and unreadable writing, which leads schools to conclude that handwriting has no future."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "items": [
+       {
+        "n": 38,
+        "before": "The writer thinks that touch-typing could start at around the age of",
+        "after": ".",
+        "answer": [
+         "eight"
+        ],
+        "why": "Paragraph F gives the age of eight."
+       },
+       {
+        "n": 39,
+        "before": "A tablet with a",
+        "after": "can show children the correct order of strokes.",
+        "answer": [
+         "stylus"
+        ],
+        "why": "Paragraph G says a tablet with a stylus can do this."
+       },
+       {
+        "n": 40,
+        "before": "Handwriting should be seen as a tool for",
+        "after": ", not as nostalgia.",
+        "answer": [
+         "thinking"
+        ],
+        "why": "The final paragraph calls it a tool for thinking rather than an exercise in nostalgia."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "writing": {
+  "task1": {
+   "kind": "bar chart report",
+   "min": 150,
+   "prompt": "The chart below shows the number of loans from the public libraries of one city in four different years, by format of item.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+   "chart": {
+    "type": "bar",
+    "title": "Library loans by format, Lindhaven public libraries (millions)",
+    "unit": "millions",
+    "labels": [
+     "Printed books",
+     "E-books",
+     "Audiobooks",
+     "Large-print books"
+    ],
+    "series": [
+     {
+      "name": "2005",
+      "data": [
+       48,
+       1,
+       4,
+       7
+      ]
+     },
+     {
+      "name": "2010",
+      "data": [
+       45,
+       6,
+       6,
+       7
+      ]
+     },
+     {
+      "name": "2015",
+      "data": [
+       38,
+       14,
+       9,
+       6
+      ]
+     },
+     {
+      "name": "2020",
+      "data": [
+       30,
+       24,
+       17,
+       5
+      ]
+     }
+    ]
+   }
+  },
+  "task2": {
+   "kind": "discussion + opinion essay",
+   "min": 250,
+   "prompt": "Some people believe that the best way to keep up with the news is through social media. Others think that newspapers remain a more reliable source of information.\n\nDiscuss both views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+  }
+ }
+}
