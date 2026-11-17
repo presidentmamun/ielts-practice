@@ -1,0 +1,1381 @@
+{
+ "id": "ac20",
+ "module": "AC",
+ "title": "Academic Test 20",
+ "listening": {
+  "parts": [
+   {
+    "title": "Part 1",
+    "context": "A woman phones a cycle hire shop to book bicycles for a group ride.",
+    "range": "1-10",
+    "speakers": {
+     "Callum": "nz_m",
+     "Janet": "airy"
+    },
+    "script": [
+     [
+      "Callum",
+      "Good morning, Pedal Pushers Cycle Hire, Callum speaking."
+     ],
+     [
+      "Janet",
+      "Oh, hello. I'm hoping you can help me. I'm organising a group ride for our walking club, believe it or not. A few of us have decided we'd like a change from boots."
+     ],
+     [
+      "Callum",
+      "Ha, well, we can certainly help with that. Can I take your name first?"
+     ],
+     [
+      "Janet",
+      "Yes, it's Janet Whitcombe. That's W-H-I-T-C-O-M-B-E."
+     ],
+     [
+      "Callum",
+      "Lovely, thanks Janet. And how many bikes are you thinking of?"
+     ],
+     [
+      "Janet",
+      "Well, there were 10 of us signed up, but two more people put their names down yesterday, so I'd better say 12."
+     ],
+     [
+      "Callum",
+      "Twelve, no problem at all. We do a group rate for anything over nine bikes, so you'll be fine. And which day were you hoping for?"
+     ],
+     [
+      "Janet",
+      "We thought Saturday 14 June."
+     ],
+     [
+      "Callum",
+      "Ah, I'm afraid we're fully booked that day. There's a charity event in town and every bike we own has been reserved since the middle of May. How about the following Saturday? That's 21 June."
+     ],
+     [
+      "Janet",
+      "Let me just check my diary. Yes, that should be fine. Nobody's said they're away that weekend, so 21 June it is."
+     ],
+     [
+      "Callum",
+      "Great. And do you know where you'll be riding?"
+     ],
+     [
+      "Janet",
+      "We'd like to do the Ferrymead Trail, that's F-E-R-R-Y-M-E-A-D. Is that suitable for beginners? Some of us haven't been on a bike for years."
+     ],
+     [
+      "Callum",
+      "It's perfect for that. It follows the old railway line, so it's almost completely flat. It's about 20 kilometres there and back, and most groups take around four hours with a stop for lunch."
+     ],
+     [
+      "Janet",
+      "That sounds ideal. And what sort of bikes do you have? I imagine mountain bikes would be overkill."
+     ],
+     [
+      "Callum",
+      "They would, and they're quite heavy, so I wouldn't recommend them for that route. What I'd suggest is our hybrid bikes. They've got slightly thicker tyres than a road bike, but they're light and very comfortable."
+     ],
+     [
+      "Janet",
+      "Hybrid, then. Perfect."
+     ],
+     [
+      "Callum",
+      "What time would you like to collect them? We open at 9, but a lot of groups come a little later."
+     ],
+     [
+      "Janet",
+      "Well, 9 would be a bit early for some of our members, to be honest. Could we make it 9.30?"
+     ],
+     [
+      "Callum",
+      "Of course, 9.30 is fine. I take it you'll need helmets as well?"
+     ],
+     [
+      "Janet",
+      "Yes please, one for everyone. Oh, and one of our members, Doreen, wants to bring her grandson. He's only three. Do you have anything for a child that small?"
+     ],
+     [
+      "Callum",
+      "We do. We can fit a child trailer to one of the bikes, and Doreen can pull him along behind her. There's a small extra charge for that."
+     ],
+     [
+      "Janet",
+      "That's fine. Now, how much is it all going to come to?"
+     ],
+     [
+      "Callum",
+      "Well, the normal price is 20 pounds per bike for the day, but for groups we bring that down to 18 pounds. The trailer is 6 pounds on top of that."
+     ],
+     [
+      "Janet",
+      "Oh, that's very reasonable. I thought it would be more."
+     ],
+     [
+      "Callum",
+      "We do take a deposit as well. It's 5 pounds per bike, so for 12 bikes that comes to 60 pounds. You pay that when you collect the bikes, and you get it all back when they're returned undamaged."
+     ],
+     [
+      "Janet",
+      "Fine. And what time do we have to bring them back? Some of the group might want a cup of tea at the end."
+     ],
+     [
+      "Callum",
+      "The shop doesn't close until 5.30, but the bikes do need to be back by 4.30 so that we can check them over before the end of the day. There's a cafe beside the trail's final car park, so your friends can have their tea there."
+     ],
+     [
+      "Janet",
+      "Good idea. Right, I think that's everything I need. Do I need to send you anything in writing?"
+     ],
+     [
+      "Callum",
+      "No, I've put it all in the booking diary. If you could just tell everyone to bring a bottle of water and some sun cream, we'll look after the rest. We'll see you on the day, Janet."
+     ],
+     [
+      "Janet",
+      "Wonderful. Thank you so much for your help, Callum. Goodbye."
+     ],
+     [
+      "Callum",
+      "Goodbye now."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "Pedal Pushers Cycle Hire: group booking",
+      "items": [
+       {
+        "n": 1,
+        "before": "Name: Janet",
+        "after": "",
+        "answer": [
+         "Whitcombe"
+        ],
+        "why": "She spells her surname W-H-I-T-C-O-M-B-E."
+       },
+       {
+        "n": 2,
+        "before": "Number of bikes:",
+        "after": "",
+        "answer": [
+         "12"
+        ],
+        "why": "She first says 10, but two more people have signed up, so she changes it to 12."
+       },
+       {
+        "n": 3,
+        "before": "Date of ride: Saturday",
+        "after": "June",
+        "answer": [
+         "21"
+        ],
+        "why": "14 June is fully booked, so they choose the following Saturday, 21 June."
+       },
+       {
+        "n": 4,
+        "before": "Route: the",
+        "after": "Trail",
+        "answer": [
+         "Ferrymead"
+        ],
+        "why": "Janet says they would like to do the Ferrymead Trail and spells it out."
+       },
+       {
+        "n": 5,
+        "before": "Type of bike: (not mountain bikes)",
+        "after": "",
+        "answer": [
+         "hybrid"
+        ],
+        "why": "Callum advises against mountain bikes and suggests hybrid bikes; Janet agrees."
+       },
+       {
+        "n": 6,
+        "before": "Collection time:",
+        "after": "",
+        "answer": [
+         "9.30"
+        ],
+        "why": "The shop opens at 9, but 9 is too early for some members, so they agree on 9.30."
+       },
+       {
+        "n": 7,
+        "before": "Extra equipment: a child",
+        "after": "for one bike",
+        "answer": [
+         "trailer"
+        ],
+        "why": "Doreen's three-year-old grandson will ride in a child trailer fitted to one bike."
+       },
+       {
+        "n": 8,
+        "before": "Cost per bike: £",
+        "after": "",
+        "answer": [
+         "18"
+        ],
+        "why": "The normal price is 20 pounds, but the group price is 18 pounds. The trailer's 6 pounds is extra."
+       },
+       {
+        "n": 9,
+        "before": "Total deposit: £",
+        "after": "",
+        "answer": [
+         "60"
+        ],
+        "why": "The deposit is 5 pounds per bike, so 60 pounds for 12 bikes."
+       },
+       {
+        "n": 10,
+        "before": "Bikes must be returned by",
+        "after": "pm",
+        "answer": [
+         "4.30"
+        ],
+        "why": "The shop closes at 5.30, but the bikes must be back by 4.30 so they can be checked."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 2",
+    "context": "A twinning association coordinator talks to local residents about a visit from the town's twin town.",
+    "range": "11-20",
+    "speakers": {
+     "Alison": "aus_f"
+    },
+    "script": [
+     [
+      "Alison",
+      "Good evening, everyone, and thank you for coming along on such a wet night. My name's Alison Drummond and I coordinate the Eastvale Twinning Association. As you know, we've been twinned with Karlsdorf in Germany for a good many years, and in just two weeks' time a group from there will be visiting us. I'd like to tell you what's been planned and, more importantly, what we need from you."
+     ],
+     [
+      "Alison",
+      "First, numbers. When we first talked about this back in the spring, the Karlsdorf committee thought they would be bringing 30 people. That's come down, because several have had to withdraw for one reason or another, so we're now expecting 24 visitors, aged from about fifteen to seventy-something."
+     ],
+     [
+      "Alison",
+      "Now, the reason for the visit. Many of you will know that this year is the 25th anniversary of the twinning, and we'll certainly be marking that with a dinner on the final evening. But the real purpose of this visit is to launch a student exchange between Eastvale High School and the Karlsdorf Gymnasium. Several of our visitors are teachers and pupils, and the plan is that next spring our own students will make the return trip."
+     ],
+     [
+      "Alison",
+      "Now, accommodation. In earlier years we put our guests in the Riverside Hotel, and that was the plan this time as well. Unfortunately, the hotel is closed for renovation, so we're asking for host families. I know a few of you were nervous about this when I mentioned it at the last meeting, but experience shows it's the very best way to make friends. And what will you actually have to provide? Breakfast, obviously, and a packed lunch for them to take on the day's activities. You don't need to cook dinner, because evening meals are all included in the programme, and you don't need to drive anyone either, because the association has hired a minibus."
+     ],
+     [
+      "Alison",
+      "Right, let me take you through the programme, which is on the sheet being passed round. The visitors arrive late on Sunday evening, so the first official event is on Monday morning, when the mayor will hold a civic reception for them at the town hall. It's quite short, with a few speeches and a cup of coffee, so please don't let your guests feel nervous."
+     ],
+     [
+      "Alison",
+      "On Tuesday, the local history society will lead a guided walk around the town. They'll be taking in the market square, the old mill and the churchyard, and I'm told the walk finishes at the museum, where lunch will be waiting."
+     ],
+     [
+      "Alison",
+      "Wednesday is the day many of you have asked about. We've arranged a visit to Hartwell, the cheese factory out in the hills, where the visitors can see the cheese being made and taste it too. The coach leaves the town hall at 8.30, so hosts, please make sure your guests are punctual."
+     ],
+     [
+      "Alison",
+      "Thursday was going to be a boat trip along the river. I was really looking forward to that, but the water level is far too low at the moment, so the boats can't run. We've replaced it with a cooking workshop at the college, where the catering students will teach our guests to make some traditional local dishes. It might actually turn out to be more fun."
+     ],
+     [
+      "Alison",
+      "On Friday afternoon there's a football match between our under-sixteens and the Karlsdorf youth team, at the sports ground. That's the day we'd planned the open-air concert, but the football club had already booked the evening, so the concert has been moved."
+     ],
+     [
+      "Alison",
+      "And that brings us to Saturday, which is the farewell day. The concert is now taking place on the green in the afternoon, with local bands and the town choir, and it's followed by the anniversary dinner in the evening. The visitors will leave on Sunday morning."
+     ],
+     [
+      "Alison",
+      "Finally, a few practical points. If you'd like to host a guest, there's a sign-up sheet at the back, and please put your phone number down so that we can match you up with someone who shares your interests. We'd particularly like to hear from households that have teenagers, because we have six young visitors and they will be much happier staying with people their own age. Also, if you speak any German, please do use it. It's greatly appreciated, even if it's only a few words. I'll take any questions now, and thank you once again for your support."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 11,
+        "q": "How many visitors are expected from Karlsdorf?",
+        "options": [
+         "18",
+         "24",
+         "30"
+        ],
+        "answer": "B",
+        "why": "The committee first thought of 30, but several withdrew, so 24 are now expected."
+       },
+       {
+        "n": 12,
+        "q": "Where will the visitors stay?",
+        "options": [
+         "in a hotel",
+         "with host families",
+         "in college accommodation"
+        ],
+        "answer": "B",
+        "why": "The hotel is closed for renovation, so host families are needed."
+       },
+       {
+        "n": 13,
+        "q": "What is the main purpose of this year's visit?",
+        "options": [
+         "to celebrate the 25th anniversary of the twinning",
+         "to launch a student exchange",
+         "to plan a joint business fair"
+        ],
+        "answer": "B",
+        "why": "The anniversary will be marked with a dinner, but the speaker says the real purpose is to launch a student exchange."
+       },
+       {
+        "n": 14,
+        "q": "What will host families be expected to provide?",
+        "options": [
+         "breakfast and dinner every day",
+         "breakfast and a packed lunch",
+         "all meals and transport"
+        ],
+        "answer": "B",
+        "why": "Hosts provide breakfast and a packed lunch; dinner is part of the programme and the association supplies a minibus."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "What activity is planned for each day of the visit? Choose SIX answers from the box and write the correct letter, A-G, next to Questions 15-20.",
+      "options": [
+       {
+        "k": "A",
+        "t": "a boat trip on the river"
+       },
+       {
+        "k": "B",
+        "t": "a visit to a cheese factory"
+       },
+       {
+        "k": "C",
+        "t": "a football match"
+       },
+       {
+        "k": "D",
+        "t": "a civic reception"
+       },
+       {
+        "k": "E",
+        "t": "a cooking workshop"
+       },
+       {
+        "k": "F",
+        "t": "a guided town walk"
+       },
+       {
+        "k": "G",
+        "t": "an open-air concert"
+       }
+      ],
+      "items": [
+       {
+        "n": 15,
+        "q": "Monday",
+        "answer": "D",
+        "why": "The mayor holds a civic reception at the town hall on Monday morning."
+       },
+       {
+        "n": 16,
+        "q": "Tuesday",
+        "answer": "F",
+        "why": "The history society leads a guided walk around the town."
+       },
+       {
+        "n": 17,
+        "q": "Wednesday",
+        "answer": "B",
+        "why": "The visitors go to Hartwell to see cheese being made."
+       },
+       {
+        "n": 18,
+        "q": "Thursday",
+        "answer": "E",
+        "why": "The planned boat trip is cancelled because the water is too low, and a cooking workshop replaces it."
+       },
+       {
+        "n": 19,
+        "q": "Friday",
+        "answer": "C",
+        "why": "The football match is on Friday afternoon. The concert was moved away from Friday."
+       },
+       {
+        "n": 20,
+        "q": "Saturday",
+        "answer": "G",
+        "why": "The concert has been moved to Saturday afternoon."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 3",
+    "context": "Two students prepare a conference poster on ocean plastics.",
+    "range": "21-30",
+    "speakers": {
+     "Dana": "glassy",
+     "Owen": "bright"
+    },
+    "script": [
+     [
+      "Dana",
+      "Okay, Owen, so we've got until Friday to finalise the poster, and the conference office needs the file by Monday morning at the latest."
+     ],
+     [
+      "Owen",
+      "Right. I've been thinking about it all week, and I'm still not entirely happy with the content. Can we go through it section by section?"
+     ],
+     [
+      "Dana",
+      "Sure. But first, are we completely sure about the topic? I know we nearly did abandoned fishing nets instead of microplastics."
+     ],
+     [
+      "Owen",
+      "I know. Honestly, I think we were right to drop the nets. My placement at the harbour would have given us a few good stories, but there simply wasn't enough published data to base anything on. With microplastics there are dozens of recent studies."
+     ],
+     [
+      "Dana",
+      "Yes, that's what swung it for me too. Even Ms Calloway said she was happy with either subject, so it was our decision. Right, the title. 'Plastic Oceans' is a bit flat, isn't it?"
+     ],
+     [
+      "Owen",
+      "It's far too vague. And it's what half the posters at the conference will probably be called. We could make it shorter, I suppose. Just 'Hidden Plastic'?"
+     ],
+     [
+      "Dana",
+      "Shorter isn't necessarily better. What about turning it into a question? 'How Much Plastic Is in Our Bay?'"
+     ],
+     [
+      "Owen",
+      "Hmm. I'd rather it said something we actually found. We counted nine particles in every litre of sample, didn't we? Something like 'Nine Particles in Every Litre'."
+     ],
+     [
+      "Dana",
+      "Oh, that's good. It makes people stop and wonder what we're talking about. Let's go with that."
+     ],
+     [
+      "Owen",
+      "Great. Now, the graph of particle counts at each site. I made it last night, but I used red and green lines. I've realised that's a problem."
+     ],
+     [
+      "Dana",
+      "Why? I thought it looked quite clear."
+     ],
+     [
+      "Owen",
+      "To most people, yes, but about one man in twelve is colour-blind, and for them the two lines look almost identical. At a conference, someone is bound to be affected. I'm going to change the colours to blue and orange."
+     ],
+     [
+      "Dana",
+      "Fair enough. I hadn't thought of that. Next, the picture for the front. I was going to use that photo of a beach covered in plastic bottles."
+     ],
+     [
+      "Owen",
+      "Hmm, I'm not sure. Everyone's seen that picture a thousand times, and it's not really about microplastics. Then there's the one of the turtle caught in a net."
+     ],
+     [
+      "Dana",
+      "That's very powerful, though."
+     ],
+     [
+      "Owen",
+      "It is, but it's about nets, so it would send exactly the wrong message about our work. How about our own photograph, the fibres under the microscope? It's different and it's our own data."
+     ],
+     [
+      "Dana",
+      "You're right. People will wonder what they are, and then they'll read the text. Let's use that."
+     ],
+     [
+      "Owen",
+      "Speaking of text, our methods section takes up nearly a third of the poster. Nobody will read all that."
+     ],
+     [
+      "Dana",
+      "I was thinking the same. What if we put the full methods on a handout instead, and leave only a couple of lines on the poster itself?"
+     ],
+     [
+      "Owen",
+      "Yes, a pile of handouts beside the poster. People can take one away. That solves it."
+     ],
+     [
+      "Dana",
+      "Right. Now let's decide what goes in each section. For the introduction, we need something to show how tiny these particles are."
+     ],
+     [
+      "Owen",
+      "How about putting our result next to something familiar? Like saying it's the same as one teabag dissolved in a full bath. People can picture that straight away."
+     ],
+     [
+      "Dana",
+      "Perfect, that's the introduction done. For the methods, we're keeping it short, so a flow chart would be best. Collect, filter, dry, count. Four boxes with arrows."
+     ],
+     [
+      "Owen",
+      "Agreed. And for the results, we obviously need our map of sampling sites, with the dots coloured according to how many particles we found. That'll be the main thing people look at."
+     ],
+     [
+      "Dana",
+      "Definitely. Then in the discussion, I'd like a real voice. When we interviewed Mr Okoro at the harbour, he said he finds more fibres in his catch every year. If we quote him, it makes the problem feel real."
+     ],
+     [
+      "Owen",
+      "Good idea. I'd thought about a short quiz for visitors, you know, true or false questions about plastic. But it would probably look a bit gimmicky."
+     ],
+     [
+      "Dana",
+      "I agree, and I doubt anyone would have time. Let's leave that out. For the recommendations, we could put a QR code that links to all the data and the full report."
+     ],
+     [
+      "Owen",
+      "Brilliant. Then visitors can follow it up later at their own pace. Right, I'll start making the changes tonight."
+     ],
+     [
+      "Dana",
+      "And I'll send the draft to Ms Calloway tomorrow for a last look. Thanks, Owen."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 21,
+        "q": "Why did Dana and Owen choose microplastics as their topic?",
+        "options": [
+         "There was more published research available.",
+         "Their tutor recommended it.",
+         "Owen had worked on the subject during a placement."
+        ],
+        "answer": "A",
+        "why": "Owen says there was not enough published data on nets, whereas dozens of recent studies exist on microplastics. The tutor was neutral and Owen's placement was about nets."
+       },
+       {
+        "n": 22,
+        "q": "What do they decide to do about the title of the poster?",
+        "options": [
+         "make it shorter",
+         "make it a question",
+         "include a statistic"
+        ],
+        "answer": "C",
+        "why": "They reject a shorter title and a question, and choose 'Nine Particles in Every Litre'."
+       },
+       {
+        "n": 23,
+        "q": "Why does Owen want to change the graph?",
+        "options": [
+         "Some people would find it hard to read.",
+         "It has too many lines on it.",
+         "Some of the data is out of date."
+        ],
+        "answer": "A",
+        "why": "Red and green lines look almost identical to colour-blind viewers."
+       },
+       {
+        "n": 24,
+        "q": "Which photograph do they decide to use on the poster?",
+        "options": [
+         "a beach covered in plastic bottles",
+         "a turtle caught in a net",
+         "plastic fibres under a microscope"
+        ],
+        "answer": "C",
+        "why": "The beach picture is overused and the turtle is about nets; they choose their own microscope photograph."
+       },
+       {
+        "n": 25,
+        "q": "What do they agree to do about the methods section?",
+        "options": [
+         "put most of it on a handout",
+         "shorten the conclusion instead",
+         "add a glossary of technical terms"
+        ],
+        "answer": "A",
+        "why": "Dana suggests a handout with the full methods and only a couple of lines on the poster; Owen agrees."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "What idea do they decide to include in each section of the poster? Choose FIVE answers from the list and write the correct letter, A-F, next to Questions 26-30.",
+      "options": [
+       {
+        "k": "A",
+        "t": "a short quiz for visitors"
+       },
+       {
+        "k": "B",
+        "t": "a comparison with an everyday object"
+       },
+       {
+        "k": "C",
+        "t": "a QR code linking to further information"
+       },
+       {
+        "k": "D",
+        "t": "a quotation from a local fisherman"
+       },
+       {
+        "k": "E",
+        "t": "a flow chart showing each stage"
+       },
+       {
+        "k": "F",
+        "t": "a map of sampling sites"
+       }
+      ],
+      "items": [
+       {
+        "n": 26,
+        "q": "Introduction",
+        "answer": "B",
+        "why": "They compare the result to one teabag in a full bath."
+       },
+       {
+        "n": 27,
+        "q": "Methods",
+        "answer": "E",
+        "why": "A four-box flow chart: collect, filter, dry, count."
+       },
+       {
+        "n": 28,
+        "q": "Results",
+        "answer": "F",
+        "why": "The map of sampling sites with coloured dots is the main feature of the results."
+       },
+       {
+        "n": 29,
+        "q": "Discussion",
+        "answer": "D",
+        "why": "They will quote Mr Okoro, the harbour fisherman."
+       },
+       {
+        "n": 30,
+        "q": "Recommendations",
+        "answer": "C",
+        "why": "A QR code will link to the data and report. The quiz (A) is rejected as gimmicky."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 4",
+    "context": "A lecturer talks about the history of soap and hygiene.",
+    "range": "31-40",
+    "speakers": {
+     "Lecturer": "aus_m"
+    },
+    "script": [
+     [
+      "Lecturer",
+      "Good morning, everyone. Today I'd like to look at something so ordinary that we rarely think about it: soap. It's a substance most of us use several times a day, yet its history is long, surprisingly muddled, and closely tied to the history of public health."
+     ],
+     [
+      "Lecturer",
+      "Let's begin with the earliest evidence. Archaeologists working in the ancient city of Babylon have found clay cylinders dating from around 2800 BC, and inscriptions on them describe a mixture of fat boiled with ashes. That's the basic recipe still behind soap today, because the alkali in wood ashes reacts with fat to produce a cleaning substance. However, it's not clear that this early mixture was used for washing the body. It may well have been used to prepare wool before spinning."
+     ],
+     [
+      "Lecturer",
+      "The Romans are often credited with inventing soap, and that's a bit of a myth. They did build magnificent public baths, but what Romans actually used to clean their skin was olive oil, which they rubbed on and then scraped off with a curved metal tool called a strigil. That's S-T-R-I-G-I-L. The dirt came away with the oil, and a good soak did the rest. True soap only became common in Europe later."
+     ],
+     [
+      "Lecturer",
+      "In the Middle Ages, soap making grew into a real industry, especially around the Mediterranean, where a plentiful supply of olive oil was available. The city of Marseille became famous for a hard, white soap, and strict rules governed how it could be made. Northern countries had no such oil and relied on animal fat, which gave a cheaper but much smellier product. This is one reason why soap stayed a luxury item for ordinary people in those countries."
+     ],
+     [
+      "Lecturer",
+      "In Britain, matters were made worse by a tax. From 1712 until 1853, soap was heavily taxed, which pushed up the price so far that many families simply went without. When the tax was finally removed, sales rose dramatically, and campaigners began to link cleanliness with good health."
+     ],
+     [
+      "Lecturer",
+      "Now, there was also a technological breakthrough. In the 1790s, a French chemist named Nicolas Leblanc developed a process for making soda from common salt. Soda was the key ingredient in hard soap, and until then it had been extracted from plant ashes, which was slow and costly. Leblanc's method made it cheap, and by the middle of the nineteenth century, soap could be made in huge quantities."
+     ],
+     [
+      "Lecturer",
+      "But cheap soap did not automatically mean clean hands. For centuries, doctors had no idea that disease was caused by germs. A famous turning point came in 1847, when a Hungarian doctor named Ignaz Semmelweis, working in a Vienna hospital, noticed that women died far less often when doctors washed their hands in a chlorine solution before delivering babies. He couldn't explain why it worked, and most of his colleagues rejected his advice. It took another twenty years before the germ theory was accepted."
+     ],
+     [
+      "Lecturer",
+      "Meanwhile, soap makers were discovering the power of marketing. In the late nineteenth century, one British company bought a famous painting by a leading artist and used it in an advertisement, and others soon did the same. Brands competed to be associated with beauty and respectability. This was the beginning of modern advertising, and it did a great deal to persuade the public that being clean was a sign of being civilised."
+     ],
+     [
+      "Lecturer",
+      "In the twentieth century, there was another change. During the First World War, there was a shortage of fats in Germany, so chemists developed the first synthetic detergents. Later these were improved, and today many of the products we call soap are actually detergents made from oil rather than from natural fat."
+     ],
+     [
+      "Lecturer",
+      "Finally, what does soap actually do? Modern research has given us a clear answer. A soap molecule has one end that attaches to water and another that attaches to oil and grease. When you wash your hands, the oily end sticks to the outer membrane of a germ and pulls it apart, and the water then washes everything away. That's why hand washing is so effective, even against viruses."
+     ],
+     [
+      "Lecturer",
+      "And that explains the emphasis on technique in modern hygiene campaigns. Many people believe you should wash for at least 30 seconds, but health experts say 20 seconds is enough, provided you cover all the surfaces of your hands. Campaigns now concentrate on children, teaching them to wash properly while they sing a short song to count the time. It's a very simple habit, but it's one that has saved millions of lives. Thank you, and I'll take any questions."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "The history of soap",
+      "items": [
+       {
+        "n": 31,
+        "before": "Babylon, around 2800 BC: clay cylinders describe fat boiled with",
+        "after": "",
+        "answer": [
+         "ashes"
+        ],
+        "why": "The inscriptions describe a mixture of fat boiled with ashes."
+       },
+       {
+        "n": 32,
+        "before": "Romans cleaned their skin with oil and a scraper called a",
+        "after": "",
+        "answer": [
+         "strigil"
+        ],
+        "why": "The Romans used olive oil scraped off with a strigil, not true soap."
+       },
+       {
+        "n": 33,
+        "before": "Marseille became famous for hard white soap made with",
+        "after": "oil",
+        "answer": [
+         "olive"
+        ],
+        "why": "Mediterranean soap makers had a plentiful supply of olive oil; northern countries used animal fat."
+       },
+       {
+        "n": 34,
+        "before": "Britain: soap stayed expensive because of a",
+        "after": "which lasted until 1853",
+        "answer": [
+         "tax"
+        ],
+        "why": "Soap was heavily taxed from 1712 until 1853."
+       },
+       {
+        "n": 35,
+        "before": "1790s: Leblanc found a way to make",
+        "after": "from salt",
+        "answer": [
+         "soda"
+        ],
+        "why": "Leblanc developed a process for making soda from common salt, which made soap cheap."
+       },
+       {
+        "n": 36,
+        "before": "Semmelweis showed the value of hand washing in Vienna in",
+        "after": "",
+        "answer": [
+         "1847"
+        ],
+        "why": "The turning point came in 1847. The germ theory was accepted about twenty years later."
+       },
+       {
+        "n": 37,
+        "before": "Companies bought famous",
+        "after": "to use in advertisements",
+        "answer": [
+         "painting",
+         "paintings"
+        ],
+        "why": "A British company bought a famous painting by a leading artist for its advertisement and others followed."
+       },
+       {
+        "n": 38,
+        "before": "First World War: a shortage of",
+        "after": "led to synthetic detergents",
+        "answer": [
+         "fats"
+        ],
+        "why": "There was a shortage of fats in Germany, so chemists developed the first synthetic detergents."
+       },
+       {
+        "n": 39,
+        "before": "Soap breaks germs apart by attaching to their outer",
+        "after": "",
+        "answer": [
+         "membrane"
+        ],
+        "why": "The oily end of the soap molecule sticks to the outer membrane of a germ."
+       },
+       {
+        "n": 40,
+        "before": "Children are taught to wash for",
+        "after": "seconds",
+        "answer": [
+         "20"
+        ],
+        "why": "Many people say 30 seconds, but experts say 20 seconds is enough."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "reading": {
+  "sections": [
+   {
+    "title": "Passage 1",
+    "range": "1-13",
+    "passages": [
+     {
+      "title": "The Tulip Trade and the First Bubbles",
+      "paras": [
+       "A  Few episodes in economic history have been retold as often as the tulip craze that gripped the Dutch Republic in the 1630s. In the popular version, ordinary citizens sold their houses to buy a single bulb, fortunes were made and lost within a week, and the country was left in ruins when prices suddenly collapsed. The tale has served for nearly four centuries as a warning against speculation. Yet historians who have returned to the surviving records in recent decades have found a rather different story, one that is less dramatic but in some ways more instructive.",
+       "B  The tulip itself arrived in Western Europe from the Ottoman Empire during the second half of the sixteenth century. Its colours were more intense than those of any native flower, and it quickly became a fashionable possession among wealthy merchants, who were looking for ways to display their taste and their success. Growers soon discovered that a bulb produced offsets, small daughter bulbs that could be separated and sold, but that a plant raised from seed might take up to twelve years to flower. This slow rate of reproduction meant that the supply of any particular variety could never expand quickly, a feature that would prove important to its price.",
+       "C  The most admired tulips were those whose petals were streaked with flame-like patterns of red, white or purple. Nobody at the time understood the cause. We now know that the effect was produced by a virus, spread by aphids, which weakened the bulb and made it increasingly difficult to propagate. The more spectacular the pattern, therefore, the more fragile and scarce the plant. Collectors gave their finest varieties grand names, and a few bulbs became so valuable that they were weighed on the same delicate scales used for gold.",
+       "D  Until about 1634, the market was restricted to experts and rich enthusiasts, who bought and sold bulbs in summer, when they could be lifted from the ground. What changed was that dealers began to trade in bulbs that were still in the soil. Buyers signed paper agreements to take delivery months later, and these documents were themselves passed from hand to hand, often in the back rooms of taverns. Because nobody needed to pay at once, even people with modest savings could take part, and the paper contracts were traded more often than the flowers they represented. In effect, the Dutch had created a primitive futures market for a plant.",
+       "E  During the winter of 1636-37 prices rose at astonishing speed, with some varieties doubling in a few weeks. Then, in early February, at an auction in the city of Haarlem, buyers failed to appear. Confidence evaporated within days and contract prices fell sharply. Sellers demanded payment, buyers refused to honour their agreements, and the authorities, unwilling to treat what they saw as gambling debts as legal obligations, eventually allowed most contracts to be settled for a small fraction of the original price. The practical consequence was that the losses were spread across many people instead of falling heavily on a few.",
+       "F  Here the modern revision begins. Researchers who searched through notarial archives expected to find hundreds of bankrupt families, but they found hardly any. The extreme prices quoted in old pamphlets were mostly for a handful of rare bulbs, while ordinary varieties sold for sums that a skilled craftsman could afford. Many of the best-known stories, such as that of the sailor who ate a valuable bulb in the belief that it was an onion, appear to have been invented or exaggerated by preachers and pamphleteers, who disapproved of the trade and wished to show that greed led to disaster. The Dutch economy, meanwhile, continued to grow for decades afterwards.",
+       "G  Whether the episode deserves the name of bubble is therefore still argued. Some economists point out that tulip prices can be partly explained by real factors: a new and fashionable product, a limited supply and the very high incomes of Dutch merchants at the time. Others reply that prices rose far faster than any change in those factors could justify, and that the behaviour of the buyers, many of whom bought only because they expected to sell to someone else at a higher price, is the defining mark of a bubble.",
+       "H  Later episodes fit that pattern more clearly. In 1720, within a few months, shares in two great trading companies, one French and one British, rose to many times their original value and then collapsed, ruining thousands of investors. Unlike the tulip crisis, these events involved large numbers of people from every level of society and left lasting damage, and governments responded with laws restricting how companies could raise money. Behavioural economists who study such episodes note several shared features: a new asset that is hard to value, easy credit, stories of quick profit and a fear of missing out. The tulip story endures not because it is the best example, but because it is the simplest to tell."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information in Passage 1? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 1,
+        "q": "A tulip grown from seed could flower within two or three years.",
+        "answer": "FALSE",
+        "why": "Paragraph B says a plant raised from seed might take up to twelve years to flower."
+       },
+       {
+        "n": 2,
+        "q": "The most patterned tulips were rare because the cause of the pattern also weakened the plant.",
+        "answer": "TRUE",
+        "why": "Paragraph C: the virus weakened the bulb and made it hard to propagate, so the more spectacular, the scarcer."
+       },
+       {
+        "n": 3,
+        "q": "Before 1634, bulbs were bought and sold mainly by experts and wealthy enthusiasts.",
+        "answer": "TRUE",
+        "why": "Paragraph D says the market was restricted to experts and rich enthusiasts until about 1634."
+       },
+       {
+        "n": 4,
+        "q": "The buyers who failed to appear at the Haarlem auction had been warned by officials.",
+        "answer": "NOT GIVEN",
+        "why": "Paragraph E says buyers did not appear but gives no reason or any warning."
+       },
+       {
+        "n": 5,
+        "q": "The Dutch authorities insisted that all contracts should be paid at their full price.",
+        "answer": "FALSE",
+        "why": "Paragraph E: most contracts were settled for a small fraction of the original price."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+      "items": [
+       {
+        "n": 6,
+        "before": "Small daughter bulbs that can be separated from a parent bulb are called",
+        "after": ".",
+        "answer": [
+         "offsets"
+        ],
+        "why": "Paragraph B: 'offsets, small daughter bulbs'."
+       },
+       {
+        "n": 7,
+        "before": "The flame-like patterns on petals were caused by a",
+        "after": "carried by aphids.",
+        "answer": [
+         "virus"
+        ],
+        "why": "Paragraph C names the virus spread by aphids."
+       },
+       {
+        "n": 8,
+        "before": "Paper agreements were often passed from hand to hand in the back rooms of",
+        "after": ".",
+        "answer": [
+         "taverns"
+        ],
+        "why": "Paragraph D."
+       },
+       {
+        "n": 9,
+        "before": "The story of the sailor who ate a bulb was probably invented or exaggerated by",
+        "after": "and pamphleteers.",
+        "answer": [
+         "preachers"
+        ],
+        "why": "Paragraph F."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "Which paragraph contains the following information? Choose the correct letter, A-H.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Paragraph A"
+       },
+       {
+        "k": "B",
+        "t": "Paragraph B"
+       },
+       {
+        "k": "C",
+        "t": "Paragraph C"
+       },
+       {
+        "k": "D",
+        "t": "Paragraph D"
+       },
+       {
+        "k": "E",
+        "t": "Paragraph E"
+       },
+       {
+        "k": "F",
+        "t": "Paragraph F"
+       },
+       {
+        "k": "G",
+        "t": "Paragraph G"
+       },
+       {
+        "k": "H",
+        "t": "Paragraph H"
+       }
+      ],
+      "items": [
+       {
+        "n": 10,
+        "q": "how trading changed from a seasonal activity to one involving bulbs still in the ground",
+        "answer": "D",
+        "why": "Paragraph D describes dealers trading bulbs that were still in the soil."
+       },
+       {
+        "n": 11,
+        "q": "a reference to evidence found in official archives",
+        "answer": "F",
+        "why": "Paragraph F: researchers searched notarial archives."
+       },
+       {
+        "n": 12,
+        "q": "a biological explanation for the appearance of the flowers",
+        "answer": "C",
+        "why": "Paragraph C explains the virus behind the patterns."
+       },
+       {
+        "n": 13,
+        "q": "an account of how governments reacted to later financial crises",
+        "answer": "H",
+        "why": "Paragraph H: governments responded with laws restricting how companies could raise money."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Passage 2",
+    "range": "14-26",
+    "passages": [
+     {
+      "title": "Rivers Rebuilt by Beavers",
+      "paras": [
+       "A  Beavers once lived along most of the rivers of Europe and northern Asia. Hunted for their dense fur and for a scented secretion that was used in medicine and perfume, they had disappeared from Britain by the sixteenth century, and in much of the continent only a few hundred survived. Today the animal is returning, sometimes with official approval, sometimes illegally, and occasionally by simply turning up on a river where nobody had released it. This return has become one of the most closely watched experiments in the movement known as rewilding, which holds that restoring a lost species can repair the damage done to a whole landscape.",
+       "B  A beaver is often called an ecosystem engineer, and the description is deserved. A family of beavers fells trees with its teeth, drags branches into a stream and packs them with mud and stones to make a dam. The water that collects behind the dam forms a pond, which protects the family's lodge from predators. A single family may build a whole series of dams along a river, and each one slows the flow, raises the water table and spreads water across the surrounding land. Where a straight channel once carried rain quickly downstream, there is soon a chain of pools, side channels and wet meadow.",
+       "C  The consequences for flooding have attracted the most attention from scientists. In the Hollin Beck project in northern England, researchers placed two beaver families in a fenced valley and compared its stream with a similar one nearby. During heavy storms, the peak flow leaving the beaver site was about a third lower than at the control site, and it arrived several hours later. The ponds act like a series of small reservoirs, storing the water and releasing it gradually. The effect also works in the other direction: in a dry summer, the stored water continued to feed the stream when the control site had shrunk to a trickle. The researchers caution, however, that dams cannot prevent a flood in an extreme storm, once the ponds are already full.",
+       "D  Water quality seems to improve too. Rain washing off farmland carries soil, fertilisers and other pollutants into rivers, and the slow-moving water in a beaver pond allows much of this material to settle. Measurements below the Hollin Beck dams showed that the water leaving the site contained less sediment and fewer nitrates than the water entering it. The layers of mud that build up behind the dams are rich in nutrients, and over time they become fertile ground for plants. Some of the carbon that would otherwise be carried to the sea is also locked away in the soil, a benefit that is only now being studied in detail.",
+       "E  The wildlife benefits are easier to see. A beaver wetland attracts dragonflies and frogs, which breed in the still water, and the insects in turn attract bats and birds. Dead trees killed by the flooding provide homes for woodpeckers and beetles. Fish have been a subject of debate, because dams look like obstacles to species such as salmon and trout that migrate upstream to spawn. Most studies, however, suggest that fish pass over or around dams easily when water levels are high, and young fish find shelter and food in the deeper pools. The overall number of species recorded at the Hollin Beck site rose by almost half in the first four years.",
+       "F  Not everyone welcomes the animal. Farmers whose fields lie beside a river worry that dams will flood productive land, and that burrows in the banks will weaken the paths of livestock and machinery. Owners of woodland complain about felled trees, and some of the animals' dams have blocked drains and culverts, causing damage to roads. Solutions exist, though they cost money and effort. Engineers can install a pipe through a dam to keep the water level behind it below a chosen height, and valuable trees can be protected by wrapping their trunks in wire mesh. Where a dam really cannot be tolerated, a licence may be granted to remove it, though conservationists argue that this should always be the last resort. One economic study concluded that the money saved by reducing flood damage in towns downstream would exceed the cost of the management work many times over.",
+       "G  The debate is as much about attitudes as about science. Supporters of rewilding see the beaver as a free and tireless worker that can do, without any budget, what human engineers do at great expense. Critics respond that a landscape shaped by beavers is untidy and unpredictable, and that this is difficult to accept in a country where nearly every field has an owner. The sensible path, most experts now agree, is neither to ban the animal nor to let it go anywhere, but to decide in advance which valleys are suitable and which are not. If that can be done, the beaver may teach us a lesson that is bigger than any single river: that nature often manages water better when it is allowed to do the work itself."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "Passage 2 has seven paragraphs, A-G. Choose the correct heading for paragraphs B-F from the list of headings below. Write the correct letter, A-G, next to Questions 14-18.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Dams that store water and calm the flow of a river"
+       },
+       {
+        "k": "B",
+        "t": "Why attitudes to the animal are changing"
+       },
+       {
+        "k": "C",
+        "t": "A builder that reshapes its surroundings"
+       },
+       {
+        "k": "D",
+        "t": "Costs for landowners and ways of reducing them"
+       },
+       {
+        "k": "E",
+        "t": "New homes for many kinds of living things"
+       },
+       {
+        "k": "F",
+        "t": "Cleaner water downstream"
+       },
+       {
+        "k": "G",
+        "t": "The first beavers to be released in Britain"
+       }
+      ],
+      "items": [
+       {
+        "n": 14,
+        "q": "Paragraph B",
+        "answer": "C",
+        "why": "Paragraph B describes how beavers fell trees and build dams that change the stream and land."
+       },
+       {
+        "n": 15,
+        "q": "Paragraph C",
+        "answer": "A",
+        "why": "Paragraph C is about ponds storing water and reducing flood peaks."
+       },
+       {
+        "n": 16,
+        "q": "Paragraph D",
+        "answer": "F",
+        "why": "Paragraph D describes sediment and nitrates settling out."
+       },
+       {
+        "n": 17,
+        "q": "Paragraph E",
+        "answer": "E",
+        "why": "Paragraph E lists the animals that benefit from beaver wetlands."
+       },
+       {
+        "n": 18,
+        "q": "Paragraph F",
+        "answer": "D",
+        "why": "Paragraph F covers the problems for farmers and landowners and how they can be managed."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 19,
+        "q": "According to paragraph A, beavers disappeared from Britain because",
+        "options": [
+         "their habitat was drained for farming",
+         "they were hunted for fur and a useful substance",
+         "they were killed by disease",
+         "they could not compete with other species"
+        ],
+        "answer": "B",
+        "why": "The paragraph says they were hunted for their fur and for a secretion used in medicine and perfume."
+       },
+       {
+        "n": 20,
+        "q": "What did the Hollin Beck researchers find about storm flows?",
+        "options": [
+         "The peak flow was lower and came later.",
+         "The peak flow was higher but shorter.",
+         "There was no difference from the control site.",
+         "Dams prevented flooding even in extreme storms."
+        ],
+        "answer": "A",
+        "why": "Peak flow was about a third lower and arrived several hours later. The researchers warn that dams cannot stop floods in extreme storms."
+       },
+       {
+        "n": 21,
+        "q": "What do most studies suggest about fish and beaver dams?",
+        "options": [
+         "Dams stop all migrating fish.",
+         "Fish can usually get past dams when the water is high.",
+         "Young fish cannot survive in the pools.",
+         "Salmon numbers rise sharply."
+        ],
+        "answer": "B",
+        "why": "Paragraph E: fish pass over or around dams easily when water levels are high."
+       },
+       {
+        "n": 22,
+        "q": "What is the writer's attitude to the removal of dams?",
+        "options": [
+         "It should happen whenever farmers ask.",
+         "It should never be allowed.",
+         "It is acceptable only if nothing else works.",
+         "It is cheaper than other management."
+        ],
+        "answer": "C",
+        "why": "Conservationists argue it should be the last resort, and the paragraph presents licences as a possibility only where a dam cannot be tolerated."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+      "items": [
+       {
+        "n": 23,
+        "before": "Engineers can control the water level behind a dam by installing a",
+        "after": "through it.",
+        "answer": [
+         "pipe"
+        ],
+        "why": "Paragraph F."
+       },
+       {
+        "n": 24,
+        "before": "Valuable trees can be protected with wire",
+        "after": "around their trunks.",
+        "answer": [
+         "mesh"
+        ],
+        "why": "Paragraph F: wrapping their trunks in wire mesh."
+       },
+       {
+        "n": 25,
+        "before": "If a dam cannot be tolerated, a",
+        "after": "may be granted to remove it.",
+        "answer": [
+         "licence"
+        ],
+        "why": "Paragraph F."
+       },
+       {
+        "n": 26,
+        "before": "A beaver is often described as an ecosystem",
+        "after": ".",
+        "answer": [
+         "engineer"
+        ],
+        "why": "Paragraph B: 'an ecosystem engineer'."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Passage 3",
+    "range": "27-40",
+    "passages": [
+     {
+      "title": "What Is Intelligence?",
+      "paras": [
+       "A  Ask a dozen people to define intelligence and you will probably receive a dozen different answers: quickness with numbers, a gift for languages, a good memory, wisdom, common sense, the ability to talk one's way out of trouble. That so familiar a word should prove so hard to pin down is not merely an academic embarrassment. Decisions about who enters selective schools, who is called gifted and who receives extra support all rest on assumptions about what intelligence is and how it can be measured. It is worth examining those assumptions rather than simply inheriting them.",
+       "B  The modern debate begins with Charles Spearman, who noticed early in the twentieth century that pupils who did well in one school subject tended to do well in others. He concluded that a single underlying capacity, which he called general intelligence, or g, contributes to success in almost every mental task, with more specific skills added on top. Over a century of research has produced striking support for his observation. Scores on very different tests correlate positively, and g predicts academic achievement and, to a lesser extent, performance at work. Critics who dismiss it as an artefact of testing have yet to explain these robust patterns, and I regard the case for g as considerably stronger than fashionable commentary admits.",
+       "C  Yet a statistical regularity is not a complete theory. Defenders of g can tell us that it exists, but they say little about what it is, and still less about creativity, judgement or the skills of a good musician. The most popular rival is Howard Gardner's theory of multiple intelligences, which proposes that people possess several relatively independent capacities, among them linguistic, musical, spatial, bodily and interpersonal. The theory has been adopted with enthusiasm by teachers, because it affirms that every child is clever in some way. That is a generous message, but generosity is not evidence. Gardner built his list from observations of brain-damaged patients, prodigies and different cultures rather than from tests, and few of his proposed intelligences have ever been measured separately in a way that survives scrutiny. When they have, they tend to correlate with one another, which is exactly what g would predict. I therefore find the theory more valuable as an educational philosophy than as a scientific account.",
+       "D  Robert Sternberg offers a middle path. His triarchic theory distinguishes analytical, creative and practical intelligence, and argues that conventional tests capture only the first. His examples are persuasive. Street traders who calculate prices at remarkable speed may struggle with the same arithmetic on paper, and managers who are successful in dealing with colleagues may score modestly in tests. Sternberg is right, in my view, to insist that conventional tests overlook abilities that matter in real life. What he has not shown is that practical intelligence is wholly separate from g, and the evidence for such independence is thinner than he implies.",
+       "E  A fourth contribution comes from James Flynn, who documented that average scores on intelligence tests rose steadily through the twentieth century in many countries, by roughly three points per decade. Genes cannot change that quickly, so environment must be responsible: better nutrition, longer schooling and a daily life that demands more abstract thinking. Flynn argued that this shows that the tests measure a particular style of reasoning encouraged by modern societies, rather than a fixed quantity that is carried inside each head. For me this is the most compelling reason to treat individual scores with humility. They are a record of developed skill, not a verdict on potential.",
+       "F  Why does the argument matter outside the seminar room? Because the belief that intelligence is fixed can be harmful. Studies suggest that pupils who regard ability as something that grows tend to persist for longer when work is difficult, while those who believe it is fixed often give up and conclude that effort is pointless. A narrow view of intelligence discourages effort, and a very generous one, which pretends that every child is equally gifted at everything, offers no useful guidance to anyone. Both extremes fail the pupil. Employers, too, would do well to remember that a high score on a reasoning test says little about whether a candidate can cooperate with colleagues, handle disappointment or keep learning after the training course has ended.",
+       "G  Perhaps the best working definition is the ability to learn from experience and adapt to new circumstances. That is wide enough to include practical wisdom and narrow enough to be tested. By this definition, existing tests capture an important part of intelligence, but only a part. Until we have better measures, we should use them as one source of evidence among several, and we should resist both the claim that a single number settles a child's future and the comforting claim that tests measure nothing at all."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "ynng",
+      "instr": "Do the following statements agree with the views of the writer in Passage 3? Choose YES, NO or NOT GIVEN.",
+      "items": [
+       {
+        "n": 27,
+        "q": "The difficulty of defining intelligence is only of interest to academics.",
+        "answer": "NO",
+        "why": "Paragraph A says it is 'not merely an academic embarrassment', because real decisions depend on it."
+       },
+       {
+        "n": 28,
+        "q": "The evidence in favour of g is stronger than many commentators admit.",
+        "answer": "YES",
+        "why": "Paragraph B: the case for g is 'considerably stronger than fashionable commentary admits'."
+       },
+       {
+        "n": 29,
+        "q": "Gardner's proposed intelligences have been shown to be independent of one another.",
+        "answer": "NO",
+        "why": "Paragraph C says that when measured, they tend to correlate with one another."
+       },
+       {
+        "n": 30,
+        "q": "Schools that use Gardner's theory have achieved better examination results.",
+        "answer": "NOT GIVEN",
+        "why": "The writer says nothing about examination results in schools that use the theory."
+       },
+       {
+        "n": 31,
+        "q": "Conventional tests may fail to measure some abilities that matter in real life.",
+        "answer": "YES",
+        "why": "Paragraph D: Sternberg is right to insist that tests overlook abilities that matter."
+       },
+       {
+        "n": 32,
+        "q": "The writer considers the rise in test scores to be a good reason for caution about individual scores.",
+        "answer": "YES",
+        "why": "Paragraph E calls it the most compelling reason to treat individual scores with humility."
+       },
+       {
+        "n": 33,
+        "q": "Intelligence tests should no longer be used.",
+        "answer": "NO",
+        "why": "Paragraph G recommends using them as one source of evidence among several."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "Match each statement with the correct researcher, A, B, C or D. You may use any letter more than once.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Spearman"
+       },
+       {
+        "k": "B",
+        "t": "Gardner"
+       },
+       {
+        "k": "C",
+        "t": "Sternberg"
+       },
+       {
+        "k": "D",
+        "t": "Flynn"
+       }
+      ],
+      "items": [
+       {
+        "n": 34,
+        "q": "Average test scores have risen because the environment has changed.",
+        "answer": "D",
+        "why": "Paragraph E."
+       },
+       {
+        "n": 35,
+        "q": "Children may be talented in different areas, such as music or movement.",
+        "answer": "B",
+        "why": "Paragraph C."
+       },
+       {
+        "n": 36,
+        "q": "Success in many different mental tasks comes from one underlying capacity.",
+        "answer": "A",
+        "why": "Paragraph B."
+       },
+       {
+        "n": 37,
+        "q": "Skills used in everyday situations are different from academic skills.",
+        "answer": "C",
+        "why": "Paragraph D: practical intelligence is distinguished from analytical intelligence."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+      "items": [
+       {
+        "n": 38,
+        "before": "The writer suggests that intelligence might be defined as the ability to",
+        "after": "from experience.",
+        "answer": [
+         "learn"
+        ],
+        "why": "Paragraph G."
+       },
+       {
+        "n": 39,
+        "before": "Tests should be used as one",
+        "after": "of evidence among several.",
+        "answer": [
+         "source"
+        ],
+        "why": "Paragraph G."
+       },
+       {
+        "n": 40,
+        "before": "A narrow view of intelligence discourages",
+        "after": ".",
+        "answer": [
+         "effort"
+        ],
+        "why": "Paragraph F."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "writing": {
+  "task1": {
+   "kind": "bar chart report",
+   "min": 150,
+   "prompt": "The chart below shows the average time people in one country spent each day on three household tasks, by age group, in 2022.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+   "chart": {
+    "type": "bar",
+    "title": "Average time spent on household tasks per day, by age group, 2022",
+    "unit": "minutes",
+    "labels": [
+     "16-24",
+     "25-34",
+     "35-49",
+     "50-64",
+     "65+"
+    ],
+    "series": [
+     {
+      "name": "Cooking",
+      "data": [
+       22,
+       38,
+       55,
+       62,
+       58
+      ]
+     },
+     {
+      "name": "Cleaning",
+      "data": [
+       18,
+       30,
+       42,
+       48,
+       52
+      ]
+     },
+     {
+      "name": "Laundry",
+      "data": [
+       8,
+       14,
+       20,
+       22,
+       20
+      ]
+     }
+    ]
+   }
+  },
+  "task2": {
+   "kind": "two-part question essay",
+   "min": 250,
+   "prompt": "In many countries, people are sleeping less than they did in the past, and sleep is often treated as something that can be sacrificed for work or entertainment.\n\nWhy is sleep being neglected in this way, and what are the effects on individuals and on society?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+  }
+ }
+}

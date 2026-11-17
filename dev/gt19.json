@@ -1,0 +1,1354 @@
+{
+ "id": "gt19",
+ "module": "GT",
+ "title": "General Training Test 19",
+ "listening": {
+  "parts": [
+   {
+    "title": "Part 1",
+    "context": "A man phones a kennels to arrange boarding for his dog while he is on holiday.",
+    "range": "1-10",
+    "speakers": {
+     "Gemma": "aus_f",
+     "Mr Pemberton": "buttery"
+    },
+    "script": [
+     [
+      "Gemma",
+      "Good morning, Willowbrook Kennels and Cattery, Gemma speaking. How can I help you?"
+     ],
+     [
+      "Mr Pemberton",
+      "Oh, hello. I'd like to book my dog in for a week or so in August, please, while we're away on holiday. I haven't used you before, I'm afraid."
+     ],
+     [
+      "Gemma",
+      "That's no problem at all. We'd be very happy to look after him. It is a him, is it?"
+     ],
+     [
+      "Mr Pemberton",
+      "Yes, he is."
+     ],
+     [
+      "Gemma",
+      "Lovely. Let me just open a new booking form on the computer. Could I take your surname first?"
+     ],
+     [
+      "Mr Pemberton",
+      "It's Pemberton."
+     ],
+     [
+      "Gemma",
+      "Could you spell that for me?"
+     ],
+     [
+      "Mr Pemberton",
+      "Yes, it's P-E-M-B-E-R-T-O-N."
+     ],
+     [
+      "Gemma",
+      "Thank you, Mr Pemberton. And what's your dog called?"
+     ],
+     [
+      "Mr Pemberton",
+      "He's called Bramble. Like the bush."
+     ],
+     [
+      "Gemma",
+      "Bramble, that's sweet. And what breed is he?"
+     ],
+     [
+      "Mr Pemberton",
+      "He's a Border terrier. Well, mostly. The vet thinks there might be a bit of Lakeland in there as well, but we've always said Border terrier."
+     ],
+     [
+      "Gemma",
+      "That's fine, I'll put terrier. And how old is he?"
+     ],
+     [
+      "Mr Pemberton",
+      "He's eight. No, sorry, I'm getting ahead of myself. He's seven. He'll be eight in March."
+     ],
+     [
+      "Gemma",
+      "Seven, thank you. Now, what dates did you have in mind?"
+     ],
+     [
+      "Mr Pemberton",
+      "We fly out on the 15th of August, but it's a very early flight, so I'd like to bring him to you the afternoon before, which would be the 14th. Is that all right?"
+     ],
+     [
+      "Gemma",
+      "Yes, you can drop him off any time between nine and five. And when would you be collecting him?"
+     ],
+     [
+      "Mr Pemberton",
+      "We get back late on the 22nd, so it'll have to be the morning of the 23rd."
+     ],
+     [
+      "Gemma",
+      "Right, so the 14th to the 23rd of August. That's nine nights. Now, I should tell you about our prices. A standard kennel is 22 pounds 50 a night for a dog of his size. We also have deluxe suites, with a sofa and a window onto the paddock, and those are 28 pounds a night. Most terriers are perfectly happy in a standard kennel, though."
+     ],
+     [
+      "Mr Pemberton",
+      "Oh, I think the standard one will do. He'll be out of it most of the day anyway, won't he?"
+     ],
+     [
+      "Gemma",
+      "Yes, two walks a day are included in the price. If you'd like a third walk, that's an extra five pounds a day. Now, does Bramble have any special diet? We provide a good quality dry food, but you're welcome to bring your own."
+     ],
+     [
+      "Mr Pemberton",
+      "He's fine with ordinary dry food, generally, but he's allergic to chicken. So you'd need to be careful to give him something without any chicken in it. Beef or fish is fine."
+     ],
+     [
+      "Gemma",
+      "Allergic to chicken. I'll mark that in red on his form. And does he need any medication?"
+     ],
+     [
+      "Mr Pemberton",
+      "Yes, he has a tablet for his joints. It's one tablet a day, and it has to be given in the evening, with his food. Not in the morning. The vet was very clear about that."
+     ],
+     [
+      "Gemma",
+      "Every evening, with food. That's no trouble. We'll need to see his vaccination certificate when you bring him in. He must have had his kennel cough vaccination at least two weeks before he arrives."
+     ],
+     [
+      "Mr Pemberton",
+      "He had that in June, so he should be fine. I'll bring the certificate with me."
+     ],
+     [
+      "Gemma",
+      "Perfect. Would you like to bring his own bed? Some owners do, and it helps the dogs to settle."
+     ],
+     [
+      "Mr Pemberton",
+      "Well, his bed is rather big. I think I'll bring a blanket instead, if that's all right."
+     ],
+     [
+      "Gemma",
+      "A blanket is ideal. Now, I need the name of your vet, in case of an emergency."
+     ],
+     [
+      "Mr Pemberton",
+      "It's Dr Halloran, at the Millfield Surgery. That's spelled H-A-L-L-O-R-A-N."
+     ],
+     [
+      "Gemma",
+      "Thank you. And finally, I'll need an emergency contact number while you're away. A mobile number is best."
+     ],
+     [
+      "Mr Pemberton",
+      "Mine will be switched off, I'm afraid, because we'll be abroad. But my sister, Ruth, will be at home all week, so you can ring her. It's 07739 554 210."
+     ],
+     [
+      "Gemma",
+      "Let me read that back. 07739 554 210. Is that right?"
+     ],
+     [
+      "Mr Pemberton",
+      "That's right."
+     ],
+     [
+      "Gemma",
+      "Wonderful. I'll send you a confirmation email this afternoon, together with a map of how to find us. We're just outside the village, on the road to the reservoir, so please don't follow your satnav past the second bridge, because it takes people the wrong way."
+     ],
+     [
+      "Mr Pemberton",
+      "Thanks very much. I'll look out for that. Goodbye."
+     ],
+     [
+      "Gemma",
+      "Goodbye, Mr Pemberton."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "Willowbrook Kennels and Cattery: dog boarding form",
+      "items": [
+       {
+        "n": 1,
+        "before": "Owner's surname:",
+        "after": "",
+        "answer": [
+         "Pemberton"
+        ],
+        "why": "The caller spells his surname P-E-M-B-E-R-T-O-N."
+       },
+       {
+        "n": 2,
+        "before": "Dog's name:",
+        "after": "",
+        "answer": [
+         "Bramble"
+        ],
+        "why": "He says the dog is called Bramble, like the bush."
+       },
+       {
+        "n": 3,
+        "before": "Breed: Border",
+        "after": "",
+        "answer": [
+         "terrier"
+        ],
+        "why": "He says Border terrier; Lakeland is only a possible mix, and Gemma writes down terrier."
+       },
+       {
+        "n": 4,
+        "before": "Age:",
+        "after": "years",
+        "answer": [
+         "7",
+         "seven"
+        ],
+        "why": "He first says eight, then corrects himself: he is seven and will be eight in March."
+       },
+       {
+        "n": 5,
+        "before": "Date of arrival in August:",
+        "after": "",
+        "answer": [
+         "14",
+         "14th"
+        ],
+        "why": "The flight is on the 15th, but he will bring the dog the afternoon before, the 14th. The 23rd is the collection date."
+       },
+       {
+        "n": 6,
+        "before": "Cost per night for standard kennel: £",
+        "after": "",
+        "answer": [
+         "22.50",
+         "22.5"
+        ],
+        "why": "Standard kennel is 22 pounds 50; the deluxe suite at 28 pounds is rejected."
+       },
+       {
+        "n": 7,
+        "before": "Allergic to:",
+        "after": "",
+        "answer": [
+         "chicken"
+        ],
+        "why": "He says Bramble is allergic to chicken; beef and fish are fine."
+       },
+       {
+        "n": 8,
+        "before": "Joint tablet to be given every",
+        "after": "with food",
+        "answer": [
+         "evening"
+        ],
+        "why": "One tablet a day, in the evening, not in the morning."
+       },
+       {
+        "n": 9,
+        "before": "Vet's name: Dr",
+        "after": "",
+        "answer": [
+         "Halloran"
+        ],
+        "why": "He spells H-A-L-L-O-R-A-N."
+       },
+       {
+        "n": 10,
+        "before": "Emergency contact number:",
+        "after": "",
+        "answer": [
+         "07739 554 210",
+         "07739554210"
+        ],
+        "why": "His sister Ruth's number is given as 07739 554 210, and Gemma reads it back."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 2",
+    "context": "A guide gives an introductory talk to visitors at the start of a tour of a castle and its gardens.",
+    "range": "11-20",
+    "speakers": {
+     "Hugh": "aus_m"
+    },
+    "script": [
+     [
+      "Hugh",
+      "Good morning, everyone, and welcome to Dunmorrow Castle. My name's Hugh, and I'll be taking you round the castle first and then out into the gardens. The whole visit should take about two and a half hours, so you'll be pleased to hear that there's a café at the end."
+     ],
+     [
+      "Hugh",
+      "Let me begin with a few words about the history. A lot of visitors imagine that Dunmorrow was built to defend the valley against invaders, and it certainly looks the part, with its thick walls and its towers. But in fact it began in the 1340s as a hunting lodge for the local baron, who simply wanted somewhere comfortable to stay while he was chasing deer. The defensive towers were added about a century later, when the family decided it was time to look a little more important."
+     ],
+     [
+      "Hugh",
+      "Another story you may hear in the village is that the castle was wrecked by cannon fire during the civil war. I'm afraid that's not true. The east wing was destroyed in 1688, when a fire started in the kitchens and spread through the roof. Nobody was hurt, but the family never rebuilt that wing, and you'll see the ruins when we get to the courtyard. The castle was then almost empty for nearly a hundred years, until a wealthy merchant bought it and began to restore it."
+     ],
+     [
+      "Hugh",
+      "Now, a few practical points before we go in. Photography is welcome throughout the castle, and you're quite free to carry your bags with you if you'd like to. The only thing we ask is that you leave any tripods in your cars, because some of the passages are very narrow, and tripods cause real problems for other visitors."
+     ],
+     [
+      "Hugh",
+      "At the end of the tour, those of you who are happy with heights can climb the Great Tower. There are ninety-eight steps, and the view from the top is wonderful. I should say that we close the tower in strong winds, for safety reasons. Last week it was ice on the steps that caused the problem, but today's forecast is fine, so it should be open all day. Only twelve people can go up at a time."
+     ],
+     [
+      "Hugh",
+      "As for refreshments, the café used to be in the Great Hall, but last year it moved to the old stables, which are just across the yard. You'll find the gift shop right next to the exit, so you can't miss it, but the café is a short walk the other way."
+     ],
+     [
+      "Hugh",
+      "Right, let me tell you a little about the gardens, because many people say they're the best part of the visit. We'll go round in this order."
+     ],
+     [
+      "Hugh",
+      "First, the Walled Garden. It was laid out in the 1800s to supply the castle kitchens with fruit and vegetables, and it's still a working kitchen garden today. But what it's really famous for is its orchard of rare apple trees. There are more than sixty old varieties, some of which can't be found anywhere else in the country, and you can buy the fruit in the autumn."
+     ],
+     [
+      "Hugh",
+      "Next to the Walled Garden is the Herb Terrace. Here you'll find plants that were used to treat illnesses, going back to the days when the castle had its own doctor. There's willow, for example, which was used for pain, and foxglove, which was used for the heart. Small labels explain what each plant was used for, but please don't pick anything."
+     ],
+     [
+      "Hugh",
+      "From there, a path leads into the Woodland Walk. It's a lovely shady route, and over the last five years we've invited artists to place their work among the trees. There are fourteen sculptures at the moment, made of wood, stone and metal. I'll give you a trail map at the gate, so you can find them all."
+     ],
+     [
+      "Hugh",
+      "At the bottom of the hill is the Lake Meadow. This is where most families go for lunch, because there are plenty of picnic tables, and you're welcome to spread a rug anywhere on the grass. Some people expect to see lots of wildlife around the lake, but the pond with the ducks is actually beside the car park, so look out for it on your way out."
+     ],
+     [
+      "Hugh",
+      "And finally, beside the lake you'll find the Victorian Glasshouse. It was restored three years ago, and it's heated all year round, so it's a pleasant place to warm up on a cold day. Inside we grow tropical fruit, such as bananas, figs and even pineapples, and the gardeners are usually happy to answer questions."
+     ],
+     [
+      "Hugh",
+      "That's all from me for now. If you'd all like to follow me through the gatehouse, we'll make a start in the Great Hall."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 11,
+        "q": "What was Dunmorrow Castle originally built as?",
+        "options": [
+         "a fort to protect the valley",
+         "a hunting lodge",
+         "a family monastery"
+        ],
+        "answer": "B",
+        "why": "Hugh says many people think it was built to defend the valley, but it began as a hunting lodge for the baron."
+       },
+       {
+        "n": 12,
+        "q": "According to Hugh, the east wing was destroyed by",
+        "options": [
+         "a fire",
+         "cannon fire",
+         "a flood"
+        ],
+        "answer": "A",
+        "why": "The cannon story is rejected; a fire started in the kitchens in 1688."
+       },
+       {
+        "n": 13,
+        "q": "Visitors are asked not to bring which of the following into the castle?",
+        "options": [
+         "bags",
+         "cameras",
+         "tripods"
+        ],
+        "answer": "C",
+        "why": "Photography and bags are both allowed; tripods must be left in the cars."
+       },
+       {
+        "n": 14,
+        "q": "The Great Tower may be closed because of",
+        "options": [
+         "strong winds",
+         "ice on the steps",
+         "a shortage of staff"
+        ],
+        "answer": "A",
+        "why": "The tower is closed in strong winds. Ice was the problem last week, but not today."
+       },
+       {
+        "n": 15,
+        "q": "Where is the café?",
+        "options": [
+         "in the old stables",
+         "in the Great Hall",
+         "next to the gift shop"
+        ],
+        "answer": "A",
+        "why": "It used to be in the Great Hall but moved to the old stables; the gift shop is by the exit."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "Which feature can be found in each part of the garden? Choose FIVE answers from the box and write the correct letter, A-F, next to questions 16-20.",
+      "options": [
+       {
+        "k": "A",
+        "t": "plants that were once used as medicine"
+       },
+       {
+        "k": "B",
+        "t": "rare varieties of apple"
+       },
+       {
+        "k": "C",
+        "t": "sculptures"
+       },
+       {
+        "k": "D",
+        "t": "tables for picnics"
+       },
+       {
+        "k": "E",
+        "t": "a pond with ducks"
+       },
+       {
+        "k": "F",
+        "t": "tropical fruit"
+       }
+      ],
+      "items": [
+       {
+        "n": 16,
+        "q": "The Walled Garden",
+        "answer": "B",
+        "why": "It is famous for its orchard of more than sixty rare apple trees."
+       },
+       {
+        "n": 17,
+        "q": "The Herb Terrace",
+        "answer": "A",
+        "why": "Plants such as willow and foxglove were used to treat illnesses."
+       },
+       {
+        "n": 18,
+        "q": "The Woodland Walk",
+        "answer": "C",
+        "why": "Artists have placed fourteen sculptures among the trees."
+       },
+       {
+        "n": 19,
+        "q": "The Lake Meadow",
+        "answer": "D",
+        "why": "Families have lunch at the picnic tables. The pond with ducks is by the car park, so E is wrong."
+       },
+       {
+        "n": 20,
+        "q": "The Victorian Glasshouse",
+        "answer": "F",
+        "why": "The gardeners grow bananas, figs and pineapples there."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 3",
+    "context": "Two geography students discuss the data they have collected on tourism in a mountain village for a joint presentation.",
+    "range": "21-30",
+    "speakers": {
+     "Nina": "rounded",
+     "Joel": "deep"
+    },
+    "script": [
+     [
+      "Joel",
+      "Right, Nina, shall we start by agreeing what we're going to say in the presentation about the data on Val Seren?"
+     ],
+     [
+      "Nina",
+      "Yes, good idea. Before we do, I wanted to check why we picked it in the first place. I'd completely forgotten."
+     ],
+     [
+      "Joel",
+      "Well, it was mostly the data, wasn't it? The tourist board there publishes figures going right back to 1990, which is unusual for such a small place. I know your cousin went skiing there once, but that wasn't the reason."
+     ],
+     [
+      "Nina",
+      "No, no, I'd never even mentioned that. And it's not as if it's easy to get to. It takes forever, so fieldwork was never an option. So yes, it was the figures."
+     ],
+     [
+      "Joel",
+      "Though they're not perfect. I spent most of yesterday going through them, and the biggest problem is that the board only counts overnight stays. Anyone who comes up on the cable car for the day isn't recorded at all."
+     ],
+     [
+      "Nina",
+      "I thought the problem was that they were out of date."
+     ],
+     [
+      "Joel",
+      "No, they're updated every year, up to last year in fact. And they cover only Val Seren, not the next village as well, which is what I'd been worried about. It's the day visitors who are missing."
+     ],
+     [
+      "Nina",
+      "Then we'll have to say so in the limitations section."
+     ],
+     [
+      "Joel",
+      "Definitely. Now, the main graph. I've plotted the number of visitors by season, from 1990 to 2020. Look at this."
+     ],
+     [
+      "Nina",
+      "Oh, that's interesting. I'd assumed that winter would be on top all the way along, because of the skiing. But the summer line crosses over somewhere around 2012."
+     ],
+     [
+      "Joel",
+      "Exactly. Summer visitors now outnumber winter ones. And before you say that winter must have collapsed, it hasn't. Winter has stayed pretty flat. It's summer that has shot up."
+     ],
+     [
+      "Nina",
+      "So I suppose it's climate change. Warmer winters, less snow, people choosing the summer instead."
+     ],
+     [
+      "Joel",
+      "That was my first thought as well. But I checked the snowfall records, and they've hardly changed since the nineties. No, in 2011 the village opened a mountain bike park and a network of hiking trails. The timing fits perfectly."
+     ],
+     [
+      "Nina",
+      "Right. And I suppose it wasn't cheap flights, either. The airport's two hours away by road."
+     ],
+     [
+      "Joel",
+      "Exactly. So I'd put it down to the bike park, rather than the weather or the flights."
+     ],
+     [
+      "Nina",
+      "Okay. Now, I think we should mark that year on the graph, so the audience can see the link straight away. We could add a line at 2011."
+     ],
+     [
+      "Joel",
+      "Good idea. I'd thought about marking the year the ski lift was replaced, which was 2005, but that didn't change the numbers much, so I'll leave it out. I'll add a line for the bike park."
+     ],
+     [
+      "Nina",
+      "Great. Now, what about our other figures? We need to get them into the notes for the slides."
+     ],
+     [
+      "Joel",
+      "Let me read out what I've got. Hotel beds first. In 1995 there were 600, but there are only 450 now, because several small hotels have been converted into holiday flats. So I'd put 450 for 2020."
+     ],
+     [
+      "Nina",
+      "Right, 450. And what about visitors from abroad?"
+     ],
+     [
+      "Joel",
+      "About 35 per cent of visitors come from other countries now. It was only 25 per cent ten years ago, so that's quite a rise."
+     ],
+     [
+      "Nina",
+      "That's useful. What about the length of stay?"
+     ],
+     [
+      "Joel",
+      "This is the one I find most interesting. The average visitor used to stay for a whole week, but it's now down to only three nights. People are taking short breaks instead of long holidays."
+     ],
+     [
+      "Nina",
+      "That fits with the day visitors we were talking about. And did you find anything about what the residents think?"
+     ],
+     [
+      "Joel",
+      "Yes, there's a council report with a section on local opinion. I'd have guessed that the biggest complaint would be noise, or perhaps litter, but it's actually parking. Residents say they can't park outside their own homes in the summer."
+     ],
+     [
+      "Nina",
+      "That's a good point for the conclusion. And what about jobs?"
+     ],
+     [
+      "Joel",
+      "The report says that nearly one job in three in the village depends on tourism, either directly or indirectly. I'll put one in three."
+     ],
+     [
+      "Nina",
+      "Fine. That gives us plenty to work with. I'll start on the slides tonight, and send them to you tomorrow so you can check the numbers."
+     ],
+     [
+      "Joel",
+      "Perfect. Let's meet in the library on Thursday to practise. If we each speak for about eight minutes, we should be well within the time limit."
+     ],
+     [
+      "Nina",
+      "Good. Thursday, then. I'll book a study room."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 21,
+        "q": "Why did the students choose Val Seren for their project?",
+        "options": [
+         "Detailed figures were available.",
+         "It was easy to visit.",
+         "One of them had a relative there."
+        ],
+        "answer": "A",
+        "why": "Joel says it was mostly the data: the tourist board publishes figures back to 1990. The village is hard to reach and the cousin is not the reason."
+       },
+       {
+        "n": 22,
+        "q": "What is the main weakness of the tourist board's data?",
+        "options": [
+         "It only includes people who stay overnight.",
+         "It is several years old.",
+         "It includes a neighbouring village."
+        ],
+        "answer": "A",
+        "why": "The board only counts overnight stays, so day visitors are missing. The data is updated yearly and covers only Val Seren."
+       },
+       {
+        "n": 23,
+        "q": "What surprised Nina about the graph of visitors by season?",
+        "options": [
+         "Summer visitors now outnumber winter visitors.",
+         "Winter visitor numbers have fallen sharply.",
+         "Autumn is now the busiest season."
+        ],
+        "answer": "A",
+        "why": "She had assumed winter would stay on top, but the summer line crosses over around 2012. Joel says winter has stayed flat, not fallen."
+       },
+       {
+        "n": 24,
+        "q": "What do they decide was the main reason for the change?",
+        "options": [
+         "warmer winters",
+         "the opening of a bike park",
+         "cheaper flights"
+        ],
+        "answer": "B",
+        "why": "Snowfall has hardly changed and the airport is far away, but a bike park opened in 2011, which fits the timing."
+       },
+       {
+        "n": 25,
+        "q": "What will Joel add to the graph?",
+        "options": [
+         "a line showing when the bike park opened",
+         "a line showing when the ski lift was replaced",
+         "a line showing the average snowfall"
+        ],
+        "answer": "A",
+        "why": "They agree to mark 2011, the bike park. The 2005 ski lift is considered and left out."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "Val Seren: notes for the slides",
+      "items": [
+       {
+        "n": 26,
+        "before": "Hotel beds in 2020:",
+        "after": "",
+        "answer": [
+         "450"
+        ],
+        "why": "There were 600 beds in 1995, but only 450 now."
+       },
+       {
+        "n": 27,
+        "before": "Visitors from abroad:",
+        "after": "per cent",
+        "answer": [
+         "35"
+        ],
+        "why": "About 35 per cent now; 25 per cent was the figure ten years ago."
+       },
+       {
+        "n": 28,
+        "before": "Average length of stay: three",
+        "after": "",
+        "answer": [
+         "nights"
+        ],
+        "why": "It used to be a whole week but is now only three nights."
+       },
+       {
+        "n": 29,
+        "before": "Biggest complaint from residents:",
+        "after": "",
+        "answer": [
+         "parking"
+        ],
+        "why": "Joel expected noise or litter, but the council report says the main complaint is parking."
+       },
+       {
+        "n": 30,
+        "before": "Jobs depending on tourism: one in",
+        "after": "",
+        "answer": [
+         "three",
+         "3"
+        ],
+        "why": "Nearly one job in three depends on tourism."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 4",
+    "context": "A lecturer talks about the history of tea drinking.",
+    "range": "31-40",
+    "speakers": {
+     "Lecturer": "nz_f"
+    },
+    "script": [
+     [
+      "Lecturer",
+      "Good afternoon, everyone. Today I'd like to talk about the history of a drink that most of us take completely for granted: tea. After water, it's the most widely consumed drink in the world, so it's worth asking where it came from, and how it travelled across the globe."
+     ],
+     [
+      "Lecturer",
+      "Let's begin in China. According to legend, tea was discovered around 2700 BC by the Emperor Shennong, who liked to boil his drinking water before he drank it, for the sake of his health. One day, some leaves from a wild tree blew into his pot, and the emperor found that the resulting drink was delicious. It's a charming story, although there's no real evidence for it."
+     ],
+     [
+      "Lecturer",
+      "What historians do know is that tea was being grown in south-west China more than two thousand years ago, and that for several hundred years it was not a refreshment at all, but a medicine. It was thought to relieve headaches and tiredness, and people chewed the leaves or boiled them with salt and spices."
+     ],
+     [
+      "Lecturer",
+      "The Tang dynasty, from the seventh century, was when tea became an everyday drink. Buddhist monks played an important part in spreading it. They drank it to stay awake during long hours of meditation, and when monks travelled from China to Japan in the ninth century, they took tea seeds with them. The Japanese eventually developed their own tea ceremony, which is still practised today."
+     ],
+     [
+      "Lecturer",
+      "Now, how did tea reach Europe? Portuguese traders had written about tea in the sixteenth century, but it was the Dutch who first shipped it in quantity. The first cargo of tea arrived in Amsterdam in 1610. Tea reached London a few decades later, in the 1650s, but it remained extremely expensive, and only the very rich could afford it."
+     ],
+     [
+      "Lecturer",
+      "The habit really took off in Britain after 1662, when King Charles the Second married Catherine of Braganza. She was a Portuguese princess, and she had grown up drinking tea, so she made it fashionable at the royal court. Within a generation, everyone who could afford it wanted to follow her example."
+     ],
+     [
+      "Lecturer",
+      "By the eighteenth century, tea had become a national passion, and the government taxed it so heavily that at times the tax was higher than the price of the tea itself. As you might expect, that created a huge black market. Smuggling was so widespread that, by some estimates, more tea was brought into Britain illegally than legally."
+     ],
+     [
+      "Lecturer",
+      "Taxes on tea caused trouble across the Atlantic as well. In 1773, colonists in Boston were so angry about a tax on tea that they boarded three ships and threw 342 chests of tea into the harbour. This protest, known as the Boston Tea Party, became one of the events that led to the American Revolution."
+     ],
+     [
+      "Lecturer",
+      "Meanwhile, Britain had a different problem. It was buying vast quantities of tea from China, and it wanted to grow its own. In the 1830s, plantations were started in Assam, in the north-east of India, where a native tea plant had been found growing wild. Within a few decades, Indian tea was competing successfully with Chinese tea."
+     ],
+     [
+      "Lecturer",
+      "The nineteenth century was also the great age of tea ships. Fast sailing ships called clippers raced each other home from China, because the first tea of the season sold at the highest price. The most famous contest, in 1866, lasted for ninety-nine days, and the two leading ships arrived in London within a few hours of each other. People placed large bets on the result."
+     ],
+     [
+      "Lecturer",
+      "Finally, let's turn to the twentieth century, and an invention that many tea lovers still don't approve of: the tea bag. It was an accident. In 1908, a New York merchant called Thomas Sullivan sent samples of his tea to customers in little bags made of silk. He expected them to empty the leaves out, but instead the customers simply dropped the whole bag into the pot, and soon they were asking for more. Later, the silk was replaced by paper, which was cheaper."
+     ],
+     [
+      "Lecturer",
+      "So, from a legend about a wild tree to a bag in a mug, tea has had a remarkably long journey. In next week's lecture, we'll look at what happened to coffee over the same period. Thank you for listening."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "The history of tea drinking",
+      "items": [
+       {
+        "n": 31,
+        "before": "Legend: wild",
+        "after": "blew into the emperor's pot of boiling water",
+        "answer": [
+         "leaves"
+        ],
+        "why": "Leaves from a wild tree blew into the emperor's pot."
+       },
+       {
+        "n": 32,
+        "before": "In early China, tea was first used as a",
+        "after": "",
+        "answer": [
+         "medicine"
+        ],
+        "why": "For several hundred years it was not a refreshment but a medicine."
+       },
+       {
+        "n": 33,
+        "before": "Buddhist",
+        "after": "took tea seeds to Japan in the ninth century",
+        "answer": [
+         "monks"
+        ],
+        "why": "Monks travelling from China to Japan took tea seeds with them."
+       },
+       {
+        "n": 34,
+        "before": "Year the first cargo reached Amsterdam:",
+        "after": "",
+        "answer": [
+         "1610"
+        ],
+        "why": "The first cargo arrived in 1610. The 1650s is when tea reached London."
+       },
+       {
+        "n": 35,
+        "before": "Catherine of Braganza, a Portuguese",
+        "after": ", made tea fashionable at court",
+        "answer": [
+         "princess"
+        ],
+        "why": "She was a Portuguese princess who married Charles the Second in 1662."
+       },
+       {
+        "n": 36,
+        "before": "High taxes in the 18th century led to widespread",
+        "after": "",
+        "answer": [
+         "smuggling"
+        ],
+        "why": "The heavy tax created a black market and smuggling was widespread."
+       },
+       {
+        "n": 37,
+        "before": "1773: colonists threw 342 chests of tea into Boston",
+        "after": "",
+        "answer": [
+         "harbour",
+         "harbor"
+        ],
+        "why": "The colonists threw the chests into the harbour."
+       },
+       {
+        "n": 38,
+        "before": "1830s: British tea plantations began in",
+        "after": "",
+        "answer": [
+         "Assam"
+        ],
+        "why": "Plantations were started in Assam, in north-east India."
+       },
+       {
+        "n": 39,
+        "before": "Fast ships called",
+        "after": "raced to bring home the first tea of the season",
+        "answer": [
+         "clippers"
+        ],
+        "why": "Fast sailing ships called clippers raced home from China."
+       },
+       {
+        "n": 40,
+        "before": "1908: tea samples sent in small",
+        "after": "bags, which led to the tea bag",
+        "answer": [
+         "silk"
+        ],
+        "why": "Sullivan sent samples in bags made of silk; paper replaced the silk later."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "reading": {
+  "sections": [
+   {
+    "title": "Section 1",
+    "range": "1-14",
+    "passages": [
+     {
+      "title": "Renting an allotment from Marlowe Town Council",
+      "paras": [
+       "A  An allotment is a plot of land that residents of Marlowe can rent in order to grow their own fruit, vegetables and flowers. The council manages four sites: Mill Lane, Church Fields, Station Road and Hollybush. A full plot measures about 250 square metres. Half plots of about 125 square metres are also available for people who have less time to spend on the land, and many new tenants find that a half plot is plenty to begin with.",
+       "B  Rent is charged by the year and is due on 1 April. A full plot costs £45 and a half plot costs £25. Tenants who are over 65, or who receive certain benefits, pay half the normal rent. In addition, every new tenant pays a one-off deposit of £20 for the key to the site gate, which is returned when the key is handed back. Demand for plots is high, and there is a waiting list at every site. At Mill Lane the wait is currently about 14 months, while the other sites are usually quicker. You can apply online or at the Civic Centre, and you can join the lists for two sites at the same time.",
+       "C  The council expects every plot to be looked after. New tenants must have at least three quarters of their plot under cultivation within the first twelve months. Site representatives inspect all the plots in June each year. A tenant whose plot is found to be neglected receives a warning letter and is given two months to improve it. If the plot has still not been improved after that time, the tenancy may be ended. Tenants who are ill, or who will be away for a long time, should tell the site representative, who can often arrange help from other tenants.",
+       "D  There are a few other rules that apply to all the sites. Sheds and greenhouses are allowed, but they must be no larger than the size shown on the plan you receive when you sign your tenancy agreement. Bonfires are permitted only on Saturdays between 1 October and 31 March. Water is available from taps shared between several plots. Hosepipes are banned in order to save water, so tenants are encouraged to install a water butt to collect rainwater from their shed roof. Hens may be kept with the council's permission, but cockerels are not allowed because of the noise. Children are welcome, but they must be supervised at all times, and dogs must be kept on a lead."
+      ]
+     },
+     {
+      "title": "Eastvale Community College: evening classes this autumn",
+      "paras": [
+       "A  Spanish for Travellers. Learn the language you need for holidays and city breaks. Mondays, 7.00-9.00 pm, for eight weeks. Fee: £64, including the course book. No previous knowledge of Spanish is needed. The course ends with a conversation evening at a local Spanish restaurant, where you can practise what you have learned over a meal with your tutor and classmates. The cost of the meal is not included in the fee.",
+       "B  Digital Photography. Get more from your camera and learn how to edit your pictures on a computer. Tuesdays, 6.30-8.30 pm, for six weeks. Fee: £58. Students must bring their own camera to every session. It can be a proper camera or a mobile phone, as long as it has a manual setting. In the final week the class goes out for a photo walk around the old harbour, so please wear comfortable shoes.",
+       "C  Pottery for Beginners. Create bowls, mugs and vases using a range of simple techniques. Wednesdays, 7.00-9.00 pm, for ten weeks. Fee: £110, which includes clay, glazes and the firing of your finished pieces. At the end of the course the best work is shown in a public exhibition in the college foyer, and students may invite friends and family to the opening evening. Please bring an apron.",
+       "D  Bookkeeping for Small Businesses. Learn how to keep accurate records, prepare invoices and understand your accounts. Thursdays, 6.00-8.00 pm, for twelve weeks. Fee: £130. A basic knowledge of spreadsheets is helpful. Students who complete the coursework and pass a short test at the end receive a nationally recognised certificate. Self-employed people may be able to claim part of the fee back as a business expense.",
+       "E  Wild Food Foraging. Find out which plants, berries and mushrooms can be safely picked and eaten, and how to cook them. Saturdays, 10.00 am-12.00 noon, for four weeks. Fee: £40. All sessions take place outdoors in all weathers, so please wear waterproof clothing and strong boots. Young people aged 12 and over are welcome to join the course, as long as they come with an adult. A booklet is provided, and every student takes home a recipe collection."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER from the text for each answer.",
+      "items": [
+       {
+        "n": 1,
+        "before": "A full plot measures about",
+        "after": "square metres.",
+        "answer": [
+         "250"
+        ],
+        "why": "Paragraph A says a full plot is about 250 square metres; 125 is the half plot."
+       },
+       {
+        "n": 2,
+        "before": "The yearly rent for a half plot is £",
+        "after": ".",
+        "answer": [
+         "25"
+        ],
+        "why": "Paragraph B: a half plot costs £25 (£45 is a full plot)."
+       },
+       {
+        "n": 3,
+        "before": "In their first year, tenants must have at least",
+        "after": "of their plot under cultivation.",
+        "answer": [
+         "three quarters"
+        ],
+        "why": "Paragraph C gives three quarters within the first twelve months."
+       },
+       {
+        "n": 4,
+        "before": "Site representatives inspect all the plots in",
+        "after": "each year.",
+        "answer": [
+         "June"
+        ],
+        "why": "Paragraph C: inspections take place in June."
+       },
+       {
+        "n": 5,
+        "before": "A tenant who fails an inspection has",
+        "after": "to improve the plot.",
+        "answer": [
+         "two months"
+        ],
+        "why": "Paragraph C: a warning letter and two months to improve."
+       },
+       {
+        "n": 6,
+        "before": "To save water, tenants are encouraged to install a",
+        "after": ".",
+        "answer": [
+         "water butt"
+        ],
+        "why": "Paragraph D: hosepipes are banned, so tenants should install a water butt."
+       },
+       {
+        "n": 7,
+        "before": "Tenants may keep hens, but",
+        "after": "are not allowed.",
+        "answer": [
+         "cockerels"
+        ],
+        "why": "Paragraph D: cockerels are not allowed because of the noise."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "Look at the evening class advertisements, A-E. For which course are the following statements true? Choose the correct letter, A-E. You may use any letter more than once.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Spanish for Travellers"
+       },
+       {
+        "k": "B",
+        "t": "Digital Photography"
+       },
+       {
+        "k": "C",
+        "t": "Pottery for Beginners"
+       },
+       {
+        "k": "D",
+        "t": "Bookkeeping for Small Businesses"
+       },
+       {
+        "k": "E",
+        "t": "Wild Food Foraging"
+       }
+      ],
+      "items": [
+       {
+        "n": 8,
+        "q": "Students can gain an official qualification.",
+        "answer": "D",
+        "why": "Only the bookkeeping course gives a nationally recognised certificate."
+       },
+       {
+        "n": 9,
+        "q": "Classes take place at the weekend.",
+        "answer": "E",
+        "why": "Foraging is on Saturdays; all the others are on weekday evenings."
+       },
+       {
+        "n": 10,
+        "q": "Students must provide their own main equipment.",
+        "answer": "B",
+        "why": "Students must bring their own camera to every session."
+       },
+       {
+        "n": 11,
+        "q": "Students' work will be shown to the public.",
+        "answer": "C",
+        "why": "The best pottery is shown in a public exhibition in the foyer."
+       },
+       {
+        "n": 12,
+        "q": "The course includes a social event away from the college.",
+        "answer": "A",
+        "why": "There is a conversation evening at a Spanish restaurant. The photo walk in B is a class activity, not a social event."
+       },
+       {
+        "n": 13,
+        "q": "The course lasts for more than ten weeks.",
+        "answer": "D",
+        "why": "Bookkeeping runs for twelve weeks; pottery lasts exactly ten."
+       },
+       {
+        "n": 14,
+        "q": "Young people under the age of 16 may attend.",
+        "answer": "E",
+        "why": "Those aged 12 and over can join if accompanied by an adult."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Section 2",
+    "range": "15-27",
+    "passages": [
+     {
+      "title": "Starting work at Calder Freight: your probation period",
+      "paras": [
+       "A  Every new employee at Calder Freight begins with a probation period. The purpose of probation is to give both you and the company the chance to find out whether the job is right for you. The standard probation period is six months, although a manager may shorten it for an employee who is already very experienced in the work. Your contract will state exactly how long your own probation lasts.",
+       "B  During probation you will meet your line manager for a formal review after three months and again at the end of the period. At each meeting your manager will talk to you about what you have achieved, discuss any difficulties and set targets for the next stage. You will receive a written summary of every review. A member of the Human Resources team does not normally attend these meetings, although you may ask for one to be present if you wish.",
+       "C  Both you and the company can end the contract during probation by giving one week's notice in writing. After probation has been completed, the notice period rises to four weeks. If your manager is not satisfied with your progress, the probation period may be extended by up to three months. This can be done only once, and you will be told the reasons in writing, together with the targets you need to meet.",
+       "D  You will begin to build up paid holiday from your first day. However, holiday may be taken in the first three months only by agreement with your line manager, so please do not book travel until you have spoken to them. Sick pay during probation follows the statutory scheme. Details of the company's own sick pay scheme will be sent to you once you have passed probation.",
+       "E  All new employees complete an induction course during their first two weeks. This covers health and safety, the use of company vehicles and the basics of our computer systems. You cannot apply for internal vacancies until you have completed probation, but you are welcome to attend any training day that is organised for your department. If you have any questions, your line manager is your first point of contact."
+      ]
+     },
+     {
+      "title": "Fire safety procedures: Marlowe House",
+      "paras": [
+       "A  If you discover a fire, raise the alarm immediately by breaking the glass of the nearest manual call point. These are red boxes fixed to the wall beside every exit and at the end of each corridor. Then leave the building at once. Do not try to put out the fire unless it is very small and you have been trained to use an extinguisher. Never put yourself at risk.",
+       "B  When you hear the alarm, which is a continuous loud bell, stop what you are doing and leave by the nearest exit. Do not use the lifts at any time during an evacuation. Do not stop to collect your belongings, and do not go back for anything once you are outside. Close doors behind you if it is safe to do so, because this slows the spread of smoke.",
+       "C  The assembly point for everyone in the building is Car Park B, at the rear of Marlowe House. Fire wardens, who wear green jackets, will be waiting there, and they will take a roll call using the daily list kept at reception. Please report to a warden as soon as you arrive so that you can be counted. Do not re-enter the building until the senior fire warden tells you that it is safe to do so.",
+       "D  Hosts are responsible for the visitors they have invited. If you are expecting a visitor, you must stay with them throughout their time in the building, and you must take them to the assembly point if the alarm sounds. Staff who may need help to leave the building, for example because of a mobility problem, should arrange a personal evacuation plan with their manager. A colleague will then be named as a buddy who will help them to reach the assembly point.",
+       "E  The fire alarm is tested every Wednesday at 10.30 am. On these occasions the bell will sound for about ten seconds, and no one needs to leave the building. A full fire drill takes place twice a year, and everyone is expected to take part. Fire doors keep flames and smoke out of escape routes, so they must never be wedged open. If you notice a fire door that has been propped open, please close it and tell the facilities team."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information in the text about probation? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 15,
+        "q": "Every new employee must serve a probation period of exactly six months.",
+        "answer": "FALSE",
+        "why": "Six months is the standard period, but a manager may shorten it for experienced employees."
+       },
+       {
+        "n": 16,
+        "q": "Employees on probation can leave the company by giving a week's notice.",
+        "answer": "TRUE",
+        "why": "Paragraph C: both sides can end the contract with one week's notice during probation."
+       },
+       {
+        "n": 17,
+        "q": "Employees need their manager's agreement to take holiday in the first three months.",
+        "answer": "TRUE",
+        "why": "Paragraph D: holiday in the first three months is only by agreement with the line manager."
+       },
+       {
+        "n": 18,
+        "q": "A probation period can be extended more than once.",
+        "answer": "FALSE",
+        "why": "Paragraph C says the extension can be done only once."
+       },
+       {
+        "n": 19,
+        "q": "Probation reviews are carried out by the employee's line manager.",
+        "answer": "TRUE",
+        "why": "Paragraph B: employees meet their line manager for the reviews."
+       },
+       {
+        "n": 20,
+        "q": "Employees receive a pay rise when they pass probation.",
+        "answer": "NOT GIVEN",
+        "why": "Nothing is said about pay after probation."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Write NO MORE THAN TWO WORDS from the text for each answer.",
+      "items": [
+       {
+        "n": 21,
+        "before": "To raise the alarm, you should break the glass of the nearest",
+        "after": ".",
+        "answer": [
+         "call point"
+        ],
+        "why": "Paragraph A names the manual call point; red boxes are what they look like."
+       },
+       {
+        "n": 22,
+        "before": "During an evacuation you must not use the",
+        "after": ".",
+        "answer": [
+         "lifts"
+        ],
+        "why": "Paragraph B: do not use the lifts at any time."
+       },
+       {
+        "n": 23,
+        "before": "Everyone should gather at",
+        "after": ", at the rear of the building.",
+        "answer": [
+         "Car Park B"
+        ],
+        "why": "Paragraph C gives Car Park B as the assembly point."
+       },
+       {
+        "n": 24,
+        "before": "Fire wardens can be recognised by their",
+        "after": "jackets.",
+        "answer": [
+         "green"
+        ],
+        "why": "Paragraph C: fire wardens wear green jackets."
+       },
+       {
+        "n": 25,
+        "before": "Staff must stay with their",
+        "after": "throughout their time in the building.",
+        "answer": [
+         "visitors"
+        ],
+        "why": "Paragraph D: hosts are responsible for the visitors they invite."
+       },
+       {
+        "n": 26,
+        "before": "The alarm is tested every",
+        "after": "at 10.30 am.",
+        "answer": [
+         "Wednesday"
+        ],
+        "why": "Paragraph E: tests take place every Wednesday."
+       },
+       {
+        "n": 27,
+        "before": "Fire doors must never be",
+        "after": "open.",
+        "answer": [
+         "wedged"
+        ],
+        "why": "Paragraph E: fire doors must never be wedged open."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Section 3",
+    "range": "28-40",
+    "passages": [
+     {
+      "title": "The story of the zip fastener",
+      "paras": [
+       "A  It is hard to imagine everyday life without the zip. We use it to close our jackets, our bags, our tents and our trousers, and we hardly notice that we are doing so. Yet for most of history, people had to make do with buttons, hooks, laces and pins, none of which could be opened or closed in a single smooth movement. In 1851 the American inventor Elias Howe, who is better known for his work on the sewing machine, patented what he called an automatic, continuous clothing closure. It was a row of small clasps threaded along a cord, and in principle it was a forerunner of the zip. But Howe never tried to sell it. Most likely, he was too busy defending the patents for his sewing machine in the courts.",
+       "B  The next step came more than forty years later. In 1893 Whitcomb Judson, an engineer from Chicago, patented a device that he called the clasp locker. He had been inspired by the problem of fastening long boots, which in those days could have a dozen or more buttons that had to be done up one by one with a hook. Judson's fastener used a row of hooks and eyes, which were joined and separated by a guide that was pulled along them. He showed it to the public at the Chicago World's Fair that same year, and a company was formed to make it. Sadly, the fasteners were unreliable. They often jammed or sprang open at the wrong moment, and few customers were willing to pay for them. The business struggled for years.",
+       "C  The man who solved the problem was Gideon Sundback, a Swedish-born engineer who moved to the United States and joined Judson's company. Sundback was a gifted designer, and in 1913 he produced an improved fastener. Four years later he came up with the version we know today. Instead of hooks and eyes, he used two rows of small interlocking teeth, each with a tiny bump on one side and a hollow on the other, attached to strips of cloth. A slider pulled along the rows forced the teeth together, or pushed them apart. He also increased the number of fastening elements from about four to eleven for each inch, which made the join much stronger. Sundback then invented a machine to produce the fasteners quickly and cheaply, and by 1918 it was able to turn out several hundred feet of fastener a day.",
+       "D  The first large orders did not come from fashion houses but from the military. During the First World War, the American armed forces ordered thousands of the new fasteners for flying clothing and uniforms. After the war, the company looked for other uses, and one proved to be very successful. In 1923 a rubber manufacturer, the B. F. Goodrich company, began fitting the fasteners to a new type of waterproof boot. The company's president was so pleased with the way the boots could be closed that he gave the product a new name. According to the story, he said that the boots would close with a 'zip', and the word soon stuck. Within a few years, the fastener itself had been renamed the zipper.",
+       "E  Nevertheless, it took a surprisingly long time for the zip to become popular in clothing. Many customers were suspicious of it, and men in particular were slow to trust it in their trousers. During the 1930s, makers of children's clothing began to advertise the zip as a way for young children to dress themselves without help, and this did much to change attitudes. At the same time, fashion designers began to see its possibilities. The Italian designer Elsa Schiaparelli placed brightly coloured zips on her dresses in the early 1930s, not only as a means of closing them, but as a decoration in their own right. Within a decade, zips had become a normal part of clothing across the world.",
+       "F  The manufacture of zips soon became a global business. In 1934 a Japanese entrepreneur, Tadao Yoshida, founded a small company in Tokyo to make fasteners, and over the following decades it grew into the world's largest zip maker. From the 1940s, the metal teeth were joined by versions made of plastic and nylon, which were lighter and cheaper and did not rust. Today a single factory can produce millions of metres of zip every day, in thousands of different sizes and colours, and zips are fitted to everything from sleeping bags and suitcases to the suits worn by astronauts.",
+       "G  Strangely, the basic design has hardly changed in a hundred years. Inventors have created rival systems, including hook-and-loop tape and magnetic fastenings, which are useful in particular situations. Yet none of them has replaced the zip, and most designers still turn to it first. Perhaps the reason is the one that attracted Judson in the first place: it is quick, strong and easy to use. Few inventions are so simple, and fewer still have been used so widely for so long. Whenever a zip glides smoothly shut, it is worth remembering the engineers who spent years making that small movement reliable."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "The text has seven paragraphs, A-G. Choose the correct heading for paragraphs B-F from the list of headings below. Write the correct letter, A-G, next to questions 28-32.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Reliability problems and a lack of customers"
+       },
+       {
+        "k": "B",
+        "t": "An engineer's improved design"
+       },
+       {
+        "k": "C",
+        "t": "Fashion and families take to the idea"
+       },
+       {
+        "k": "D",
+        "t": "From war uniforms to rubber boots"
+       },
+       {
+        "k": "E",
+        "t": "A worldwide industry grows from a small workshop"
+       },
+       {
+        "k": "F",
+        "t": "The long search for a way to fasten clothes"
+       },
+       {
+        "k": "G",
+        "t": "A lawsuit that nearly ended the business"
+       }
+      ],
+      "items": [
+       {
+        "n": 28,
+        "q": "Paragraph B",
+        "answer": "A",
+        "why": "Judson's fasteners often jammed or sprang open, and few customers would pay for them."
+       },
+       {
+        "n": 29,
+        "q": "Paragraph C",
+        "answer": "B",
+        "why": "Sundback produced the design with interlocking teeth and many more elements per inch."
+       },
+       {
+        "n": 30,
+        "q": "Paragraph D",
+        "answer": "D",
+        "why": "The first big orders came from the military, and the name 'zip' came from rubber boots."
+       },
+       {
+        "n": 31,
+        "q": "Paragraph E",
+        "answer": "C",
+        "why": "Children's clothing makers and fashion designers helped to make zips popular."
+       },
+       {
+        "n": 32,
+        "q": "Paragraph F",
+        "answer": "E",
+        "why": "A small Tokyo company became the largest zip maker in the world. Heading F matches the opening of paragraph A and G is not mentioned."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 33,
+        "q": "Why did Elias Howe not sell his clothing closure?",
+        "options": [
+         "He believed that buttons were better.",
+         "He did not have enough money to make it.",
+         "He was busy protecting another invention.",
+         "He could not obtain a patent for it."
+        ],
+        "answer": "C",
+        "why": "The writer says he was most likely too busy defending the patents for his sewing machine; he did patent the closure."
+       },
+       {
+        "n": 34,
+        "q": "What was the main problem with Judson's clasp locker?",
+        "options": [
+         "It often failed to stay fastened.",
+         "It was too heavy for boots.",
+         "It was too difficult to make.",
+         "It could be used only on boots."
+        ],
+        "answer": "A",
+        "why": "The fasteners often jammed or sprang open at the wrong moment."
+       },
+       {
+        "n": 35,
+        "q": "How did Sundback improve the fastener?",
+        "options": [
+         "He replaced the cloth strips with metal.",
+         "He made the sliders much larger.",
+         "He used a cord instead of two rows.",
+         "He used interlocking teeth and increased their number."
+        ],
+        "answer": "D",
+        "why": "He used two rows of interlocking teeth and raised the number of elements from about four to eleven per inch."
+       },
+       {
+        "n": 36,
+        "q": "What does the writer say about the word 'zipper'?",
+        "options": [
+         "Sundback chose it for his invention.",
+         "It first appeared with a rubber boot.",
+         "It came from the sound the military heard.",
+         "It was thought up by fashion designers."
+        ],
+        "answer": "B",
+        "why": "It was the name of a product made by a rubber manufacturer, and it was later applied to the fastener."
+       }
+      ]
+     },
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information given in the text? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 37,
+        "q": "Judson's fastener was shown at an exhibition.",
+        "answer": "TRUE",
+        "why": "Paragraph B: he showed it at the Chicago World's Fair in 1893."
+       },
+       {
+        "n": 38,
+        "q": "Gideon Sundback was born in the United States.",
+        "answer": "FALSE",
+        "why": "Paragraph C says he was Swedish-born and moved to the United States."
+       },
+       {
+        "n": 39,
+        "q": "Dresses with zips sold better than other designs by Schiaparelli.",
+        "answer": "NOT GIVEN",
+        "why": "The text says she used zips as decoration but gives no sales information."
+       },
+       {
+        "n": 40,
+        "q": "No rival system has replaced the zip.",
+        "answer": "TRUE",
+        "why": "Paragraph G: rival systems exist, but none has replaced the zip."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "writing": {
+  "task1": {
+   "kind": "letter (informal)",
+   "min": 150,
+   "prompt": "A close friend invited you to a celebration last weekend, but you were not able to go.\n\nWrite a letter to your friend. In your letter:\n- apologise for not going to the celebration\n- explain why you could not go\n- suggest how you could make up for it\n\nWrite at least 150 words. You do NOT need to write any addresses.\n\nBegin your letter as follows:\nDear Sam,"
+  },
+  "task2": {
+   "kind": "opinion essay (agree/disagree)",
+   "min": 250,
+   "prompt": "Write about the following topic:\n\nSome people believe that advertising aimed at children should be banned.\n\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+  }
+ }
+}
