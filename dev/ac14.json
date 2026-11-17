@@ -1,0 +1,1375 @@
+{
+ "id": "ac14",
+ "module": "AC",
+ "title": "Academic Test 14",
+ "listening": {
+  "parts": [
+   {
+    "title": "Part 1",
+    "context": "A woman phones a photography studio to book a photographer for a family event.",
+    "range": "1-10",
+    "speakers": {
+     "Daniel": "nz_m",
+     "Carol": "glassy"
+    },
+    "script": [
+     [
+      "Daniel",
+      "Good afternoon, Rowan Lane Photography, Daniel speaking."
+     ],
+     [
+      "Carol",
+      "Oh, hello Daniel. I'm hoping to book a photographer for a family event this summer. A friend of mine used you for her daughter's graduation and she said you were wonderful."
+     ],
+     [
+      "Daniel",
+      "That's very kind of her. Let me just open the booking form on my screen. Right. Could I start with your surname?"
+     ],
+     [
+      "Carol",
+      "It's Whitlock. That's W-H-I-T-L-O-C-K."
+     ],
+     [
+      "Daniel",
+      "Whitlock, thank you. And a contact number?"
+     ],
+     [
+      "Carol",
+      "Well, my home number is 01632 960 118, but I'm hardly ever there during the day, so you'd better take my mobile instead. It's 07915 663 204."
+     ],
+     [
+      "Daniel",
+      "07915 663 204. Lovely. So what's the occasion? Is it a wedding?"
+     ],
+     [
+      "Carol",
+      "Oh no, nothing like that. It started out as a birthday party for my mother, she's turning eighty, but then my brother decided to fly in from Canada, and now all the cousins are coming too, so it's turned into a proper family reunion. We'll still have the cake, though."
+     ],
+     [
+      "Daniel",
+      "How lovely. And when is it?"
+     ],
+     [
+      "Carol",
+      "We'd planned it for the 21st of June, but the hall was already booked, so we've had to move it. It's now Saturday 14 June."
+     ],
+     [
+      "Daniel",
+      "The 14th. Let me look at the diary. Yes, that's free, so I can pencil you in. And where will it be held?"
+     ],
+     [
+      "Carol",
+      "At Marsden Village Hall. That's M-A-R-S-D-E-N."
+     ],
+     [
+      "Daniel",
+      "Oh, I know it. It's got that lovely walled garden at the back, which is perfect for photographs if the weather's kind. Now, roughly how many guests are you expecting?"
+     ],
+     [
+      "Carol",
+      "I originally said 60, but a few people have dropped out, so we're now expecting 45."
+     ],
+     [
+      "Daniel",
+      "That's a good size for a group. Right, now let me explain our packages. We have a two-hour package, which covers people arriving and the meal, and a three-hour package, which also covers the cake and the speeches. Some clients go for four hours, but that's usually only needed if there's an evening party as well."
+     ],
+     [
+      "Carol",
+      "The speeches won't start until about four o'clock, so I think we'd better have the three hours. I don't think we'd need four."
+     ],
+     [
+      "Daniel",
+      "I agree, three should be plenty. Now, the price. The two-hour package is 280 pounds, and the three-hour one is normally 420 pounds, but we give a discount if you book more than six weeks ahead, which you're doing, so for you it would be 385 pounds."
+     ],
+     [
+      "Carol",
+      "Oh, that's good news. 385 pounds, that's fine."
+     ],
+     [
+      "Daniel",
+      "Is there anything in particular you'd like us to capture? Some people give me a list of shots."
+     ],
+     [
+      "Carol",
+      "Yes, there is one thing. My mother has always wanted a photograph of the whole family together in front of the fountain in the garden. I know a lot of people choose the rose arch, but she's very fond of the fountain."
+     ],
+     [
+      "Daniel",
+      "Not a problem at all. The fountain it is. We'll do that before the meal, while everyone's still tidy."
+     ],
+     [
+      "Carol",
+      "Good idea. And how do we get the photographs afterwards?"
+     ],
+     [
+      "Daniel",
+      "We edit them and send you the pictures within two weeks. We used to put them on a memory stick, but these days almost everyone prefers an online gallery. You get a link, and you can share it with relatives and order prints directly from the site."
+     ],
+     [
+      "Carol",
+      "That sounds ideal. My brother will want to see them straight away, so he can look at them from Canada. The online gallery will be perfect."
+     ],
+     [
+      "Daniel",
+      "Wonderful. I'll need a deposit of 50 pounds to secure the date, and I'll email you the confirmation this afternoon. Is there anything else you'd like to ask?"
+     ],
+     [
+      "Carol",
+      "I don't think so. Oh, actually, how many photographs should we expect?"
+     ],
+     [
+      "Daniel",
+      "For a three-hour event, normally somewhere between 200 and 300, all edited. You'll have more than enough."
+     ],
+     [
+      "Carol",
+      "Brilliant. Thank you so much, Daniel."
+     ],
+     [
+      "Daniel",
+      "My pleasure, Mrs Whitlock. I look forward to meeting you all in June."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "Rowan Lane Photography: booking form",
+      "items": [
+       {
+        "n": 1,
+        "before": "Customer's surname:",
+        "after": "",
+        "answer": [
+         "Whitlock"
+        ],
+        "why": "She spells it out: W-H-I-T-L-O-C-K."
+       },
+       {
+        "n": 2,
+        "before": "Mobile number:",
+        "after": "",
+        "answer": [
+         "07915 663 204",
+         "07915663204"
+        ],
+        "why": "She first gives a home number but says she is hardly ever there, so Daniel takes the mobile: 07915 663 204."
+       },
+       {
+        "n": 3,
+        "before": "Type of event: family",
+        "after": "",
+        "answer": [
+         "reunion"
+        ],
+        "why": "It began as a birthday party but has turned into a proper family reunion."
+       },
+       {
+        "n": 4,
+        "before": "Date: Saturday",
+        "after": "June",
+        "answer": [
+         "14"
+        ],
+        "why": "The 21st of June is no longer possible because the hall was booked; the new date is Saturday 14 June."
+       },
+       {
+        "n": 5,
+        "before": "Venue:",
+        "after": "Village Hall",
+        "answer": [
+         "Marsden"
+        ],
+        "why": "She spells the place name: M-A-R-S-D-E-N."
+       },
+       {
+        "n": 6,
+        "before": "Number of guests:",
+        "after": "",
+        "answer": [
+         "45"
+        ],
+        "why": "She first said 60, but some people dropped out and 45 are now expected."
+       },
+       {
+        "n": 7,
+        "before": "Length of coverage:",
+        "after": "hours",
+        "answer": [
+         "3"
+        ],
+        "why": "The speeches start about four o'clock, so she chooses the three-hour package; two hours is too short and four is not needed."
+       },
+       {
+        "n": 8,
+        "before": "Cost: £",
+        "after": "",
+        "answer": [
+         "385"
+        ],
+        "why": "The normal price is 420 pounds, but the early-booking discount makes it 385 pounds."
+       },
+       {
+        "n": 9,
+        "before": "Group photograph in front of the",
+        "after": "",
+        "answer": [
+         "fountain"
+        ],
+        "why": "She mentions the rose arch as a common choice, but her mother prefers the fountain."
+       },
+       {
+        "n": 10,
+        "before": "Photographs sent by online",
+        "after": "",
+        "answer": [
+         "gallery"
+        ],
+        "why": "A memory stick was the old method; she chooses the online gallery."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 2",
+    "context": "A guide gives an introduction to the glasshouses of a botanical garden.",
+    "range": "11-20",
+    "speakers": {
+     "Marianne": "aus_f"
+    },
+    "script": [
+     [
+      "Marianne",
+      "Good morning, everyone, and welcome to Ashgrove Botanical Garden. My name's Marianne and I'll be taking you through our glasshouses today. Before we set off, I'd like to say a few words about how they came to be here."
+     ],
+     [
+      "Marianne",
+      "Most visitors assume that the glasshouses were built to show off exotic plants to the public, and of course that's what they do now. But when the first one went up in the 1880s, the owner of the estate had something far more practical in mind. He wanted to grow pineapples and grapes all year round for his own family's table. It was only after his death that the garden was handed over to the city and opened to everybody."
+     ],
+     [
+      "Marianne",
+      "If you've been here before, you'll notice some changes. Some of you will have seen the new café, and yes, it's very nice, but that was only a matter of moving it a few metres closer to the lake. Tickets are the same as ever, too. The biggest change is the entrance. The old gate by the car park has been closed, and everyone now comes in through the new visitor centre. It's a longer walk to the glasshouses, but you do get a good view of the lake on the way."
+     ],
+     [
+      "Marianne",
+      "A word about tours. Free guided tours run twice a day, at 11 and at half past 2. Quite a lot of people wait at the visitor centre, because that's where the tours used to start, but they now leave from the main door of the Palm House, which is where we are standing at the moment. So if you want to come back for a second tour, that's where to go."
+     ],
+     [
+      "Marianne",
+      "Now, photography. You're very welcome to take photographs, and I'd encourage you to. Some people worry that flash will harm the plants, but there's no evidence of that, so please feel free to use it. What we do ask is that you don't bring tripods inside, because the paths are narrow and someone could trip. Also, it's warm in the Palm House, about 28 degrees, so you may want to take off your coat. There are free lockers just inside the visitor centre, and I'd suggest leaving anything heavy there rather than carrying it round with you."
+     ],
+     [
+      "Marianne",
+      "Right, let me tell you a little about each of our glasshouses, so you can decide where to spend your time. We have seven in all, though today I'll focus on six of them."
+     ],
+     [
+      "Marianne",
+      "The Palm House, where we are now, is the largest. A lot of people assume it must be the oldest as well, but that title belongs to the Water Lily House, next door. Unfortunately, the Water Lily House is closed for repairs until the spring, so you'll have to come back to see it. What the Palm House does have is a spiral staircase that takes you up to a raised walkway. You can walk along it at the level of the treetops, and see the leaves and fruit of the tall palms from only a metre or two away. It's the most popular spot in the whole garden, so I'd recommend going early."
+     ],
+     [
+      "Marianne",
+      "Next to it is the Fern House. It's dark, damp and very green, and it holds the collection of ferns gathered by the founder of the garden on his travels. Some of those plants are now extremely rare in the wild, and a few came from places that have since been cleared. It's the one part of the garden that still feels as it did in his lifetime."
+     ],
+     [
+      "Marianne",
+      "Then we have the Orchid House. Last year the orchid show was in the Fern House, but this year it's here, and it's on all this month. There are more than three hundred plants on display, and many of them have only just come into flower. The show ends on the last day of the month, so if you're interested, don't leave it too long."
+     ],
+     [
+      "Marianne",
+      "After that, the Mountain House. You may want your coat after all, because this is the coolest of the glasshouses. It's kept at around 10 degrees, which suits the little alpine plants that grow among the rocks. They look rather plain compared with the orchids, but botanists love them, because they survive in such harsh conditions."
+     ],
+     [
+      "Marianne",
+      "Last on our route is the Herb House, and this one is quite different, because it's all about the senses. Most of the plants here are fragrant, such as lavender, mint, rosemary and lemon balm, and visitors are encouraged to rub the leaves between their fingers and breathe in. Children especially enjoy it. It's the only glasshouse where touching the plants is actually part of the experience, so do try."
+     ],
+     [
+      "Marianne",
+      "That's all from me for now. The route takes about forty minutes at a gentle pace, and I'll be waiting at the exit of the Herb House if anyone has any questions. Please follow me, and watch your step on the stairs."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 11,
+        "q": "What was the original purpose of the first glasshouse?",
+        "options": [
+         "To display rare plants to visitors",
+         "To grow fruit for the owner's family",
+         "To carry out scientific research"
+        ],
+        "answer": "B",
+        "why": "The owner wanted to grow pineapples and grapes for his own family's table; the public came later."
+       },
+       {
+        "n": 12,
+        "q": "What is the biggest change since visitors' last visit?",
+        "options": [
+         "The café has moved.",
+         "The ticket prices have gone down.",
+         "There is a new way into the garden."
+        ],
+        "answer": "C",
+        "why": "The café has only moved a few metres and tickets are unchanged; the biggest change is that everyone now enters through the new visitor centre."
+       },
+       {
+        "n": 13,
+        "q": "Where do the guided tours now start?",
+        "options": [
+         "At the main door of the Palm House",
+         "At the visitor centre",
+         "At the café by the lake"
+        ],
+        "answer": "A",
+        "why": "People wait at the visitor centre because tours used to start there, but they now leave from the Palm House door."
+       },
+       {
+        "n": 14,
+        "q": "What does the guide say about photography?",
+        "options": [
+         "Flash is not allowed.",
+         "Photographs must not be shared online.",
+         "Tripods are not allowed."
+        ],
+        "answer": "C",
+        "why": "Flash is permitted because it does not harm plants; the only restriction is on tripods, as the paths are narrow."
+       },
+       {
+        "n": 15,
+        "q": "What does the guide suggest visitors do with heavy coats?",
+        "options": [
+         "Leave them in the lockers",
+         "Carry them over their arm",
+         "Hang them up inside the Palm House"
+        ],
+        "answer": "A",
+        "why": "She suggests leaving anything heavy in the free lockers at the visitor centre rather than carrying it."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "What does the guide say about each of the following glasshouses? Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+      "options": [
+       {
+        "k": "A",
+        "t": "It is the oldest glasshouse."
+       },
+       {
+        "k": "B",
+        "t": "It is closed for repairs."
+       },
+       {
+        "k": "C",
+        "t": "Visitors can walk at the level of the treetops."
+       },
+       {
+        "k": "D",
+        "t": "It contains plants collected by the founder."
+       },
+       {
+        "k": "E",
+        "t": "It is hosting a show this month."
+       },
+       {
+        "k": "F",
+        "t": "It is the coolest glasshouse."
+       },
+       {
+        "k": "G",
+        "t": "Visitors are encouraged to touch the plants."
+       }
+      ],
+      "items": [
+       {
+        "n": 16,
+        "q": "Palm House",
+        "answer": "C",
+        "why": "A raised walkway lets visitors walk at the level of the treetops. It is the largest but not the oldest glasshouse."
+       },
+       {
+        "n": 17,
+        "q": "Fern House",
+        "answer": "D",
+        "why": "It holds the ferns the founder gathered on his travels."
+       },
+       {
+        "n": 18,
+        "q": "Orchid House",
+        "answer": "E",
+        "why": "This year's orchid show is here and runs all this month; last year's was in the Fern House."
+       },
+       {
+        "n": 19,
+        "q": "Mountain House",
+        "answer": "F",
+        "why": "It is the coolest of the glasshouses, at around 10 degrees."
+       },
+       {
+        "n": 20,
+        "q": "Herb House",
+        "answer": "G",
+        "why": "Visitors are encouraged to rub the fragrant leaves between their fingers."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 3",
+    "context": "Two students, Freya and Callum, revise an essay plan on the printing press.",
+    "range": "21-30",
+    "speakers": {
+     "Freya": "rounded",
+     "Callum": "buttery"
+    },
+    "script": [
+     [
+      "Freya",
+      "Hi, Callum. Sorry I'm late. Have you been here long?"
+     ],
+     [
+      "Callum",
+      "Only ten minutes. I've been going through the feedback on my first draft. It's not great news, I'm afraid."
+     ],
+     [
+      "Freya",
+      "Oh dear. What did Dr Hartley say?"
+     ],
+     [
+      "Callum",
+      "Well, the references were fine, and my English was fine, but she said it was too descriptive. I'd written about what happened, with lots of dates and names, but I hadn't really argued anything."
+     ],
+     [
+      "Freya",
+      "Right. That's easy to do with history. You get carried away telling the story. Have you got the essay question there?"
+     ],
+     [
+      "Callum",
+      "Yes. How far did the invention of the printing press change European society in the fifteenth and sixteenth centuries? So, basically, I need to say how far, and give reasons."
+     ],
+     [
+      "Freya",
+      "Okay. Shall we make a plan, then? I need to do mine as well. I've got a rough one, but I'm not sure about the structure."
+     ],
+     [
+      "Callum",
+      "Good idea. Let me start with the introduction. I want to define the main term, movable type. That's the idea of separate metal letters that you can rearrange, instead of carving a whole page out of one block of wood."
+     ],
+     [
+      "Freya",
+      "Should you mention the Chinese printing that came earlier? They used woodblocks, and even clay type, centuries before."
+     ],
+     [
+      "Callum",
+      "I did think about it, and I found some good sources. But the word limit is only 2,500 words, so I'd have to cut something else to fit it in. My tutor said it wasn't off the topic, but it wasn't necessary either, so I'm leaving it out."
+     ],
+     [
+      "Freya",
+      "Fair enough. So what's your first section?"
+     ],
+     [
+      "Callum",
+      "Literacy. The argument is that more books meant more people learned to read. What I found surprising in the reading was how many of the early printed books weren't about religion. I'd always assumed it was all Bibles, but a lot were calendars, grammar books and manuals for farmers and merchants."
+     ],
+     [
+      "Freya",
+      "I thought that was true of the first few years, but then the Bibles took over."
+     ],
+     [
+      "Callum",
+      "Not according to the catalogue I looked at. Religious works were important, but they were never the majority. Anyway, for evidence, I'm going to use the growth in the number of schools in towns. Not libraries, because most ordinary people didn't have access to those. Schools show that more people wanted to learn."
+     ],
+     [
+      "Freya",
+      "That works. And the second section?"
+     ],
+     [
+      "Callum",
+      "Religion. The way the Reformation spread. Luther's ideas reached thousands of people very quickly. People tend to say sermons, but that was mostly in the churches. What actually travelled was the cheap printed pamphlets, which could be passed hand to hand."
+     ],
+     [
+      "Freya",
+      "Yes, pamphlets are the key point. Have you read Professor Marlowe's book on this?"
+     ],
+     [
+      "Callum",
+      "I have. She says printing was the single cause of the Reformation, and I think that's exaggerated. There were other things going on, like politics and money. I'd say printing made it faster, but it didn't cause it."
+     ],
+     [
+      "Freya",
+      "I agree. I'd be careful with anything that says one cause explains everything. So that's the Reformation. What about science?"
+     ],
+     [
+      "Callum",
+      "Science is my third section. Before printing, scholars copied texts by hand, and every copy had mistakes. Once books were printed, they could all be identical, so scholars in different countries could compare their work. The thing that mattered most was the standardised diagrams. Maps came a bit later, but the diagrams of the human body or of the stars were what allowed people to check each other's observations."
+     ],
+     [
+      "Freya",
+      "That's a good point, and it's one that a lot of students miss. What's your last section?"
+     ],
+     [
+      "Callum",
+      "Limits. I want to show that the change wasn't as big as people say. Most people still couldn't read, and printed material reached the big cities much more than the villages. So the effect was greater in cities than in villages."
+     ],
+     [
+      "Freya",
+      "And the conclusion?"
+     ],
+     [
+      "Callum",
+      "I'm still deciding. I wondered about writing it first, to give me something to aim at, but I think that's risky. I'll keep it short, and link it back to the argument in the introduction. Dr Hartley doesn't like conclusions that bring in new ideas, or personal opinions."
+     ],
+     [
+      "Freya",
+      "No, she's strict about that. I'd do the same. Right, my turn. Mine's a bit of a mess..."
+     ],
+     [
+      "Callum",
+      "Don't worry. We've got plenty of time before the deadline. That's Friday the 21st, isn't it?"
+     ],
+     [
+      "Freya",
+      "It is. So, if we both finish a draft by Wednesday, we can swap and read each other's."
+     ],
+     [
+      "Callum",
+      "Perfect. Now, let's look at yours."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 21,
+        "q": "What was the tutor's main criticism of Callum's first draft?",
+        "options": [
+         "It contained too much description.",
+         "It had too few references.",
+         "It was written in poor English."
+        ],
+        "answer": "A",
+        "why": "Dr Hartley said it was too descriptive; the references and the English were fine."
+       },
+       {
+        "n": 22,
+        "q": "Why did Callum decide not to include Chinese printing?",
+        "options": [
+         "He could not find enough sources.",
+         "There was not enough space within the word limit.",
+         "His tutor said it was irrelevant."
+        ],
+        "answer": "B",
+        "why": "He found good sources, and the tutor said it was not off the topic; the problem is the 2,500-word limit."
+       },
+       {
+        "n": 23,
+        "q": "What surprised Callum about early printed books?",
+        "options": [
+         "How cheaply they were sold",
+         "How few of them were in Latin",
+         "How many were not about religion"
+        ],
+        "answer": "C",
+        "why": "He had assumed they were all Bibles, but many were calendars, grammar books and manuals."
+       },
+       {
+        "n": 24,
+        "q": "What do Callum and Freya think about Professor Marlowe's view of the Reformation?",
+        "options": [
+         "It is out of date.",
+         "It is exaggerated.",
+         "It is well supported."
+        ],
+        "answer": "B",
+        "why": "Callum says her claim that printing was the single cause is exaggerated, and Freya agrees."
+       },
+       {
+        "n": 25,
+        "q": "What does Callum decide about his conclusion?",
+        "options": [
+         "He will write it before the rest of the essay.",
+         "He will include his own opinion.",
+         "He will keep it short and link it to the introduction."
+        ],
+        "answer": "C",
+        "why": "He considers writing it first but finds it risky; personal opinions and new ideas are disliked by the tutor."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the essay plan below. Write ONE WORD ONLY for each answer.",
+      "heading": "Essay plan: the printing press and European society",
+      "items": [
+       {
+        "n": 26,
+        "before": "Introduction: define the term movable",
+        "after": "",
+        "answer": [
+         "type"
+        ],
+        "why": "Callum says he wants to define the main term, movable type."
+       },
+       {
+        "n": 27,
+        "before": "Literacy: evidence is the growth in the number of",
+        "after": "in towns",
+        "answer": [
+         "schools"
+        ],
+        "why": "He rejects libraries because ordinary people could not use them; schools show more people wanted to learn."
+       },
+       {
+        "n": 28,
+        "before": "Religion: the Reformation spread through cheap printed",
+        "after": "",
+        "answer": [
+         "pamphlets"
+        ],
+        "why": "He says sermons were mostly in churches; what travelled was the cheap pamphlets."
+       },
+       {
+        "n": 29,
+        "before": "Science: standardised",
+        "after": "let scholars check each other's observations",
+        "answer": [
+         "diagrams"
+        ],
+        "why": "Maps came later; the diagrams of the body and stars were what mattered most."
+       },
+       {
+        "n": 30,
+        "before": "Limits: the effect was greater in",
+        "after": "than in villages",
+        "answer": [
+         "cities"
+        ],
+        "why": "He says printed material reached the big cities much more than the villages."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 4",
+    "context": "A lecture on how memory champions train.",
+    "range": "31-40",
+    "speakers": {
+     "Lecturer": "deep"
+    },
+    "script": [
+     [
+      "Lecturer",
+      "Good morning. Today I want to talk about memory athletes, the people who can memorise a shuffled pack of cards in under a minute, or recite thousands of digits of a random number, and who compete against each other in championships around the world. When people see this for the first time, they usually assume that these competitors were born with extraordinary brains. The research says otherwise."
+     ],
+     [
+      "Lecturer",
+      "The best known study was carried out by Professor Eliza Brandt and her team. They scanned the brains of twenty top competitors and compared them with those of ordinary volunteers. The researchers expected to find differences, perhaps in the size of certain regions. In fact, there was no unusual structure at all. The champions' brains looked just like everyone else's. Nor did the champions score higher on intelligence tests. What was different was the pattern of activity while they were memorising. They were using the parts of the brain that are involved in finding your way around."
+     ],
+     [
+      "Lecturer",
+      "That finding makes sense once you know their main technique, which is called the method of loci, or the memory palace. It is very old. Ancient orators in Greece and Rome used it to remember long speeches without notes. The word loci simply means places. I'll explain it in three steps."
+     ],
+     [
+      "Lecturer",
+      "First, you choose a route that you know extremely well. It might be the walk from your front door to the bus stop, or the corridors of your old school. Some people start with a house, with a different object in each room, but a route is better, because it has a natural order."
+     ],
+     [
+      "Lecturer",
+      "Second, you turn the information that you want to remember into images, and the images need to be bizarre. A shopping list of milk, eggs and bread does not stick by itself. But if you picture a giant cow drinking from a bucket of eggs, wearing a loaf of bread as a hat, you will not forget it. The stranger and more vivid the picture, the better, because the brain pays much more attention to what is unusual. Funny images work well, and so do slightly rude ones."
+     ],
+     [
+      "Lecturer",
+      "Third, you place each image at a landmark along your route. The garden gate, the post box, the window of the bakery. To recall the list, you simply walk through the route in your mind and collect the images one at a time."
+     ],
+     [
+      "Lecturer",
+      "For numbers and cards, the champions add another layer. They have a personal system in which every card, or every two-digit number, is represented by a person. Some competitors use an object for each card, but the top ones generally prefer to give every card a character, because a person can do things, and that makes the image more memorable. So the queen of hearts might be your aunt, and the seven of clubs a famous footballer. For a sequence of cards, the aunt kicks a ball through the window of the bakery, and so on."
+     ],
+     [
+      "Lecturer",
+      "Now, how do they train? Most of the champions practise for around 4 hours a day in the months before a competition. Some of them start with just 2 hours, but they build up. Crucially, they don't simply repeat the same exercise. They time themselves, analyse every mistake, and then go back and review what they have learned at spaced intervals, after an hour, then a day, then a week. This repeated review moves the information into long-term memory, and it is why the images stay in their minds long after the competition has ended."
+     ],
+     [
+      "Lecturer",
+      "You might think that people with such extraordinary memories would never lose their keys. Interestingly, Professor Brandt's team also tested everyday memory, and the results were a surprise to many people. The champions were no better than average. Many of them admitted that they forget names, miss appointments and leave their phones on the bus, just like the rest of us. Their skill belongs to the technique, not to some general ability."
+     ],
+     [
+      "Lecturer",
+      "So, what can students take from this? Let me be clear. These techniques will not make you cleverer, and they cannot replace understanding. But for learning lists, such as vocabulary in a foreign language, the names of bones in the body, or a series of historical dates, the method is far quicker than simply reading the notes again and again."
+     ],
+     [
+      "Lecturer",
+      "Next week, we'll put this into practice. I'd like each of you to come to the class with a route that you know very well, and you will build a memory palace and use it to memorise a list of forty words."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "heading": "How memory champions train",
+      "items": [
+       {
+        "n": 31,
+        "before": "Brandt's study found no unusual brain",
+        "after": "in the champions",
+        "answer": [
+         "structure"
+        ],
+        "why": "The researchers expected differences in size but found no unusual structure at all."
+       },
+       {
+        "n": 32,
+        "before": "Method of loci: used by ancient",
+        "after": "to remember long speeches",
+        "answer": [
+         "orators"
+        ],
+        "why": "Ancient orators in Greece and Rome used it to remember speeches without notes."
+       },
+       {
+        "n": 33,
+        "before": "Step 1: choose a familiar",
+        "after": "that has a natural order",
+        "answer": [
+         "route"
+        ],
+        "why": "A house is mentioned, but a route is better because of its natural order."
+       },
+       {
+        "n": 34,
+        "before": "Step 2: turn the information into",
+        "after": "images",
+        "answer": [
+         "bizarre"
+        ],
+        "why": "The images need to be bizarre, because the brain notices what is unusual."
+       },
+       {
+        "n": 35,
+        "before": "Step 3: put each image at a",
+        "after": "on the route",
+        "answer": [
+         "landmark"
+        ],
+        "why": "Each image is placed at a landmark such as the garden gate or post box."
+       },
+       {
+        "n": 36,
+        "before": "Cards: top competitors give each card a",
+        "after": "",
+        "answer": [
+         "character",
+         "person"
+        ],
+        "why": "Some use an object for each card, but the top ones prefer to give every card a character."
+       },
+       {
+        "n": 37,
+        "before": "Training: review the information at spaced",
+        "after": "",
+        "answer": [
+         "intervals"
+        ],
+        "why": "They review after an hour, then a day, then a week, at spaced intervals."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 38,
+        "q": "What did Brandt's team find about the champions' everyday memory?",
+        "options": [
+         "They remember names more easily than other people.",
+         "They need more sleep than other people.",
+         "They are no better than average."
+        ],
+        "answer": "C",
+        "why": "The champions were no better than average and forget names and appointments like everyone else."
+       },
+       {
+        "n": 39,
+        "q": "According to the lecturer, what is the main benefit of memory techniques for students?",
+        "options": [
+         "They make it quicker to learn lists of facts.",
+         "They make students more intelligent.",
+         "They remove the need to understand a subject."
+        ],
+        "answer": "A",
+        "why": "He says they will not make students cleverer or replace understanding, but they are far quicker for lists."
+       },
+       {
+        "n": 40,
+        "q": "What will the students do in next week's class?",
+        "options": [
+         "Take a short test on memory research",
+         "Build a memory palace to learn a list",
+         "Watch a recording of a memory competition"
+        ],
+        "answer": "B",
+        "why": "They are asked to bring a familiar route, build a memory palace and use it to memorise forty words."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "reading": {
+  "sections": [
+   {
+    "title": "Passage 1",
+    "range": "1-13",
+    "passages": [
+     {
+      "title": "Painting with Light",
+      "paras": [
+       "A  For most of human history, the only way to keep a likeness of a person or a place was to draw or paint it. A portrait took many hours of sitting, and the best painters charged fees that only the wealthy could afford. Artists had long used the camera obscura, a darkened box with a small hole that projects an upside-down image of the outside world onto a wall, but nobody had found a way to make that fleeting image permanent. In the 1820s several experimenters across Europe set out to solve the problem, and not all of them were professional scientists. One of the earliest was Etienne Marchetti, a pharmacist from a small town in eastern France, who had become fascinated by the way sunlight darkened certain silver salts.",
+       "B  Marchetti's first successful image, made in 1827, was a view of a courtyard from an upstairs window. The exposure lasted about eight hours, with the result that the sun crossed the sky and appears to light both sides of the buildings. The picture was faint, it could not be copied, and it began to fade within a few years. Marchetti was a modest and rather secretive man, and he showed it to very few people. He wrote to a learned society in London, hoping for support, but the society declined to read his paper because he refused to reveal his method. Disappointed, he returned to his pharmacy and might have been forgotten altogether if a stranger had not written to him.",
+       "C  That stranger was Lucien Arnaud, a theatre designer who had been trying to record the painted scenery he made for the stage. The two men began to correspond and, eventually, to work together. Their breakthrough came by accident. Arnaud left an apparently blank plate in a cupboard, and when he took it out some days later he found a faint picture on it. After weeks of testing, they discovered that the cause was the fumes from a spilled dish of warmed mercury. This meant that a short exposure could produce an invisible image, which the mercury vapour would then bring out. Exposure times fell from hours to about twenty minutes, and with better lenses and chemicals soon to less than a minute. The result was a picture on a polished silver-coated plate, with a mirror-like surface. Each plate was unique and had to be tilted at the right angle to be seen clearly, but the detail was astonishing.",
+       "D  Meanwhile, in England, a landowner and amateur scientist named Edmund Haskell was following a different path. Haskell made his pictures on paper, producing a negative from which any number of positive prints could be made. His images were softer and grainier than the silver plates, and many people thought them inferior. Their great advantage was that copies were cheap, and could be mailed to friends. Within about ten years, the paper method had replaced the plates in most studios, even though connoisseurs continued to admire the sharpness of the older process.",
+       "E  When Arnaud's plates were first shown to the public in Paris, crowds queued to see them. Visitors examined the pictures with magnifying glasses, marvelling at the tiny leaves on a distant tree or the individual paving stones in a street. Newspapers called the process painting with light. The reaction among painters was mixed. Some declared that their art was finished, while others felt relieved of the duty of producing exact likenesses, and turned to ways of painting that a camera could not imitate. Marguerite Leclerc, a portrait painter in Lyon, was more practical. Within two years she had learned the new technique and opened a photographic studio, and by the end of the decade she was earning more from photographs than from paintings.",
+       "F  Not everyone welcomed the invention. Some critics thought photographs cold and mechanical, lacking the soul of a painted portrait. Newspapers of the period also report that people in remote villages believed that having a likeness taken would steal part of the sitter's spirit or bring bad luck. Modern historians are doubtful about how widespread such fears really were. Most of the evidence comes from city newspapers, whose writers may well have exaggerated the superstitions of country people for comic effect. A more reliable explanation for the famously serious faces in early portraits is a practical one. Sitters had to hold completely still for many seconds, sometimes with their heads held in place by metal clamps, and a smile is very hard to keep up for that long.",
+       "G  By the 1850s there were photographic studios in every large town, and prices had fallen so far that a portrait cost no more than a few loaves of bread. Working families who had never owned a painted picture could now give their children a photograph of a parent, or send one to a relative overseas. Photographs of dead relatives became a way of grieving, and soldiers posed for pictures to leave at home. Something more subtle was also happening. In an age when mirrors were small, expensive and often distorting, many people saw an accurate picture of their own faces for the first time. Police forces began to photograph criminals, scientists photographed everything from the moon to bacteria, and travellers brought home views of lands that most of their neighbours would never visit. Within a single lifetime, the invention of photography had changed not just how the past was recorded but how people understood themselves."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information given in Passage 1? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 1,
+        "q": "Marchetti's first successful image required an exposure of several hours.",
+        "answer": "TRUE",
+        "why": "Paragraph B says the exposure lasted about eight hours."
+       },
+       {
+        "n": 2,
+        "q": "The London society refused to read Marchetti's paper because it doubted his results.",
+        "answer": "FALSE",
+        "why": "It declined because he refused to reveal his method, not because of doubts about his results."
+       },
+       {
+        "n": 3,
+        "q": "Arnaud was younger than Marchetti.",
+        "answer": "NOT GIVEN",
+        "why": "Neither man's age is mentioned."
+       },
+       {
+        "n": 4,
+        "q": "Plates made by Arnaud's method could be copied many times.",
+        "answer": "FALSE",
+        "why": "Each plate was unique; copying was the advantage of Haskell's paper negatives."
+       },
+       {
+        "n": 5,
+        "q": "Haskell's process made it cheaper to produce several copies of a picture.",
+        "answer": "TRUE",
+        "why": "Paragraph D says copies were cheap and could be mailed to friends."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "Which paragraph contains the following information? Choose the correct letter, A-G.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Paragraph A"
+       },
+       {
+        "k": "B",
+        "t": "Paragraph B"
+       },
+       {
+        "k": "C",
+        "t": "Paragraph C"
+       },
+       {
+        "k": "D",
+        "t": "Paragraph D"
+       },
+       {
+        "k": "E",
+        "t": "Paragraph E"
+       },
+       {
+        "k": "F",
+        "t": "Paragraph F"
+       },
+       {
+        "k": "G",
+        "t": "Paragraph G"
+       }
+      ],
+      "items": [
+       {
+        "n": 6,
+        "q": "a description of how exposure times were drastically shortened",
+        "answer": "C",
+        "why": "Paragraph C explains how mercury vapour allowed short exposures to be developed."
+       },
+       {
+        "n": 7,
+        "q": "a reason why historians doubt a belief about public fear",
+        "answer": "F",
+        "why": "Paragraph F says the evidence comes from city newspapers that may have exaggerated."
+       },
+       {
+        "n": 8,
+        "q": "a comparison between the cost of a portrait and the price of everyday goods",
+        "answer": "G",
+        "why": "Paragraph G says a portrait cost no more than a few loaves of bread."
+       },
+       {
+        "n": 9,
+        "q": "an example of an artist who adapted to the new technology",
+        "answer": "E",
+        "why": "Paragraph E describes Marguerite Leclerc, who opened a photographic studio."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "items": [
+       {
+        "n": 10,
+        "before": "Artists had long used a",
+        "after": "to project an image of the outside world.",
+        "answer": [
+         "camera obscura"
+        ],
+        "why": "Paragraph A: Artists had long used the camera obscura."
+       },
+       {
+        "n": 11,
+        "before": "The mirror-like silver plates had to be",
+        "after": "at the right angle to be seen clearly.",
+        "answer": [
+         "tilted"
+        ],
+        "why": "Paragraph C says each plate had to be tilted at the right angle."
+       },
+       {
+        "n": 12,
+        "before": "Sitters' heads were sometimes held in place by metal",
+        "after": ".",
+        "answer": [
+         "clamps"
+        ],
+        "why": "Paragraph F mentions heads held in place by metal clamps."
+       },
+       {
+        "n": 13,
+        "before": "Many people first saw an accurate picture of their own",
+        "after": "in a photograph.",
+        "answer": [
+         "faces"
+        ],
+        "why": "Paragraph G says that many people saw an accurate picture of their own faces for the first time."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Passage 2",
+    "range": "14-26",
+    "passages": [
+     {
+      "title": "Born from the Ashes",
+      "paras": [
+       "A  Few images of nature are as shocking as a forest after a fire: a landscape of blackened trunks, grey ash and silence. For a long time, foresters and the public alike regarded such scenes as pure catastrophe, and the aim of forest management was to put out every fire as quickly as possible. Over the past few decades, however, ecologists have come to see fire very differently. Many of the world's forests have evolved with fire over millions of years, and some depend on it. Within weeks of a blaze, tiny green shoots may already be pushing through the ash, and within a few years the ground can be covered in young plants. The question that now interests scientists is not whether forests recover, but how.",
+       "B  For many trees, the first answer lies in their seeds. Some pine species carry cones that are sealed shut with a tough resin, and these cones open only when the heat of a fire melts the resin. The seeds then fall onto ground that has been cleared of competition and enriched by the minerals in the ash, an ideal place to germinate. Other plants keep their seeds buried in the soil for decades, waiting for a signal. In many cases this signal is not heat but smoke: chemicals in smoke can break the dormancy of seeds that have lain in the ground since before the previous fire. Such strategies guarantee that a new generation appears at precisely the moment when conditions are best for it.",
+       "C  Other trees do not rely on seeds at all. Many species of oak and eucalyptus can resprout from buds that are protected beneath their thick bark, or from swollen woody structures near the roots, called lignotubers, that store energy. After a fire, even a trunk that looks completely dead can produce a crown of fresh leaves within weeks. Resprouting trees usually recover faster than seedlings can grow, because they begin with an established root system. But the strategy has a cost. Each time a tree resprouts it uses up its stored reserves, and if a second fire arrives before those reserves have been rebuilt, the tree may not survive.",
+       "D  Recovery also follows a rough order, which ecologists call succession. In the first year, fast-growing pioneer species such as grasses and fireweed colonise the bare ground. Some of these plants work with bacteria in their roots to add nitrogen to the soil, which prepares the ground for those that follow. Shrubs appear next, and then, after perhaps ten years, young trees begin to rise above them. A mature forest may take anywhere from eighty to two hundred years to return. Animals follow the same pattern. Woodpeckers arrive to feed on the beetles that colonise dead trees, and some of these beetles have organs that detect infrared radiation, which allows them to locate a burning forest from many kilometres away and be the first to lay their eggs in the freshly killed wood.",
+       "E  Fires seldom burn evenly. A single blaze usually leaves a mosaic of severely burned, lightly burned and entirely untouched patches, and this unevenness is a major reason for recovery. The unburned islands act as refuges for animals, and as sources of seed for the surrounding area. A low-intensity fire that creeps along the ground clears the undergrowth but leaves the tree canopy intact, while a severe crown fire may kill everything, including the seeds in the soil. A twenty-year study by Dr Anneli Strand in the Karrimoor Range found that areas burned at moderate severity ended up with a greater variety of species than either unburned areas or those that had been burned severely. Fire, in other words, can increase diversity, provided it is not too fierce.",
+       "F  The danger comes when fires become too frequent. Many fire-adapted pines need fifteen to twenty years to grow to the point at which they can produce cones. If a second fire comes before that happens, the seed supply is gone, and the forest cannot rebuild itself. Strand's team found that sites burned twice within twelve years often did not return to forest at all. Instead, they became shrubland or grassland, a change that ecologists call type conversion. With rising temperatures and longer dry seasons, fires in many regions are now larger and more frequent than at any time in recorded history, so such conversions may become more common.",
+       "G  This knowledge is beginning to change forest management. Decades of complete fire suppression allowed fuel to accumulate on the forest floor, which in turn made later fires more intense and harder to control. Some agencies now carry out small, planned burns to reduce this fuel, a practice that echoes the traditional cultural burning used by indigenous land managers for thousands of years. Another debated question is what to do with the dead trees afterwards. Salvage logging, which removes them to recover the timber, is profitable but can slow recovery, since the standing dead trees provide habitat for birds and insects, and shade that protects young seedlings from the sun. The best response to a fire, it seems, is often to leave the forest largely alone."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "Passage 2 has seven paragraphs, A-G. Choose the correct heading for paragraphs B-F from the list of headings below. There are more headings than paragraphs, so you will not use them all.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Why putting out every fire may be unwise"
+       },
+       {
+        "k": "B",
+        "t": "A sequence of arrivals, from small plants to tall trees"
+       },
+       {
+        "k": "C",
+        "t": "When fires come too often"
+       },
+       {
+        "k": "D",
+        "t": "How heat and smoke prompt the next generation"
+       },
+       {
+        "k": "E",
+        "t": "The advantage of an uneven pattern of burning"
+       },
+       {
+        "k": "F",
+        "t": "Trees that regrow from damaged trunks and roots"
+       },
+       {
+        "k": "G",
+        "t": "The speed of recovery in different climates"
+       }
+      ],
+      "items": [
+       {
+        "n": 14,
+        "q": "Paragraph B",
+        "answer": "D",
+        "why": "Heat opens resin-sealed cones and smoke breaks seed dormancy."
+       },
+       {
+        "n": 15,
+        "q": "Paragraph C",
+        "answer": "F",
+        "why": "Paragraph C is about resprouting from buds and lignotubers."
+       },
+       {
+        "n": 16,
+        "q": "Paragraph D",
+        "answer": "B",
+        "why": "Paragraph D describes succession: grasses, shrubs, then trees."
+       },
+       {
+        "n": 17,
+        "q": "Paragraph E",
+        "answer": "E",
+        "why": "Paragraph E explains how a mosaic of burned and unburned patches helps recovery."
+       },
+       {
+        "n": 18,
+        "q": "Paragraph F",
+        "answer": "C",
+        "why": "Paragraph F warns about repeated fires before trees can produce cones."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 19,
+        "q": "What does the writer say about the way ecologists now regard fire?",
+        "options": [
+         "They see it as a problem that foresters have solved.",
+         "They accept that it is a natural part of many forests' history.",
+         "They believe that it should be prevented whenever possible.",
+         "They think that it is more destructive than it used to be."
+        ],
+        "answer": "B",
+        "why": "Paragraph A says many forests have evolved with fire over millions of years, and some depend on it."
+       },
+       {
+        "n": 20,
+        "q": "Why is ash good for the seeds of some pines?",
+        "options": [
+         "It protects them from the heat.",
+         "It keeps the soil moist.",
+         "It supplies minerals and removes competition.",
+         "It melts the resin on the cones."
+        ],
+        "answer": "C",
+        "why": "The seeds fall onto ground cleared of competition and enriched by the minerals in the ash. It is the heat, not the ash, that melts the resin."
+       },
+       {
+        "n": 21,
+        "q": "According to paragraph C, why might a resprouting tree die?",
+        "options": [
+         "Its bark may be too thick.",
+         "A second fire may come before its reserves are rebuilt.",
+         "Its roots may be damaged in the first fire.",
+         "It may grow more slowly than seedlings."
+        ],
+        "answer": "B",
+        "why": "Each resprouting uses up stored reserves, and a second fire before they are rebuilt may kill the tree."
+       },
+       {
+        "n": 22,
+        "q": "What did Strand's twenty-year study find?",
+        "options": [
+         "Unburned areas contained the greatest variety of species.",
+         "Severely burned areas recovered most quickly.",
+         "Moderately burned areas had greater variety than other areas.",
+         "Species variety did not depend on how severely land was burned."
+        ],
+        "answer": "C",
+        "why": "Areas burned at moderate severity ended up with a greater variety of species than either unburned or severely burned areas."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "items": [
+       {
+        "n": 23,
+        "before": "Some pioneer plants add",
+        "after": "to the soil with the help of bacteria.",
+        "answer": [
+         "nitrogen"
+        ],
+        "why": "Paragraph D says they work with bacteria in their roots to add nitrogen."
+       },
+       {
+        "n": 24,
+        "before": "Certain beetles find burning forests by detecting",
+        "after": ".",
+        "answer": [
+         "infrared radiation",
+         "infrared"
+        ],
+        "why": "Paragraph D: organs that detect infrared radiation."
+       },
+       {
+        "n": 25,
+        "before": "Forests burned twice within twelve years may be replaced by grassland or",
+        "after": ".",
+        "answer": [
+         "shrubland"
+        ],
+        "why": "Paragraph F says such sites became shrubland or grassland."
+       },
+       {
+        "n": 26,
+        "before": "Standing dead trees provide habitat for animals and",
+        "after": "for seedlings.",
+        "answer": [
+         "shade"
+        ],
+        "why": "Paragraph G: habitat for birds and insects, and shade that protects seedlings."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Passage 3",
+    "range": "27-40",
+    "passages": [
+     {
+      "title": "Two Tongues, Two Minds?",
+      "paras": [
+       "A  Few parents of young children can have escaped being told that a second language will make their children cleverer. The claim has become so familiar that it is repeated in school brochures, newspaper features and political speeches, usually with no more evidence than a general reference to \"research\". I want to argue that it stands on much shakier ground than most people admit, and that the way it has spread says as much about our hopes as about the facts.",
+       "B  The story begins with a reversal. Until the middle of the twentieth century, bilingualism was widely regarded as a handicap, and several early studies appeared to show that bilingual children scored lower on intelligence tests. In my view, these studies were poorly designed: the children were often tested in a language that they spoke badly, and little attention was paid to their family circumstances. The change of mind came in the 1960s, when Joanna Reisen studied schoolchildren in a Canadian city and found that bilingual pupils did better on tasks that required them to switch between rules. The finding was small and the sample was modest, but it was welcomed with enthusiasm, because it offered a more hopeful view of children who grew up with two languages.",
+       "C  A theory soon followed to explain the result. Bilingual people, it was suggested, must constantly keep one language in check while they use the other, and this daily exercise strengthens the general control system of the brain, which governs attention and the ability to switch between tasks. The idea of a mental gym is attractive, and I find it a perfectly plausible one. It gained a further boost in 2004, when Tomas Adeyemi reported that bilingual patients in a hospital clinic developed the symptoms of dementia about four years later than monolingual patients. The result was widely reported, and for many people it settled the matter.",
+       "D  It should not have done so. The first difficulty is that the groups compared in these studies were seldom alike. Bilingual children in many Western studies come from immigrant families, who may differ from their monolingual classmates in income, education, diet and even the ways in which parents encourage children to take tests. Such differences can easily account for a small gap in performance, yet most of the early researchers did not take them seriously. When later studies selected the groups with great care, so that the children matched in every respect except language, the bilingual advantage tended to become smaller, and in many cases to vanish.",
+       "E  A second difficulty lies in what gets published. Researchers who find that bilingualism improves performance are likely to have their studies accepted by journals, while those who find nothing are inclined to put the results in a drawer. Kalani Park examined hundreds of conference presentations and found that studies reporting no advantage were far less likely to be published as full papers than those reporting an advantage. Once this imbalance was taken into account, the overall effect shrank to very little. Park later led a study of around 11,000 children from several countries, and found no difference in the control abilities of bilingual and monolingual children. A result of that size is hard to dismiss as a statistical accident.",
+       "F  The dementia claim is even more doubtful. Adeyemi's patients were drawn from the records of a single clinic, not from the population at large, and people who visit a memory clinic are not a random sample of the elderly. Studies in other countries have produced conflicting results, and some have found no delay at all. I do not claim that the question is closed. It may turn out that some benefit exists for some kinds of bilingual experience, and I would be happy to be proved wrong. But a modest and uncertain effect is a long way from the dramatic boost that is so often promised, and to speak of it as proven is, at best, wishful thinking.",
+       "G  Does any of this matter? I think it does. When we justify the teaching of languages by saying that they make children cleverer, we make the case dependent on a claim that may not survive. We also imply that the many children who grow up with a single language are somehow at a disadvantage, which is a needless worry for their parents. There are far better reasons to learn a language: to talk to more people, to understand other cultures, to find work, and to keep hold of a family heritage. Schools should teach languages for these reasons, and researchers, for their part, should be willing to publish results that are less exciting than we had hoped for."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "ynng",
+      "instr": "Do the following statements agree with the views of the writer in Passage 3? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "items": [
+       {
+        "n": 27,
+        "q": "The belief that bilingualism improves intelligence rests on firm evidence.",
+        "answer": "NO",
+        "why": "The writer argues it stands on shakier ground than most people admit."
+       },
+       {
+        "n": 28,
+        "q": "The early studies showing poor results for bilingual children were carefully designed.",
+        "answer": "NO",
+        "why": "The writer calls them poorly designed."
+       },
+       {
+        "n": 29,
+        "q": "Joanna Reisen's study deserved the attention that it received.",
+        "answer": "NOT GIVEN",
+        "why": "The writer says it was welcomed with enthusiasm but gives no opinion on whether it deserved it."
+       },
+       {
+        "n": 30,
+        "q": "The idea that bilinguals keep one language in check sounds reasonable.",
+        "answer": "YES",
+        "why": "The writer finds the mental gym idea perfectly plausible."
+       },
+       {
+        "n": 31,
+        "q": "Differences in family background have been properly dealt with in most studies.",
+        "answer": "NO",
+        "why": "Most early researchers did not take such differences seriously."
+       },
+       {
+        "n": 32,
+        "q": "Researchers who find no bilingual advantage ought to publish their results.",
+        "answer": "YES",
+        "why": "The writer says researchers should be willing to publish less exciting results."
+       },
+       {
+        "n": 33,
+        "q": "It is possible that bilingualism brings a small mental benefit.",
+        "answer": "YES",
+        "why": "The writer does not claim the question is closed and accepts that a modest benefit may exist."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "Look at the following statements (Questions 34-37) and the list of researchers below. Match each statement with the correct researcher, A, B or C. You may use any letter more than once.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Joanna Reisen"
+       },
+       {
+        "k": "B",
+        "t": "Tomas Adeyemi"
+       },
+       {
+        "k": "C",
+        "t": "Kalani Park"
+       }
+      ],
+      "items": [
+       {
+        "n": 34,
+        "q": "worked with schoolchildren in the 1960s",
+        "answer": "A",
+        "why": "Reisen studied schoolchildren in a Canadian city in the 1960s."
+       },
+       {
+        "n": 35,
+        "q": "found that studies with negative results were less likely to be published",
+        "answer": "C",
+        "why": "Park examined conference presentations and found this."
+       },
+       {
+        "n": 36,
+        "q": "reported a delay in the symptoms of dementia among bilingual people",
+        "answer": "B",
+        "why": "Adeyemi reported dementia symptoms appearing about four years later."
+       },
+       {
+        "n": 37,
+        "q": "carried out research on around 11,000 children",
+        "answer": "C",
+        "why": "Park later led a study of about 11,000 children."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 38,
+        "q": "What point does the writer make about the study of 11,000 children?",
+        "options": [
+         "Its results were a statistical accident.",
+         "It was carried out in only one country.",
+         "It suggests that earlier findings were exaggerated.",
+         "It proves that bilingualism has no benefits."
+        ],
+        "answer": "C",
+        "why": "Park's large study found no difference, and the result is hard to dismiss; the writer uses it to cast doubt on earlier claims. It involved several countries and does not prove no benefits."
+       },
+       {
+        "n": 39,
+        "q": "What is the writer's criticism of Adeyemi's research?",
+        "options": [
+         "Its sample was too small.",
+         "Its patients may not represent the general population.",
+         "Its results have been confirmed in other countries.",
+         "It was published in the wrong journal."
+        ],
+        "answer": "B",
+        "why": "The patients came from one clinic and were not a random sample; other countries produced conflicting results."
+       },
+       {
+        "n": 40,
+        "q": "What is the writer's main purpose in the passage?",
+        "options": [
+         "To argue that a popular claim is not as well supported as it seems",
+         "To explain why bilingual children are less intelligent",
+         "To encourage parents to teach children a second language early",
+         "To describe how researchers test intelligence"
+        ],
+        "answer": "A",
+        "why": "The passage sets out the weaknesses in the claim that bilingualism makes people cleverer."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "writing": {
+  "task1": {
+   "kind": "pie chart report",
+   "min": 150,
+   "prompt": "The pie charts below show the sources of income of a charity in 2004 and in 2024.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+   "chart": {
+    "type": "pie",
+    "title": "Sources of a charity's income, 2004 and 2024",
+    "unit": "%",
+    "labels": [
+     "Individual donations",
+     "Legacies",
+     "Government grants",
+     "Fundraising events",
+     "Shop sales",
+     "Other"
+    ],
+    "series": [
+     {
+      "name": "2004",
+      "data": [
+       48,
+       12,
+       25,
+       9,
+       4,
+       2
+      ]
+     },
+     {
+      "name": "2024",
+      "data": [
+       31,
+       22,
+       11,
+       14,
+       18,
+       4
+      ]
+     }
+    ]
+   }
+  },
+  "task2": {
+   "kind": "problem and solution essay",
+   "min": 250,
+   "prompt": "In many countries, a growing number of older people live alone and feel lonely.\n\nWhat problems does this cause? What can be done to reduce loneliness among older people?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+  }
+ }
+}
