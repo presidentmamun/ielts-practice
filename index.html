@@ -335,6 +335,20 @@ textarea.essay:focus{border-color:var(--accent);outline:0}
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+/* ---------- install the app (PWA): Chrome/Edge give an install prompt; iPhone/iPad need Share → Add to Home Screen ---------- */
+const INSTALL = {evt: null, done: false};
+addEventListener("beforeinstallprompt", e => { e.preventDefault(); INSTALL.evt = e });
+addEventListener("appinstalled", () => { INSTALL.evt = null; INSTALL.done = true });
+const isStandalone = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+const isIOS = () => /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+function installField(){
+  let body;
+  if (isStandalone() || INSTALL.done) body = `<p class="note">${INSTALL.done ? "Installed. Open it from your home screen or app list." : "You are using the installed app."}</p>`;
+  else if (INSTALL.evt) body = `<p class="note">Open it from your home screen in one tap, full screen, and practise offline.</p><div style="display:flex;gap:8px;margin-top:8px"><button class="btn primary small" id="sinstall">Install app</button></div>`;
+  else if (isIOS()) body = `<p class="note">Open it from your home screen in one tap and practise offline.</p><ol class="note" style="margin:6px 0 0;padding-left:20px"><li>In Safari, tap the <b>Share</b> button (the square with an arrow).</li><li>Tap <b>Add to Home Screen</b>, then <b>Add</b>.</li></ol>`;
+  else body = `<p class="note">Open your browser menu (⋮ or ⋯) and choose <b>Install app</b> or <b>Add to Home screen</b>. Then it opens from your home screen in one tap and works offline.</p>`;
+  return `<div class="field" id="sinstallf"><span class="lab">Install the app</span>${body}</div>`;
+}
 const LS = {get(k, d){try{const v = localStorage.getItem(k); return v ? JSON.parse(v) : d}catch(e){return d}},
             set(k, v){try{localStorage.setItem(k, JSON.stringify(v))}catch(e){}},
             del(k){try{localStorage.removeItem(k)}catch(e){}}};
@@ -598,6 +612,7 @@ function settingsBox(){
       ? `<p><b>${esc(AUTH.user.name)}</b> <span class="note">· ${esc(AUTH.user.email)}</span></p><p class="note" style="margin-top:4px">${PREM.key ? "Listening uses the more natural voices. " : ""}Your progress is saved to your account.</p>
         <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn small" id="signout">Log out</button></div>`
       : `<p class="note">A free account keeps your progress when you change phone.</p><div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn primary small" id="goSignup">Create a free account</button><button class="btn small" id="goLogin">Log in</button></div>`}</div>
+    ${installField()}
     <div class="row"><button class="btn" id="srefresh">Refresh the app</button><button class="btn primary" id="sclose">Done</button></div></div>`;
   setTimeout(() => { const rf = $("#srefresh", d); if (rf) rf.onclick = () => { rf.disabled = true; rf.textContent = "Refreshing…"; refreshApp() } }, 0);
   document.body.appendChild(d);
@@ -607,6 +622,9 @@ function settingsBox(){
   $$("[data-theme-set]", d).forEach(b => b.onclick = () => { LS.set("theme", b.dataset.themeSet); applyTheme(); $$("[data-theme-set]", d).forEach(x => x.setAttribute("aria-pressed", x === b)) });
   $("#engine", d).onchange = e => LS.set("engine2", e.target.value);
   const so = $("#signout", d); if (so) so.onclick = async () => { await signOut(); d.remove(); settingsBox() };
+  const si = $("#sinstall", d); if (si) si.onclick = async () => { const ev = INSTALL.evt; if (!ev) return; si.disabled = true;
+    ev.prompt(); const r = await ev.userChoice.catch(() => null); INSTALL.evt = null; if (r && r.outcome === "accepted") INSTALL.done = true;
+    $("#sinstallf", d).outerHTML = installField() };
   const gs = $("#goSignup", d); if (gs) gs.onclick = () => { d.remove(); accountBox("signup") };
   const gl = $("#goLogin", d); if (gl) gl.onclick = () => { d.remove(); accountBox("login") };
 }
