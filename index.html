@@ -595,11 +595,9 @@ function settingsBox(){
     <div class="field"><span class="lab">Appearance</span><div class="seg">${["auto", "light", "dark"].map(t => `<button data-theme-set="${t}" aria-pressed="${theme === t}">${t[0].toUpperCase() + t.slice(1)}</button>`).join("")}</div></div>
     <div class="field"><label for="engine">Listening voice</label><select id="engine"><option value="recorded" ${engine !== "browser" ? "selected" : ""}>Recorded AI voices (recommended)</option><option value="browser" ${engine === "browser" ? "selected" : ""}>This device's built-in voice</option></select></div>
     <div class="field"><span class="lab">Your account</span>${AUTH.user
-      ? `<p><b>${esc(AUTH.user.name)}</b> <span class="note">· ${esc(AUTH.user.email)}</span></p>${AUTH.user.verified
-          ? `<p class="note" style="margin-top:4px">${PREM.key ? "Listening uses the more natural voices. " : ""}Your progress is saved to your account.</p>`
-          : `<p class="note" style="margin-top:4px;color:var(--bad)">Your email is not confirmed yet. <button class="linkbtn" id="goVerify">Confirm it</button></p>`}
-        <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn small" id="signout">Log out</button>${AUTH.isAdmin ? `<button class="btn small" id="goAdmin">Learners</button>` : ""}</div>`
-      : `<p class="note">A free account keeps your progress when you change phone. Approved learners also get more natural listening voices.</p><div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn primary small" id="goSignup">Create a free account</button><button class="btn small" id="goLogin">Log in</button></div>`}</div>
+      ? `<p><b>${esc(AUTH.user.name)}</b> <span class="note">· ${esc(AUTH.user.email)}</span></p><p class="note" style="margin-top:4px">${PREM.key ? "Listening uses the more natural voices. " : ""}Your progress is saved to your account.</p>
+        <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn small" id="signout">Log out</button></div>`
+      : `<p class="note">A free account keeps your progress when you change phone.</p><div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn primary small" id="goSignup">Create a free account</button><button class="btn small" id="goLogin">Log in</button></div>`}</div>
     <div class="row"><button class="btn" id="srefresh">Refresh the app</button><button class="btn primary" id="sclose">Done</button></div></div>`;
   setTimeout(() => { const rf = $("#srefresh", d); if (rf) rf.onclick = () => { rf.disabled = true; rf.textContent = "Refreshing…"; refreshApp() } }, 0);
   document.body.appendChild(d);
@@ -609,45 +607,24 @@ function settingsBox(){
   $$("[data-theme-set]", d).forEach(b => b.onclick = () => { LS.set("theme", b.dataset.themeSet); applyTheme(); $$("[data-theme-set]", d).forEach(x => x.setAttribute("aria-pressed", x === b)) });
   $("#engine", d).onchange = e => LS.set("engine2", e.target.value);
   const so = $("#signout", d); if (so) so.onclick = async () => { await signOut(); d.remove(); settingsBox() };
-  const gv = $("#goVerify", d); if (gv) gv.onclick = () => { d.remove(); verifyBox() };
-  const ga = $("#goAdmin", d); if (ga) ga.onclick = () => { d.remove(); adminBox() };
   const gs = $("#goSignup", d); if (gs) gs.onclick = () => { d.remove(); accountBox("signup") };
   const gl = $("#goLogin", d); if (gl) gl.onclick = () => { d.remove(); accountBox("login") };
 }
 
-/* ---------- accounts: Firebase Authentication (email verification and password reset by email) + Firestore ---------- */
-const FB_CFG = {apiKey: "AIzaSyBlp3Jv8z4kQDZ-loINoRTu5GdQUIZAsmo", authDomain: "ielts-practice-desk.firebaseapp.com", projectId: "ielts-practice-desk",
-  storageBucket: "ielts-practice-desk.firebasestorage.app", messagingSenderId: "537328003950", appId: "1:537328003950:web:ef8d1c024ca2441f9c2f7f"};
-const FB_SDK = "https://www.gstatic.com/firebasejs/10.12.5/";
-const ADMIN_EMAIL = "presidentmamun@gmail.com";   // the rules give this verified address the approval list
+/* ---------- accounts: free sign-up and login, kept on the companion WordPress site (iwate-bd.org) ----------
+   Sign-up sends a 6-digit code and a link to the email; either one confirms it. The administrator manages
+   learners (block, delete, add) in WordPress → IELTS Desk. */
+const API = "https://iwate-bd.org/wp-json/ielts/v1";
 const AUTH = {user: LS.get("auth", null)};
-let FB = null, fbLoading = null;
-function loadScript(src){ return new Promise((ok, no) => { const s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = () => no(new Error("load " + src)); document.head.appendChild(s) }) }
-/* the SDK (~150 KB) loads only when someone uses an account, or when this device was already logged in */
-function fb(){
-  if (FB) return Promise.resolve(FB);
-  if (!fbLoading) fbLoading = (async () => {
-    await loadScript(FB_SDK + "firebase-app-compat.js");
-    await Promise.all([loadScript(FB_SDK + "firebase-auth-compat.js"), loadScript(FB_SDK + "firebase-firestore-compat.js")]);
-    firebase.initializeApp(FB_CFG);
-    const auth = firebase.auth(); auth.useDeviceLanguage();
-    FB = {auth, db: firebase.firestore()};
-    await new Promise(res => { let first = true; auth.onAuthStateChanged(u => { onAuth(u).finally(() => { if (first) { first = false; res() } }) }) });
-    return FB;
-  })().catch(e => { fbLoading = null; throw {code: "offline", message: "Could not reach the account service. Check your connection and try again."} });
-  return fbLoading;
+if (AUTH.user && !AUTH.user.token) { AUTH.user = null; LS.del("auth") }   // a login from the old account system
+async function api(path, body, keepalive){
+  let r;
+  try { r = await fetch(API + path, {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(body || {}), credentials: "omit", keepalive: !!keepalive}) }
+  catch(e) { throw {code: "offline", message: "Could not reach the server. Check your connection and try again."} }
+  const j = await r.json().catch(() => null);
+  if (!r.ok || !j) throw {code: j?.code || "http_" + r.status, message: j?.code?.startsWith("ielts_") && j.message ? j.message : "Something went wrong. Please try again in a moment."};
+  return j;
 }
-const FB_ERR = {
-  "auth/email-already-in-use": "There is already an account with this email. Log in instead.",
-  "auth/invalid-email": "Please enter a valid email address.",
-  "auth/weak-password": "Choose a password with at least 8 characters.",
-  "auth/invalid-credential": "Wrong email or password.", "auth/wrong-password": "Wrong email or password.", "auth/user-not-found": "Wrong email or password.",
-  "auth/too-many-requests": "Too many attempts. Please wait a few minutes and try again.",
-  "auth/network-request-failed": "Could not reach the server. Check your connection and try again.",
-  "auth/user-disabled": "This account has been turned off."};
-const fbMsg = e => FB_ERR[e?.code] || e?.message || "Something went wrong. Please try again.";
-const verifyUrl = () => location.origin + location.pathname;
-
 /* everything worth keeping when the learner changes device */
 function progressBlob(){
   const drafts = {};
@@ -673,187 +650,146 @@ function mergeProgress(p){
   }
   if (!LS.get("resume", null) && p.resume && hasDraft(p.resume.id)) LS.set("resume", p.resume);
 }
-const userDoc = () => FB.db.collection("users").doc(AUTH.user.uid);
 let pushTimer = null;
-function pushNow(){
-  clearTimeout(pushTimer); pushTimer = null;
-  if (!FB || !AUTH.user?.verified) return;
-  userDoc().set({name: AUTH.user.name, email: AUTH.user.email, progress: JSON.stringify(progressBlob()),
-    updatedAt: firebase.firestore.FieldValue.serverTimestamp()}, {merge: true}).catch(() => {});
+/* the server said this login is no longer valid (logged out elsewhere, blocked, deleted) */
+function authFail(e){
+  if (e?.code !== "ielts_token" && e?.code !== "ielts_blocked") return;
+  signOut(true);
+  if (e.code === "ielts_blocked") confirmBox({title: "Account suspended", text: e.message, yes: "OK"}, () => {});
+  if (S.view === "home" && !$(".modal")) renderHome();
 }
-function queuePush(){ if (!AUTH.user?.verified) return; clearTimeout(pushTimer); pushTimer = setTimeout(pushNow, 4000) }
-addEventListener("pagehide", () => { if (pushTimer) pushNow() });
-addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden" && pushTimer) pushNow() });
+function pushNow(keepalive){ clearTimeout(pushTimer); pushTimer = null; if (AUTH.user) api("/progress", {token: AUTH.user.token, progress: progressBlob()}, keepalive).catch(authFail) }
+function queuePush(){ if (!AUTH.user) return; clearTimeout(pushTimer); pushTimer = setTimeout(pushNow, 4000) }
+addEventListener("pagehide", () => { if (pushTimer) pushNow(true) });
+addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden" && pushTimer) pushNow(true) });
 async function useKey(k){ if (!k || !PREM.available) return; try { PREM.key = await premKey(k); LS.set("pk", k) } catch(e){} }
-
-/* called by Firebase whenever the signed-in user changes (also once at start) */
-async function onAuth(u){
-  if (!u) { if (AUTH.user) { AUTH.user = null; LS.del("auth"); LS.del("pk"); PREM.key = null } return }
-  AUTH.user = {uid: u.uid, email: u.email, name: u.displayName || (u.email || "").split("@")[0], verified: !!u.emailVerified};
-  AUTH.isAdmin = AUTH.user.verified && (u.email || "").toLowerCase() === ADMIN_EMAIL;
-  LS.set("auth", AUTH.user);
-  if (!AUTH.user.verified) return;
-  try {
-    const snap = await userDoc().get();
-    if (snap.exists) { const p = snap.data().progress; try { mergeProgress(typeof p === "string" ? JSON.parse(p) : p) } catch(e){} }
-    else await userDoc().set({name: AUTH.user.name, email: AUTH.user.email, createdAt: firebase.firestore.FieldValue.serverTimestamp()});
-  } catch(e){}
-  try { const k = await FB.db.collection("config").doc("premium").get(); AUTH.approved = k.exists; if (k.exists) await useKey(k.data().key) }
-  catch(e) { AUTH.approved = false }   // not approved yet: the rules refuse the read
-  queuePush();
+async function startSession(s){
+  AUTH.user = {token: s.token || AUTH.user?.token, name: s.name, email: s.email}; LS.set("auth", AUTH.user);
+  await useKey(s.key); mergeProgress(s.progress); queuePush();
 }
-/* links from our emails come back here: ?mode=verifyEmail|resetPassword&oobCode=... (set as the action URL in Firebase) */
-async function handleEmailLink(){
-  const q = new URLSearchParams(location.search), mode = q.get("mode"), code = q.get("oobCode");
-  if (!mode || !code) return false;
+/* after logging in, confirming or a new password: either logged in, or still waiting for approval */
+async function finishAuth(s, d){
+  if (d) d.remove();
+  if (s.pending) return confirmBox({title: "Email confirmed", text: "Your account is waiting for approval. You can log in once it has been approved.", yes: "OK"}, () => { if (S.view === "home") renderHome() });
+  await startSession(s); if (S.view === "home") renderHome();
+}
+/* the link in the email comes back here as ?confirmed=1 (or 0 when it was too old) */
+function linkReturn(){
+  const q = new URLSearchParams(location.search); if (!q.has("confirmed")) return false;
   history.replaceState(null, "", location.pathname);
-  try { await fb() } catch(e) { confirmBox({title: "No connection", text: "Open the link again when you are online.", yes: "OK"}, () => {}); return true }
-  if (mode === "verifyEmail") {
-    try {
-      await FB.auth.applyActionCode(code);
-      const u = FB.auth.currentUser; if (u) { await u.reload(); await u.getIdToken(true); await onAuth(u) }
-      confirmBox({title: "Email confirmed", text: u ? "Thank you. Your account is ready and your progress will be saved." : "Thank you. Log in to start saving your progress.", yes: u ? "OK" : "Log in"}, () => { if (!u) accountBox("login"); else if (S.view === "home") renderHome() });
-    } catch(x) { confirmBox({title: "This link has expired", text: "The link was already used or is too old. Log in and choose Send again to get a new one.", yes: "Log in"}, () => accountBox("login")) }
-    return true;
-  }
-  if (mode === "resetPassword") {
-    let email;
-    try { email = await FB.auth.verifyPasswordResetCode(code) }
-    catch(x) { confirmBox({title: "This link has expired", text: "Ask for a new password link and use the newest email.", yes: "OK"}, () => resetBox()); return true }
-    const d = modalShell("Choose a new password", `<h3>Choose a new password</h3><p class="note">For ${esc(email)}</p>
-      <form id="nform" novalidate><div class="field"><label for="npass">New password (at least 8 characters)</label><input id="npass" type="password" autocomplete="new-password" minlength="8" required></div>
-      <p class="note" id="nerr" role="alert" style="margin-top:10px;color:var(--bad);min-height:20px"></p>
-      <div class="row"><button class="btn primary" id="ngo">Save password</button></div></form>`);
-    $("#npass", d).focus();
-    $("#nform", d).onsubmit = async e => {
-      e.preventDefault(); const pw = $("#npass", d).value;
-      if (pw.length < 8) return $("#nerr", d).textContent = "Choose a password with at least 8 characters.";
-      $("#ngo", d).disabled = true;
-      try { await FB.auth.confirmPasswordReset(code, pw); await FB.auth.signInWithEmailAndPassword(email, pw); d.remove(); if (S.view === "home") renderHome();
-        confirmBox({title: "Password changed", text: "You are logged in with your new password.", yes: "OK"}, () => {}) }
-      catch(x) { $("#nerr", d).textContent = fbMsg(x); $("#ngo", d).disabled = false }
-    };
-    return true;
-  }
-  return false;
+  if (q.get("confirmed") === "1") confirmBox({title: "Email confirmed", text: AUTH.user ? "Thank you." : "Thank you. Log in to start saving your progress.", yes: AUTH.user ? "OK" : "Log in"}, () => { if (!AUTH.user) accountBox("login", LS.get("pendingEmail", "")) });
+  else confirmBox({title: "This link has expired", text: "The link was already used or is too old. Log in and we will send you a new code.", yes: "Log in"}, () => accountBox("login", LS.get("pendingEmail", "")));
+  return true;
 }
 async function syncPull(){
-  if (await handleEmailLink()) return;
+  if (linkReturn()) return;
   if (!AUTH.user) return;
-  try {
-    await fb();
-    const u = FB.auth.currentUser;   // came back after confirming the email in another tab: refresh the status
-    if (u && !u.emailVerified) { await u.reload(); if (u.emailVerified) { await u.getIdToken(true); await onAuth(u) } }
-  } catch(e){}
+  try { await startSession(await api("/me", {token: AUTH.user.token})) } catch(e) { authFail(e) }
 }
-addEventListener("focus", () => { if (AUTH.user && !AUTH.user.verified && FB?.auth.currentUser) FB.auth.currentUser.reload().then(async () => { const u = FB.auth.currentUser; if (u?.emailVerified) { await u.getIdToken(true); await onAuth(u); if (S.view === "home" && !$(".modal")) renderHome() } }).catch(() => {}) });
-async function signOut(){
-  clearTimeout(pushTimer); pushTimer = null; stopAudio();
-  AUTH.user = null; AUTH.isAdmin = false; PREM.key = null; LS.del("auth"); LS.del("pk");
-  try { if (FB) await FB.auth.signOut() } catch(e){}
+async function signOut(silent){
+  const t = AUTH.user?.token; clearTimeout(pushTimer); pushTimer = null; stopAudio();
+  AUTH.user = null; PREM.key = null; LS.del("auth"); LS.del("pk");
+  if (t && !silent) await api("/logout", {token: t}).catch(() => {});
 }
 function modalShell(label, inner){
   const d = document.createElement("div"); d.className = "modal";
   d.innerHTML = `<div class="box" role="dialog" aria-modal="true" aria-label="${esc(label)}">${inner}</div>`;
   document.body.appendChild(d); return d;
 }
-function accountBox(mode){
-  if (mode === "verify") return verifyBox();
-  if (mode === "reset") return resetBox();
+const pwField = (id, label, auto) => `<div class="field"><label for="${id}">${label}</label><div style="display:flex;gap:8px"><input id="${id}" type="password" autocomplete="${auto}" minlength="8" required style="flex:1;min-width:0"><button type="button" class="btn small" data-pw="${id}" aria-label="Show password">Show</button></div></div>`;
+function wireShow(d){ $$("[data-pw]", d).forEach(b => b.onclick = () => { const i = $("#" + b.dataset.pw, d), on = i.type === "password"; i.type = on ? "text" : "password"; b.textContent = on ? "Hide" : "Show" }) }
+function accountBox(mode, email){
   const signup = mode === "signup";
   const d = modalShell(signup ? "Create a free account" : "Log in", `<h3>${signup ? "Create a free account" : "Log in"}</h3>
-    <p class="note">${signup ? "Free. Your progress stays with you when you change phone. We send a link to your email to confirm it is yours." : "Welcome back."}</p>
+    <p class="note">${signup ? "Free. Your progress stays with you when you change phone. We email you a 6-digit code to confirm the address is yours." : "Welcome back."}</p>
     <form id="aform" novalidate>
       ${signup ? `<div class="field"><label for="aname">Your name</label><input id="aname" type="text" autocomplete="name" maxlength="60" required></div>` : ""}
-      <div class="field"><label for="aemail">Email</label><input id="aemail" type="email" autocomplete="email" inputmode="email" required></div>
-      <div class="field"><label for="apass">Password${signup ? " (at least 8 characters)" : ""}</label><input id="apass" type="password" autocomplete="${signup ? "new-password" : "current-password"}" minlength="8" required></div>
+      <div class="field"><label for="aemail">Email</label><input id="aemail" type="email" autocomplete="email" inputmode="email" required value="${esc(email || "")}"></div>
+      ${pwField("apass", "Password" + (signup ? " (at least 8 characters)" : ""), signup ? "new-password" : "current-password")}
+      ${signup ? `<input type="text" id="awebsite" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">` : ""}
       <p class="note" id="aerr" role="alert" style="margin-top:10px;color:var(--bad);min-height:20px"></p>
       <div class="row" style="margin-top:6px"><button type="button" class="btn" id="acancel">Cancel</button><button class="btn primary" id="ago">${signup ? "Create account" : "Log in"}</button></div>
     </form>
     <p class="note" style="margin-top:14px">${signup ? `Already have an account? <button class="linkbtn" id="aswap">Log in</button>`
       : `New here? <button class="linkbtn" id="aswap">Create a free account</button> · <button class="linkbtn" id="aforgot">Forgot password?</button>`}</p>`);
+  wireShow(d);
   const close = () => { d.remove(); if (S.view === "home") renderHome() };
   $("#acancel", d).onclick = close; d.onclick = e => { if (e.target === d) close() };
-  $("#aswap", d).onclick = () => { d.remove(); accountBox(signup ? "login" : "signup") };
+  $("#aswap", d).onclick = () => { const em = $("#aemail", d).value.trim(); d.remove(); accountBox(signup ? "login" : "signup", em) };
   const fg = $("#aforgot", d); if (fg) fg.onclick = () => { const em = $("#aemail", d).value.trim(); d.remove(); resetBox(em) };
-  (signup ? $("#aname", d) : $("#aemail", d)).focus();
-  fb().catch(() => {});   // start loading while the learner types
+  (signup ? $("#aname", d) : (email ? $("#apass", d) : $("#aemail", d))).focus();
   $("#aform", d).onsubmit = async e => {
     e.preventDefault(); const err = $("#aerr", d), go = $("#ago", d);
-    const name = signup ? $("#aname", d).value.trim() : "", email = $("#aemail", d).value.trim(), password = $("#apass", d).value;
+    const name = signup ? $("#aname", d).value.trim() : "", em = $("#aemail", d).value.trim(), password = $("#apass", d).value;
     if (signup && !name) return err.textContent = "Please enter your name.";
-    if (!/^\S+@\S+\.\S+$/.test(email)) return err.textContent = "Please enter a valid email address.";
+    if (!/^\S+@\S+\.\S+$/.test(em)) return err.textContent = "Please enter a valid email address.";
     if (signup ? password.length < 8 : !password) return err.textContent = signup ? "Choose a password with at least 8 characters." : "Please enter your password.";
     go.disabled = true; err.textContent = ""; go.textContent = "Please wait…";
     try {
-      await fb();
-      if (signup) {
-        const cred = await FB.auth.createUserWithEmailAndPassword(email, password);
-        await cred.user.updateProfile({displayName: name});
-        await cred.user.sendEmailVerification({url: verifyUrl()});
-        await onAuth(cred.user);
-      } else await FB.auth.signInWithEmailAndPassword(email, password);
-      d.remove();
-      if (!AUTH.user?.verified) return verifyBox(signup);
-      if (S.view === "home") renderHome();
-    } catch(x) { err.textContent = fbMsg(x); go.disabled = false; go.textContent = signup ? "Create account" : "Log in" }
+      if (signup) { await api("/signup", {name, email: em, password, website: $("#awebsite", d).value}); LS.set("pendingEmail", em); d.remove(); return codeBox(em, true) }
+      await finishAuth(await api("/login", {email: em, password}), d);
+    } catch(x) {
+      if (x?.code === "ielts_unverified") {   // never typed the code: send a fresh one and ask for it
+        LS.set("pendingEmail", em); d.remove(); api("/resend", {email: em}).catch(() => {}); return codeBox(em, false);
+      }
+      err.textContent = x?.message || "Something went wrong. Please try again."; go.disabled = false; go.textContent = signup ? "Create account" : "Log in";
+    }
   };
 }
-/* the account exists but the email is not confirmed yet */
-function verifyBox(justCreated){
-  const em = AUTH.user?.email || "";
+const codeField = `<div class="field"><label for="ccode">6-digit code</label><input id="ccode" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="7" required style="font-size:22px;letter-spacing:.3em;text-align:center"></div>`;
+/* confirm the email: type the code from the email (or tap its link) */
+function codeBox(email, justCreated){
   const d = modalShell("Confirm your email", `<h3>Confirm your email</h3>
-    <p>${justCreated ? "Your account is ready. " : ""}We sent a link to <b>${esc(em)}</b>. Open the email and tap the link, then come back here.</p>
-    <p class="note" style="margin-top:6px">No email? Check the spam folder, or send it again.</p>
-    <p class="note" id="verr" role="status" style="margin-top:10px;min-height:20px"></p>
-    <div class="row" style="flex-wrap:wrap"><button class="btn" id="vlater">Later</button><button class="btn" id="vagain">Send again</button><button class="btn primary" id="vdone">I have confirmed</button></div>`);
-  const msg = $("#verr", d);
-  $("#vlater", d).onclick = () => { d.remove(); if (S.view === "home") renderHome() };
-  $("#vagain", d).onclick = async () => { try { await fb(); await FB.auth.currentUser.sendEmailVerification({url: verifyUrl()}); msg.textContent = "Sent. It can take a minute to arrive." } catch(x) { msg.textContent = fbMsg(x) } };
-  $("#vdone", d).onclick = async () => {
-    try {
-      await fb(); const u = FB.auth.currentUser; if (!u) { d.remove(); return accountBox("login") }
-      await u.reload(); await u.getIdToken(true); await onAuth(u);
-      if (AUTH.user?.verified) { d.remove(); if (S.view === "home") renderHome(); return }
-      msg.textContent = "Not confirmed yet. Tap the link in the email first.";
-    } catch(x) { msg.textContent = fbMsg(x) }
+    <p>${justCreated ? "Your account is almost ready. " : ""}We sent a 6-digit code to <b>${esc(email)}</b>. Type it here, or tap the link in the same email.</p>
+    <form id="cform" novalidate>${codeField}
+      <p class="note" id="cerr" role="alert" style="margin-top:10px;min-height:20px"></p>
+      <div class="row" style="flex-wrap:wrap"><button type="button" class="btn" id="cagain">Send the code again</button><button class="btn primary" id="cgo">Confirm</button></div></form>
+    <p class="note" style="margin-top:12px">No email? Check the spam folder. The code works for 30 minutes. <button class="linkbtn" id="clater">Later</button></p>`);
+  const msg = $("#cerr", d), code = $("#ccode", d); code.focus();
+  $("#clater", d).onclick = () => { d.remove(); if (S.view === "home") renderHome() };
+  $("#cagain", d).onclick = async e => { const b = e.currentTarget; b.disabled = true; try { await api("/resend", {email}); msg.style.color = ""; msg.textContent = "Sent. Use the code in the newest email." } catch(x) { msg.style.color = "var(--bad)"; msg.textContent = x.message } setTimeout(() => b.disabled = false, 20000) };
+  code.oninput = () => { if (code.value.replace(/\D/g, "").length === 6 && !$("#cgo", d).disabled) $("#cform", d).requestSubmit() };
+  $("#cform", d).onsubmit = async e => {
+    e.preventDefault(); const c = code.value.replace(/\D/g, "");
+    if (c.length !== 6) { msg.style.color = "var(--bad)"; return msg.textContent = "The code has 6 digits." }
+    $("#cgo", d).disabled = true; msg.textContent = "";
+    try { const s = await api("/verify", {email, code: c}); LS.del("pendingEmail"); await finishAuth(s, d); if (!s.pending) confirmBox({title: "Welcome", text: "Your email is confirmed and your progress will be saved to your account.", yes: "OK"}, () => {}) }
+    catch(x) { if (x?.code === "ielts_confirmed") { d.remove(); LS.del("pendingEmail"); return accountBox("login", email) } msg.style.color = "var(--bad)"; msg.textContent = x.message; $("#cgo", d).disabled = false; code.select() }
   };
 }
+/* forgot password: a code by email, then a new password */
 function resetBox(email){
   const d = modalShell("Reset your password", `<h3>Reset your password</h3>
-    <p class="note">Enter your email. We will send you a link to choose a new password.</p>
+    <p class="note">Enter your email. We will send you a 6-digit code.</p>
     <form id="rform" novalidate><div class="field"><label for="remail">Email</label><input id="remail" type="email" autocomplete="email" inputmode="email" required value="${esc(email || "")}"></div>
-    <p class="note" id="rerr" role="status" style="margin-top:10px;min-height:20px"></p>
-    <div class="row"><button type="button" class="btn" id="rback">Back</button><button class="btn primary" id="rgo">Send link</button></div></form>`);
-  $("#rback", d).onclick = () => { d.remove(); accountBox("login") };
+    <p class="note" id="rerr" role="alert" style="margin-top:10px;min-height:20px"></p>
+    <div class="row"><button type="button" class="btn" id="rback">Back</button><button class="btn primary" id="rgo">Send the code</button></div></form>`);
+  $("#rback", d).onclick = () => { const em = $("#remail", d).value.trim(); d.remove(); accountBox("login", em) };
   $("#remail", d).focus();
   $("#rform", d).onsubmit = async e => {
     e.preventDefault(); const em = $("#remail", d).value.trim(), msg = $("#rerr", d);
-    if (!/^\S+@\S+\.\S+$/.test(em)) return msg.textContent = "Please enter a valid email address.";
+    if (!/^\S+@\S+\.\S+$/.test(em)) { msg.style.color = "var(--bad)"; return msg.textContent = "Please enter a valid email address." }
     $("#rgo", d).disabled = true;
-    try { await fb(); await FB.auth.sendPasswordResetEmail(em, {url: location.origin + location.pathname}); msg.textContent = "If there is an account with this email, a reset link is on its way. Check your inbox and spam folder." }
-    catch(x) { msg.textContent = x?.code === "auth/user-not-found" ? "If there is an account with this email, a reset link is on its way." : fbMsg(x); $("#rgo", d).disabled = false }
+    try { await api("/forgot", {email: em}); d.remove(); newPassBox(em) }
+    catch(x) { msg.style.color = "var(--bad)"; msg.textContent = x.message; $("#rgo", d).disabled = false }
   };
 }
-/* administrator only: approve learners for the natural voices, and set the key */
-async function adminBox(){
-  const d = modalShell("Learners", `<h3>Learners</h3><p class="note">Approved learners get the natural voices. Everyone with a confirmed email can save progress.</p>
-    <div id="alist" style="margin-top:10px">Loading…</div>
-    <div class="field" style="margin-top:14px"><label for="akey">Natural-voice key</label><div style="display:flex;gap:8px"><input id="akey" type="text" autocomplete="off" style="flex:1;min-width:0"><button class="btn small" id="akeysave">Save</button></div><p class="note" id="akeymsg"></p></div>
-    <div class="row"><button class="btn primary" id="aclose">Done</button></div>`);
-  $("#aclose", d).onclick = () => d.remove();
-  try {
-    await fb();
-    const [us, ap, key] = await Promise.all([FB.db.collection("users").get(), FB.db.collection("approved").get(), FB.db.collection("config").doc("premium").get()]);
-    if (key.exists) $("#akey", d).value = key.data().key || "";
-    const ok = new Set(ap.docs.map(x => x.id));
-    const rows = us.docs.map(x => ({id: x.id, ...x.data()})).sort((a, b) => (ok.has(a.id) - ok.has(b.id)) || String(a.email).localeCompare(String(b.email)));
-    $("#alist", d).innerHTML = rows.length ? `<table class="hist" style="width:100%"><tbody>${rows.map(r => `<tr><td>${esc(r.name || "")}<div class="note">${esc(r.email || "")}</div></td><td style="text-align:right">${ok.has(r.id)
-      ? `<button class="btn small" data-unap="${esc(r.id)}">Remove</button>` : `<button class="btn primary small" data-ap="${esc(r.id)}">Approve</button>`}</td></tr>`).join("")}</tbody></table>` : `<p class="note">No learners with a confirmed email yet.</p>`;
-    $$("[data-ap]", d).forEach(b => b.onclick = async () => { b.disabled = true; await FB.db.collection("approved").doc(b.dataset.ap).set({at: firebase.firestore.FieldValue.serverTimestamp()}); d.remove(); adminBox() });
-    $$("[data-unap]", d).forEach(b => b.onclick = async () => { b.disabled = true; await FB.db.collection("approved").doc(b.dataset.unap).delete(); d.remove(); adminBox() });
-    $("#akeysave", d).onclick = async () => { const v = $("#akey", d).value.trim(); try { await FB.db.collection("config").doc("premium").set({key: v}); await useKey(v); $("#akeymsg", d).textContent = "Saved." } catch(x) { $("#akeymsg", d).textContent = fbMsg(x) } };
-  } catch(x) { $("#alist", d).innerHTML = `<p class="note">${esc(fbMsg(x))}</p>` }
+function newPassBox(email){
+  const d = modalShell("Choose a new password", `<h3>Choose a new password</h3>
+    <p class="note">If <b>${esc(email)}</b> has an account, a 6-digit code is on its way. Check the spam folder too.</p>
+    <form id="nform" novalidate>${codeField}${pwField("npass", "New password (at least 8 characters)", "new-password")}
+      <p class="note" id="nerr" role="alert" style="margin-top:10px;color:var(--bad);min-height:20px"></p>
+      <div class="row"><button type="button" class="btn" id="nback">Back</button><button class="btn primary" id="ngo">Save password</button></div></form>`);
+  wireShow(d); $("#ccode", d).focus();
+  $("#nback", d).onclick = () => { d.remove(); resetBox(email) };
+  $("#nform", d).onsubmit = async e => {
+    e.preventDefault(); const c = $("#ccode", d).value.replace(/\D/g, ""), pw = $("#npass", d).value, err = $("#nerr", d);
+    if (c.length !== 6) return err.textContent = "The code has 6 digits.";
+    if (pw.length < 8) return err.textContent = "Choose a password with at least 8 characters.";
+    $("#ngo", d).disabled = true;
+    try { const s = await api("/reset", {email, code: c, password: pw}); await finishAuth(s, d); if (!s.pending) confirmBox({title: "Password changed", text: "You are logged in with your new password.", yes: "OK"}, () => {}) }
+    catch(x) { err.textContent = x.message; $("#ngo", d).disabled = false }
+  };
 }
 
 /* ---------- building a run ----------
