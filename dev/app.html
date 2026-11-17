@@ -400,8 +400,8 @@ async function loadTest(id){
   const meta = S.index.tests.find(t => t.id === id);
   const r = await fetch(meta.file); S.tests[id] = await r.json(); return S.tests[id];
 }
-const moduleTests = () => S.index.tests.filter(t => t.module === S.module || (S.module === "AC" && t.module === "GT")).map(t => S.tests[t.id]).filter(Boolean)
-  .sort((a, b) => (a.module !== S.module) - (b.module !== S.module));   // this module's own tests first, then shared Listening
+// Academic and General Training each have their own 20 tests, so a module shows only its own
+const moduleTests = () => S.index.tests.filter(t => t.module === S.module).map(t => S.tests[t.id]).filter(Boolean);
 const ownTests = () => moduleTests().filter(t => t.module === S.module);   // tests whose Reading and Writing belong to this module
 const secsOf = (test, skill) => skill === "L" ? test.listening.parts : skill === "R" ? test.reading.sections : [test.writing.task1, test.writing.task2];
 const shortTitle = t => t.module === S.module ? t.title.replace("General Training ", "").replace("Academic ", "") : t.title.replace("General Training ", "GT ");
