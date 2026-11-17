@@ -128,6 +128,19 @@ h1,h2,h3{text-wrap:balance}
 .tile b{font-size:15.5px}
 .tile span{font-size:13.5px;color:var(--muted)}
 .sub{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--muted);margin:16px 0 8px}
+.tpick{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:6px;margin-bottom:6px}
+.tpick button{position:relative;height:42px;border:1px solid var(--line);background:var(--surface);border-radius:10px;font-family:var(--f-num);font-weight:600;font-size:14px;color:var(--ink);padding:0;white-space:nowrap}
+.tpick button:hover{border-color:var(--accent)}
+.tpick button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.tpick button.done::after,.tpick button.part::after,.dot{content:"";position:absolute;top:4px;right:4px;width:7px;height:7px;border-radius:50%}
+.tpick button.done::after,.dot.done{background:var(--good)}
+.tpick button.part::after,.dot.part{background:var(--flag)}
+.tpicknote{margin:0 0 10px;display:flex;align-items:center;gap:6px}
+.tpicknote .dot{position:static;display:inline-block;margin-left:6px}
+.tpicknote .dot:first-child{margin-left:0}
+.tnav{align-items:center;gap:10px}
+.tnav .iconbtn{width:38px;height:38px;border-radius:50%}
+.tnav .iconbtn:disabled{opacity:.35}
 .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .trio button{display:flex;flex-direction:column;align-items:flex-start;gap:1px;border:1px solid var(--line);background:var(--surface2);border-radius:12px;padding:10px 12px;text-align:left;min-height:64px}
 .trio button:hover{border-color:var(--accent)}
@@ -455,18 +468,43 @@ function unitBadge(id){
 }
 const unitRow = (id, title, sub, cls = "") => `<button class="unit ${cls}" data-unit="${id}"><span class="ut"><b>${esc(title)}</b><span>${esc(sub)}</span></span>${unitBadge(id)}<span class="go">${ic("right", 18)}</span></button>`;
 
+/* ---------- test picker: one numbered button per test, then only the chosen test is shown ---------- */
+const chipLabel = t => (t.module === S.module ? "" : "GT ") + t.id.replace(/^\D+/, "");
+function testState(t, skill){   // "done", "part" or "" for this test and skill
+  if (skill === "T") return ["L", "R", "W"].some(k => bestBand(k, t.id) != null) ? "done" : "";
+  const n = secsOf(t, skill).length, ids = [...Array(n).keys()].map(i => `p:${t.id}:${skill}:${i}`);
+  const got = ids.filter(id => S.units[id]).length + (S.units[`p:${t.id}:${skill}:all`] ? n : 0);
+  return got >= n ? "done" : got || ids.some(hasDraft) ? "part" : "";
+}
+function pickedTest(list, skill){
+  const key = "pick:" + S.module + ":" + skill, want = LS.get(key, null);
+  return list.find(t => t.id === want) || list.find(t => testState(t, skill) !== "done") || list[0];
+}
+function pickerHTML(list, cur, skill){
+  return `<div class="tpick" role="group" aria-label="Choose a test">${list.map(t => { const st = testState(t, skill);
+    return `<button data-pick="${skill}:${t.id}" aria-pressed="${t === cur}" class="${st}" aria-label="${esc(t.title)}${st === "done" ? ", done" : st === "part" ? ", started" : ""}">${esc(chipLabel(t))}</button>` }).join("")}</div>
+    <p class="note tpicknote"><span class="dot done"></span> done <span class="dot part"></span> started</p>`;
+}
+function testHead(list, cur, skill, note){
+  const i = list.indexOf(cur), prev = list[i - 1], next = list[i + 1];
+  return `<div class="thead tnav"><button class="iconbtn" data-pick="${skill}:${prev ? prev.id : ""}" ${prev ? "" : "disabled"} aria-label="Previous test">${ic("left", 18)}</button>
+    <div style="flex:1;min-width:0"><h3>${esc(cur.title)}</h3><span class="note">${note}</span></div>
+    <button class="iconbtn" data-pick="${skill}:${next ? next.id : ""}" ${next ? "" : "disabled"} aria-label="Next test">${ic("right", 18)}</button></div>`;
+}
 function practiceHTML(){
   const tabs = [["L", "Listening", "headphones"], ["R", "Reading", "book"], ["W", "Writing", "pen"], ["T", "Question types", "target"]];
   const k = S.pskill; let body = "";
   const soon = `<div class="card empty">Academic Reading and Writing are still being written. Listening is the same in both modules, so you can practise it now.</div>`;
-  if (k === "L") body = moduleTests().map(t => `<div class="card"><div class="thead"><h3>${esc(shortTitle(t))}</h3><span class="note">${t.listening.parts.length} parts · 10 questions each</span></div>
+  const list = k === "L" ? moduleTests() : ownTests(), t = k !== "T" && list.length ? pickedTest(list, k) : null;
+  if (k !== "T" && !t) body = soon;
+  else if (k === "L") body = `${pickerHTML(list, t, k)}<div class="card">${testHead(list, t, k, "4 parts · 10 questions each")}
       ${t.listening.parts.map((p, i) => unitRow(`p:${t.id}:L:${i}`, p.title, p.context)).join("")}
-      ${unitRow(`p:${t.id}:L:all`, "All four parts", "40 questions, with a band estimate", "all")}</div>`).join("");
-  else if (k === "R") body = ownTests().map(t => `<div class="card"><div class="thead"><h3>${esc(shortTitle(t))}</h3><span class="note">${t.reading.sections.length} sections</span></div>
+      ${unitRow(`p:${t.id}:L:all`, "All four parts", "40 questions, with a band estimate", "all")}</div>`;
+  else if (k === "R") body = `${pickerHTML(list, t, k)}<div class="card">${testHead(list, t, k, "3 sections · 40 questions")}
       ${t.reading.sections.map((s, i) => unitRow(`p:${t.id}:R:${i}`, `${s.title} · questions ${s.range}`, s.passages.map(p => p.title).join(" · "))).join("")}
-      ${unitRow(`p:${t.id}:R:all`, "All sections", "40 questions, with a band estimate", "all")}</div>`).join("") || soon;
-  else if (k === "W") body = ownTests().map(t => `<div class="card"><div class="thead"><h3>${esc(shortTitle(t))}</h3></div>
-      ${[t.writing.task1, t.writing.task2].map((w, i) => unitRow(`p:${t.id}:W:${i}`, `Task ${i + 1} · ${w.kind}`, w.prompt.split("\n")[0])).join("")}</div>`).join("") || soon;
+      ${unitRow(`p:${t.id}:R:all`, "All sections", "40 questions, with a band estimate", "all")}</div>`;
+  else if (k === "W") body = `${pickerHTML(list, t, k)}<div class="card">${testHead(list, t, k, "2 tasks")}
+      ${[t.writing.task1, t.writing.task2].map((w, i) => unitRow(`p:${t.id}:W:${i}`, `Task ${i + 1} · ${w.kind}`, w.prompt.split("\n")[0])).join("")}</div>`;
   else {
     const sec = skill => { const n = {}, sets = {};
       (skill === "L" ? moduleTests() : ownTests()).forEach(t => secsOf(t, skill).forEach(s => s.groups.forEach(g => { n[g.type] = (n[g.type] || 0) + g.items.length; sets[g.type] = (sets[g.type] || 0) + 1 })));
@@ -475,17 +513,20 @@ function practiceHTML(){
     body = `<p class="note">Work on one kind of question until it feels easy. Sets are taken from all the tests.</p>${sec("R")}${sec("L")}`;
   }
   return `<h2 class="h">Practise at your own pace</h2>
-    <p class="lead">No clock. Take one small part, check each answer as you go, replay the audio and open the transcript whenever you like.</p>
+    <p class="lead">No clock. Check each answer as you go, replay the audio, open the transcript.</p>
     <div class="skilltabs" role="group" aria-label="Skill">${tabs.map(([id, name, icon]) => `<button data-pskill="${id}" aria-pressed="${k === id}">${ic(icon, 22)}<span>${name}</span></button>`).join("")}</div>${body}`;
 }
 function testHTML(){
+  const list = moduleTests(), t = pickedTest(list, "T");
+  if (!t) return `<h2 class="h">Mock test</h2><div class="card empty">No tests yet.</div>`;
+  const own = t.module === S.module, b = k => { const v = bestBand(k, t.id); return v == null ? "" : ` · best ${v}` };
   return `<h2 class="h">Mock test</h2>
-    <p class="lead">Exam conditions, like the computer-delivered test: a countdown, the recording plays once, no checking until the end. You get a band estimate when you finish.</p>
-    ${moduleTests().map(t => { const own = t.module === S.module; const b = k => { const v = bestBand(k, t.id); return v == null ? "" : ` · best ${v}` };
-      return `<div class="card"><div class="thead"><h3>${esc(own ? shortTitle(t) : shortTitle(t) + " (shared Listening)")}</h3></div>
+    <p class="lead">Exam conditions: a countdown, the recording plays once, no checking until the end, then a band estimate.</p>
+    ${pickerHTML(list, t, "T")}
+    <div class="card">${testHead(list, t, "T", own ? "Listening · Reading · Writing" : "Shared Listening test")}
       <div class="trio"><button data-test="t:${t.id}:L"><b>${ic("headphones", 16)} Listening</b><span>30 min${b("L")}</span></button>
       ${own ? `<button data-test="t:${t.id}:R"><b>${ic("book", 16)} Reading</b><span>60 min${b("R")}</span></button>
-      <button data-test="t:${t.id}:W"><b>${ic("pen", 16)} Writing</b><span>60 min</span></button>` : ""}</div></div>` }).join("")}`;
+      <button data-test="t:${t.id}:W"><b>${ic("pen", 16)} Writing</b><span>60 min</span></button>` : ""}</div></div>`;
 }
 function progressHTML(){
   const mine = S.attempts.filter(a => a.module === S.module), recent = mine.slice(0, 10);
@@ -538,6 +579,8 @@ function renderHome(){
   $$("[data-tab]").forEach(b => b.onclick = () => { S.tab = b.dataset.tab; LS.set("tab", S.tab); renderHome(); scrollTo(0, 0) });
   $$("[data-pskill]").forEach(b => b.onclick = () => { S.pskill = b.dataset.pskill; LS.set("pskill", S.pskill); renderHome() });
   $$("[data-unit]").forEach(b => b.onclick = () => startUnit(b.dataset.unit));
+  $$("[data-pick]").forEach(b => b.onclick = () => { const [k, id] = b.dataset.pick.split(":"); if (!id) return;
+    LS.set("pick:" + S.module + ":" + k, id); const y = scrollY; renderHome(); scrollTo(0, y) });
   $$("[data-test]").forEach(b => b.onclick = () => { const k = b.dataset.test.split(":")[2];
     confirmBox({title: SKILL[k] + " mock test", text: k === "L" ? "30 minutes. The recording plays once and cannot be paused; each part starts with 30 seconds to read the questions. Use headphones if you can."
       : k === "R" ? "60 minutes for 3 sections and 40 questions. Answers are not checked until you finish." : "60 minutes for 2 tasks. Spend about 20 minutes on Task 1 and 40 on Task 2.", yes: "Start the test"}, () => startUnit(b.dataset.test)) });
