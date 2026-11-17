@@ -608,10 +608,8 @@ function settingsBox(){
     <div class="field"><span class="lab">Your exam</span><div class="seg"><button data-mod="GT" aria-pressed="${S.module === "GT"}">General Training</button><button data-mod="AC" aria-pressed="${S.module === "AC"}">Academic</button></div></div>
     <div class="field"><span class="lab">Appearance</span><div class="seg">${["auto", "light", "dark"].map(t => `<button data-theme-set="${t}" aria-pressed="${theme === t}">${t[0].toUpperCase() + t.slice(1)}</button>`).join("")}</div></div>
     <div class="field"><label for="engine">Listening voice</label><select id="engine"><option value="recorded" ${engine !== "browser" ? "selected" : ""}>Recorded AI voices (recommended)</option><option value="browser" ${engine === "browser" ? "selected" : ""}>This device's built-in voice</option></select></div>
-    <div class="field"><span class="lab">Your account</span>${AUTH.user
-      ? `<p><b>${esc(AUTH.user.name)}</b> <span class="note">· ${esc(AUTH.user.email)}</span></p><p class="note" style="margin-top:4px">${PREM.key ? "Listening uses the more natural voices. " : ""}Your progress is saved to your account.</p>
-        <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn small" id="signout">Log out</button></div>`
-      : `<p class="note">A free account keeps your progress when you change phone.</p><div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn primary small" id="goSignup">Create a free account</button><button class="btn small" id="goLogin">Log in</button></div>`}</div>
+    ${AUTH.user ? `<div class="field"><span class="lab">Your account</span><p><b>${esc(AUTH.user.name)}</b> <span class="note">· ${esc(AUTH.user.email)}</span></p><p class="note" style="margin-top:4px">${PREM.key ? "Listening uses the more natural voices. " : ""}Your progress is saved to your account.</p>
+        <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn small" id="signout">Log out</button></div></div>` : ""}
     ${installField()}
     <div class="row"><button class="btn" id="srefresh">Refresh the app</button><button class="btn primary" id="sclose">Done</button></div></div>`;
   setTimeout(() => { const rf = $("#srefresh", d); if (rf) rf.onclick = () => { rf.disabled = true; rf.textContent = "Refreshing…"; refreshApp() } }, 0);
@@ -625,8 +623,6 @@ function settingsBox(){
   const si = $("#sinstall", d); if (si) si.onclick = async () => { const ev = INSTALL.evt; if (!ev) return; si.disabled = true;
     ev.prompt(); const r = await ev.userChoice.catch(() => null); INSTALL.evt = null; if (r && r.outcome === "accepted") INSTALL.done = true;
     $("#sinstallf", d).outerHTML = installField() };
-  const gs = $("#goSignup", d); if (gs) gs.onclick = () => { d.remove(); accountBox("signup") };
-  const gl = $("#goLogin", d); if (gl) gl.onclick = () => { d.remove(); accountBox("login") };
 }
 
 /* ---------- accounts: free sign-up and login, kept on the companion WordPress site (iwate-bd.org) ----------
