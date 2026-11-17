@@ -1,0 +1,1372 @@
+{
+ "id": "gt16",
+ "module": "GT",
+ "title": "General Training Test 16",
+ "listening": {
+  "parts": [
+   {
+    "title": "Part 1",
+    "context": "A man phones a doctor's surgery to register as a new patient.",
+    "range": "1-10",
+    "speakers": {
+     "Receptionist": "nz_f",
+     "Daniel": "bright"
+    },
+    "script": [
+     [
+      "Receptionist",
+      "Good morning, Calder Park Medical Centre. How can I help?"
+     ],
+     [
+      "Daniel",
+      "Oh, hello. I've just moved to the area and I'd like to register as a new patient, please."
+     ],
+     [
+      "Receptionist",
+      "Of course, that's no problem at all. I can take your details over the phone now, and then you'll need to pop in with some identification. Is that all right?"
+     ],
+     [
+      "Daniel",
+      "Yes, that's fine. Do I need to register my wife as well?"
+     ],
+     [
+      "Receptionist",
+      "Only if she's moving here too. Is she?"
+     ],
+     [
+      "Daniel",
+      "She is, but she's finishing her notice at work, so she'll join me in a few weeks. I'll ask her to ring you then."
+     ],
+     [
+      "Receptionist",
+      "No problem. So, just you for now. Can I start with your full name?"
+     ],
+     [
+      "Daniel",
+      "It's Daniel Lindqvist."
+     ],
+     [
+      "Receptionist",
+      "Could you spell the surname for me, please?"
+     ],
+     [
+      "Daniel",
+      "Yes, it's L-I-N-D-Q-V-I-S-T. People always leave out the Q, so it's an unusual one."
+     ],
+     [
+      "Receptionist",
+      "Thank you. L-I-N-D-Q-V-I-S-T. And your date of birth?"
+     ],
+     [
+      "Daniel",
+      "14 March 1988."
+     ],
+     [
+      "Receptionist",
+      "Thanks. And what's your new address?"
+     ],
+     [
+      "Daniel",
+      "It's 27 Fenwick Road. Oh, sorry, that's my old address in Plymouth, it's still stuck in my head. It's 72 Fenwick Road. Seven, two."
+     ],
+     [
+      "Receptionist",
+      "72 Fenwick Road. And the postcode?"
+     ],
+     [
+      "Daniel",
+      "KF4 3QL."
+     ],
+     [
+      "Receptionist",
+      "KF4 3QL. Lovely, that's well inside our catchment area. And what's the best phone number to reach you on?"
+     ],
+     [
+      "Daniel",
+      "My landline isn't connected yet, so please use my mobile. It's 07845 336 092."
+     ],
+     [
+      "Receptionist",
+      "07845 336 092. Got that. Now, who was your previous doctor?"
+     ],
+     [
+      "Daniel",
+      "Harbour Lane Surgery, in Plymouth. A Dr Fenn looked after me there for about six years."
+     ],
+     [
+      "Receptionist",
+      "Thanks, we'll ask them to send your records over. Do you have any medical conditions we should know about?"
+     ],
+     [
+      "Daniel",
+      "Well, I have asthma. It's quite mild, I only use an inhaler when I'm running or when the weather's very cold. My wife's the one with hay fever, but that's nothing to do with me."
+     ],
+     [
+      "Receptionist",
+      "Right. And are you allergic to any medicines?"
+     ],
+     [
+      "Daniel",
+      "Yes, penicillin. I come out in a rash. I used to think I was allergic to aspirin as well, but a test last year showed I was fine with that."
+     ],
+     [
+      "Receptionist",
+      "Good to know. And what's your occupation? We ask because it can affect which appointment times suit you."
+     ],
+     [
+      "Daniel",
+      "I'm a bus driver. I mostly work early shifts, so I'm usually finished by two in the afternoon."
+     ],
+     [
+      "Receptionist",
+      "That's helpful. Right, the next step is a new patient health check with our practice nurse. It takes about 20 minutes and includes a blood pressure test and a few questions about your lifestyle. We have Thursday at 9.45 or at 10.15."
+     ],
+     [
+      "Daniel",
+      "9.45 would be tricky, I'm afraid. I'd be coming straight off a shift and the bus can be slow at that time. Could I take the 10.15?"
+     ],
+     [
+      "Receptionist",
+      "Of course. I'll put you down for Thursday at 10.15. Please bring some photo identification, such as a passport or driving licence, and something that shows your address. A recent electricity bill is fine. A bank statement would do as well, but we can't accept a mobile phone bill."
+     ],
+     [
+      "Daniel",
+      "Right, an electricity bill, I've got one of those. Do I need to fill in a form beforehand?"
+     ],
+     [
+      "Receptionist",
+      "You can fill in the registration form when you arrive, but if you come about ten minutes early it will save time. We're on Mill Lane, right next to the pharmacy, and there's a small car park at the back."
+     ],
+     [
+      "Daniel",
+      "Great. And once I'm registered, how do I book appointments? Do I have to phone every time?"
+     ],
+     [
+      "Receptionist",
+      "Not at all. We'll give you a login for our online system, and you can book and cancel there, or through the app. The phone lines are busiest between 8 and 9 in the morning, so online is usually quicker."
+     ],
+     [
+      "Daniel",
+      "That sounds ideal. Thank you very much for your help."
+     ],
+     [
+      "Receptionist",
+      "You're very welcome, Mr Lindqvist. We'll see you on Thursday."
+     ],
+     [
+      "Daniel",
+      "Thanks. Goodbye."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "heading": "Calder Park Medical Centre: new patient registration",
+      "items": [
+       {
+        "n": 1,
+        "before": "Surname:",
+        "after": "",
+        "answer": [
+         "Lindqvist"
+        ],
+        "why": "He spells it L-I-N-D-Q-V-I-S-T."
+       },
+       {
+        "n": 2,
+        "before": "Address:",
+        "after": "Fenwick Road",
+        "answer": [
+         "72"
+        ],
+        "why": "He first says 27, which is his old address, then corrects himself: 72."
+       },
+       {
+        "n": 3,
+        "before": "Postcode:",
+        "after": "",
+        "answer": [
+         "KF4 3QL",
+         "KF43QL"
+        ],
+        "why": "The postcode is given as KF4 3QL."
+       },
+       {
+        "n": 4,
+        "before": "Mobile number:",
+        "after": "",
+        "answer": [
+         "07845 336 092",
+         "07845336092"
+        ],
+        "why": "He gives his mobile because the landline is not connected."
+       },
+       {
+        "n": 5,
+        "before": "Previous surgery:",
+        "after": "Lane Surgery, Plymouth",
+        "answer": [
+         "Harbour"
+        ],
+        "why": "His previous doctor was at Harbour Lane Surgery."
+       },
+       {
+        "n": 6,
+        "before": "Medical condition:",
+        "after": "",
+        "answer": [
+         "asthma"
+        ],
+        "why": "He has mild asthma; hay fever is his wife's, not his."
+       },
+       {
+        "n": 7,
+        "before": "Allergic to:",
+        "after": "",
+        "answer": [
+         "penicillin"
+        ],
+        "why": "He is allergic to penicillin; the aspirin allergy was ruled out by a test."
+       },
+       {
+        "n": 8,
+        "before": "Occupation: bus",
+        "after": "",
+        "answer": [
+         "driver"
+        ],
+        "why": "He says he is a bus driver."
+       },
+       {
+        "n": 9,
+        "before": "Health check with nurse: Thursday at",
+        "after": "",
+        "answer": [
+         "10.15",
+         "10:15"
+        ],
+        "why": "9.45 is rejected; he takes the 10.15 appointment."
+       },
+       {
+        "n": 10,
+        "before": "Bring photo ID and a recent",
+        "after": "bill",
+        "answer": [
+         "electricity"
+        ],
+        "why": "An electricity bill is accepted; a mobile phone bill is not."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 2",
+    "context": "A council officer gives a talk about the city's new tram network.",
+    "range": "11-20",
+    "speakers": {
+     "Craig": "aus_m"
+    },
+    "script": [
+     [
+      "Craig",
+      "Good evening, everyone, and thank you for coming along to this information evening about the Meridian Line, the city's new tram network. I'm Craig Holloway from the city transport office. I'll spend the next few minutes explaining what is happening and when, and then there will be time for your questions."
+     ],
+     [
+      "Craig",
+      "First, the date. Many of you will have seen on the council website that the first trams were due to carry passengers on 3 March. That has changed. Testing took longer than we expected, particularly the signalling at the crossings in the city centre, so the opening has moved back. There was some talk of 10 March, but I can now confirm that it will be 17 March, and we'll be offering free travel for the whole of that first weekend."
+     ],
+     [
+      "Craig",
+      "Now, why trams? When this project began, the council looked seriously at simply adding more buses. Buses would have been cheaper to build, I should say, and trams do run on electricity, which is good for air quality in the centre. But neither of those was the deciding factor. What decided it was capacity. A single tram can carry around 200 passengers, about three times as many as a bus, and on the busiest road in the city that makes an enormous difference to congestion."
+     ],
+     [
+      "Craig",
+      "So how often will they run? Our original plan was a tram every four minutes at peak times, but we only have enough vehicles for one every six minutes, so that is what you will get on weekdays between 7 and 9 in the morning and between 4 and 6 in the evening. At all other times, it will be every twelve minutes. We hope to buy more trams in two years' time, and then we can improve the service."
+     ],
+     [
+      "Craig",
+      "A word about tickets, because this is quite different from the buses. You cannot buy a ticket from the driver, and there are no ticket sales on board at all. You must buy before you get on, either from the machines you'll find at every stop, or through the Meridian app. Inspectors will be checking tickets, and if you are caught without a valid one, the penalty is 60 pounds. So please, do buy your ticket first."
+     ],
+     [
+      "Craig",
+      "Then there's parking. Many of you will want to drive to the Eastfield stop at the northern end of the line and take the tram into town. The car park there has 400 spaces. If you simply park there, you pay by the hour, like any other car park. But if you show a valid tram ticket for that day, parking is free all day. So please keep your ticket safe, and use it at the exit barrier."
+     ],
+     [
+      "Craig",
+      "Let me now take you along the line from south to north, and mention a few features of the stops, because each one is a little different."
+     ],
+     [
+      "Craig",
+      "The first stop is Cathedral Square, right in the heart of the city. It sits on the edge of the Saturday market, so if you are doing your shopping you can hop off, fill a bag with vegetables, and get straight back on the next tram."
+     ],
+     [
+      "Craig",
+      "Next comes Brook Street. I'm afraid this one is not ready yet. A water main was found under the platform, and the repairs mean it won't open until June. Until then, trams will pass through without stopping, so please don't be surprised."
+     ],
+     [
+      "Craig",
+      "After that, Westmere. This is where we are particularly proud of the secure cycle storage: space for 150 bikes, under cover and free to use, so you can cycle from home, lock up and take the tram into work. And while I'm talking about facilities, the nearest stop for the hospital is at Greenfield, which is a little further along the line, and a lift takes you straight up to the main entrance there."
+     ],
+     [
+      "Craig",
+      "University Gate is the next stop, and you really can't miss it. Students from the art school have created a huge mosaic along the platform wall, and it's the first thing you will see as you arrive. It took them nine months, and I think it's the best thing on the whole line."
+     ],
+     [
+      "Craig",
+      "And finally, the Docklands stop. Here you can step straight off the tram and onto the main railway platforms, so you can connect with trains to the capital and the airport without even crossing a road. People often ask whether Docklands has the biggest car park. It doesn't. As I said, that's Eastfield."
+     ],
+     [
+      "Craig",
+      "That's all from me for now. I'll hand out the printed timetables at the door as you leave, and I'm happy to take your questions. Please come to the front, and use the microphone so that everyone can hear."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 11,
+        "q": "When will the tram network open to passengers?",
+        "options": [
+         "on 3 March",
+         "on 10 March",
+         "on 17 March"
+        ],
+        "answer": "C",
+        "why": "3 March was the original date and 10 March was only talked about; the speaker confirms 17 March."
+       },
+       {
+        "n": 12,
+        "q": "Why did the council choose trams rather than more buses?",
+        "options": [
+         "Trams can carry far more passengers.",
+         "Trams are cheaper to build.",
+         "Trams are better for air quality."
+        ],
+        "answer": "A",
+        "why": "Buses would have been cheaper and trams are electric, but capacity was the deciding factor: about three times as many passengers as a bus."
+       },
+       {
+        "n": 13,
+        "q": "How often will trams run on weekdays in the morning peak?",
+        "options": [
+         "every four minutes",
+         "every six minutes",
+         "every twelve minutes"
+        ],
+        "answer": "B",
+        "why": "Four minutes was the original plan; at peak times it will be every six minutes. Twelve minutes is the off-peak service."
+       },
+       {
+        "n": 14,
+        "q": "Passengers who want a ticket must",
+        "options": [
+         "buy it from the driver.",
+         "buy it before they board.",
+         "buy it using the app only."
+        ],
+        "answer": "B",
+        "why": "There are no sales on board; tickets come from machines at every stop or from the app, so the app is not the only way."
+       },
+       {
+        "n": 15,
+        "q": "At the Eastfield car park, passengers will",
+        "options": [
+         "pay a fixed daily charge.",
+         "need to reserve a space in advance.",
+         "park free if they show a valid tram ticket."
+        ],
+        "answer": "C",
+        "why": "Those who just park pay by the hour, but showing a valid tram ticket makes parking free all day."
+       }
+      ]
+     },
+     {
+      "type": "match",
+      "instr": "What is the feature of each tram stop? Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+      "options": [
+       {
+        "k": "A",
+        "t": "secure cycle storage"
+       },
+       {
+        "k": "B",
+        "t": "next to a weekly market"
+       },
+       {
+        "k": "C",
+        "t": "closest stop to the hospital"
+       },
+       {
+        "k": "D",
+        "t": "the largest car park"
+       },
+       {
+        "k": "E",
+        "t": "a large piece of student artwork"
+       },
+       {
+        "k": "F",
+        "t": "not open until June"
+       },
+       {
+        "k": "G",
+        "t": "direct access to railway platforms"
+       }
+      ],
+      "items": [
+       {
+        "n": 16,
+        "q": "Cathedral Square",
+        "answer": "B",
+        "why": "It is on the edge of the Saturday market."
+       },
+       {
+        "n": 17,
+        "q": "Brook Street",
+        "answer": "F",
+        "why": "A water main was found, so it won't open until June."
+       },
+       {
+        "n": 18,
+        "q": "Westmere",
+        "answer": "A",
+        "why": "It has covered, free storage for 150 bikes. The hospital stop is Greenfield, so C is wrong."
+       },
+       {
+        "n": 19,
+        "q": "University Gate",
+        "answer": "E",
+        "why": "Art school students made a huge mosaic on the platform wall."
+       },
+       {
+        "n": 20,
+        "q": "Docklands",
+        "answer": "G",
+        "why": "Passengers step straight onto the railway platforms. The biggest car park is at Eastfield, so D is wrong."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 3",
+    "context": "A student and her supervisor discuss interview methods for an oral history project.",
+    "range": "21-30",
+    "speakers": {
+     "Nina": "glassy",
+     "Dr Webb": "nz_m"
+    },
+    "script": [
+     [
+      "Dr Webb",
+      "Come in, Nina, and take a seat. So, you wanted to talk about your oral history project."
+     ],
+     [
+      "Nina",
+      "Yes. Thanks for seeing me, Dr Webb. I've decided to look at the closure of the Saltmouth fish cannery thirty years ago, and I'd like to interview people who used to work there."
+     ],
+     [
+      "Dr Webb",
+      "Good. And what made you choose oral history rather than a study based on documents?"
+     ],
+     [
+      "Nina",
+      "Well, my grandmother worked at the cannery for years, which is how I first got interested, but that isn't the reason, really. I went to the town archive last week and found plenty of council minutes and newspaper reports. But there's hardly anything about what the work was actually like day to day, or how the workers felt when it closed. The official record just doesn't cover that."
+     ],
+     [
+      "Dr Webb",
+      "Exactly. That's the gap oral history fills. Have you found people to talk to?"
+     ],
+     [
+      "Nina",
+      "Twelve volunteers so far, which is more than enough. What worries me is the interviews themselves. These are people in their seventies and eighties, and I think once they start on the old days they might go off on long stories about things that have nothing to do with the cannery. I don't want to interrupt them, but I only have an hour with each person."
+     ],
+     [
+      "Dr Webb",
+      "That's a common worry. Some students are concerned that people will forget things, but in my experience people remember vivid detail about their working lives. The bigger risk is wandering off the subject, and good preparation takes care of most of that."
+     ],
+     [
+      "Nina",
+      "Should I write out a full list of questions and ask them in the same order every time, so that the interviews can be compared?"
+     ],
+     [
+      "Dr Webb",
+      "I'd advise against that. If you read out fixed questions, the interview feels like a questionnaire and people give short answers. Prepare a list of topics, perhaps six or seven, and follow where the conversation goes, bringing it back when you need to."
+     ],
+     [
+      "Nina",
+      "So, semi-structured."
+     ],
+     [
+      "Dr Webb",
+      "Yes, that's the usual term. Now, where do you plan to hold these interviews?"
+     ],
+     [
+      "Nina",
+      "I've booked the meeting room at the library for all of them. It's quiet, and it's convenient for me."
+     ],
+     [
+      "Dr Webb",
+      "Hmm. It's certainly convenient for you, but think about the participants. In their own homes they'll be relaxed and surrounded by their own things, and that helps them remember. So visit them at home if you can, unless someone really prefers to meet elsewhere. Keep the library room for anyone who doesn't want a visitor."
+     ],
+     [
+      "Nina",
+      "OK, I hadn't thought of that. I'll change the plan. And what about the ethics side? I know I have to fill in the department form."
+     ],
+     [
+      "Dr Webb",
+      "You do. But the key thing is what happens before each interview. Before you switch on the recorder, get a consent form signed which says the recording can be kept in the university archive and quoted in your report. Without that you can't use anything. Some students think they should send the questions in advance, but I wouldn't. It tends to make the answers sound rehearsed."
+     ],
+     [
+      "Nina",
+      "Right, I'll bring consent forms every time. And I thought I'd ask someone from the family to sit in, in case people are nervous."
+     ],
+     [
+      "Dr Webb",
+      "I'd leave that out, unless the participant asks. A relative can easily change what's said. Now, a few practical tips. Do you have a recorder?"
+     ],
+     [
+      "Nina",
+      "I've borrowed one from the department."
+     ],
+     [
+      "Dr Webb",
+      "Test it before every visit, and always take spare batteries. I've seen whole interviews lost because the recorder died halfway through, and you can't rely on there being a socket nearby."
+     ],
+     [
+      "Nina",
+      "Spare batteries. Got it. And how should I begin?"
+     ],
+     [
+      "Dr Webb",
+      "Start with easy questions. Ask about their childhood, where they grew up, how they came to work at the cannery. That relaxes people before you move on to harder subjects, like the day the factory closed."
+     ],
+     [
+      "Nina",
+      "OK. And what about people who struggle to remember?"
+     ],
+     [
+      "Dr Webb",
+      "Ask them to dig out old photographs, or take some from the archive with you. Photographs are wonderful prompts. People point at faces and the stories come flooding back."
+     ],
+     [
+      "Nina",
+      "And what if there's a long pause?"
+     ],
+     [
+      "Dr Webb",
+      "Resist the urge to fill it. Never interrupt a silence; give them time. The best material often comes after a pause."
+     ],
+     [
+      "Nina",
+      "That'll be hard for me. I tend to talk too much when I'm nervous."
+     ],
+     [
+      "Dr Webb",
+      "You'll learn. And afterwards, label the file straight away, with the date and the participant's surname, and write a short summary of the main points within a day, while it's fresh in your mind."
+     ],
+     [
+      "Nina",
+      "Date and surname. Brilliant. Thanks so much."
+     ],
+     [
+      "Dr Webb",
+      "Send me your interview plan by Friday and I'll have a look. Good luck with the first one."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 21,
+        "q": "Why has Nina chosen to use oral history?",
+        "options": [
+         "The official records say little about workers' daily lives.",
+         "Her grandmother worked at the cannery.",
+         "The town archive is hard to use."
+        ],
+        "answer": "A",
+        "why": "She says her grandmother is how she got interested but not the reason; the archive lacks material on what the work was like."
+       },
+       {
+        "n": 22,
+        "q": "What is Nina's main concern about the interviews?",
+        "options": [
+         "Participants may talk about unrelated things.",
+         "Participants may forget important details.",
+         "There may not be enough volunteers."
+        ],
+        "answer": "A",
+        "why": "She worries people will go off on long stories; Dr Webb mentions forgetting as a common worry but she has twelve volunteers and memory is not her concern."
+       },
+       {
+        "n": 23,
+        "q": "What does Dr Webb advise about the questions?",
+        "options": [
+         "Ask the same questions in the same order every time.",
+         "Prepare a list of topics and be flexible.",
+         "Ask only questions about dates and events."
+        ],
+        "answer": "B",
+        "why": "He advises against fixed questions and recommends a short list of topics and following the conversation."
+       },
+       {
+        "n": 24,
+        "q": "Where does Dr Webb suggest the interviews should take place?",
+        "options": [
+         "in the participants' homes",
+         "in the library meeting room",
+         "in a university seminar room"
+        ],
+        "answer": "A",
+        "why": "In their own homes people are relaxed and surrounded by objects that help memory; the library is only for those who prefer it."
+       },
+       {
+        "n": 25,
+        "q": "What must Nina do before each interview begins?",
+        "options": [
+         "send the participant a list of questions",
+         "get a consent form signed",
+         "invite a family member to attend"
+        ],
+        "answer": "B",
+        "why": "A signed consent form is needed before recording; sending questions would make answers rehearsed and a relative should not sit in."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "heading": "Interview checklist",
+      "items": [
+       {
+        "n": 26,
+        "before": "Take spare",
+        "after": "for the recorder.",
+        "answer": [
+         "batteries"
+        ],
+        "why": "He tells her to take spare batteries."
+       },
+       {
+        "n": 27,
+        "before": "Begin with easy questions about the person's",
+        "after": ".",
+        "answer": [
+         "childhood"
+        ],
+        "why": "He suggests starting with childhood and where they grew up."
+       },
+       {
+        "n": 28,
+        "before": "Use old",
+        "after": "as prompts.",
+        "answer": [
+         "photographs"
+        ],
+        "why": "Photographs are described as wonderful prompts."
+       },
+       {
+        "n": 29,
+        "before": "Never",
+        "after": "during a long silence.",
+        "answer": [
+         "interrupt"
+        ],
+        "why": "He says never interrupt a silence."
+       },
+       {
+        "n": 30,
+        "before": "Name each file with the date and the participant's",
+        "after": ".",
+        "answer": [
+         "surname"
+        ],
+        "why": "Files are labelled with the date and the participant's surname."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Part 4",
+    "context": "A lecturer talks about the history of the umbrella.",
+    "range": "31-40",
+    "speakers": {
+     "Lecturer": "rounded"
+    },
+    "script": [
+     [
+      "Lecturer",
+      "Today I'd like to talk about an object that we all own and that nearly all of us have lost at some time: the umbrella. It looks simple, but it has a long and surprisingly varied history, and I think it tells us something about how design improves slowly, in small steps."
+     ],
+     [
+      "Lecturer",
+      "Let's start at the beginning. The earliest umbrellas we know of come from Egypt, Assyria and China, about three thousand years ago, and they were not meant to keep off the rain at all. They were designed to give shade from the sun. They were also symbols of status. In several ancient courts, only royalty or very senior officials were allowed to have one held over their heads. The word umbrella itself comes from a Latin word meaning shade."
+     ],
+     [
+      "Lecturer",
+      "The Chinese were probably the first to make umbrellas waterproof. They used paper, and the question was how to stop it turning to pulp in the rain. Some makers experimented with oil, but that made the paper heavy and it soon turned yellow. Wax proved to be the most successful treatment, and it allowed the same object to be used against both sun and rain."
+     ],
+     [
+      "Lecturer",
+      "Umbrellas reached Europe through Greece and Rome, but they stayed rare. By the seventeenth century, they were mainly something that women carried, as a fashion item or to protect the complexion from the sun. A man who was seen with one risked being laughed at, and many simply wouldn't carry one."
+     ],
+     [
+      "Lecturer",
+      "That began to change in London in the 1750s. A traveller and charity worker called Jonas Hanway is said to have carried an umbrella through the streets for thirty years. Plenty of people mocked him, but the most hostile were the coachmen, who made their living from hiring out carriages and who saw people sheltering from the rain without a carriage as a threat to their trade."
+     ],
+     [
+      "Lecturer",
+      "Even so, the early European umbrella was not a pleasant object. The frames were made mainly of whalebone, with a little cane here and there, and the canopy was oiled canvas. It was heavy, it was awkward, it dripped and it would not fold. Some were so large that they had to be carried by servants."
+     ],
+     [
+      "Lecturer",
+      "The breakthrough came in 1852, when Samuel Fox, a steelmaker in the north of England, patented a frame with ribs made of thin U-shaped steel. He called it the Paradise frame. It was lighter, much cheaper and much stronger than whalebone, and within a few years umbrellas were affordable for ordinary people. I should add that the date is sometimes given as 1850 in older books, but 1852 is correct."
+     ],
+     [
+      "Lecturer",
+      "The next big step was folding. Umbrellas of the nineteenth century were long, and in a crowded street or a train they were a nuisance. In 1928, Hans Haupt, a German engineer, designed the first successful pocket umbrella, which could be shortened to about half its length by a telescopic shaft and a folding frame. Haupt is sometimes described as Swiss or Austrian, because he worked in several countries, but he was German."
+     ],
+     [
+      "Lecturer",
+      "Since then, most of the change has been in materials rather than in the design. Cotton and silk gave way to nylon and polyester, and ribs of fibreglass or carbon replaced some steel ones. Designers have also tried vented canopies, double layers and frames that flex."
+     ],
+     [
+      "Lecturer",
+      "So what goes wrong? Many people assume that the fabric tears in a strong wind, but that is rarely the problem. Almost always it is the frame. The ribs bend, or one of the joints breaks, and the whole structure turns inside out. That is why a lot of engineering effort now goes into the joints rather than the cover."
+     ],
+     [
+      "Lecturer",
+      "There is another problem, which designers are only starting to take seriously. Billions of umbrellas are thrown away each year, and they are very hard to recycle. They are made of several materials, metal, plastic and fabric, all joined together, and separating them costs more than the materials are worth. A few companies now offer umbrellas made from a single material, or with parts that can be replaced, and I think that will become more common."
+     ],
+     [
+      "Lecturer",
+      "If you take away the modern materials, the structure of today's umbrella is almost exactly what Samuel Fox patented more than a century and a half ago. That, to me, is the most remarkable thing about it. Very few everyday objects have needed so little change. Thank you."
+     ]
+    ],
+    "groups": [
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "heading": "The history of the umbrella",
+      "items": [
+       {
+        "n": 31,
+        "before": "The earliest umbrellas gave shade from the",
+        "after": ".",
+        "answer": [
+         "sun"
+        ],
+        "why": "They were designed to give shade from the sun, not to keep off the rain."
+       },
+       {
+        "n": 32,
+        "before": "In China, the most successful treatment for waterproofing paper was",
+        "after": ".",
+        "answer": [
+         "wax"
+        ],
+        "why": "Oil was tried but made the paper heavy and yellow; wax was the most successful."
+       },
+       {
+        "n": 33,
+        "before": "In 17th-century Europe, umbrellas were mainly carried by",
+        "after": ".",
+        "answer": [
+         "women"
+        ],
+        "why": "They were mainly something that women carried."
+       },
+       {
+        "n": 34,
+        "before": "Jonas Hanway was mocked most strongly by",
+        "after": ".",
+        "answer": [
+         "coachmen"
+        ],
+        "why": "The coachmen were the most hostile because he threatened their trade."
+       },
+       {
+        "n": 35,
+        "before": "Early European frames were made mainly of",
+        "after": ".",
+        "answer": [
+         "whalebone"
+        ],
+        "why": "Frames were mainly whalebone, with only a little cane."
+       },
+       {
+        "n": 36,
+        "before": "In 1852, Samuel Fox patented a frame with",
+        "after": "ribs.",
+        "answer": [
+         "steel"
+        ],
+        "why": "His ribs were of thin U-shaped steel."
+       },
+       {
+        "n": 37,
+        "before": "The first successful pocket umbrella was designed by a",
+        "after": "engineer.",
+        "answer": [
+         "German"
+        ],
+        "why": "Haupt is sometimes called Swiss or Austrian but he was German."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B or C.",
+      "items": [
+       {
+        "n": 38,
+        "q": "According to the lecturer, modern umbrellas usually fail in strong wind because",
+        "options": [
+         "the frame bends or a joint breaks.",
+         "the fabric tears.",
+         "the handle comes off."
+        ],
+        "answer": "A",
+        "why": "She says the fabric is rarely the problem; almost always it is the ribs bending or a joint breaking."
+       },
+       {
+        "n": 39,
+        "q": "Why is it difficult to recycle umbrellas?",
+        "options": [
+         "Very few people throw them away.",
+         "They are made from several materials joined together.",
+         "No company will collect them."
+        ],
+        "answer": "B",
+        "why": "Metal, plastic and fabric are joined, and separating them costs more than the materials are worth."
+       },
+       {
+        "n": 40,
+        "q": "What does the lecturer conclude about umbrella design?",
+        "options": [
+         "It has hardly changed in its basic structure since the 1850s.",
+         "It is likely to change completely in the near future.",
+         "It has become much more complicated since the 1850s."
+        ],
+        "answer": "A",
+        "why": "She says that without modern materials today's umbrella is almost exactly what Fox patented."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "reading": {
+  "sections": [
+   {
+    "title": "Section 1",
+    "range": "1-14",
+    "passages": [
+     {
+      "title": "Heron's Rest: self-catering holiday cottage, Isle of Carrow",
+      "paras": [
+       "Heron's Rest is a stone-built cottage on the north shore of the Isle of Carrow, ten minutes' walk from the fishing village of Port Aldric and a short step from a quiet pebble beach. It sleeps up to six people in three bedrooms (one double, one twin and one with bunk beds), so it suits families and groups of friends. There is a large kitchen with a dishwasher, a living room with a wood-burning stove and a sunroom overlooking the bay. A first basket of logs is provided; further baskets can be bought from the owners for 6 pounds each.",
+       "Bed linen and heating are included in the price, but towels are not. Guests may bring their own or hire a set for 6 pounds per person for the week. Wi-Fi is available in the sunroom only, as the thick stone walls make a signal elsewhere in the cottage unreliable. There is no mobile phone reception in the garden, which many guests consider a bonus.",
+       "The nearest shop is two miles away in Port Aldric, which also has a post office and a pub serving food every evening. The owners leave a welcome pack of milk, bread, eggs and tea on arrival, and a local butcher will deliver to the cottage if you order two days in advance.",
+       "From June to September, bookings run from Saturday to Saturday. Outside these months, a minimum stay of three nights applies. Check-in is from 4 pm and guests must leave by 10 am. One well-behaved dog is welcome at no extra charge, but dogs must not be left alone in the cottage or allowed upstairs. Smoking is not permitted anywhere in the building. A deposit of 100 pounds is payable at the time of booking and is returned within seven days of departure, provided there is no damage. Because of the steep steps down to the beach and the open staircase, the owners advise against bringing children under five."
+      ]
+     },
+     {
+      "title": "Carrow Island Ferries: summer timetable and ticket rules",
+      "paras": [
+       "The ferry crosses between Port Aldric on the mainland and Carrow Harbour on the island, and the crossing takes 50 minutes. On weekdays the first sailing leaves Port Aldric at 7.30 am and the last at 9.15 pm. On Sundays, services start later, with the first sailing at 9.00 am.",
+       "Foot passengers must check in at least 20 minutes before departure and drivers of vehicles at least 30 minutes before. Late arrivals will not be allowed on board, even if the ferry is still at the quay. Passengers who book online through the company website receive a discount of 10 per cent, which is not available on tickets bought at the harbour office.",
+       "Tickets are not refundable. However, they can be changed to a different sailing up to 24 hours before departure for a fee of 5 pounds; changes within 24 hours are not possible. Return tickets are valid for three months from the date of issue. Bicycles are carried free of charge, but must be wheeled onto the lower deck by their owners, and the company accepts no responsibility for damage. Dogs are welcome on the open deck. Large dogs must wear a muzzle at all times, and small dogs must be kept on a lead. Passengers are not permitted to stay in their vehicles during the crossing.",
+       "In rough weather, sailings may be cancelled at short notice. If this happens, passengers who have booked will be informed by text message and offered a place on the next available crossing or a full refund. Information about delays is also displayed on the website and announced at the harbour. Caravans and trailers must be booked by telephone, as space on board is limited."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information in the text about Heron's Rest? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 1,
+        "q": "One of the bedrooms has bunk beds.",
+        "answer": "TRUE",
+        "why": "The cottage has one double, one twin and one room with bunk beds."
+       },
+       {
+        "n": 2,
+        "q": "Guests can take extra logs without paying.",
+        "answer": "FALSE",
+        "why": "Only the first basket is free; further baskets cost 6 pounds each."
+       },
+       {
+        "n": 3,
+        "q": "Wi-Fi can be used in every room of the cottage.",
+        "answer": "FALSE",
+        "why": "It is available in the sunroom only."
+       },
+       {
+        "n": 4,
+        "q": "Meals are available in the evenings at a pub in Port Aldric.",
+        "answer": "TRUE",
+        "why": "The village has a pub serving food every evening."
+       },
+       {
+        "n": 5,
+        "q": "A stay of three nights can be booked in July.",
+        "answer": "FALSE",
+        "why": "In June to September bookings run Saturday to Saturday; the three-night minimum applies outside those months."
+       },
+       {
+        "n": 6,
+        "q": "The kitchen has a washing machine.",
+        "answer": "NOT GIVEN",
+        "why": "A dishwasher is mentioned but a washing machine is not."
+       },
+       {
+        "n": 7,
+        "q": "The owners recommend that young children do not stay at the cottage.",
+        "answer": "TRUE",
+        "why": "They advise against bringing children under five."
+       }
+      ]
+     },
+     {
+      "type": "gap",
+      "instr": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER from the text about the ferry for each answer.",
+      "heading": "Carrow Island Ferries: key information",
+      "items": [
+       {
+        "n": 8,
+        "before": "First weekday sailing from Port Aldric leaves at",
+        "after": ".",
+        "answer": [
+         "7.30 am",
+         "7.30"
+        ],
+        "why": "Weekday sailings start at 7.30 am."
+       },
+       {
+        "n": 9,
+        "before": "Foot passengers must check in at least",
+        "after": "minutes before departure.",
+        "answer": [
+         "20"
+        ],
+        "why": "Foot passengers check in 20 minutes early; vehicle drivers need 30."
+       },
+       {
+        "n": 10,
+        "before": "Online bookings receive a discount of",
+        "after": ".",
+        "answer": [
+         "10 per cent",
+         "10%"
+        ],
+        "why": "The discount for booking online is 10 per cent."
+       },
+       {
+        "n": 11,
+        "before": "Changing to a different sailing costs",
+        "after": ".",
+        "answer": [
+         "5 pounds",
+         "£5"
+        ],
+        "why": "The fee for changing a sailing is 5 pounds."
+       },
+       {
+        "n": 12,
+        "before": "Bicycles are carried",
+        "after": ".",
+        "answer": [
+         "free of charge"
+        ],
+        "why": "The text says bicycles are carried free of charge."
+       },
+       {
+        "n": 13,
+        "before": "Large dogs must always wear a",
+        "after": ".",
+        "answer": [
+         "muzzle"
+        ],
+        "why": "Large dogs must wear a muzzle at all times."
+       },
+       {
+        "n": 14,
+        "before": "If a sailing is cancelled, passengers are told by",
+        "after": ".",
+        "answer": [
+         "text message"
+        ],
+        "why": "Booked passengers are informed by text message."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Section 2",
+    "range": "15-27",
+    "passages": [
+     {
+      "title": "Housekeeping procedures at the Ashgrove Hotel",
+      "paras": [
+       "A  Starting the shift. Housekeepers report to the housekeeping office at 8.30 am, where they collect their daily allocation sheet showing which rooms are to be cleaned, with departures dealt with first. Staff must wear the full uniform and a name badge. Mobile phones must be left in the locker and may be used only during breaks.",
+       "B  Entering rooms. Always knock three times and say 'housekeeping' before entering. If a Do Not Disturb sign is displayed, do not go in. Note the room number and return after 2 pm. If the sign is still displayed at 4 pm, tell the duty manager, who will telephone the room to check that the guest is well.",
+       "C  Cleaning order. Open the window, strip the bed, then clean the bathroom before moving on to dusting and vacuuming. Use the colour-coded cloths: red for toilets, blue for glass and mirrors, yellow for other bathroom surfaces and green for everything else. This prevents germs from spreading from one area to another.",
+       "D  Lost property. Any item left behind by a guest must be taken to the housekeeping office within the hour and recorded in the lost property book, with the room number, the date and a description. Items are kept for 90 days. Valuables such as jewellery and cash are handed to the manager immediately and locked in the safe.",
+       "E  Damage and faults. Report any breakages, stains that cannot be removed or equipment faults to the maintenance team through the app on your tablet, attaching a photograph. Never attempt to repair electrical equipment yourself. If a guest's belongings are damaged, tell your supervisor and do not discuss compensation with the guest.",
+       "F  Inspections. Each room is checked by a supervisor before it is released to new guests, and at least five rooms a day are inspected in detail. Staff whose rooms fail an inspection twice in one month will receive extra training. Guests who are not satisfied may ask for their room to be cleaned again."
+      ]
+     },
+     {
+      "title": "Giving a good presentation at work",
+      "paras": [
+       "Many people dread presenting to colleagues, but a few simple habits can turn a nervous talk into a confident one.",
+       "Start by deciding what the audience needs. A common mistake is to include everything you know. Ask yourself what you would like people to remember tomorrow, and build the talk around no more than three main points. Listeners retain very little of a long list.",
+       "Slides should support you, not replace you. Use a few words and one image on each slide; if people are reading, they are not listening. Never read slides aloud. As a rough guide, allow one slide for every two minutes of talking, which is much slower than most beginners expect.",
+       "Rehearse out loud, at least twice, ideally in front of a colleague who will give you honest feedback. Time yourself: most people speak more quickly when they are nervous and finish earlier than they planned. Arriving early on the day lets you check the projector and the sound.",
+       "The opening matters. Rather than apologising or telling a joke, begin with a question or a striking fact. Speak slowly, pause between points and look at different people in the room instead of at the screen. If you lose your place, remember that a pause feels much longer to you than to the audience. Take a breath, look at your notes and carry on.",
+       "Questions are the part many people fear most. Listen to the whole question, thank the person and, if you do not know the answer, say so and offer to find out afterwards. Bluffing is usually noticed and damages trust. Finally, finish on time. Nobody has ever complained that a presentation ended five minutes early."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "The text about housekeeping procedures has six sections, A-F. Which section contains the following information? Choose the correct letter, A-F.",
+      "options": [
+       {
+        "k": "A",
+        "t": "Section A"
+       },
+       {
+        "k": "B",
+        "t": "Section B"
+       },
+       {
+        "k": "C",
+        "t": "Section C"
+       },
+       {
+        "k": "D",
+        "t": "Section D"
+       },
+       {
+        "k": "E",
+        "t": "Section E"
+       },
+       {
+        "k": "F",
+        "t": "Section F"
+       }
+      ],
+      "items": [
+       {
+        "n": 15,
+        "q": "what to do with something a guest has left in a room",
+        "answer": "D",
+        "why": "Section D covers lost property."
+       },
+       {
+        "n": 16,
+        "q": "the reason for using different cloths in different places",
+        "answer": "C",
+        "why": "Colour-coded cloths prevent germs spreading between areas."
+       },
+       {
+        "n": 17,
+        "q": "a warning about repairing electrical items",
+        "answer": "E",
+        "why": "Section E says never to repair electrical equipment."
+       },
+       {
+        "n": 18,
+        "q": "a consequence for staff whose work is not good enough",
+        "answer": "F",
+        "why": "Failing two inspections in a month leads to extra training."
+       },
+       {
+        "n": 19,
+        "q": "the time housekeepers begin work",
+        "answer": "A",
+        "why": "They report to the office at 8.30 am."
+       },
+       {
+        "n": 20,
+        "q": "when a manager should be told about a guest who has not responded",
+        "answer": "B",
+        "why": "If the Do Not Disturb sign is still up at 4 pm, the duty manager is told."
+       }
+      ]
+     },
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information in the text about giving presentations? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 21,
+        "q": "A good presentation should include as much information as possible.",
+        "answer": "FALSE",
+        "why": "The writer calls this a common mistake and recommends no more than three main points."
+       },
+       {
+        "n": 22,
+        "q": "The writer recommends about one slide for every two minutes of a talk.",
+        "answer": "TRUE",
+        "why": "'Allow one slide for every two minutes of talking.'"
+       },
+       {
+        "n": 23,
+        "q": "Recording yourself rehearsing is a useful way to improve.",
+        "answer": "NOT GIVEN",
+        "why": "Recording is not mentioned; the text suggests rehearsing in front of a colleague."
+       },
+       {
+        "n": 24,
+        "q": "Nervous speakers tend to talk faster than they intend.",
+        "answer": "TRUE",
+        "why": "Most people speak more quickly when nervous and finish earlier than planned."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 25,
+        "q": "What does the writer suggest for the start of a presentation?",
+        "options": [
+         "a question or a striking fact",
+         "an apology for being nervous",
+         "a joke to relax the audience",
+         "a summary of the whole talk"
+        ],
+        "answer": "A",
+        "why": "The writer advises a question or striking fact rather than apologising or joking."
+       },
+       {
+        "n": 26,
+        "q": "What should a speaker do after losing their place?",
+        "options": [
+         "start the talk again",
+         "ask the audience for help",
+         "pause, breathe and check their notes",
+         "move on to the next slide"
+        ],
+        "answer": "C",
+        "why": "The text says to take a breath, look at your notes and carry on."
+       },
+       {
+        "n": 27,
+        "q": "What should a speaker do if they cannot answer a question?",
+        "options": [
+         "give the best guess they can",
+         "change the subject politely",
+         "ask a colleague to reply",
+         "admit it and offer to find out later"
+        ],
+        "answer": "D",
+        "why": "Say so and offer to find out afterwards; bluffing damages trust."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Section 3",
+    "range": "28-40",
+    "passages": [
+     {
+      "title": "Walls without mortar: the craft of dry-stone walling",
+      "paras": [
+       "A  Drive along almost any upland road in northern Britain and you will see them: grey lines of stone climbing steep hillsides, dividing fields, vanishing over ridges. Dry-stone walls contain no mortar, no cement, nothing but the weight and careful fit of the stones themselves. They are the oldest and most common field boundary in many hill regions, yet few of the people who admire them know how they are made, or that without a steady supply of skilled builders, thousands of kilometres of them are slowly falling down.",
+       "B  The principle is simple to state and hard to practise. A wall is built as two faces that lean slightly inwards, so that it is wider at the base than at the top, and the space between them is packed with small stones known as hearting. Every so often, long stones called throughstones span the full width of the wall and bind the two faces together. The top is finished with capstones, set on end or on edge, which lock everything beneath them in place. A good waller does not choose stones at random. Each one is picked up, turned and tried, and the aim, they say, is to handle every stone only once.",
+       "C  The craft has ancient roots. Stone boundaries exist in Britain that archaeologists believe are four thousand years old, but the great age of wall building came with the enclosure of common land in the eighteenth and nineteenth centuries, when landowners fenced off open grazing. In some districts the work was done by gangs of travelling labourers who were paid by the metre. A skilled man could build only about six metres in a long day. Many of the walls that survive from that period were made from stone cleared from the fields themselves, which explains why a stony hillside has so many of them: building a wall was also a way of getting rid of the stones.",
+       "D  By the middle of the twentieth century, the craft was in decline. Barbed wire and, later, post-and-wire fencing were quicker and cheaper, and a farmer could put up a hundred metres of fence in the time it took a waller to build ten metres of wall. Farms became larger, farm labour became scarcer and young people left rural areas for the towns. Walls were allowed to fall into disrepair, and gaps were patched with whatever was to hand, such as a sheet of corrugated iron or an old gate. In some counties, only a handful of full-time wallers remained.",
+       "E  The revival began with an unlikely alliance. Conservation groups noticed that walls were a refuge for wildlife: lichens, mosses and ferns grow on the stones, insects and spiders shelter in the cracks, and in the larger gaps live small mammals such as stoats, while wrens and wheatears nest in the crevices. One study found that a kilometre of wall can support as many plant species as the same length of hedgerow. At the same time, rural tourism boomed and the walls became part of what visitors came to see. A trade association was formed to set standards and run assessments, awarding certificates at several levels, up to master craftsman.",
+       "F  Training today mixes the old and the new. Many learners attend weekend courses, where a beginner builds a short length of wall under supervision. The first lesson is nearly always how to lift a stone safely, since a waller may shift several tonnes in a day. Learners use tools that have barely changed in centuries: a hammer, a chisel, a string line and a pair of wooden frames, called templates, which show the angle of the wall's sides. Apprenticeships exist for those who want to make it a career, and a competent professional can now earn a decent living, because farmers and landowners, many of them receiving grants for repairs, compete for their time.",
+       "G  The students are a varied group. Instructors report that, to their surprise, most are not from farming families at all but are office workers in their thirties and forties who spend the week in front of a screen and find satisfaction in a job where the result is visible at the end of the day. One instructor believes the best learners are often those with no experience of handling stone, since they have no bad habits to unlearn. Yet the work has a hard side. It is cold, heavy and often wet, and a wall of a metre in height takes one person a day to build for only a few metres.",
+       "H  Challenges remain. Training is slow, and it can take years to reach the standard at which a waller is trusted with a restoration. Regional styles differ greatly: walls in one valley may use rounded river stones laid in layers, while those in the next use flat slabs set on edge, so a waller trained in one area may need to learn again in another. And the funding on which repair depends can be cut. Even so, those involved are cautiously optimistic. A well-built wall may stand for two hundred years, and every metre repaired today is a small piece of landscape saved for the next generation."
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "type": "match",
+      "instr": "The text has eight paragraphs, A-H. Choose the correct heading for paragraphs B-F from the list of headings below. Write the correct letter, A-G.",
+      "options": [
+       {
+        "k": "A",
+        "t": "A craft with ancient roots and a golden age"
+       },
+       {
+        "k": "B",
+        "t": "Why cheaper alternatives took over"
+       },
+       {
+        "k": "C",
+        "t": "The unexpected value of walls to wildlife"
+       },
+       {
+        "k": "D",
+        "t": "How the structure holds together"
+       },
+       {
+        "k": "E",
+        "t": "Learning the trade today"
+       },
+       {
+        "k": "F",
+        "t": "The risk of losing regional styles"
+       },
+       {
+        "k": "G",
+        "t": "A wall that never needs repair"
+       }
+      ],
+      "items": [
+       {
+        "n": 28,
+        "q": "Paragraph B",
+        "answer": "D",
+        "why": "It explains faces, hearting, throughstones and capstones."
+       },
+       {
+        "n": 29,
+        "q": "Paragraph C",
+        "answer": "A",
+        "why": "It traces the ancient origins and the enclosure period of heavy wall building."
+       },
+       {
+        "n": 30,
+        "q": "Paragraph D",
+        "answer": "B",
+        "why": "Wire fencing was quicker and cheaper, so walls declined."
+       },
+       {
+        "n": 31,
+        "q": "Paragraph E",
+        "answer": "C",
+        "why": "It describes the wildlife that live in walls, which helped to start the revival."
+       },
+       {
+        "n": 32,
+        "q": "Paragraph F",
+        "answer": "E",
+        "why": "It covers courses, tools and apprenticeships. Regional styles are in paragraph H, not F."
+       }
+      ]
+     },
+     {
+      "type": "tfng",
+      "instr": "Do the following statements agree with the information in the text? Choose TRUE, FALSE or NOT GIVEN.",
+      "items": [
+       {
+        "n": 33,
+        "q": "The space between the two faces of a wall is filled with small stones.",
+        "answer": "TRUE",
+        "why": "Paragraph B: the space is packed with small stones known as hearting."
+       },
+       {
+        "n": 34,
+        "q": "Most walls from the enclosure period were built by the farmers who owned the land.",
+        "answer": "NOT GIVEN",
+        "why": "Paragraph C says gangs of labourers worked in some districts but does not say who built most walls."
+       },
+       {
+        "n": 35,
+        "q": "Wire fencing was cheaper and quicker to put up than a wall.",
+        "answer": "TRUE",
+        "why": "Paragraph D says fencing was quicker and cheaper."
+       },
+       {
+        "n": 36,
+        "q": "Most students on walling courses come from farming families.",
+        "answer": "FALSE",
+        "why": "Paragraph G says most are not from farming families but are office workers."
+       }
+      ]
+     },
+     {
+      "type": "mcq",
+      "instr": "Choose the correct letter, A, B, C or D.",
+      "items": [
+       {
+        "n": 37,
+        "q": "What is the purpose of throughstones?",
+        "options": [
+         "to decorate the top of the wall",
+         "to bind the two faces together",
+         "to fill the space inside the wall",
+         "to mark the boundary of a field"
+        ],
+        "answer": "B",
+        "why": "They span the full width and bind the two faces together; capstones finish the top and hearting fills the middle."
+       },
+       {
+        "n": 38,
+        "q": "Why did many walls fall into disrepair in the twentieth century?",
+        "options": [
+         "Farmers preferred the appearance of fences.",
+         "Stone became too expensive to buy.",
+         "Walkers damaged them in large numbers.",
+         "There were fewer workers and cheaper alternatives."
+        ],
+        "answer": "D",
+        "why": "Fencing was cheaper and quicker, and farm labour became scarcer."
+       },
+       {
+        "n": 39,
+        "q": "What does the writer say about wallers who move to a different area?",
+        "options": [
+         "They may have to learn the local style again.",
+         "Their certificates are not accepted.",
+         "They must use different tools.",
+         "They usually find the work easier."
+        ],
+        "answer": "A",
+        "why": "Paragraph H says regional styles differ, so a waller may need to learn again."
+       },
+       {
+        "n": 40,
+        "q": "What is the writer's attitude to the future of dry-stone walling at the end of the text?",
+        "options": [
+         "pessimistic about the lack of funding",
+         "uncertain about whether walls last long",
+         "critical of the pace of training",
+         "hopeful, despite some difficulties"
+        ],
+        "answer": "D",
+        "why": "Those involved are described as cautiously optimistic, even though training is slow and funding uncertain."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "writing": {
+  "task1": {
+   "kind": "letter (informal)",
+   "min": 150,
+   "prompt": "A friend of yours is thinking of learning a new skill. You recently took a course that you enjoyed.\n\nWrite a letter to your friend. In your letter:\n- describe the course you took\n- explain what you enjoyed about it\n- say why you think your friend would benefit from it\n\nWrite at least 150 words. You do NOT need to write any addresses.\n\nBegin your letter as follows:\nDear Alex,"
+  },
+  "task2": {
+   "kind": "advantages and disadvantages essay",
+   "min": 250,
+   "prompt": "Many students now choose to complete part or all of their university education in a foreign country.\n\nWhat are the advantages and disadvantages of studying abroad?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+  }
+ }
+}

@@ -85,6 +85,18 @@
    "file": "gt14.json"
   },
   {
+   "id": "gt15",
+   "module": "GT",
+   "title": "General Training Test 15",
+   "file": "gt15.json"
+  },
+  {
+   "id": "gt16",
+   "module": "GT",
+   "title": "General Training Test 16",
+   "file": "gt16.json"
+  },
+  {
    "id": "gt17",
    "module": "GT",
    "title": "General Training Test 17",
